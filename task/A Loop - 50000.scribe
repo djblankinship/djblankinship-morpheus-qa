@@ -1,0 +1,27 @@
+resource "task" "A Loop - 50000" {
+  name = "A Loop - 50000"
+  uuid = "8197996a-5422-4504-86ac-8e38bb54b5e3"
+  allowCustomConfig = false
+  dateCreated = "2022-11-16T20:12:19.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-11-17T18:16:20.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "97d1e2e3-9749-4361-8d97-1a79f180864c" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
