@@ -9,7 +9,7 @@ resource "instance-type-layout" "fffa46f5-7257-499b-84d7-ea10f1da00a0" {
   hasAutoScale = true
   instanceLevel = "user"
   instanceVersion = "1.11"
-  labels = [ "auto", "keep" ]
+  labels = [ { name = "auto" }, { name = "keep" } ]
   memoryRequirement = 0
   networkLevel = "container"
   portCount = 1
