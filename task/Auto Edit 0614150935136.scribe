@@ -1,0 +1,26 @@
+resource "task" "Auto Edit 0614150935136" {
+  name = "Auto Edit 0614150935136"
+  uuid = "f54aa976-f609-412b-9df7-2707cf92b26e"
+  allowCustomConfig = false
+  dateCreated = "2023-06-14T22:10:39.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-06-14T22:10:39.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "c4a94f0f-5f2e-4e05-8611-9df9ea8c9080" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
