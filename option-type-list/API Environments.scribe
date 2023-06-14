@@ -3,7 +3,7 @@ resource "option-type-list" "API Environments" {
   uuid = "52c483ed-c4ad-461d-b3b0-4f374cfdc354"
   apiType = "environments"
   ignoreSSLErrors = false
-  labels = [ { name = "auto" }, { name = "keep" } ]
+  labels = [ "auto", "keep" ]
   realTime = true
   sourceMethod = "GET"
   translationScript = <<EOF
