@@ -19,7 +19,7 @@ resource "option-type" "morphgroup" {
   fieldSetName = "morphgroup"
   global = true
   groupExpand = false
-  labels = [ "auto", "keep" ]
+  labels = [ { name = "auto" }, { name = "keep" } ]
   noBlank = false
   optionList = { name = "API Groups" }
   optionSource = "list"
