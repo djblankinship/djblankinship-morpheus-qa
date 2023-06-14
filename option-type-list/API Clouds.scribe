@@ -3,7 +3,7 @@ resource "option-type-list" "API Clouds" {
   uuid = "b4a042d7-6498-472e-91b9-c0d5514f6178"
   apiType = "clouds"
   ignoreSSLErrors = false
-  labels = [ { name = "auto" }, { name = "keep" } ]
+  labels = [ "auto", "keep" ]
   realTime = true
   requestScript = "results.siteId = input.morphgroup"
   sourceMethod = "GET"
