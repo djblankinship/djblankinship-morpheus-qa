@@ -11,7 +11,7 @@ resource "instance-type-layout" "fdad888d-c5b3-4b58-bd6e-b9bf6d3f3491" {
   hasServiceUser = false
   instanceLevel = "user"
   instanceVersion = "latest"
-  labels = [ "qa" ]
+  labels = [ { name = "qa" } ]
   memoryRequirement = 0
   networkLevel = "container"
   portCount = 1
