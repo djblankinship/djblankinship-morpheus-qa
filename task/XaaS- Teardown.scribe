@@ -1,0 +1,26 @@
+resource "task" "XaaS: Teardown" {
+  name = "XaaS: Teardown"
+  uuid = "a6668515-a6bc-4e61-81c7-63db45f6c4c6"
+  allowCustomConfig = false
+  dateCreated = "2022-01-06T05:07:27.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-01-06T05:07:27.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "55f6127a-5b3d-44dc-97b3-b8fcf6040687" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}

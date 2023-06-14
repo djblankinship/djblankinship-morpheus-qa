@@ -1,0 +1,26 @@
+resource "task" "XaaS: Provision" {
+  name = "XaaS: Provision"
+  uuid = "0863c9cc-331c-4776-b0af-359fe2c094f6"
+  allowCustomConfig = false
+  dateCreated = "2022-01-06T05:06:31.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-01-06T05:06:31.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "efdd7cd2-874a-443f-887c-a1bc78956308" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
