@@ -1,0 +1,28 @@
+resource "task" "Auto 0614150603395" {
+  name = "Auto 0614150603395"
+  uuid = "435a19ce-41af-4d31-ada2-b0d8900950ae"
+  allowCustomConfig = true
+  dateCreated = "2023-06-14T22:06:30.000Z"
+  executeTarget = "resource"
+  labels = [ { name = "auto" }, { name = "test" } ]
+  lastUpdated = "2023-06-14T22:06:30.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "c06be954-21a1-4efe-87e0-c671254ab510" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 3
+  retryDelaySeconds = 5
+  retryable = true
+  taskType = { code = "script" }
+  visibility = "public"
+}

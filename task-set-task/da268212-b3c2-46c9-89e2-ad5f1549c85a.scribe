@@ -1,0 +1,7 @@
+resource "task-set-task" "da268212-b3c2-46c9-89e2-ad5f1549c85a" {
+  uuid = "da268212-b3c2-46c9-89e2-ad5f1549c85a"
+  entryTask = false
+  task = { name = "Auto Edit 0614150603817" }
+  taskOrder = 1
+  taskPhase = "operation"
+}
