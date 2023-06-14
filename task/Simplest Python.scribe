@@ -1,0 +1,29 @@
+resource "task" "Simplest Python" {
+  name = "Simplest Python"
+  uuid = "1a6b9137-e6ee-4745-acad-f1fc59a15108"
+  allowCustomConfig = false
+  dateCreated = "2020-06-02T19:32:31.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-06-02T19:32:31.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "pythonAdditionalPackages" } },
+    { optionType = { code = "pythonArgs" } },
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    {
+      content = { uuid = "1ee9d188-ef70-4f85-ba34-c84f3e47a6ea" }
+      optionType = { code = "pythonScript" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
