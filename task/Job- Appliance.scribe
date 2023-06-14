@@ -1,0 +1,28 @@
+resource "task" "Job: Appliance" {
+  name = "Job: Appliance"
+  uuid = "fbc0f408-b5af-4ce2-b3a6-6abce1351cca"
+  allowCustomConfig = false
+  dateCreated = "2019-06-21T21:56:31.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-07-29T18:51:30.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "5966479c-593c-49c0-a4f8-7de2202ad356" }
+      optionType = { code = "script" }
+      value = "echo \"$(date) - appliance\" | tee -a /opt/morpheus/.local/job_appliance.txt"
+    },
+    { optionType = { code = "shell.sudo" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
