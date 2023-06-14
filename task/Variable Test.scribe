@@ -3,7 +3,7 @@ resource "task" "Variable Test" {
   uuid = "3e26f801-34cf-49e8-b559-80c7b4553024"
   allowCustomConfig = false
   executeTarget = "resource"
-  labels = [ { name = "keep" }, { name = "production" } ]
+  labels = [ "keep", "production" ]
   lastUpdated = "2022-10-17T15:24:01.000Z"
   options = [
     { optionType = { code = "host" } },
