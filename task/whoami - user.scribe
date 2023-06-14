@@ -1,0 +1,14 @@
+resource "task" "whoami - user" {
+  name = "whoami - user"
+  uuid = "a0b8d73d-4a60-4487-8d14-ad7a754398f7"
+  executeTarget = "resource"
+  options = [
+    { optionType = { code = "containerScriptId" }, value = "839" },
+    {
+      optionType = { code = "containerScript" }
+      value = "Who Am I - User"
+    }
+  ]
+  taskType = { code = "containerScript" }
+  visibility = "private"
+}
