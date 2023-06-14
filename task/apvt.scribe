@@ -1,0 +1,31 @@
+resource "task" "apvt" {
+  code = "apvt"
+  name = "aw-python-vars-test"
+  uuid = "0fc86efb-3fac-4b87-b345-51521779e581"
+  allowCustomConfig = false
+  dateCreated = "2022-10-13T17:59:35.000Z"
+  executeTarget = "local"
+  labels = [ "vars" ]
+  lastUpdated = "2022-10-13T17:59:35.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "pythonAdditionalPackages" } },
+    { optionType = { code = "pythonArgs" } },
+    { optionType = { code = "pythonBinary" } },
+    {
+      content = { uuid = "f5b39fb5-7cd0-4310-bbfb-866592b36ec3" }
+      optionType = { code = "pythonScript" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
