@@ -1,0 +1,27 @@
+resource "task" "cypher template" {
+  name = "cypher template"
+  uuid = "9fdcf378-5d5b-4ca9-b8fe-2edc5d6ecc66"
+  allowCustomConfig = false
+  dateCreated = "2023-04-20T16:50:24.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-04-20T16:50:24.000Z"
+  options = [
+    {
+      optionType = { code = "containerTemplate" }
+      value = "My CypherTemplate"
+    },
+    { optionType = { code = "containerTemplateId" }, value = "2119" },
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "containerTemplate" }
+  visibility = "private"
+}
