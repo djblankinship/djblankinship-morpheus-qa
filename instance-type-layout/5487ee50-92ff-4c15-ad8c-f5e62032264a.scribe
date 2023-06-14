@@ -9,7 +9,7 @@ resource "instance-type-layout" "5487ee50-92ff-4c15-ad8c-f5e62032264a" {
   hasAutoScale = true
   instanceLevel = "user"
   instanceVersion = "vmdk"
-  labels = [ "auto", "keep" ]
+  labels = [ { name = "auto" }, { name = "keep" } ]
   memoryRequirement = 0
   networkLevel = "container"
   portCount = 1
