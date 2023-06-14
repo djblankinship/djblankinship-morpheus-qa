@@ -1,0 +1,30 @@
+resource "task" "db-hello-py" {
+  code = "db-hello-py"
+  name = "db-hello-py"
+  uuid = "32cd9d64-bf36-4dd4-815b-a99fb2114b69"
+  allowCustomConfig = false
+  dateCreated = "2022-01-26T15:42:07.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-01-26T15:42:07.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "pythonAdditionalPackages" } },
+    { optionType = { code = "pythonArgs" } },
+    { optionType = { code = "pythonBinary" } },
+    {
+      content = { uuid = "945aa0e7-42ee-40ff-94c6-99dc74d84f43" }
+      optionType = { code = "pythonScript" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
