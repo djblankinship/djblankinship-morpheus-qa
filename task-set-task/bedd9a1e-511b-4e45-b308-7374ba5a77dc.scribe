@@ -1,7 +1,0 @@
-resource "task-set-task" "bedd9a1e-511b-4e45-b308-7374ba5a77dc" {
-  uuid = "bedd9a1e-511b-4e45-b308-7374ba5a77dc"
-  entryTask = false
-  task = { name = "Ansible: Nginx" }
-  taskOrder = 0
-  taskPhase = "provision"
-}

@@ -1,7 +1,0 @@
-resource "task-set-task" "b23305c5-a913-408d-ab45-3c7975f4fced" {
-  uuid = "b23305c5-a913-408d-ab45-3c7975f4fced"
-  entryTask = false
-  task = { name = "Auto 0614150603395" }
-  taskOrder = 0
-  taskPhase = "operation"
-}
