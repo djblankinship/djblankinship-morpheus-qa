@@ -1,0 +1,26 @@
+resource "task" "z WINRM - RESOURCE" {
+  code = "z WINRM - RESOURCE"
+  name = "z WINRM - RESOURCE"
+  uuid = "9ef6ed03-e8c9-4f12-828a-61cb324f176a"
+  dateCreated = "2019-06-27T00:17:40.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-06-27T15:12:28.000Z"
+  options = [
+    {
+      optionType = { code = "script" }
+      value = "echo \"$(date) <%= instance.name %> - test\" >> c:\\\\blah"
+    },
+    { optionType = { code = "username" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "winrm.elevated" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
