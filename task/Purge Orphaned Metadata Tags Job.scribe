@@ -1,0 +1,27 @@
+resource "task" "Purge Orphaned Metadata Tags Job" {
+  name = "Purge Orphaned Metadata Tags Job"
+  uuid = "f2e17e93-0b03-4201-bb9d-81e20e428cc0"
+  allowCustomConfig = false
+  dateCreated = "2023-03-09T23:23:26.000Z"
+  executeTarget = "local"
+  labels = [ "utility" ]
+  lastUpdated = "2023-03-09T23:23:26.000Z"
+  options = [
+    {
+      content = { uuid = "ffd06785-36b2-497c-a87f-070534c4fa67" }
+      optionType = { code = "groovyScript" }
+    },
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
