@@ -1,0 +1,10 @@
+resource "app-template" "ct-2-tier" {
+  name = "ct-2-tier"
+  uuid = "967319f0-8521-47a7-b1fa-ea6003f2f1fb"
+  active = true
+  custom = false
+  dateCreated = "2022-08-25T16:13:33.000Z"
+  lastUpdated = "2022-08-25T16:13:33.000Z"
+  templateType = { code = "morpheus" }
+  visibility = "private"
+}
