@@ -1,0 +1,27 @@
+resource "task" "PreReq SCAP Windows" {
+  name = "PreReq SCAP Windows"
+  uuid = "c0b1422e-16bf-4029-a00f-b53826d32424"
+  allowCustomConfig = false
+  dateCreated = "2021-11-16T19:08:52.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-16T19:08:52.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "607a08a6-859e-488b-936d-c2adb287fb06" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } },
+    { optionType = { code = "winrm.elevated" }, value = "on" }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
