@@ -16,7 +16,7 @@ resource "container-type" "8134270a-8aa0-4c26-a49d-5c00915a8574" {
   exportInstanceHostname = false
   hasSettings = false
   hasSslCert = false
-  labels = [ { name = "qa" } ]
+  labels = [ "qa" ]
   logTypeCode = "vm"
   mountConfig = "/etc/apache2"
   mountData = "/var/www/html"
