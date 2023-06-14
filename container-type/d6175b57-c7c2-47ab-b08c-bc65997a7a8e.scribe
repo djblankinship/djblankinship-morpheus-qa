@@ -13,7 +13,7 @@ resource "container-type" "d6175b57-c7c2-47ab-b08c-bc65997a7a8e" {
   exportInstanceHostname = false
   hasSettings = false
   hasSslCert = false
-  labels = [ { name = "auto" }, { name = "qa" } ]
+  labels = [ "auto", "qa" ]
   logTypeCode = "vm"
   priorityOrder = 0
   provisionType = { code = "vmware" }
