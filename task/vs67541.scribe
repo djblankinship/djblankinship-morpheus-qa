@@ -1,0 +1,28 @@
+resource "task" "vs67541" {
+  name = "vs67541"
+  uuid = "34ed7ad0-d221-4c33-a2b6-84491f2b77b9"
+  allowCustomConfig = false
+  dateCreated = "2022-08-19T09:44:34.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-08-19T10:30:56.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "3b0afdb9-0099-4281-90d0-3eb76242626a" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  resultType = "value"
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
