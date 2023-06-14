@@ -17,7 +17,7 @@ resource "container-type" "ec468592-a9e8-43ff-a4ab-6e6e48bfe426" {
   exportInstanceHostname = false
   hasSettings = false
   hasSslCert = false
-  labels = [ { name = "qa" } ]
+  labels = [ "qa" ]
   logTypeCode = "docker"
   mountData = "/var/www"
   mountLogs = "/var/log/apache2"
