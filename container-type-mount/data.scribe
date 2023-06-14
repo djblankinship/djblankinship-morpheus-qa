@@ -1,0 +1,15 @@
+resource "container-type-mount" "data" {
+  name = "data"
+  autoRun = true
+  canPersist = true
+  certStore = false
+  containerPath = "/usr/src/redmine/files"
+  customType = false
+  deployable = true
+  hostPath = "/usr/src/redmine/files"
+  required = false
+  sortOrder = 0
+  subMount = false
+  unmanagedEnabled = false
+  visible = false
+}
