@@ -1,0 +1,14 @@
+resource "task" "File: Library Script" {
+  name = "File: Library Script"
+  uuid = "c105f763-c387-4e43-b75c-6f38f37a3967"
+  executeTarget = "resource"
+  options = [
+    { optionType = { code = "containerScriptId" }, value = "187" },
+    {
+      optionType = { code = "containerScript" }
+      value = "file: library script"
+    }
+  ]
+  taskType = { code = "containerScript" }
+  visibility = "private"
+}
