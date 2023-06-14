@@ -7,6 +7,7 @@ resource "task" "! Email" {
   labels = [ "david", "hello" ]
   lastUpdated = "2022-11-18T00:40:25.000Z"
   options = [
+    { optionType = { code = "emailSubject" }, value = "configure" },
     {
       optionType = { code = "emailAddress" }
       value = "tommymarks@gmail.com"
@@ -16,14 +17,13 @@ resource "task" "! Email" {
       optionType = { code = "emailBody" }
     },
     { optionType = { code = "emailSkipTemplate" } },
-    { optionType = { code = "emailSubject" }, value = "configure" },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } },
+    { optionType = { code = "localScriptGitRef" } },
     { optionType = { code = "host" } },
     { optionType = { code = "localScriptGitId" } },
-    { optionType = { code = "localScriptGitRef" } },
     { optionType = { code = "password" } },
-    { optionType = { code = "port" } },
-    { optionType = { code = "sshKey" } },
-    { optionType = { code = "username" } }
+    { optionType = { code = "port" } }
   ]
   retryCount = 5
   retryDelaySeconds = 10
