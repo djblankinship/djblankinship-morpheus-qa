@@ -1,0 +1,26 @@
+resource "task" "VDI - Configure Remote Applications" {
+  name = "VDI - Configure Remote Applications"
+  uuid = "0cc42824-d294-4f3c-b868-7e52ae900adb"
+  allowCustomConfig = false
+  dateCreated = "2021-11-16T21:51:31.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-16T21:51:31.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "db196da4-e2ec-402c-9116-eaada1493922" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "winrmTask" }
+  visibility = "private"
+}
