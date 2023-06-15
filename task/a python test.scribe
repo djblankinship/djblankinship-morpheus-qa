@@ -1,0 +1,32 @@
+resource "task" "a python test" {
+  name = "a python test"
+  uuid = "c40f1b12-39a4-4f90-a9e9-b25183dda733"
+  allowCustomConfig = false
+  dateCreated = "2020-04-29T23:10:34.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-04-29T23:10:34.000Z"
+  options = [
+    { optionType = { code = "pythonArgs" }, value = "Hello World" },
+    {
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "pprint mechanize"
+    },
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "localScriptGitRef" } },
+    {
+      content = { uuid = "e2fe1067-32e4-4ca9-8b1f-424b5442d279" }
+      optionType = { code = "pythonScript" }
+    },
+    { optionType = { code = "port" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "host" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
