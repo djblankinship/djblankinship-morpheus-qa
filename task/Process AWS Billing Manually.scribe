@@ -1,0 +1,26 @@
+resource "task" "Process AWS Billing Manually" {
+  name = "Process AWS Billing Manually"
+  uuid = "c2827ff6-f27c-44fb-b1d3-dcc726d0b5f0"
+  allowCustomConfig = false
+  dateCreated = "2020-06-16T11:33:37.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-06-16T11:33:37.000Z"
+  options = [
+    {
+      content = { uuid = "0f776332-ffd3-4b79-af31-3d5cdfd3ea6e" }
+      optionType = { code = "groovyScript" }
+    },
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "groovyTask" }
+  visibility = "private"
+}
