@@ -24,7 +24,7 @@ resource "container-type" "b258917b-ccc5-44e7-8232-931a80412558" {
   exportInstanceHostname = false
   hasSettings = false
   hasSslCert = true
-  labels = [ { name = "qa" } ]
+  labels = [ "qa" ]
   logTypeCode = "docker"
   priorityOrder = 0
   provisionService = "dockerContainerService"
