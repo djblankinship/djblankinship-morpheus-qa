@@ -1,14 +1,14 @@
-resource "container-type-port" "HTTP" {
-  name = "HTTP"
+resource "container-type-port" "HTTPS" {
+  name = "HTTPS"
   allowMapping = true
   customType = false
   export = true
-  exportName = "HTTP"
-  externalPort = 80
-  internalPort = 80
+  exportName = "HTTPS"
+  externalPort = 443
+  internalPort = 443
   link = true
   loadBalance = true
-  loadBalanceProtocol = "HTTP"
+  loadBalanceProtocol = "HTTPS"
   primaryPort = false
   sortOrder = 0
   unmanagedEnabled = false
