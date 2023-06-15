@@ -1,0 +1,27 @@
+resource "task" "eg_read_result" {
+  name = "eg_read_result"
+  uuid = "722e635f-a53d-4b44-8daa-4fcb4f82d878"
+  allowCustomConfig = false
+  dateCreated = "2022-12-07T00:10:32.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-12-08T19:52:09.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "8473c7b6-f965-4d06-af26-fbe689215963" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
