@@ -1,0 +1,27 @@
+resource "task" "test" {
+  code = "test"
+  name = "AC Test Task"
+  uuid = "98eb3b3f-4e4a-4cf8-834c-21d21dcb4c39"
+  allowCustomConfig = false
+  dateCreated = "2023-06-05T14:44:08.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-06-05T14:44:08.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "f372f0f5-c15b-4554-8f96-281e5e383e71" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
