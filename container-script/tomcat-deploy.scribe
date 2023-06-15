@@ -4,7 +4,7 @@ resource "container-script" "tomcat-deploy" {
   uuid = "ae98bbb1-32ad-4990-a321-99280166bad0"
   dateCreated = "2023-03-06T03:39:06.000Z"
   failOnError = true
-  labels = [ { name = "qa" } ]
+  labels = [ "qa" ]
   lastUpdated = "2023-03-06T03:59:27.000Z"
   script = <<EOF
 chmod 775 -R <%=container.hostMountPoint%>/config ; sudo chown -R root.morpheus-node <%=container.hostMountPoint%>/config
