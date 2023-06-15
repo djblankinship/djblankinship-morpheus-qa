@@ -1,0 +1,26 @@
+resource "task" "Version 3" {
+  name = "Version 3"
+  uuid = "d51d5833-7869-4a8b-af1d-777aa546f995"
+  allowCustomConfig = false
+  dateCreated = "2019-12-12T18:54:35.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-12-12T18:54:35.000Z"
+  options = [
+    {
+      optionType = { code = "script" }
+      value = "echo \"version 3.0\" | sudo tee -a /version.txt"
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "username" } },
+    { optionType = { code = "port" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
