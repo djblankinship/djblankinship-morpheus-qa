@@ -1,0 +1,29 @@
+resource "task" "puppet.agent" {
+  code = "puppet.agent"
+  name = "JCS Puppet Agent"
+  uuid = "469d0d32-038d-4031-ac05-accb0a75764c"
+  allowCustomConfig = false
+  dateCreated = "2020-04-13T23:24:12.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2020-04-13T23:24:12.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      optionType = { code = "puppetEnvironment" }
+      value = "production"
+    },
+    { optionType = { code = "puppetMasterId" }, value = "7347" },
+    { optionType = { code = "puppetNodeName" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "puppetTask" }
+  visibility = "private"
+}
