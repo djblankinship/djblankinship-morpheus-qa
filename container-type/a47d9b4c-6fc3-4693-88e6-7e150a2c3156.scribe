@@ -17,7 +17,7 @@ resource "container-type" "a47d9b4c-6fc3-4693-88e6-7e150a2c3156" {
   exportInstanceHostname = false
   hasSettings = false
   hasSslCert = false
-  labels = [ { name = "qa" } ]
+  labels = [ "qa" ]
   logTypeCode = "docker"
   mountPoint = "/data"
   priorityOrder = 0
