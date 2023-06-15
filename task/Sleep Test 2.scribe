@@ -1,0 +1,27 @@
+resource "task" "Sleep Test 2" {
+  name = "Sleep Test 2"
+  uuid = "89395a5a-e178-4e71-9c5d-b5174889c6c8"
+  allowCustomConfig = false
+  dateCreated = "2021-06-01T19:40:48.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-06-02T02:32:30.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "b70344bf-6120-43bc-94b6-7fd1aa8ddaa2" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
