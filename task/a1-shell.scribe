@@ -1,0 +1,26 @@
+resource "task" "a1-shell" {
+  name = "a1-shell"
+  uuid = "167bec7f-db6a-4da1-89cb-320a7ae95ee9"
+  allowCustomConfig = false
+  dateCreated = "2021-09-28T16:26:56.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-09-28T16:26:56.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "80346d2d-759f-413f-9c14-82e2bbde7efd" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
