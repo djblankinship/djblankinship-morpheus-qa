@@ -1,0 +1,23 @@
+resource "container-type" "69a079f6-cd1e-4326-a263-e0273714143a" {
+  code = "69a079f6-cd1e-4326-a263-e0273714143a"
+  name = "wa-case70801"
+  uuid = "861e4f89-0d93-4ec0-a40e-18f9ee531eef"
+  commEnabled = false
+  containerVersion = "1"
+  customType = false
+  entryPoint = ""
+  exportHostname = false
+  exportInstanceHostname = false
+  hasSettings = false
+  hasSslCert = false
+  priorityOrder = 0
+  provisionService = "nutanix-prism-provision-provider"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  repositoryImage = ""
+  shortName = "wa-case70801"
+  showServerLogs = false
+  slave = false
+  userDeploy = true
+  viewSet = "default"
+  virtualImage = { code = "nutanix.prism.image.morpheus.ubuntu.16.04" }
+}
