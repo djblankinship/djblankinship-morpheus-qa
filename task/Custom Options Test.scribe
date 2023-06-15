@@ -1,0 +1,25 @@
+resource "task" "Custom Options Test" {
+  name = "Custom Options Test"
+  uuid = "e18ca0ea-93bb-4ab9-9d67-93d6d2a3d42f"
+  allowCustomConfig = false
+  dateCreated = "2019-09-27T18:30:58.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-11-14T06:04:11.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      optionType = { code = "script" }
+      value = "echo customOptions = <%=customOptions.testField%>"
+    },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
