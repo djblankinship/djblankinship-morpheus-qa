@@ -1,0 +1,27 @@
+resource "task" "IPv6" {
+  name = "IPv6"
+  uuid = "22579b7f-7f24-4e74-a5c1-1c1fa3dae497"
+  allowCustomConfig = false
+  dateCreated = "2022-11-15T20:23:08.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-11-15T20:26:40.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "a6432a33-539f-409d-bb67-bac126e0e367" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
