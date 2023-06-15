@@ -19,7 +19,7 @@ resource "option-type" "morphenv" {
   fieldSetName = "morphenv"
   global = true
   groupExpand = false
-  labels = [ { name = "auto" }, { name = "keep" } ]
+  labels = [ "auto", "keep" ]
   noBlank = false
   optionList = { name = "API Environments" }
   optionSource = "list"
