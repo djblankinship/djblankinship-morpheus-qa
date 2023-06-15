@@ -20,7 +20,7 @@ resource "option-type" "morphsecgroup" {
   fieldSetName = "morphsecgroup"
   global = true
   groupExpand = false
-  labels = [ { name = "auto" }, { name = "keep" } ]
+  labels = [ "auto", "keep" ]
   noBlank = false
   optionList = { name = "API Security Groups" }
   optionSource = "list"

@@ -3,7 +3,7 @@ resource "option-type-list" "API Security Groups" {
   uuid = "59e07535-d7d0-48bc-a1fe-06499883fa77"
   apiType = "securityGroups"
   ignoreSSLErrors = false
-  labels = [ { name = "auto" }, { name = "keep" } ]
+  labels = [ "auto", "keep" ]
   realTime = true
   requestScript = <<EOF
 results.siteId = input.morphgroup

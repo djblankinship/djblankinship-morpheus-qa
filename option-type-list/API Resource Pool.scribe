@@ -3,7 +3,7 @@ resource "option-type-list" "API Resource Pool" {
   uuid = "c6a54a98-5af2-4967-8fd6-71479d8f14b8"
   apiType = "resourcePools"
   ignoreSSLErrors = false
-  labels = [ { name = "auto" }, { name = "keep" } ]
+  labels = [ "auto", "keep" ]
   realTime = true
   requestScript = <<EOF
 results.zoneId = input.morphcloud
