@@ -1,0 +1,27 @@
+resource "task" "spotts test" {
+  name = "spotts test"
+  uuid = "21547851-e25d-43c1-a415-244ec0e8d37e"
+  allowCustomConfig = false
+  dateCreated = "2023-05-04T15:05:20.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-05-04T15:07:40.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "fc2f4737-0005-4bac-971b-207542ef625d" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" } },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
