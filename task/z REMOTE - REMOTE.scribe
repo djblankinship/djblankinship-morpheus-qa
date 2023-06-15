@@ -1,0 +1,22 @@
+resource "task" "z REMOTE - REMOTE" {
+  name = "z REMOTE - REMOTE"
+  uuid = "e3b897be-2fc6-45fa-8fb9-35213349d51e"
+  dateCreated = "2019-06-27T00:16:43.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2019-06-27T00:16:43.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "script" } },
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}
