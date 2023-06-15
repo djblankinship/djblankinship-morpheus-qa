@@ -3,9 +3,9 @@ resource "container-type-mount" "data" {
   autoRun = true
   canPersist = true
   certStore = false
-  containerPath = "/usr/local/apache2/htdocs"
+  containerPath = "/morpheus/data"
   customType = false
-  deployable = true
+  deployable = false
   fileMount = false
   hostPath = "/data"
   mountType = "volume"
