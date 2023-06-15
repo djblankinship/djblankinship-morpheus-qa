@@ -4,7 +4,7 @@ resource "task" "Auto 0614150603395" {
   allowCustomConfig = true
   dateCreated = "2023-06-14T22:06:30.000Z"
   executeTarget = "resource"
-  labels = [ { name = "auto" }, { name = "test" } ]
+  labels = [ "auto", "test" ]
   lastUpdated = "2023-06-14T22:06:30.000Z"
   options = [
     { optionType = { code = "host" } },
