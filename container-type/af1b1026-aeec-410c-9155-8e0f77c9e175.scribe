@@ -22,7 +22,7 @@ resource "container-type" "af1b1026-aeec-410c-9155-8e0f77c9e175" {
   exportInstanceHostname = false
   hasSettings = false
   hasSslCert = false
-  labels = [ { name = "auto" }, { name = "keep" } ]
+  labels = [ "auto", "keep" ]
   logTypeCode = "vm"
   mountConfig = "/morpheus/config"
   mountData = "/var/www/html"
