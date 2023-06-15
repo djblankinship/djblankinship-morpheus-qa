@@ -9,7 +9,7 @@ resource "instance-type-layout" "e58ac12b-cc4b-4fe1-9dd0-a1bb3a464564" {
   hasAutoScale = true
   instanceLevel = "user"
   instanceVersion = "options"
-  labels = [ "auto", "keep" ]
+  labels = [ { name = "auto" }, { name = "keep" } ]
   memoryRequirement = 0
   networkLevel = "container"
   optionTypes = [
