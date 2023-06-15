@@ -10,7 +10,7 @@ resource "instance-type-layout" "07847b23-74d3-498e-9385-2500a5340ae8" {
   hasServiceUser = false
   instanceLevel = "user"
   instanceVersion = "2016"
-  labels = [ "auto", "qa" ]
+  labels = [ { name = "auto" }, { name = "qa" } ]
   memoryRequirement = 4294967296
   networkLevel = "container"
   portCount = 1
