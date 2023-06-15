@@ -20,7 +20,7 @@ resource "option-type" "morphpool" {
   fieldSetName = "morphpool"
   global = true
   groupExpand = false
-  labels = [ "auto", "keep" ]
+  labels = [ { name = "auto" }, { name = "keep" } ]
   noBlank = false
   optionList = { name = "API Resource Pool" }
   optionSource = "list"
