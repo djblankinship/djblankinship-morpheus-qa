@@ -1,0 +1,26 @@
+resource "task" "! Shell" {
+  name = "! Shell"
+  uuid = "8bd117ec-298d-44b3-9c7d-f8cf538809a1"
+  allowCustomConfig = false
+  dateCreated = "2020-11-04T16:10:19.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-11-04T23:00:53.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    {
+      content = { uuid = "e29497c5-2f60-4782-a6d5-3d6b49435876" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "script" }
+  visibility = "private"
+}

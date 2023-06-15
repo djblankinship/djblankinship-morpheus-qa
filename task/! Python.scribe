@@ -1,0 +1,29 @@
+resource "task" "! Python" {
+  name = "! Python"
+  uuid = "b9373de3-26ab-4260-9c5f-470f7553fcc2"
+  allowCustomConfig = false
+  dateCreated = "2020-11-03T03:23:28.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-11-03T03:23:28.000Z"
+  options = [
+    { optionType = { code = "host" } },
+    { optionType = { code = "localScriptGitId" } },
+    { optionType = { code = "localScriptGitRef" } },
+    { optionType = { code = "password" } },
+    { optionType = { code = "port" } },
+    { optionType = { code = "pythonAdditionalPackages" } },
+    { optionType = { code = "pythonArgs" } },
+    { optionType = { code = "pythonBinary" } },
+    {
+      content = { uuid = "dd2733fe-4468-4226-a6d2-beb36bdd91d1" }
+      optionType = { code = "pythonScript" }
+    },
+    { optionType = { code = "sshKey" } },
+    { optionType = { code = "username" } }
+  ]
+  retryCount = 5
+  retryDelaySeconds = 10
+  retryable = false
+  taskType = { code = "jythonTask" }
+  visibility = "private"
+}
