@@ -1,0 +1,19 @@
+resource "task" "js" {
+  code = "js"
+  name = "_Javascript"
+  uuid = "e8a9a067-aa95-4d79-9ad5-0d0418a98252"
+  executeTarget = "local"
+  lastUpdated = "2022-06-21T19:34:02.000Z"
+  options = [
+    {
+      optionType = { code = "jsScript" }
+      value = <<EOF
+output = "\"{\"ping\":\"pong\",\"flash\":\"bang\"}\""
+output
+
+EOF
+    }
+  ]
+  resultType = "json"
+  taskType = { code = "javascriptTask" }
+}
