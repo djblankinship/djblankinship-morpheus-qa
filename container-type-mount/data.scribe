@@ -1,9 +1,7 @@
 resource "container-type-mount" "data" {
   name = "data"
   canPersist = true
-  containerPath = "/var/www/html/"
+  containerPath = "/usr/src/redmine/files"
   deployable = true
-  hostPath = "/var/www/html/"
-  shortName = "data"
-  volumeName = "data"
+  hostPath = "/usr/src/redmine/files"
 }
