@@ -1,0 +1,19 @@
+resource "task" "db-task-nested-0308" {
+  code = "db-task-nested-0308"
+  name = "db-task-nested-0308"
+  uuid = "cc02803f-4666-4bb5-98ea-722ae1e4e84b"
+  dateCreated = "2023-03-09T05:28:49.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-03-09T19:33:58.000Z"
+  options = [
+    {
+      optionType = { code = "operationalWorkflowId" }
+      value = "6157"
+    },
+    {
+      optionType = { code = "operationalWorkflowName" }
+      value = "Hello World Operational"
+    }
+  ]
+  taskType = { code = "nestedWorkflow" }
+}
