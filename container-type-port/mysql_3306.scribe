@@ -1,0 +1,10 @@
+resource "container-type-port" "mysql.3306" {
+  code = "mysql.3306"
+  name = "Db Port"
+  export = true
+  externalPort = 3306
+  internalPort = 3306
+  primaryPort = true
+  shortName = "tcp"
+  visible = true
+}
