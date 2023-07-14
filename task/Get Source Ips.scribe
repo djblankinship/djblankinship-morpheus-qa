@@ -1,0 +1,14 @@
+resource "task" "Get Source Ips" {
+  name = "Get Source Ips"
+  uuid = "15b09d7a-41bd-4b46-8fcf-2716c2c3b6ef"
+  dateCreated = "2022-02-09T01:37:32.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-02-09T01:37:32.000Z"
+  options = [
+    {
+      content = { uuid = "ab667653-6219-4e02-8976-995d52457db6" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
