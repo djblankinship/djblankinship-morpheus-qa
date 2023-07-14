@@ -1,0 +1,5 @@
+resource "task-set-task" "efe581ea-b6f5-4677-8228-dfadadca0a04" {
+  uuid = "efe581ea-b6f5-4677-8228-dfadadca0a04"
+  task = { name = "Job: Appliance" }
+  taskPhase = "operation"
+}
