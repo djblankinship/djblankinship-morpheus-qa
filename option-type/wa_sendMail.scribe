@@ -1,0 +1,9 @@
+resource "option-type" "wa_sendMail" {
+  code = "wa_sendMail"
+  name = "wa send mail check box"
+  uuid = "5999e153-8448-4a25-8257-085177b42aeb"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Send Mail"
+  fieldName = "wa_sendMail"
+  type = "checkbox"
+}
