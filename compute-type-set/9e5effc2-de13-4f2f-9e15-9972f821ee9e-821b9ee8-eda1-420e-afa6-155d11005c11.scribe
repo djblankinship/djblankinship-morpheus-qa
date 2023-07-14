@@ -1,0 +1,12 @@
+resource "compute-type-set" "9e5effc2-de13-4f2f-9e15-9972f821ee9e-821b9ee8-eda1-420e-afa6-155d11005c11" {
+  code = "9e5effc2-de13-4f2f-9e15-9972f821ee9e-821b9ee8-eda1-420e-afa6-155d11005c11"
+  name = "Amazon Custom Debian 9-worker-821b9ee8-eda1-420e-afa6-155d11005c11-set"
+  canAddNodes = true
+  computeServerType = { code = "amazonLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  installStorageRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  workloadType = { code = "821b9ee8-eda1-420e-afa6-155d11005c11" }
+}
