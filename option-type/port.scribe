@@ -1,11 +1,15 @@
 resource "option-type" "port" {
   code = "port"
   name = "Port"
-  uuid = "d11a9953-26a0-4fec-9421-7bdfa73e7b5b"
-  category = "code"
-  displayOrder = 1
-  fieldCode = "gomorpheus.optiontype.Port"
-  fieldContext = "taskOptions"
+  uuid = "a8891137-904b-440c-b824-b40b2de9d252"
+  defaultValue = "27020"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "port"
   fieldLabel = "Port"
   fieldName = "port"
+  fieldSetName = "port"
+  optionList = { name = "Ports" }
+  optionSource = "list"
+  type = "select"
 }
