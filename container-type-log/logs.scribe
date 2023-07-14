@@ -1,5 +1,5 @@
 resource "container-type-log" "logs" {
   name = "logs"
-  containerPath = "/morpheus/logs"
-  hostPath = "/morpheus/logs"
+  containerPath = "/var/log/nginx"
+  hostPath = "/logs"
 }
