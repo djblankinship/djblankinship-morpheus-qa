@@ -1,0 +1,15 @@
+resource "option-type" "morphrpmversion" {
+  code = "morphrpmversion"
+  name = "Morpheus RPM Version"
+  uuid = "1da7bad9-7883-4659-bb41-75ce6eb0e80f"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "morphrpmversion"
+  fieldLabel = "Morpheus RPM Version"
+  fieldName = "morphrpmversion"
+  fieldSetName = "morphrpmversion"
+  optionList = { name = "Morpheus RPM Versions" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
