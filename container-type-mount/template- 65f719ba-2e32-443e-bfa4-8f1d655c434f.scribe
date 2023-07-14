@@ -1,0 +1,10 @@
+resource "container-type-mount" "template: 65f719ba-2e32-443e-bfa4-8f1d655c434f" {
+  code = "template: 65f719ba-2e32-443e-bfa4-8f1d655c434f"
+  name = "QA Test Container"
+  containerPath = "/config"
+  hostPath = "/config"
+  mountType = "config"
+  shortName = "qa-test-container"
+  template = { code = "65f719ba-2e32-443e-bfa4-8f1d655c434f" }
+  volumeName = "qa-test-container"
+}
