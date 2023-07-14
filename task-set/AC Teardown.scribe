@@ -1,0 +1,7 @@
+resource "task-set" "AC Teardown" {
+  name = "AC Teardown"
+  uuid = "909c2e15-124e-4ba5-a5ae-0d6949f0cd6f"
+  dateCreated = "2023-06-29T14:32:59.000Z"
+  lastUpdated = "2023-07-07T17:51:25.000Z"
+  taskSetTasks = [ { uuid = "2bc70024-727e-44a8-b456-a8e05557cf2c" } ]
+}

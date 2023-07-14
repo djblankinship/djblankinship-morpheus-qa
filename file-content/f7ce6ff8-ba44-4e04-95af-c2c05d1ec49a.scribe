@@ -1,0 +1,10 @@
+resource "file-content" "f7ce6ff8-ba44-4e04-95af-c2c05d1ec49a" {
+  uuid = "f7ce6ff8-ba44-4e04-95af-c2c05d1ec49a"
+  content = <<EOF
+echo $(date) "task starting....."
+sleep 60
+echo $(date) "task complete!"
+EOF
+  dateCreated = "2023-07-07T16:04:50.000Z"
+  lastUpdated = "2023-07-07T17:24:16.000Z"
+}
