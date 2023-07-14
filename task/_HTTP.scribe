@@ -1,0 +1,8 @@
+resource "task" "_HTTP" {
+  name = "_HTTP"
+  uuid = "dfb25887-4bc9-4a1f-95ab-b544b04ad5ac"
+  executeTarget = "local"
+  lastUpdated = "2020-10-29T20:47:39.000Z"
+  options = [ { optionType = { code = "webHeaders" }, value = "[]" } ]
+  taskType = { code = "httpTask" }
+}
