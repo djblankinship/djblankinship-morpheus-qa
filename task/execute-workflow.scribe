@@ -1,0 +1,17 @@
+resource "task" "execute-workflow" {
+  name = "execute-workflow"
+  uuid = "b7ded94e-1e89-446e-aee1-ace10071da07"
+  dateCreated = "2019-09-19T18:34:22.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-09-19T18:34:22.000Z"
+  options = [
+    {
+      optionType = { code = "script" }
+      value = <<EOF
+echo "EXECUTE WORKFLOW"
+echo ERROR: Did I do that? 1>&2
+EOF
+    }
+  ]
+  taskType = { code = "script" }
+}
