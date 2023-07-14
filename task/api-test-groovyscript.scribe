@@ -1,0 +1,14 @@
+resource "task" "api-test-groovyscript" {
+  name = "api-test-groovyscript"
+  uuid = "cc951073-333e-4541-a3ef-f02c9f125147"
+  dateCreated = "2023-04-06T21:06:31.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-04-06T21:06:31.000Z"
+  options = [
+    {
+      content = { uuid = "afae17e4-9f97-4a8f-af34-f82f9a1ecc2a" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
