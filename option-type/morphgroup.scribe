@@ -1,12 +1,14 @@
 resource "option-type" "morphgroup" {
   code = "morphgroup"
-  name = "API2 Group"
-  uuid = "cf550128-1d77-4d1f-b7ba-454d91d2928a"
-  config = { _multiSelect = "" }
+  name = "API Groups"
+  uuid = "4c77b644-904e-49e7-8d89-7ba3a7b17743"
   fieldContext = "config.customOptions"
+  fieldGetName = "morphgroup"
   fieldLabel = "Group"
   fieldName = "morphgroup"
+  fieldSetName = "morphgroup"
+  labels = [ "auto", "keep" ]
   optionList = { name = "API Groups" }
   optionSource = "list"
-  type = "typeahead"
+  type = "select"
 }
