@@ -1,0 +1,10 @@
+resource "resource-spec-template" "c141db5d-b837-49bc-aded-08487c7b2108" {
+  name = "26 VMs"
+  uuid = "c141db5d-b837-49bc-aded-08487c7b2108"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-10-28T15:09:19.000Z"
+  lastUpdated = "2023-06-08T22:00:35.000Z"
+  template = { uuid = "c456c57d-ad44-4c3b-9386-df7e1473415a" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
