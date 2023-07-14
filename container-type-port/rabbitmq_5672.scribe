@@ -1,0 +1,13 @@
+resource "container-type-port" "rabbitmq.5672" {
+  code = "rabbitmq.5672"
+  name = "AMQP Port"
+  allowMapping = false
+  evarName = "RABBITMQ_NODE_PORT"
+  export = true
+  exportName = "AMQP"
+  externalPort = 5672
+  internalPort = 5672
+  primaryPort = true
+  shortName = "amqp"
+  visible = true
+}
