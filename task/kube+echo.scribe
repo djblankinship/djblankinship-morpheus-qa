@@ -6,11 +6,11 @@ resource "task" "kube+echo" {
   executeTarget = "local"
   lastUpdated = "2022-08-17T13:36:27.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "c445ec67-b7e3-4e16-839a-b62c454975e4" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   resultType = "value"
   taskType = { code = "script" }
