@@ -1,10 +1,9 @@
 resource "container-type-mount" "data" {
   name = "data"
   canPersist = true
-  containerPath = "/usr/share/nginx/html"
+  containerPath = "/usr/share/misc"
   deployable = true
-  hostPath = "/data"
-  mountType = "volume"
+  hostPath = "/usr/share/misc"
   shortName = "data"
   volumeName = "data"
 }
