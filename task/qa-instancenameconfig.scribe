@@ -1,0 +1,16 @@
+resource "task" "qa-instancenameconfig" {
+  code = "qa-instancenameconfig"
+  name = "instance name config"
+  uuid = "c9906c27-04c5-4f81-ad14-33de3fdb7ff9"
+  dateCreated = "2020-10-29T17:23:47.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-10-29T20:51:49.000Z"
+  options = [
+    {
+      content = { uuid = "4e7e23c7-faee-469f-8bcc-4d3f92b34815" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  resultType = "json"
+  taskType = { code = "groovyTask" }
+}
