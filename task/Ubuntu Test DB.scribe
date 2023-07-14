@@ -1,0 +1,14 @@
+resource "task" "Ubuntu Test DB" {
+  name = "Ubuntu Test DB"
+  uuid = "425107f2-49e5-4b9d-b020-b44b263316ce"
+  dateCreated = "2022-02-28T19:58:22.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-02-28T19:58:22.000Z"
+  options = [
+    {
+      content = { uuid = "adfad2a6-1d2a-44d4-b0ec-bd650283a85a" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
