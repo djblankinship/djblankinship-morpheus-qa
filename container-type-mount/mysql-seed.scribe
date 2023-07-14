@@ -1,0 +1,14 @@
+resource "container-type-mount" "mysql-seed" {
+  code = "mysql-seed"
+  name = "mysql seed"
+  containerPath = "/morpheus/seed"
+  deployable = true
+  hostPath = "/data"
+  mountType = "volume"
+  shortName = "seed"
+  sortOrder = 2
+  subMount = true
+  subPath = "seed"
+  visible = true
+  volumeName = "data"
+}

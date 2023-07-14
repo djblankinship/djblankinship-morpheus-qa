@@ -1,0 +1,10 @@
+resource "container-type-mount" "template: mysql-cnf-custom-5.6" {
+  code = "template: mysql-cnf-custom-5.6"
+  name = "MySQL Config"
+  containerPath = "/etc/my.cnf.d"
+  hostPath = "/etc/my.cnf.d"
+  mountType = "config"
+  shortName = "mysql-config"
+  template = { code = "mysql-cnf-custom-5.6" }
+  volumeName = "mysql-config"
+}

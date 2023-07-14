@@ -1,0 +1,10 @@
+resource "container-type-mount" "template: mysqld-cnf-5.7" {
+  code = "template: mysqld-cnf-5.7"
+  name = "morpheus mysqld 5.7 config"
+  containerPath = "/config/mysqld.cnf"
+  hostPath = "/config/mysqld.cnf"
+  mountType = "config"
+  shortName = "morpheus-mysqld-5.7-config"
+  template = { code = "mysqld-cnf-5.7" }
+  volumeName = "morpheus-mysqld-5.7-config"
+}
