@@ -1,14 +1,14 @@
 resource "option-type" "morphgroup" {
   code = "morphgroup"
-  name = "API Groups"
-  uuid = "4c77b644-904e-49e7-8d89-7ba3a7b17743"
+  name = "BungeGroup"
+  uuid = "e01a17d3-70e2-4bbb-bb66-13a61de05e1d"
   fieldContext = "config.customOptions"
   fieldGetName = "morphgroup"
   fieldLabel = "Group"
   fieldName = "morphgroup"
   fieldSetName = "morphgroup"
-  labels = [ "auto", "keep" ]
   optionList = { name = "API Groups" }
   optionSource = "list"
+  required = true
   type = "select"
 }
