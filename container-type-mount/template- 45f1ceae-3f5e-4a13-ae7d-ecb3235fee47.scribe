@@ -1,10 +1,8 @@
 resource "container-type-mount" "template: 45f1ceae-3f5e-4a13-ae7d-ecb3235fee47" {
   code = "template: 45f1ceae-3f5e-4a13-ae7d-ecb3235fee47"
   name = "phase: deploy"
-  containerPath = "/tmp/templates/deploy.txt"
-  hostPath = "/tmp/templates/deploy.txt"
+  containerPath = "/var/tmp/templates"
+  hostPath = "/var/tmp/templates"
   mountType = "config"
-  shortName = "phase:-deploy"
   template = { code = "45f1ceae-3f5e-4a13-ae7d-ecb3235fee47" }
-  volumeName = "phase:-deploy"
 }
