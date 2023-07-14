@@ -1,0 +1,8 @@
+resource "container-type-port" "RDP" {
+  name = "RDP"
+  export = true
+  exportName = "RDP"
+  externalPort = 3389
+  internalPort = 3389
+  visible = true
+}
