@@ -1,0 +1,10 @@
+resource "option-type-list" "A A" {
+  name = "A A"
+  uuid = "80bd83de-d7d6-4164-ae3b-7182061b7b67"
+  initialDataset = <<EOF
+a,1
+b,2
+EOF
+  labels = [ "auto", "test" ]
+  type = "manual"
+}
