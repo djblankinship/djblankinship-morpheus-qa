@@ -1,0 +1,16 @@
+resource "option-type" "kubernetes.master.podCidr" {
+  code = "kubernetes.master.podCidr"
+  name = "podCidr"
+  uuid = "7ff2fe59-891b-45a8-972b-803a6fbb322d"
+  category = "kubernetes.master"
+  defaultValue = "172.20.0.0/16"
+  displayOrder = 105
+  editable = true
+  fieldCode = "gomorpheus.optiontype.PodCidr"
+  fieldGroup = "default"
+  fieldLabel = "Pod Cidr"
+  fieldName = "podCidr"
+  global = false
+  helpBlock = ""
+  required = true
+}
