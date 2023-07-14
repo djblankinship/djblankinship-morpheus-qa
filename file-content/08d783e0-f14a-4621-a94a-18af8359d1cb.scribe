@@ -1,0 +1,6 @@
+resource "file-content" "08d783e0-f14a-4621-a94a-18af8359d1cb" {
+  uuid = "08d783e0-f14a-4621-a94a-18af8359d1cb"
+  content = "echo \"hello world!\" | tee -a /var/tmp/hello.txt"
+  dateCreated = "2023-07-12T20:50:34.000Z"
+  lastUpdated = "2023-07-12T20:50:34.000Z"
+}
