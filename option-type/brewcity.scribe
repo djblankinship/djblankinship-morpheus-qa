@@ -1,0 +1,12 @@
+resource "option-type" "brewcity" {
+  code = "brewcity"
+  name = "Brewery - City Input - Select"
+  uuid = "435020ea-64fa-4a7e-b44d-170754b67c7d"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Brewery - City Input - Select"
+  fieldName = "brewcity"
+  optionList = { name = "Breweries - City List" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
