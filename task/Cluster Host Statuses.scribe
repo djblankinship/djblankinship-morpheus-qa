@@ -1,0 +1,14 @@
+resource "task" "Cluster Host Statuses" {
+  name = "Cluster Host Statuses"
+  uuid = "5f3768c6-5c8d-4f12-b43a-9227e162a8c7"
+  dateCreated = "2021-04-28T19:39:13.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-04-28T19:39:13.000Z"
+  options = [
+    {
+      content = { uuid = "6aa9036f-fbda-4569-ad19-a2b2bd09c8af" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
