@@ -1,10 +1,10 @@
 resource "task" "http" {
   code = "http"
-  name = "auto http 0712020143103"
-  uuid = "7d7bdab0-1178-4cc3-9f4b-7a40af42a005"
-  dateCreated = "2023-07-12T09:05:53.000Z"
+  name = "auto http 0712032523331"
+  uuid = "f19b43dd-246f-4665-8c76-ffb73d508aff"
+  dateCreated = "2023-07-12T10:29:49.000Z"
   executeTarget = "local"
-  lastUpdated = "2023-07-12T09:05:53.000Z"
+  lastUpdated = "2023-07-12T10:29:49.000Z"
   options = [
     { optionType = { code = "webMethod" }, value = "GET" },
     { optionType = { code = "webHeaders" }, value = "[]" },
