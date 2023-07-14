@@ -1,0 +1,9 @@
+resource "resource-spec-template" "ffc3f9af-30ee-43b8-934e-5425220d6a80" {
+  name = "CF DynamoDB"
+  uuid = "ffc3f9af-30ee-43b8-934e-5425220d6a80"
+  dateCreated = "2019-10-25T22:24:00.000Z"
+  lastUpdated = "2019-10-25T22:24:00.000Z"
+  template = { uuid = "c8977ae5-adf8-4a65-ae33-b8c6cc52e0d5" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
