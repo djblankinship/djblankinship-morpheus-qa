@@ -1,0 +1,12 @@
+resource "option-type" "engineVersion" {
+  code = "engineVersion"
+  name = "RDS Engine Version"
+  uuid = "1e4553f6-2968-471b-b234-555101de5fbf"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "engineVersion"
+  fieldLabel = "engine_version"
+  fieldName = "engineVersion"
+  fieldSetName = "engineVersion"
+  required = true
+}
