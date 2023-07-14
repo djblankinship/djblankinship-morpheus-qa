@@ -1,0 +1,14 @@
+resource "option-type" "text3" {
+  code = "text3"
+  name = "config.customOptions.text3"
+  uuid = "8ecc5b49-3f76-4bce-beb1-89bf90a204a6"
+  description = "sample text field"
+  displayOrder = 23
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "text3"
+  fieldLabel = "Text 3"
+  fieldName = "text3"
+  fieldSetName = "text3"
+  showOnEdit = false
+}

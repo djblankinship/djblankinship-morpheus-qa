@@ -1,0 +1,16 @@
+resource "option-type" "aduser" {
+  code = "aduser"
+  name = "config.customOptions.ldap"
+  uuid = "496a0938-0d42-44f1-8607-020a5364c220"
+  config = { _multiSelect = "" }
+  displayOrder = 5
+  fieldContext = "config.customOptions"
+  fieldGetName = "aduser"
+  fieldLabel = "aduser"
+  fieldName = "aduser"
+  fieldSetName = "aduser"
+  optionList = { name = "ActiveDirectory Users" }
+  optionSource = "list"
+  required = true
+  type = "typeahead"
+}
