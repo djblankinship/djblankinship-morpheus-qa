@@ -1,0 +1,15 @@
+resource "task" "Mysql RDS Test" {
+  name = "Mysql RDS Test"
+  uuid = "3baa79e9-f5a9-43eb-8a49-7953c371abcb"
+  dateCreated = "2023-03-09T21:18:26.000Z"
+  executeTarget = "local"
+  labels = [ "test" ]
+  lastUpdated = "2023-03-09T21:18:27.000Z"
+  options = [
+    {
+      content = { uuid = "9a087b54-f03c-40d1-9b92-0a6a27731a38" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
