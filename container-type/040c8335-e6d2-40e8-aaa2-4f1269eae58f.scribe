@@ -1,0 +1,15 @@
+resource "container-type" "040c8335-e6d2-40e8-aaa2-4f1269eae58f" {
+  code = "040c8335-e6d2-40e8-aaa2-4f1269eae58f"
+  name = "nc-cent-v1-xen"
+  uuid = "fa1795e7-f032-46ad-9c12-d76ec3ab9f08"
+  containerVersion = "1"
+  entryPoint = ""
+  logTypeCode = "xen"
+  provisionType = { code = "xen" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "nc-cent-v1-xen"
+  showServerLogs = true
+  statTypeCode = "xen"
+  virtualImage = { uuid = "eebcf54d-38e3-4aa1-8cb6-4dbee1e3f617" }
+}
