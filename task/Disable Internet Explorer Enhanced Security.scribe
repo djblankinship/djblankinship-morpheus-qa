@@ -1,0 +1,14 @@
+resource "task" "Disable Internet Explorer Enhanced Security" {
+  name = "Disable Internet Explorer Enhanced Security"
+  uuid = "d503315e-5490-4893-9061-5c27b8eb6f52"
+  dateCreated = "2021-11-16T21:51:52.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-16T21:51:52.000Z"
+  options = [
+    {
+      content = { uuid = "d5afe55c-18a7-4fb3-a8a9-aa4e7d1b1ff0" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
