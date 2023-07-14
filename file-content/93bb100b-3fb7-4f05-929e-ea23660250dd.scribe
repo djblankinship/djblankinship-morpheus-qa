@@ -1,0 +1,6 @@
+resource "file-content" "93bb100b-3fb7-4f05-929e-ea23660250dd" {
+  uuid = "93bb100b-3fb7-4f05-929e-ea23660250dd"
+  content = "echo \"<%= spec.customOptions.testField %>\""
+  dateCreated = "2021-11-29T13:44:50.000Z"
+  lastUpdated = "2021-11-29T13:44:50.000Z"
+}

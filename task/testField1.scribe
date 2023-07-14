@@ -1,0 +1,14 @@
+resource "task" "testField1" {
+  name = "testField1"
+  uuid = "58fc254e-6349-4724-b917-818ddae72740"
+  dateCreated = "2021-11-29T13:44:50.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-11-29T13:44:50.000Z"
+  options = [
+    {
+      content = { uuid = "93bb100b-3fb7-4f05-929e-ea23660250dd" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
