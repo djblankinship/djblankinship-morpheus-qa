@@ -1,0 +1,13 @@
+resource "task" "Reset Agent" {
+  name = "Reset Agent"
+  uuid = "3b18d84d-8290-49f9-ba48-db3a81f4003d"
+  executeTarget = "resource"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      optionType = { code = "script" }
+      value = "sudo morpheus-ctl stop morphd; sleep 5 ; sudo morpheus-ctl start morphd"
+    }
+  ]
+  taskType = { code = "script" }
+}
