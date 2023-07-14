@@ -1,0 +1,11 @@
+resource "compute-type-set" "2547d4e4-9280-4ff8-8efe-71a0ec74ab04-centos-nutanix-7.5" {
+  code = "2547d4e4-9280-4ff8-8efe-71a0ec74ab04-centos-nutanix-7.5"
+  name = "Nutanix Custom Centos 7-worker-centos-nutanix-7.5-set"
+  canAddNodes = true
+  computeServerType = { code = "nutanixLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  workloadType = { code = "centos-nutanix-7.5" }
+}
