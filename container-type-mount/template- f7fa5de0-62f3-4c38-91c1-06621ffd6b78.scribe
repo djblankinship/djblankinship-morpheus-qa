@@ -1,8 +1,8 @@
 resource "container-type-mount" "template: f7fa5de0-62f3-4c38-91c1-06621ffd6b78" {
   code = "template: f7fa5de0-62f3-4c38-91c1-06621ffd6b78"
   name = "phase: post provision"
-  containerPath = "/var/tmp/templates"
-  hostPath = "/var/tmp/templates"
+  containerPath = "/tmp/templates/postprovision.txt"
+  hostPath = "/tmp/templates/postprovision.txt"
   mountType = "config"
   shortName = "phase:-post-provision"
   template = { code = "f7fa5de0-62f3-4c38-91c1-06621ffd6b78" }
