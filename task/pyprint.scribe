@@ -1,0 +1,16 @@
+resource "task" "pyprint" {
+  code = "pyprint"
+  name = "PyPrint"
+  uuid = "c991742b-6ca2-4ad0-b77e-caeaa0baf8c5"
+  dateCreated = "2019-09-19T20:51:00.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-09-19T20:51:00.000Z"
+  options = [
+    {
+      optionType = { code = "pythonScript" }
+      value = "print \"hello\""
+    }
+  ]
+  resultType = "value"
+  taskType = { code = "jythonTask" }
+}
