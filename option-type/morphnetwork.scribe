@@ -1,16 +1,15 @@
 resource "option-type" "morphnetwork" {
   code = "morphnetwork"
-  name = "API Networks"
-  uuid = "357a7c71-e563-44f1-809e-93900259c2e8"
+  name = "BungeNetworks"
+  uuid = "b193cf12-4f93-4bab-a72a-50b988488f9a"
   dependsOnCode = "morphpool"
-  displayOrder = 5
   fieldContext = "config.customOptions"
   fieldGetName = "morphnetwork"
-  fieldLabel = "Network"
+  fieldLabel = "BungeNetworks"
   fieldName = "morphnetwork"
   fieldSetName = "morphnetwork"
-  labels = [ "auto", "keep" ]
-  optionList = { name = "API Networks" }
+  optionList = { name = "BungeNetworks" }
   optionSource = "list"
+  required = true
   type = "select"
 }
