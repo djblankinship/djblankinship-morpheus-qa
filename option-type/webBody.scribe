@@ -1,0 +1,12 @@
+resource "option-type" "webBody" {
+  code = "webBody"
+  name = "Body"
+  uuid = "0e891802-74cb-40c0-8510-44c4aedf268c"
+  category = "code"
+  displayOrder = 5
+  fieldCode = "gomorpheus.optiontype.Body"
+  fieldContext = "taskOptions"
+  fieldLabel = "Body"
+  fieldName = "webBody"
+  type = "code-editor"
+}
