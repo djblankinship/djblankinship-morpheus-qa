@@ -1,0 +1,10 @@
+resource "resource-spec-template" "7ba97f52-4135-4b3e-864f-10176cfc5153" {
+  name = "TF Variable"
+  uuid = "7ba97f52-4135-4b3e-864f-10176cfc5153"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2021-12-08T19:30:47.000Z"
+  lastUpdated = "2021-12-08T19:36:03.000Z"
+  template = { uuid = "533fd996-20ce-4660-8411-232226cbfa4b" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
