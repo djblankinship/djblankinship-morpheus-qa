@@ -1,0 +1,13 @@
+resource "task" "Environment Variables" {
+  name = "Environment Variables"
+  uuid = "0a0b3929-53ae-4563-a34c-a800855eb4da"
+  executeTarget = "resource"
+  options = [
+    {
+      optionType = { code = "script" }
+      value = "env | tee /tmp/environment.txt"
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
