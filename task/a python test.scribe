@@ -1,0 +1,20 @@
+resource "task" "a python test" {
+  name = "a python test"
+  uuid = "c40f1b12-39a4-4f90-a9e9-b25183dda733"
+  dateCreated = "2020-04-29T23:10:34.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-04-29T23:10:34.000Z"
+  options = [
+    {
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "pprint mechanize"
+    },
+    { optionType = { code = "pythonArgs" }, value = "Hello World" },
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    {
+      content = { uuid = "e2fe1067-32e4-4ca9-8b1f-424b5442d279" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}

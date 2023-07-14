@@ -1,0 +1,14 @@
+resource "option-type" "projectbranch" {
+  code = "projectbranch"
+  name = "Project Branch"
+  uuid = "56fdb9eb-e378-4d7b-9545-e909ce294b75"
+  defaultValue = "false"
+  dependsOnCode = "projectenv"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Software Branch"
+  fieldName = "projectbranch"
+  optionList = { name = "Project Branch List" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
