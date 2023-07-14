@@ -1,0 +1,14 @@
+resource "task" "spotts test" {
+  name = "spotts test"
+  uuid = "21547851-e25d-43c1-a415-244ec0e8d37e"
+  dateCreated = "2023-05-04T15:05:20.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-05-04T15:07:40.000Z"
+  options = [
+    {
+      content = { uuid = "fc2f4737-0005-4bac-971b-207542ef625d" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
