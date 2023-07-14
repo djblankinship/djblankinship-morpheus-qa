@@ -1,0 +1,15 @@
+resource "task" "Permissions Test Blueprints" {
+  name = "Permissions Test Blueprints"
+  uuid = "2253bc83-5065-4ed6-a7fc-7a4f60afdf77"
+  dateCreated = "2022-09-22T00:49:43.000Z"
+  executeTarget = "local"
+  labels = [ "david" ]
+  lastUpdated = "2022-09-22T00:49:43.000Z"
+  options = [
+    {
+      content = { uuid = "b01ba96f-4b3a-4cf0-b485-4bd585030935" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
