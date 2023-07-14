@@ -5,11 +5,11 @@ resource "task" "a ps task 2" {
   executeTarget = "resource"
   lastUpdated = "2020-05-05T18:37:41.000Z"
   options = [
+    { optionType = { code = "winrm.elevated" }, value = "on" },
     {
       content = { uuid = "289ca66a-5a07-47fb-979c-b28fcb8fe035" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "winrm.elevated" }, value = "on" }
+    }
   ]
   taskType = { code = "winrmTask" }
 }
