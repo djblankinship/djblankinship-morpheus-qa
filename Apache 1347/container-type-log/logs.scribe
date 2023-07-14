@@ -1,0 +1,5 @@
+resource "container-type-log" "logs" {
+  name = "logs"
+  containerPath = "/var/log/apache2"
+  hostPath = "/var/log/apache2"
+}
