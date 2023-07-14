@@ -1,0 +1,14 @@
+resource "container-type" "9678148c-eb10-40e7-8949-6a64ee5812aa" {
+  code = "9678148c-eb10-40e7-8949-6a64ee5812aa"
+  name = "nginx"
+  uuid = "26d3a5a7-6764-42fd-8460-a08efb353e32"
+  backupType = "lvmSnapshot"
+  containerVersion = "0.1"
+  entryPoint = ""
+  logTypeCode = "docker"
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "nginx"
+  shortName = "nginx"
+  statTypeCode = "docker"
+}
