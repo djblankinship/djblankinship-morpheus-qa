@@ -1,10 +1,9 @@
 resource "container-type-mount" "data" {
   name = "data"
   canPersist = true
-  containerPath = "/usr/local/apache2/htdocs"
+  containerPath = "/var/www/html"
   deployable = true
-  hostPath = "/data"
-  mountType = "volume"
+  hostPath = "/var/www/html"
   shortName = "data"
   volumeName = "data"
 }
