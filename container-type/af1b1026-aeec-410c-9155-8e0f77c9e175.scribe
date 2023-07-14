@@ -6,12 +6,12 @@ resource "container-type" "af1b1026-aeec-410c-9155-8e0f77c9e175" {
   actions = [ { code = "generic-remove-node" } ]
   containerLogs = [ { name = "logs" } ]
   containerMounts = [
-    { name = "data" },
-    { code = "template: 45f1ceae-3f5e-4a13-ae7d-ecb3235fee47" },
-    { code = "template: f7fa5de0-62f3-4c38-91c1-06621ffd6b78" },
     { code = "template: 08aa784c-b0c5-4fe3-8a37-e5ceb46b6e80" },
+    { code = "template: 45f1ceae-3f5e-4a13-ae7d-ecb3235fee47" },
     { code = "template: 6b372edc-4a68-498e-bb1c-04ce8c452c50" },
-    { code = "template: 86c71669-6bef-4631-a15b-a8da1b9698f5" }
+    { code = "template: 86c71669-6bef-4631-a15b-a8da1b9698f5" },
+    { code = "template: f7fa5de0-62f3-4c38-91c1-06621ffd6b78" },
+    { name = "data" }
   ]
   containerPorts = [ { name = "HTTP" }, { name = "HTTPS" }, { name = "SSL" } ]
   containerVersion = "vmdk"
