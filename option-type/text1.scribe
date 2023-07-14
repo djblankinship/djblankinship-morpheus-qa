@@ -1,0 +1,19 @@
+resource "option-type" "text1" {
+  code = "text1"
+  name = "config.customOptions.text1"
+  uuid = "103aa63f-5aaf-435d-a02f-9ddecd10116d"
+  defaultValue = "default"
+  description = "sample text field"
+  displayOrder = 6
+  editable = true
+  exportMeta = true
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "text1"
+  fieldLabel = "Text 1"
+  fieldName = "text1"
+  fieldSetName = "text1"
+  placeHolder = "placeholder"
+  required = true
+  showOnEdit = false
+}

@@ -1,0 +1,14 @@
+resource "option-type" "3ebf8c9c-1915-4cb7-aa01-a0131ba2e70f" {
+  name = "config.customOptions.hidden1"
+  uuid = "3ebf8c9c-1915-4cb7-aa01-a0131ba2e70f"
+  defaultValue = "hidden"
+  description = "sample hidden field"
+  displayOrder = 2
+  exportMeta = true
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "hidden1"
+  fieldName = "hidden1"
+  fieldSetName = "hidden1"
+  type = "hidden"
+}
