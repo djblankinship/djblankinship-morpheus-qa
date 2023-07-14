@@ -1,0 +1,14 @@
+resource "task" "Usage Check" {
+  name = "Usage Check"
+  uuid = "fbc3f58a-5266-4b31-b7de-e4aa3d3c11f7"
+  dateCreated = "2021-11-18T11:22:06.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-11-18T11:22:06.000Z"
+  options = [
+    {
+      content = { uuid = "d4056173-b99e-42d9-b33d-80206164d7e0" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
