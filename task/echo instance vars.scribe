@@ -1,0 +1,15 @@
+resource "task" "echo instance vars" {
+  name = "echo instance vars"
+  uuid = "974571ee-3b75-4171-8f9e-65149f725e47"
+  dateCreated = "2020-11-06T21:28:14.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2020-11-06T21:28:14.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "82d3bda4-2b39-4a10-84f8-326d85241a87" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
