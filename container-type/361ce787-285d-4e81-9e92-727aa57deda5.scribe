@@ -11,8 +11,8 @@ resource "container-type" "361ce787-285d-4e81-9e92-727aa57deda5" {
   checkTypeCode = "webGetCheck"
   containerLogs = [ { name = "logs" } ]
   containerMounts = [
-    { code = "template: e5ba79f9-d24d-41be-8da7-f00a7080b6fe" },
-    { name = "data" }
+    { name = "data" },
+    { code = "template: e5ba79f9-d24d-41be-8da7-f00a7080b6fe" }
   ]
   containerPorts = [ { name = "Http" }, { name = "Https" } ]
   containerVersion = "latest"
