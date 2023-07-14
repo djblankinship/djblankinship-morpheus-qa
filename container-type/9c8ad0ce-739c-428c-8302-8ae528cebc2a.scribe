@@ -1,0 +1,17 @@
+resource "container-type" "9c8ad0ce-739c-428c-8302-8ae528cebc2a" {
+  code = "9c8ad0ce-739c-428c-8302-8ae528cebc2a"
+  name = "Docker Nginx"
+  uuid = "ba825d6e-c746-464e-ae75-0ace199ab2ba"
+  actions = [ { code = "5c8506ee-a563-4133-8073-dcaf8ee2f564" } ]
+  containerLogs = [ { name = "logs" } ]
+  containerMounts = [ { name = "data" } ]
+  containerPorts = [ { name = "HTTP" }, { name = "HTTPS" } ]
+  containerVersion = "latest"
+  entryPoint = ""
+  logTypeCode = "docker"
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "nginx"
+  shortName = "nginx"
+  statTypeCode = "docker"
+}
