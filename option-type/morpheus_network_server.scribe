@@ -1,0 +1,13 @@
+resource "option-type" "morpheus_network_server" {
+  code = "morpheus_network_server"
+  name = "morpheus_network_server"
+  uuid = "eb1b99ab-6997-4e61-bc33-22345fe213c7"
+  config = { _multiSelect = "" }
+  fieldContext = "config.customOptions"
+  fieldLabel = "Server"
+  fieldName = "morpheus_network_server"
+  optionList = { name = "morpheus_servers_list" }
+  optionSource = "list"
+  required = true
+  type = "typeahead"
+}
