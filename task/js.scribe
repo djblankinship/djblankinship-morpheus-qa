@@ -1,19 +1,20 @@
 resource "task" "js" {
   code = "js"
-  name = "_Javascript"
-  uuid = "e8a9a067-aa95-4d79-9ad5-0d0418a98252"
+  name = "temp javascript"
+  uuid = "07eae0e5-61cc-41bc-91d8-67a259d48f03"
+  dateCreated = "2023-06-13T23:53:08.000Z"
   executeTarget = "local"
-  lastUpdated = "2022-06-21T19:34:02.000Z"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-13T23:58:56.000Z"
   options = [
     {
       optionType = { code = "jsScript" }
       value = <<EOF
-output = "\"{\"ping\":\"pong\",\"flash\":\"bang\"}\""
+output = "HELLO JAVASCRIPT"
 output
-
 EOF
     }
   ]
-  resultType = "json"
+  resultType = "value"
   taskType = { code = "javascriptTask" }
 }
