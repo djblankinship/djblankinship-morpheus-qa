@@ -1,9 +1,10 @@
 resource "container-type-mount" "data" {
   name = "data"
   canPersist = true
-  containerPath = "/morpheus/data"
+  containerPath = "/usr/share/nginx/html"
   deployable = true
-  hostPath = "/morpheus/data"
+  hostPath = "/data"
+  mountType = "volume"
   shortName = "data"
   volumeName = "data"
 }
