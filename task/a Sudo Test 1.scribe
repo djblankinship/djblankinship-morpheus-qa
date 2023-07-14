@@ -1,0 +1,15 @@
+resource "task" "a Sudo Test 1" {
+  name = "a Sudo Test 1"
+  uuid = "67308cc5-612f-4027-9545-c6df5cdef420"
+  dateCreated = "2021-02-12T04:05:39.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-02-19T23:11:17.000Z"
+  options = [
+    {
+      content = { uuid = "9e95533c-2b4c-4d6e-98c5-255d8179462d" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
