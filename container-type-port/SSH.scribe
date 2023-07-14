@@ -1,0 +1,10 @@
+resource "container-type-port" "SSH" {
+  name = "SSH"
+  export = true
+  exportName = "SSH"
+  externalPort = 22
+  internalPort = 22
+  loadBalance = true
+  loadBalanceProtocol = "null"
+  visible = true
+}
