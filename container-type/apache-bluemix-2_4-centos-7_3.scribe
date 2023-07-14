@@ -1,0 +1,30 @@
+resource "container-type" "apache-bluemix-2.4-centos-7.3" {
+  code = "apache-bluemix-2.4-centos-7.3"
+  name = "Apache 2.4"
+  uuid = "0e0b33e8-5fc6-42c1-809f-7f5237267d2d"
+  category = "apache"
+  actions = [ { code = "apache-remove-node" } ]
+  backupType = "bluemixSnapshot"
+  checkTypeCode = "webGetCheck"
+  containerPorts = [ { code = "apache.80" }, { code = "apache.443" } ]
+  containerVersion = "2.4"
+  deploymentType = { code = "default" }
+  entryPoint = "/entrypoint.sh"
+  logTypeCode = "apache"
+  mountConfig = "/etc/httpd"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/httpd"
+  mountPoint = "/data"
+  providerType = "bluemix"
+  provisionType = { code = "bluemix" }
+  repositoryImage = ""
+  scripts = [
+    { code = "apache-2.4-vm-entrypoint" },
+    { code = "apache-2.4-vm-centos-stop" },
+    { code = "apache-2.4-vm-centos-start" }
+  ]
+  serverType = "vm"
+  shortName = "apache"
+  statTypeCode = "vm"
+  virtualImage = { code = "bluemix.image.morpheus.centos-7_2" }
+}
