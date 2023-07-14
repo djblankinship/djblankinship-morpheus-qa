@@ -5,11 +5,11 @@ resource "task" "Setup Cypher Server" {
   executeTarget = "resource"
   lastUpdated = "2022-01-31T04:51:46.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "d6265386-f4fd-4e30-80cf-601ed6fcc709" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
