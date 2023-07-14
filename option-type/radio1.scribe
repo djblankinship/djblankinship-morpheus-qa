@@ -1,0 +1,13 @@
+resource "option-type" "radio1" {
+  code = "radio1"
+  name = "Radio 1"
+  uuid = "80c591c0-808a-432c-88d1-081bd0395cd7"
+  fieldContext = "config.customOptions"
+  fieldGetName = "radio1"
+  fieldLabel = "Radio 1"
+  fieldName = "radio1"
+  fieldSetName = "radio1"
+  optionList = { name = "manual csv" }
+  optionSource = "list"
+  type = "radio"
+}
