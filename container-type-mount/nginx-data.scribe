@@ -1,0 +1,16 @@
+resource "container-type-mount" "nginx-data" {
+  code = "nginx-data"
+  name = "nginx data"
+  autoRun = false
+  canPersist = true
+  claimName = "data"
+  containerPath = "/var/www/html"
+  deployable = true
+  hostPath = "/data"
+  mountType = "volume"
+  shortName = "data"
+  sortOrder = 1
+  subPath = "html"
+  visible = true
+  volumeName = "data"
+}

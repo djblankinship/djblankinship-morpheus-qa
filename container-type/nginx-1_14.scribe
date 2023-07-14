@@ -1,0 +1,28 @@
+resource "container-type" "nginx-1.14" {
+  code = "nginx-1.14"
+  name = "Nginx 1.14"
+  uuid = "339ce69f-a340-4442-ae72-bb151fffd7ec"
+  category = "nginx"
+  actions = [ { code = "nginx-1.9-remove-node" } ]
+  backupType = "lvmSnapshot"
+  certificateFile = "nginx"
+  certificatePath = "/etc/nginx/certs"
+  certificateStyle = "crt_key"
+  certificateWritePath = "/config/certs"
+  checkTypeCode = "webGetCheck"
+  containerMounts = [
+    { code = "nginx-certs" },
+    { code = "nginx-config" },
+    { code = "nginx-data" }
+  ]
+  containerPorts = [ { code = "nginx.80" }, { code = "nginx.443" } ]
+  containerVersion = "1.14.2"
+  deploymentType = { code = "nginx" }
+  entryPoint = ""
+  hasSslCert = true
+  logTypeCode = "nginx"
+  provisionType = { code = "docker" }
+  repositoryImage = "registry.morpheusdata.com/library/nginx"
+  shortName = "nginx"
+  statTypeCode = "container"
+}
