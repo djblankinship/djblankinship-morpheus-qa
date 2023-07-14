@@ -1,0 +1,8 @@
+resource "container-type-port" "Awesome" {
+  name = "Awesome"
+  export = true
+  exportName = "AWESOME"
+  externalPort = 1337
+  internalPort = 1337
+  visible = true
+}
