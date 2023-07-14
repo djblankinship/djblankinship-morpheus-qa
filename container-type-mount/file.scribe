@@ -1,0 +1,9 @@
+resource "container-type-mount" "file" {
+  name = "file"
+  canPersist = true
+  containerPath = "/vault/file"
+  hostPath = "/data"
+  mountType = "volume"
+  shortName = "file"
+  volumeName = "file"
+}

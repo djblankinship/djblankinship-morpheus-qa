@@ -1,5 +1,5 @@
 resource "container-type-log" "logs" {
   name = "logs"
-  containerPath = "/var/log/nginx"
+  containerPath = "/vault/logs"
   hostPath = "/logs"
 }
