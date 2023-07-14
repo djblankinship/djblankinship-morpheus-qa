@@ -6,6 +6,7 @@ resource "task" "! Email" {
   labels = [ "david", "hello" ]
   lastUpdated = "2022-11-18T00:40:25.000Z"
   options = [
+    { optionType = { code = "emailSubject" }, value = "configure" },
     {
       optionType = { code = "emailAddress" }
       value = "tommymarks@gmail.com"
@@ -13,8 +14,7 @@ resource "task" "! Email" {
     {
       content = { uuid = "a2f9b095-99b7-4f73-a6ae-328125b9b722" }
       optionType = { code = "emailBody" }
-    },
-    { optionType = { code = "emailSubject" }, value = "configure" }
+    }
   ]
   taskType = { code = "email" }
 }
