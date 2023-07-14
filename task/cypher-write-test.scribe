@@ -1,0 +1,14 @@
+resource "task" "cypher-write-test" {
+  name = "cypher-write-test"
+  uuid = "feb8db0a-aacd-4393-85bf-70e6905c9075"
+  dateCreated = "2023-03-08T21:15:42.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-03-08T21:15:42.000Z"
+  options = [
+    {
+      content = { uuid = "55113840-d443-4455-9759-b124798a69a5" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
