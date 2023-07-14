@@ -1,7 +1,9 @@
 resource "container-type-mount" "data" {
   name = "data"
   canPersist = true
-  containerPath = "/usr/src/redmine/files"
+  containerPath = "/morpheus/data"
   deployable = true
-  hostPath = "/usr/src/redmine/files"
+  hostPath = "/morpheus/data"
+  shortName = "data"
+  volumeName = "data"
 }
