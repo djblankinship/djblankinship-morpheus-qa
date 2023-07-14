@@ -1,0 +1,12 @@
+resource "option-type" "fnADUsers" {
+  code = "fnADUsers"
+  name = "AD Users"
+  uuid = "023a0ae8-2336-46f2-b2b1-b566d267dee8"
+  fieldContext = "config.customOptions"
+  fieldLabel = "AD Users"
+  fieldName = "fnADUsers"
+  optionList = { name = "ActiveDirectory Users" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
