@@ -1,0 +1,10 @@
+resource "resource-spec-template" "fe80d9d5-7e97-480b-910e-255305d6f608" {
+  name = "A DG Arm"
+  uuid = "fe80d9d5-7e97-480b-910e-255305d6f608"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-06-02T00:47:26.000Z"
+  lastUpdated = "2022-06-02T00:57:43.000Z"
+  template = { uuid = "81363419-659a-4160-8e1f-99cb680941fb" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
