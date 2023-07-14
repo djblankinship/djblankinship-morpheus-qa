@@ -1,0 +1,14 @@
+resource "container-type" "07ddb858-5781-4c4d-9f32-db5c85f85562" {
+  code = "07ddb858-5781-4c4d-9f32-db5c85f85562"
+  name = "Vmware4Disks"
+  uuid = "b8614320-7f7d-4053-9513-e92f1ae71d68"
+  containerVersion = "4"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "vmw4"
+  showServerLogs = true
+  statTypeCode = "vmware"
+}
