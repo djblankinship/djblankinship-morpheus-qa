@@ -1,0 +1,12 @@
+resource "option-type" "localScriptGitRef" {
+  code = "localScriptGitRef"
+  name = "Git Ref"
+  uuid = "b9cb0571-2e74-4433-83a5-a00f563dcec3"
+  category = "localScript"
+  displayOrder = 2
+  fieldCode = "gomorpheus.optiontype.GitRef"
+  fieldContext = "taskOptions"
+  fieldLabel = "Git Ref"
+  fieldName = "localScriptGitRef"
+  placeHolder = "master"
+}
