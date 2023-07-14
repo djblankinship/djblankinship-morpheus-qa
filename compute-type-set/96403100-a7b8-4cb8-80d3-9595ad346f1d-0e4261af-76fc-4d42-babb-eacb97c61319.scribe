@@ -1,0 +1,12 @@
+resource "compute-type-set" "96403100-a7b8-4cb8-80d3-9595ad346f1d-0e4261af-76fc-4d42-babb-eacb97c61319" {
+  code = "96403100-a7b8-4cb8-80d3-9595ad346f1d-0e4261af-76fc-4d42-babb-eacb97c61319"
+  name = "Amazon Custom Centos 7-worker-0e4261af-76fc-4d42-babb-eacb97c61319-set"
+  canAddNodes = true
+  computeServerType = { code = "amazonLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  installStorageRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  workloadType = { code = "0e4261af-76fc-4d42-babb-eacb97c61319" }
+}
