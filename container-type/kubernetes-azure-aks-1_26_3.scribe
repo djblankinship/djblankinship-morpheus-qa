@@ -1,0 +1,15 @@
+resource "container-type" "kubernetes-azure-aks-1.26.3" {
+  code = "kubernetes-azure-aks-1.26.3"
+  name = "Kubernetes Master 1.26.3 on AKS"
+  uuid = "faa211bd-2912-400b-9d2a-917951d3404c"
+  category = "aks"
+  containerVersion = "1.26.3"
+  entryPoint = ""
+  imageCode = ""
+  providerType = "aks"
+  provisionType = { code = "aks" }
+  repositoryImage = ""
+  serverType = "service"
+  shortName = "kubernetes-aks"
+  showServerLogs = true
+}

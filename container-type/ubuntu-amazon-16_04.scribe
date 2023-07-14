@@ -1,0 +1,22 @@
+resource "container-type" "ubuntu-amazon-16.04" {
+  code = "ubuntu-amazon-16.04"
+  name = "Ubuntu 16.04"
+  uuid = "eb702296-8e8c-493c-81e5-9493d72ac0d7"
+  actions = [ { code = "ubuntu-remove-node" } ]
+  backupType = "amazonSnapshot"
+  checkTypeCode = "containerCheck"
+  containerPorts = [ { code = "ubuntu.22" } ]
+  containerVersion = "16.04"
+  entryPoint = ""
+  logTypeCode = "ubuntu"
+  mountPoint = "/morpheus"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ubuntu"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = {
+    code = "amazon.ec2.image.morpheus.ubuntu.16.04.3-v2.ubuntu.16.04.3.amd64"
+  }
+}
