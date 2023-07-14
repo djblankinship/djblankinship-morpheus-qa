@@ -1,0 +1,13 @@
+resource "option-type" "appman" {
+  code = "appman"
+  name = "Tag application Manual"
+  uuid = "72b9d487-0b82-49fe-94cd-613fc4c4d7e6"
+  fieldContext = "config.customOptions"
+  fieldGetName = "appman"
+  fieldLabel = "Tag application Manual"
+  fieldName = "appman"
+  fieldSetName = "appman"
+  optionList = { name = "Tag Application Manual" }
+  optionSource = "list"
+  required = true
+}
