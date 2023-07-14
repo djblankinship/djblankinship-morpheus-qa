@@ -1,0 +1,17 @@
+resource "task" "vs-archive-test" {
+  code = "vs-archive-test"
+  name = "vs-archive-test"
+  uuid = "15f465fa-1273-4a05-a27e-0d924f0371a6"
+  dateCreated = "2022-07-21T10:20:51.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-07-21T10:20:51.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "bc9bc712-b6f5-4e56-b599-14b774c4bba1" }
+      optionType = { code = "script" }
+    }
+  ]
+  resultType = "json"
+  taskType = { code = "script" }
+}
