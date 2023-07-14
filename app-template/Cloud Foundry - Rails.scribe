@@ -1,7 +1,0 @@
-resource "app-template" "Cloud Foundry - Rails" {
-  name = "Cloud Foundry - Rails"
-  uuid = "e54341e2-6787-4a1f-b71e-732fc4945cae"
-  active = true
-  custom = false
-  templateType = { code = "morpheus" }
-}
