@@ -5,11 +5,11 @@ resource "task" "Scan Sda2 and restart cloud-init" {
   executeTarget = "resource"
   lastUpdated = "2021-11-18T12:17:31.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "8bcde563-f070-4621-9657-66f934604fbd" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
