@@ -1,0 +1,7 @@
+resource "container-action" "nginx-1.9-remove-node" {
+  code = "nginx-1.9-remove-node"
+  name = "Remove Nginx Node"
+  uuid = "7ee625e5-ec6e-4d8f-961f-a44a9fe76edc"
+  actionCode = "removeNode"
+  description = "This will remove the nginx node"
+}

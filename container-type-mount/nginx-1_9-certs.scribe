@@ -1,0 +1,14 @@
+resource "container-type-mount" "nginx-1.9-certs" {
+  code = "nginx-1.9-certs"
+  name = "nginx certs"
+  certStore = true
+  containerPath = "/etc/nginx/certs"
+  hostPath = "/data"
+  mountType = "volume"
+  shortName = "certs"
+  sortOrder = 2
+  subMount = true
+  subPath = "certs"
+  visible = true
+  volumeName = "data"
+}

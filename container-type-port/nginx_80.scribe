@@ -1,0 +1,14 @@
+resource "container-type-port" "nginx.80" {
+  code = "nginx.80"
+  name = "Http"
+  export = true
+  exportName = "HTTP"
+  externalPort = 80
+  internalPort = 80
+  link = true
+  loadBalance = true
+  loadBalanceProtocol = "http"
+  primaryPort = true
+  shortName = "http"
+  visible = true
+}
