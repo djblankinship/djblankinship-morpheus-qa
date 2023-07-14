@@ -5,12 +5,12 @@ resource "container-type" "b0da5919-815a-4333-93f7-c171a57eaca7" {
   category = "Web"
   containerLogs = [ { name = "logs" } ]
   containerMounts = [
-    { code = "template: 08aa784c-b0c5-4fe3-8a37-e5ceb46b6e80" },
+    { name = "data" },
     { code = "template: 45f1ceae-3f5e-4a13-ae7d-ecb3235fee47" },
     { code = "template: 6b372edc-4a68-498e-bb1c-04ce8c452c50" },
-    { code = "template: 86c71669-6bef-4631-a15b-a8da1b9698f5" },
     { code = "template: f7fa5de0-62f3-4c38-91c1-06621ffd6b78" },
-    { name = "data" }
+    { code = "template: 86c71669-6bef-4631-a15b-a8da1b9698f5" },
+    { code = "template: 08aa784c-b0c5-4fe3-8a37-e5ceb46b6e80" }
   ]
   containerPorts = [ { name = "HTTP" }, { name = "HTTPS" }, { name = "Awesome" } ]
   containerVersion = "options"
