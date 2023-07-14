@@ -1,0 +1,14 @@
+resource "task" "All Variables Output" {
+  name = "All Variables Output"
+  uuid = "9cce5e9a-d7b0-449d-b86d-4db87279b2f6"
+  dateCreated = "2021-07-29T14:32:49.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-03-07T00:32:36.000Z"
+  options = [
+    {
+      content = { uuid = "bf20c7ad-dc12-4f78-be07-90cd2206d5f4" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
