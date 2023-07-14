@@ -1,0 +1,17 @@
+resource "option-type" "Application_Service_Tier" {
+  code = "Application_Service_Tier"
+  name = "CS NS Application Service Tier - All Apps"
+  uuid = "fa7e7dd6-18f1-4b34-a749-0b340015bc24"
+  defaultValue = "z"
+  dependsOnCode = "App_Name"
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Application Tier"
+  fieldName = "Application_Service_Tier"
+  optionList = { name = "CS Application Service Tier - ALL Apps" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
