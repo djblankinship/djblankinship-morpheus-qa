@@ -1,0 +1,162 @@
+resource "file-content" "90226d40-e956-4f5c-8921-b3a67ad4acdb" {
+  uuid = "90226d40-e956-4f5c-8921-b3a67ad4acdb"
+  content = <<EOF
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "osVersion": {
+            "type": "string",
+            "defaultValue": "Please select required OS Version",
+            "allowedValues": [
+                "------Windows OS------",
+                "2012-R2-Datacenter",
+                "2012-R2-Datacenter-smalldisk",
+                "2016-Datacenter",
+                "2016-Datacenter-smalldisk",
+                "2019-Datacenter"
+            ],
+            "metadata": {
+                "description": "The OS version for the VM. This will pick a fully patched image of this given version. Allowed values: Windows"
+            }
+        },
+        "vmSize": {
+            "type": "string",
+            "defaultValue": "Select your VM Size",
+            "allowedValues": [
+                "1 CPU, 2GB Memory - XS, Standard_B1ms",
+                "2 CPU, 4GB Memory - S, Standard_B2s",
+                "2 CPU, 8GB Memory - M, Standard_B2ms",
+                "4 CPU, 16GB Memory - L, Standard_B4ms",
+                "8 CPU, 32Gb Memory - XL, Standard_B8ms"
+            ],
+            "metadata": {
+                "description": "The size(T-shirt) for the VM.",
+                "SNC::Parameter::Metadata": {
+                    "referenceType": "Microsoft.Compute/virtualMachines/vmSize"
+                }
+            }
+        },
+        "SAType": {
+            "type": "string",
+            "defaultValue": "Select your SA Type depends of vmSize",
+            "allowedValues": [
+                "Premium_LRS",
+                "Standard_LRS",
+                "StandardSSD_LRS"
+            ],
+            "metadata": {
+                "description": "The Storage Account Type for the VM."
+            }
+        },
+        "customData": {
+            "type": "string",
+            "defaultValue": "PDxDVVNUT01fREFUQQpydW5jbWQ6CiAgLSA8JT1pbnN0YW5jZT8uY2xvdWRDb25maWc/LmFnZW50SW5zdGFsbCU+CiAgLSA8JT1pbnN0YW5jZT8uY2xvdWRDb25maWc/LmZpbmFsaXplU2VydmVyJT4KQ1VTVE9NX0RBVEE=",
+            "metadata": {
+                "description": "Custom data to be encoded and passed to the VM."
+            }
+        }
+    },
+    "variables": {
+        "windowsimagePublisher": "MicrosoftWindowsServer",
+        "vmName": "<%=instance.hostname%>",
+        "windowsimageOffer": "WindowsServer",
+        "vmSizeArray": "[split(parameters('vmSize'),',')]",
+        "vmSize": "[trim(variables('vmSizeArray')[2])]",
+        "storageAccountType": "[parameters('SAType')]",
+        "OSDiskName": "[concat(variables('vmName'), '-osDisk')]",
+        "vmLocation": "centralus",
+        "nicName": "[concat(variables('vmName'),'-vnic')]",
+        "vNetRG": "rmg-ops",
+        "vNetName": "rmg-ops",
+        "subnetName": "default",
+        "vnetID": "[resourceId(variables('vNetRG'), 'Microsoft.Network/virtualNetworks', variables('vNetName'))]",
+        "subnetRef": "[concat(variables('vnetID'),'/subnets/', variables('subnetName'))]",
+        "decodedCustomData": "[base64ToString(parameters('customData'))]"
+    },
+    "resources": [
+        {
+            "name": "[variables('nicName')]",
+            "type": "Microsoft.Network/networkInterfaces",
+            "apiVersion": "2018-11-01",
+            "location": "[variables('vmLocation')]",
+            "DependsOn": [],
+            "properties": {
+                "primary": true,
+                "ipConfigurations": [
+                    {
+                        "name": "Prod",
+                        "properties": {
+                            "privateIPAllocationMethod": "Dynamic",
+                            "subnet": {
+                                "id": "[variables('subnetRef')]"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "[variables('vmName')]",
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2018-10-01",
+            "location": "[variables('vmLocation')]",
+            "dependsOn": [
+                "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
+            ],
+            "tags": {
+                "Owner": "<%=instance.createdByEmail%>",
+                "BackupRequired": "yes"
+            },
+            "properties": {
+                "licenseType": "Windows_Server",
+                "hardwareProfile": {
+                    "vmSize": "[variables('vmSize')]"
+                },
+                "osProfile": {
+                    "computerName": "[variables('vmName')]",
+                    "adminUsername": "LocalAdminUser",
+                    "adminPassword": "<%=cypher.read('password/LocalAdminUser')%>",
+
+                    "windowsConfiguration": {
+                        "enableAutomaticUpdates": false
+                    }
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "[variables('windowsimagePublisher')]",
+                        "offer": "[variables('windowsimageOffer')]",
+                        "sku": "[parameters('osVersion')]",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "name": "[variables('osDiskName')]",
+                        "createOption": "FromImage",
+                        "caching": "ReadWrite",
+                        "managedDisk": {
+                            "storageAccountType": "[variables('storageAccountType')]"
+                        }
+                    },
+                    "dataDisks": []
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[resourceId('Microsoft.Network/networkInterfaces',variables('nicName'))]"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "outputs": {
+        "decodedCustomData": {
+      "type": "string",
+      "value": "[variables('decodedCustomData')]"
+    }
+  }
+}
+EOF
+  dateCreated = "2023-06-14T14:23:27.000Z"
+  lastUpdated = "2023-06-14T14:23:27.000Z"
+}
