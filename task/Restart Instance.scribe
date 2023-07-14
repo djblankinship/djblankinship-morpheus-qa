@@ -1,0 +1,8 @@
+resource "task" "Restart Instance" {
+  name = "Restart Instance"
+  uuid = "a354b713-1c1f-48d1-8a37-c9c269b02872"
+  dateCreated = "2022-03-15T15:43:31.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-03-15T15:43:31.000Z"
+  taskType = { code = "restartTask" }
+}
