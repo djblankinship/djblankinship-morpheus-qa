@@ -1,0 +1,14 @@
+resource "task" "Refresh Stats Jobs" {
+  name = "Refresh Stats Jobs"
+  uuid = "eba6b10d-3d88-40c8-881d-b921dc814885"
+  dateCreated = "2022-04-12T22:18:12.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-04-12T22:18:12.000Z"
+  options = [
+    {
+      content = { uuid = "221462ba-5a69-48b0-8c8f-6aabf21db41a" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
