@@ -7,11 +7,11 @@ resource "task" "shell" {
   labels = [ "temp" ]
   lastUpdated = "2023-06-14T00:00:29.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "13f4f7ba-0556-4e9f-bf1b-5e67bfd86195" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   resultType = "json"
   taskType = { code = "script" }
