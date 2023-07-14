@@ -1,0 +1,12 @@
+resource "option-type" "vsopenstackFloatingIp" {
+  code = "vsopenstackFloatingIp"
+  name = "vsopenstackFloatingIp"
+  uuid = "81ffce84-6499-48ba-bdb7-133aa048b033"
+  dependsOnCode = "vsClouds"
+  displayOrder = 3
+  fieldContext = "config.customOptions"
+  fieldLabel = "FloatingIp"
+  fieldName = "vsopenstackFloatingIp"
+  optionSource = "list"
+  type = "select"
+}
