@@ -7,12 +7,12 @@ resource "task" "a2-pwsh" {
   options = [
     { optionType = { code = "host" }, value = "192.168.10.4" },
     {
-      optionType = { code = "username" }
-      value = "cbunge@bungebash.com"
-    },
-    {
       content = { uuid = "bec97fa1-0901-414f-9140-d355a0b16132" }
       optionType = { code = "script" }
+    },
+    {
+      optionType = { code = "username" }
+      value = "cbunge@bungebash.com"
     }
   ]
   taskType = { code = "winrmTask" }
