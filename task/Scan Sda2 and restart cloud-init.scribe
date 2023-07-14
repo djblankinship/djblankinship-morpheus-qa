@@ -1,0 +1,15 @@
+resource "task" "Scan Sda2 and restart cloud-init" {
+  name = "Scan Sda2 and restart cloud-init"
+  uuid = "178c3e44-33f8-4f09-ad22-c6f34723e8d9"
+  dateCreated = "2021-11-18T12:17:31.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-18T12:17:31.000Z"
+  options = [
+    {
+      content = { uuid = "8bcde563-f070-4621-9657-66f934604fbd" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
