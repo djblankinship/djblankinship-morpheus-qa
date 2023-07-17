@@ -1,0 +1,6 @@
+resource "file-content" "99dcdd59-325a-4cc0-b87a-2e508a5ffe29" {
+  uuid = "99dcdd59-325a-4cc0-b87a-2e508a5ffe29"
+  content = "prints(\"hello world\")"
+  dateCreated = "2023-07-07T17:24:44.000Z"
+  lastUpdated = "2023-07-07T17:24:44.000Z"
+}
