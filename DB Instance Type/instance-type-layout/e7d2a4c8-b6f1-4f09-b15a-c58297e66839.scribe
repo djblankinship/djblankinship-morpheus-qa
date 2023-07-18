@@ -1,0 +1,10 @@
+resource "instance-type-layout" "e7d2a4c8-b6f1-4f09-b15a-c58297e66839" {
+  code = "e7d2a4c8-b6f1-4f09-b15a-c58297e66839"
+  name = "db-layout-0718"
+  uuid = "bcffe367-4129-4bd0-8ec3-51802adeaf2e"
+  instanceType = { code = "db-instancetype-0718" }
+  instanceVersion = "1.0"
+  memoryRequirement = 0
+  provisionType = { code = "vmware" }
+  workloads = [ { code = "0b776693-ba33-4909-8f5c-34ae2e8980ea" } ]
+}
