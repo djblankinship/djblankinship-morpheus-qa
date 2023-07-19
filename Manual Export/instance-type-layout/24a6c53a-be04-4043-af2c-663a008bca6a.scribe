@@ -1,0 +1,11 @@
+resource "instance-type-layout" "24a6c53a-be04-4043-af2c-663a008bca6a" {
+  code = "24a6c53a-be04-4043-af2c-663a008bca6a"
+  name = "al-ubuntu"
+  uuid = "4c7889f6-9868-4227-bcc8-046d1167ac98"
+  description = "Test for case 63441"
+  instanceType = { code = "al-ubuntu" }
+  instanceVersion = "20.4.3"
+  memoryRequirement = 0
+  provisionType = { code = "vmware" }
+  workloads = [ { code = "a7bfb402-5455-4cf8-a55a-a7a9e64dd175" } ]
+}

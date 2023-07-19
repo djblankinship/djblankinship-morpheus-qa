@@ -1,0 +1,8 @@
+resource "instance-type" "al-ubuntu" {
+  code = "al-ubuntu"
+  name = "al-ubuntu"
+  uuid = "c3f5ed6b-de1d-44b7-b96b-ac16c1a962e3"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "AL-UBUNTU"
+}
