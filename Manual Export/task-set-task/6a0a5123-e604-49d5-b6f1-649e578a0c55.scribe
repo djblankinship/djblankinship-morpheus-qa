@@ -1,0 +1,5 @@
+resource "task-set-task" "6a0a5123-e604-49d5-b6f1-649e578a0c55" {
+  uuid = "6a0a5123-e604-49d5-b6f1-649e578a0c55"
+  task = { name = "Create Chef User" }
+  taskPhase = "provision"
+}
