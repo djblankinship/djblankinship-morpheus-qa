@@ -1,10 +1,11 @@
 resource "task" "vro" {
   code = "vro"
-  name = "vRO Task"
-  uuid = "86ac3b8d-6ffe-4c65-91f8-897d06f36013"
-  dateCreated = "2019-09-12T18:39:55.000Z"
+  name = "temp vRO task"
+  uuid = "4ff3d4fa-181e-4e64-94e0-b393c6a46e69"
+  dateCreated = "2023-06-14T00:15:54.000Z"
   executeTarget = "resource"
-  lastUpdated = "2023-06-14T00:15:58.000Z"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-14T00:15:54.000Z"
   options = [
     {
       optionType = { code = "vroIntegrationId" }
