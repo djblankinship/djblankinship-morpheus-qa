@@ -1,0 +1,14 @@
+resource "container-type" "nutanix-prism-provision-provider-1.0" {
+  code = "nutanix-prism-provision-provider-1.0"
+  name = "Nutanix Prism Central"
+  uuid = "ee97eaa5-ac67-44e3-8c26-192a1a3d8d53"
+  category = "cloud"
+  backupType = "nutanixPrismSnapshot"
+  containerVersion = "1.0"
+  logTypeCode = "nutanix-prism-central"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  serverType = "vm"
+  shortName = "nutanix-prism-central"
+  showServerLogs = true
+  statTypeCode = "vm"
+}
