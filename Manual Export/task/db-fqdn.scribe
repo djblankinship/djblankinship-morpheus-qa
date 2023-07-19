@@ -1,0 +1,14 @@
+resource "task" "db-fqdn" {
+  name = "db-fqdn"
+  uuid = "87b9bdd7-8095-4a30-b3d9-0efe2c358fe8"
+  dateCreated = "2021-06-16T15:53:30.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-06-16T15:53:30.000Z"
+  options = [
+    {
+      content = { uuid = "765fb115-cdac-43db-8e1b-53a5fe986834" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
