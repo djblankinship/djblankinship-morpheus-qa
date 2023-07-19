@@ -1,0 +1,23 @@
+resource "container-type" "14bb9a8d-5f4f-4465-b14a-a9e5c325bf1c" {
+  code = "14bb9a8d-5f4f-4465-b14a-a9e5c325bf1c"
+  name = "Custom Nutanix"
+  uuid = "9a5727c5-e356-43b7-a825-5654433f6883"
+  category = "Web"
+  actions = [ { code = "generic-remove-node" } ]
+  containerLogs = [ { uuid = "968c3a49-11fd-4320-a063-81149fe54510" } ]
+  containerPorts = [
+    { uuid = "06727d0e-ba92-46cc-a88c-05565c4f5fee" },
+    { uuid = "4dc13405-24c5-4692-a9e0-a14ce53d365d" },
+    { uuid = "b00040bd-91c5-469b-bd9f-95fc13b02977" }
+  ]
+  containerVersion = "qcow2"
+  entryPoint = ""
+  logTypeCode = "nutanix"
+  provisionType = { code = "nutanix" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  statTypeCode = "nutanix"
+  virtualImage = { uuid = "84e4c9ac-8fa2-475c-88ff-43a1e27fa72b" }
+}
