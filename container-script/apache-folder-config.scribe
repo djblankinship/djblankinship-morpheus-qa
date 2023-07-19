@@ -1,9 +1,0 @@
-resource "container-script" "apache-folder-config" {
-  code = "apache-folder-config"
-  name = "apache folder config"
-  uuid = "8ee8f62d-6675-401c-b9d8-798bfada8768"
-  script = "bash -c \"mkdir -p <%=hostMountPoint%>/config/ssl\""
-  scriptPhase = "preProvision"
-  scriptVersion = "1.0"
-  sudoUser = true
-}
