@@ -1,0 +1,15 @@
+resource "task" "add vm disk" {
+  name = "add vm disk"
+  uuid = "34babf05-e09b-406a-8cdf-b81dde568a66"
+  dateCreated = "2021-11-03T12:56:32.000Z"
+  executeTarget = "local"
+  lastUpdated = "2021-11-03T12:56:32.000Z"
+  options = [
+    {
+      optionType = { code = "vroIntegrationId" }
+      value = { name = "Labs vRO" }
+    },
+    { optionType = { code = "vroWorkflow" }, value = "10630717" }
+  ]
+  taskType = { code = "vro" }
+}
