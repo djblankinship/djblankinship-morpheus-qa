@@ -1,0 +1,31 @@
+resource "task" "Morpheus Update" {
+  name = "Morpheus Update"
+  uuid = "6befb156-7fb4-46a5-972f-1ebc1c0572dd"
+  dateCreated = "2019-10-31T02:52:12.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-10-31T02:52:12.000Z"
+  options = [
+    {
+      optionType = { code = "script" }
+      value = <<EOF
+cd /opt/morpheus/lib/morpheus
+
+sudo wget --quiet --auth-no-challenge --user=bertramdev --password=Pa55w0rd https://jenkins.bertramlabs.com/job/morpheus-ui-4.2/lastSuccessfulBuild/artifact/build/libs/morpheus-ui-4.2-4.2.0.war
+
+sudo rm morpheus-ui.war
+
+sudo mv morpheus-ui-4.2-4.2.0.war /opt/morpheus/lib/morpheus/morpheus-ui.war
+
+sudo chown morpheus-app.morpheus-app /opt/morpheus/lib/morpheus/morpheus-ui.war
+
+sudo chmod 600 /opt/morpheus/lib/morpheus/morpheus-ui.war
+
+sudo morpheus-ctl graceful-kill morpheus-ui
+
+sudo morpheus-ctl start morpheus-ui
+EOF
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}

@@ -1,0 +1,22 @@
+resource "task" "Morpheus Setup" {
+  name = "Morpheus Setup"
+  uuid = "15b172bd-9d02-436a-a8bd-a97f7fe46749"
+  dateCreated = "2019-10-30T21:24:03.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-12-22T00:10:37.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "fafd230b-4295-4801-9d90-1e7557f881f0" }
+      optionType = { code = "script" }
+      value = <<EOF
+wget --quiet http://pkgrepo.morpheusdata.com/files/morpheus-appliance_4.1.2~rc6-1_amd64.deb
+
+sudo dpkg -i morpheus-appliance_4.1.2~rc6-1_amd64.deb
+
+sudo morpheus-ctl reconfigure
+EOF
+    }
+  ]
+  taskType = { code = "script" }
+}
