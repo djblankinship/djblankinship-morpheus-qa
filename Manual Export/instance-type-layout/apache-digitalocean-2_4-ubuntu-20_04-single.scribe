@@ -1,0 +1,15 @@
+resource "instance-type-layout" "apache-digitalocean-2.4-ubuntu-20.04-single" {
+  code = "apache-digitalocean-2.4-ubuntu-20.04-single"
+  name = "DigitalOcean Apache"
+  uuid = "02ead3e0-c8fc-4134-adc4-3b8732561bf2"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  portCount = 2
+  provisionType = { code = "digitalocean" }
+  serverType = "vm"
+  sortOrder = 10
+  workloads = [ { code = "apache-digitalocean-2.4-ubuntu-20.04-set" } ]
+}
