@@ -1,0 +1,9 @@
+resource "resource-spec-template" "0f7f9b2f-94a3-48f3-a792-35c36e036a57" {
+  name = "CF Windows"
+  uuid = "0f7f9b2f-94a3-48f3-a792-35c36e036a57"
+  dateCreated = "2019-10-16T18:13:22.000Z"
+  lastUpdated = "2019-10-16T18:13:22.000Z"
+  template = { uuid = "02ce4041-fb98-4204-9619-3b1523bcda68" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
