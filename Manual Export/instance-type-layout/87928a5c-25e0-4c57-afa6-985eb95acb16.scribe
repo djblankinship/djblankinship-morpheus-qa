@@ -1,0 +1,10 @@
+resource "instance-type-layout" "87928a5c-25e0-4c57-afa6-985eb95acb16" {
+  code = "87928a5c-25e0-4c57-afa6-985eb95acb16"
+  name = "AWS Bucket"
+  uuid = "60105b17-1bde-4d23-9c44-8b0bcecbc07e"
+  instanceType = { code = "specs" }
+  instanceVersion = "bucket"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "cb4da503-71bf-436a-b2d8-3084ddb594b4" } ]
+}
