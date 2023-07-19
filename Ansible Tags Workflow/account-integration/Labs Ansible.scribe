@@ -1,9 +1,0 @@
-resource "account-integration" "Labs Ansible" {
-  name = "Labs Ansible"
-  uuid = "3208081e-10f1-47a0-8bdd-2ff9f564b8f8"
-  category = "cm-server"
-  integrationType = { code = "ansible" }
-  serviceFlag = true
-  serviceUrl = "git@github.com:bertramdev/morpheus-ansible.git"
-  type = "ansible"
-}
