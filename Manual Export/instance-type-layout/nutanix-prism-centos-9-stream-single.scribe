@@ -1,0 +1,15 @@
+resource "instance-type-layout" "nutanix-prism-centos-9-stream-single" {
+  code = "nutanix-prism-centos-9-stream-single"
+  name = "Nutanix Prism Central VM"
+  uuid = "7a990ff8-4d1c-4249-afda-7b0d4548b793"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single vm"
+  hasAutoScale = true
+  instanceType = { code = "centos" }
+  instanceVersion = "9-stream"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  serverType = "vm"
+  sortOrder = 40
+  supportsConvertToManaged = true
+  workloads = [ { code = "nutanix-prism-centos-9-stream-set" } ]
+}
