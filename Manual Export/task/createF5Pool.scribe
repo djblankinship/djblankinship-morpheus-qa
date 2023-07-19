@@ -1,0 +1,28 @@
+resource "task" "createF5Pool" {
+  name = "createF5Pool"
+  uuid = "436e399e-a1f6-4422-817f-6c226a9b3930"
+  dateCreated = "2023-01-16T13:21:22.000Z"
+  executeTarget = "local"
+  labels = [ "localTask", "runForAll" ]
+  lastUpdated = "2023-01-16T13:21:54.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleTowerIntegrationId" }
+      value = { name = "Labs Ansible Tower" }
+    },
+    {
+      optionType = { code = "ansibleTowerJobTemplateId" }
+      value = "26452"
+    },
+    {
+      optionType = { code = "ansibleTowerInventoryId" }
+      value = "3220"
+    },
+    {
+      optionType = { code = "ansibleTowerExecuteMode" }
+      value = "executeAll"
+    },
+    { optionType = { code = "ansibleGroup" }, value = "f5" }
+  ]
+  taskType = { code = "ansibleTowerTask" }
+}
