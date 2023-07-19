@@ -1,0 +1,6 @@
+resource "container-type-set" "nutanix-prism-centos-8-stream-set" {
+  code = "nutanix-prism-centos-8-stream-set"
+  uuid = "8a6549b4-c166-4b80-ac8f-0e1645d5f232"
+  dynamicCount = true
+  workloadType = { code = "nutanix-prism-centos-8-stream" }
+}
