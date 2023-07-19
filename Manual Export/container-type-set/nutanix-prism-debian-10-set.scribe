@@ -1,0 +1,6 @@
+resource "container-type-set" "nutanix-prism-debian-10-set" {
+  code = "nutanix-prism-debian-10-set"
+  uuid = "4010a153-a7b3-48e4-ba99-2acc5db61acd"
+  dynamicCount = true
+  workloadType = { code = "nutanix-prism-debian-10" }
+}
