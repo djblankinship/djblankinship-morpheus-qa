@@ -1,0 +1,15 @@
+resource "task" "test-tmp-file" {
+  code = "test-tmp-file"
+  name = "Test Temp File"
+  uuid = "ad2610c8-83b1-4b45-8f83-7489b13fdbd4"
+  dateCreated = "2020-05-05T00:05:54.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-05-05T00:05:54.000Z"
+  options = [
+    {
+      content = { uuid = "d22082ba-cdcc-44a3-b614-64673362e561" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
