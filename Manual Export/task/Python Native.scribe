@@ -1,0 +1,14 @@
+resource "task" "Python Native" {
+  name = "Python Native"
+  uuid = "59690266-0285-498c-8798-b56ba0b63988"
+  dateCreated = "2019-10-09T14:11:10.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-10-09T14:11:10.000Z"
+  options = [
+    {
+      optionType = { code = "pythonScript" }
+      value = "print(json.dumps(morpheus))"
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}
