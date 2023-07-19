@@ -1,0 +1,17 @@
+resource "task" "ansible-nexus-demo" {
+  name = "ansible-nexus-demo"
+  uuid = "072fcc27-823d-4193-976c-db5792b4bc9f"
+  allowCustomConfig = true
+  dateCreated = "2022-02-11T18:50:15.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-02-11T19:14:03.000Z"
+  options = [
+    { optionType = { code = "ansibleGitId" }, value = "12292" },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "playbook.yml"
+    }
+  ]
+  retryable = true
+  taskType = { code = "ansibleTask" }
+}
