@@ -1,0 +1,15 @@
+resource "option-type" "networksApiExternal" {
+  code = "networksApiExternal"
+  name = "Morpheus Networks API External"
+  uuid = "710e49f6-8ee1-49d9-9c4f-c8143bbefbf6"
+  dependsOnCode = "poolId"
+  fieldContext = "config.customOptions"
+  fieldGetName = "networksApiExternal"
+  fieldLabel = "Network"
+  fieldName = "networksApiExternal"
+  fieldSetName = "networksApiExternal"
+  optionList = { name = "Morpheus API Networks External" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
