@@ -1,0 +1,15 @@
+resource "task" "db-hello-groovy" {
+  code = "db-hello-groovy"
+  name = "db-hello-groovy"
+  uuid = "91b3d57e-788d-4dc4-bf8d-50d8a1e028ba"
+  dateCreated = "2022-01-26T15:41:16.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-09-21T17:51:56.000Z"
+  options = [
+    {
+      content = { uuid = "052ba557-75bf-495a-bb57-16753a6fc460" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
