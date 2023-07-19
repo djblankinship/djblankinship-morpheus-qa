@@ -1,0 +1,19 @@
+resource "task" "an email 4" {
+  name = "an email 4"
+  uuid = "c0f0077c-6b57-45db-8be0-9a6f62878870"
+  dateCreated = "2020-04-07T02:52:31.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-04-07T02:52:31.000Z"
+  options = [
+    { optionType = { code = "emailSubject" }, value = "email 4" },
+    {
+      optionType = { code = "emailAddress" }
+      value = "tommymarks+4@gmail.com"
+    },
+    {
+      content = { uuid = "78d6dd0d-eb08-423f-a9c4-53fb09c9a953" }
+      optionType = { code = "emailBody" }
+    }
+  ]
+  taskType = { code = "email" }
+}
