@@ -1,0 +1,11 @@
+resource "option-type" "ldPass2" {
+  code = "ldPass2"
+  name = "ld-pass-2"
+  uuid = "39bc8f70-e56b-436d-a2b6-235c058a92ae"
+  fieldContext = "config.customOptions"
+  fieldGetName = "ldPass2"
+  fieldLabel = "Pass Two"
+  fieldName = "ldPass2"
+  fieldSetName = "ldPass2"
+  type = "password"
+}
