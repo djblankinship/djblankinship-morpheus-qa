@@ -1,0 +1,10 @@
+resource "option-type" "wa_email_address" {
+  code = "wa_email_address"
+  name = "wa email field"
+  uuid = "7c891941-e5ed-449d-994c-420711a18c77"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Email Address"
+  fieldName = "wa_email_address"
+  placeHolder = "test@hello.com"
+  visibleOnCode = "wa_sendMail:(on)"
+}
