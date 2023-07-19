@@ -1,0 +1,10 @@
+resource "instance-type" "c75V" {
+  code = "c75V"
+  name = "CentOS 7.5 VMware"
+  uuid = "7447e408-11a6-472e-8c3b-91a5e95c211e"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "CENTOS_7_5_VMWARE"
+  hasSettings = true
+  visibility = "public"
+}
