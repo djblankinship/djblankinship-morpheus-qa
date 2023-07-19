@@ -1,0 +1,14 @@
+resource "option-type" "riHospitals" {
+  code = "riHospitals"
+  name = "RIHospitals"
+  uuid = "bb1ece95-3b3a-4593-9ad8-19d539905943"
+  description = "List of RI Hospitals"
+  fieldContext = "config.customOptions"
+  fieldGetName = "riHospitals"
+  fieldLabel = "RIHospitals"
+  fieldName = "riHospitals"
+  fieldSetName = "riHospitals"
+  optionList = { name = "Hospital Groups" }
+  optionSource = "list"
+  type = "select"
+}
