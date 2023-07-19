@@ -1,0 +1,16 @@
+resource "container-type" "0e4261af-76fc-4d42-babb-eacb97c61319" {
+  code = "0e4261af-76fc-4d42-babb-eacb97c61319"
+  name = "Amazon Centos 7"
+  uuid = "cfbe5ddf-0741-4964-bf4d-0aaa91ecba07"
+  containerPorts = [ { uuid = "a9905974-6b34-4439-a977-f701a1975f05" } ]
+  containerVersion = "Centos 7"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awscent7"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "55c03cbf-7150-47fd-a763-eeedd6c2dbfc" }
+}
