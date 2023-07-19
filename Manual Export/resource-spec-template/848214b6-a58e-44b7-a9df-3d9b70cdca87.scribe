@@ -1,0 +1,10 @@
+resource "resource-spec-template" "848214b6-a58e-44b7-a9df-3d9b70cdca87" {
+  name = "arm2"
+  uuid = "848214b6-a58e-44b7-a9df-3d9b70cdca87"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2021-08-02T18:48:22.000Z"
+  lastUpdated = "2021-08-02T18:48:22.000Z"
+  template = { uuid = "b2c7980e-5bd5-46ba-a58a-85b633d3a81a" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
