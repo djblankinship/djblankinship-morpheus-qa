@@ -6,4 +6,5 @@ resource "instance-type" "redmine" {
   deploymentService = ""
   description = "A great project management system built on top of ruby on rails."
   environmentPrefix = "REDMINE"
+  layouts = [ { code = "707baed1-03cf-4f05-a958-5cf81f346baf" } ]
 }
