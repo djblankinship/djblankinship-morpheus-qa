@@ -5,5 +5,6 @@ resource "instance-type" "db-instancetype-0718" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "DB-INSTANCETYPE-0718"
+  layouts = [ { code = "e7d2a4c8-b6f1-4f09-b15a-c58297e66839" } ]
   visibility = "public"
 }
