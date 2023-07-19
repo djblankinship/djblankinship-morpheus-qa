@@ -1,0 +1,7 @@
+resource "container-type-set" "apache-2.4-set" {
+  code = "apache-2.4-set"
+  uuid = "90418e68-39fe-45dc-9a33-3f63196291de"
+  category = "apache"
+  dynamicCount = true
+  workloadType = { code = "apache-2.4" }
+}
