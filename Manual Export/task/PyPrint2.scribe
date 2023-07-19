@@ -1,0 +1,17 @@
+resource "task" "PyPrint2" {
+  name = "PyPrint2"
+  uuid = "d9bd0e22-81ea-4480-b996-6307aaeb55a5"
+  dateCreated = "2019-09-19T20:51:21.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-09-19T20:51:21.000Z"
+  options = [
+    {
+      optionType = { code = "pythonScript" }
+      value = <<EOF
+lololol = morpheus['results']['pyprint']
+print str(lololol)
+EOF
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}
