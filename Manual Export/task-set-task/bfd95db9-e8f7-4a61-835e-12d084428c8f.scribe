@@ -1,0 +1,5 @@
+resource "task-set-task" "bfd95db9-e8f7-4a61-835e-12d084428c8f" {
+  uuid = "bfd95db9-e8f7-4a61-835e-12d084428c8f"
+  task = { code = "acSleep" }
+  taskPhase = "teardown"
+}
