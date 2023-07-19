@@ -1,0 +1,13 @@
+resource "code-repository" "automation" {
+  name = "automation"
+  uuid = "4a2264a2-731a-4d12-b34f-bbd94daec9b4"
+  dateCreated = "2021-08-30T19:13:09.000Z"
+  defaultBranch = "master"
+  displayName = "jw automation"
+  externalId = "https://github.com/1Wheeler/automation.git"
+  integration = { name = "jw automation" }
+  lastUpdated = "2023-07-09T05:13:41.000Z"
+  orgId = "//github.com/1Wheeler"
+  orgName = "//github.com/1Wheeler"
+  serviceUrl = "https://github.com/1Wheeler/automation.git"
+}
