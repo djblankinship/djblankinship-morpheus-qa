@@ -1,0 +1,5 @@
+resource "task-set-task" "b45d091e-d85a-4525-a77e-7c3f7c2b69cd" {
+  uuid = "b45d091e-d85a-4525-a77e-7c3f7c2b69cd"
+  task = { name = "List Windows Users" }
+  taskPhase = "operation"
+}
