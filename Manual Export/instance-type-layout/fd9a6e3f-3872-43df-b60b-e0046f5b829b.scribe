@@ -1,0 +1,10 @@
+resource "instance-type-layout" "fd9a6e3f-3872-43df-b60b-e0046f5b829b" {
+  code = "fd9a6e3f-3872-43df-b60b-e0046f5b829b"
+  name = "26 VMs"
+  uuid = "9b329435-7060-4258-b380-f8c19bf8666c"
+  instanceType = { code = "specs" }
+  instanceVersion = "26vms"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "c141db5d-b837-49bc-aded-08487c7b2108" } ]
+}
