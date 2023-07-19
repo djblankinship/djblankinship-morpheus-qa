@@ -1,9 +1,0 @@
-resource "task-set" "vsRestInstances" {
-  name = "vsRestInstances"
-  uuid = "d1f3ae08-8fe7-4eea-94d6-123957d90bef"
-  dateCreated = "2023-06-26T14:12:12.000Z"
-  lastUpdated = "2023-06-26T14:12:12.000Z"
-  optionTypes = [ { code = "vsRestInstances" } ]
-  taskSetTasks = [ { uuid = "1567b072-0ddb-49e4-b4a8-c2fd98c7c92c" } ]
-  taskSetType = "operation"
-}

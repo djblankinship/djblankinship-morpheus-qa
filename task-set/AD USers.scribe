@@ -1,8 +1,0 @@
-resource "task-set" "AD USers" {
-  name = "AD USers"
-  uuid = "1a18d5e7-8d1f-4eba-8974-18121ebb58cb"
-  dateCreated = "2022-09-10T04:10:17.000Z"
-  lastUpdated = "2022-09-10T04:10:17.000Z"
-  optionTypes = [ { code = "fnADUsers" } ]
-  taskSetType = "operation"
-}
