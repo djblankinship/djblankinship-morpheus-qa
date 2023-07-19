@@ -1,0 +1,27 @@
+resource "task" "DGTestNewTemplate" {
+  name = "DGTestNewTemplate"
+  uuid = "3b4baa1f-0eaf-48f7-b1ab-19f9aa2edc2e"
+  dateCreated = "2023-02-23T19:29:05.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-02-27T10:15:15.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleTowerIntegrationId" }
+      value = { name = "Labs Ansible Tower" }
+    },
+    {
+      optionType = { code = "ansibleTowerInventoryId" }
+      value = "2788"
+    },
+    {
+      optionType = { code = "ansibleTowerJobTemplateId" }
+      value = "32522"
+    },
+    {
+      optionType = { code = "ansibleTowerExecuteMode" }
+      value = "executeHost"
+    }
+  ]
+  taskType = { code = "ansibleTowerTask" }
+  visibility = "public"
+}
