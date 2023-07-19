@@ -1,0 +1,9 @@
+resource "instance-type" "nctestinstancetype" {
+  code = "nctestinstancetype"
+  name = "nctest-instances"
+  uuid = "4f84041a-8023-46a5-974a-9c74b6340dd6"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "NCTEST-INSTANCES"
+  hasSettings = true
+}
