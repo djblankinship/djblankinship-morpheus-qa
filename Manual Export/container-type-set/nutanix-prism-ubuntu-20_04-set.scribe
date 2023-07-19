@@ -1,0 +1,6 @@
+resource "container-type-set" "nutanix-prism-ubuntu-20.04-set" {
+  code = "nutanix-prism-ubuntu-20.04-set"
+  uuid = "26205547-4a65-4328-b7bb-0dfe6397db0a"
+  dynamicCount = true
+  workloadType = { code = "nutanix-prism-ubuntu-20.04" }
+}

@@ -1,0 +1,15 @@
+resource "instance-type-layout" "nutanix-prism-ubuntu-20.04-single" {
+  code = "nutanix-prism-ubuntu-20.04-single"
+  name = "Nutanix Prism Central VM"
+  uuid = "b97e4f4a-a856-4dbe-9237-9bdb83a0ce0c"
+  actions = [ { code = "ubuntu-add-node" } ]
+  description = "This will provision a single vm"
+  hasAutoScale = true
+  instanceType = { code = "ubuntu" }
+  instanceVersion = "20.04"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  serverType = "vm"
+  sortOrder = 30
+  supportsConvertToManaged = true
+  workloads = [ { code = "nutanix-prism-ubuntu-20.04-set" } ]
+}
