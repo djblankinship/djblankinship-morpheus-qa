@@ -1,5 +1,0 @@
-resource "task-set-task" "2bc70024-727e-44a8-b456-a8e05557cf2c" {
-  uuid = "2bc70024-727e-44a8-b456-a8e05557cf2c"
-  task = { name = "AC Sleep 1 min" }
-  taskPhase = "teardown"
-}

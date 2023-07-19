@@ -1,5 +1,0 @@
-resource "task-set-task" "7afdffa6-287f-46f7-98b2-917a56d93d9b" {
-  uuid = "7afdffa6-287f-46f7-98b2-917a56d93d9b"
-  task = { name = "Job: Task (No Custom Content)" }
-  taskPhase = "operation"
-}

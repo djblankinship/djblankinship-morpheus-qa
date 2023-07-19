@@ -1,5 +1,0 @@
-resource "task-set-task" "0de240f2-865e-4280-8de7-12e9c83a47e7" {
-  uuid = "0de240f2-865e-4280-8de7-12e9c83a47e7"
-  task = { code = "kube+echo" }
-  taskPhase = "operation"
-}

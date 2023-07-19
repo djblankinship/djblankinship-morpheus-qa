@@ -1,5 +1,0 @@
-resource "task-set-task" "1567b072-0ddb-49e4-b4a8-c2fd98c7c92c" {
-  uuid = "1567b072-0ddb-49e4-b4a8-c2fd98c7c92c"
-  task = { name = "vsRestInstances" }
-  taskPhase = "operation"
-}
