@@ -1,0 +1,9 @@
+resource "instance-type" "morphapp" {
+  code = "morphapp"
+  name = "Morpheus Appliance"
+  uuid = "698a2655-ecfd-4163-84ad-4fbaf45985b2"
+  category = "apps"
+  deploymentService = ""
+  description = "morpheus awesomeness"
+  environmentPrefix = "MORPH"
+}
