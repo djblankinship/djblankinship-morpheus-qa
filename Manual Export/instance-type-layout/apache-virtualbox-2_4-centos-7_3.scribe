@@ -1,0 +1,15 @@
+resource "instance-type-layout" "apache-virtualbox-2.4-centos-7.3" {
+  code = "apache-virtualbox-2.4-centos-7.3"
+  name = "VirtualBox Apache 2.4 on CentOS 7.3"
+  uuid = "48662841-05bc-4a8d-b759-e1063ef90c10"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  portCount = 2
+  provisionType = { code = "virtualbox" }
+  serverType = "vm"
+  sortOrder = 100
+  workloads = [ { code = "apache-virtualbox-2.4-centos-7.3-set" } ]
+}
