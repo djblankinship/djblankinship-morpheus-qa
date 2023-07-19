@@ -1,0 +1,17 @@
+resource "task" "task execution in oracle cloud" {
+  name = "task execution in oracle cloud"
+  uuid = "e2d1054d-990b-4ca3-b084-9659615ee42f"
+  dateCreated = "2021-11-26T13:10:20.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2021-11-26T15:21:31.000Z"
+  options = [
+    { optionType = { code = "host" }, value = "150.136.238.134" },
+    { optionType = { code = "port" }, value = "5985" },
+    {
+      content = { uuid = "94f2d2aa-8bdf-4780-8eb2-388920f0a293" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "username" }, value = "deepti" }
+  ]
+  taskType = { code = "winrmTask" }
+}
