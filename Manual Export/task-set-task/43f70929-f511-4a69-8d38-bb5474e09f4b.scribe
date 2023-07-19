@@ -1,0 +1,5 @@
+resource "task-set-task" "43f70929-f511-4a69-8d38-bb5474e09f4b" {
+  uuid = "43f70929-f511-4a69-8d38-bb5474e09f4b"
+  task = { name = "cypher template" }
+  taskPhase = "preProvision"
+}
