@@ -1,0 +1,12 @@
+resource "instance-type-layout" "4656320b-a887-48a8-8387-e65185fb2d27" {
+  code = "4656320b-a887-48a8-8387-e65185fb2d27"
+  name = "Windows Server"
+  uuid = "30214e64-0436-467d-a146-eca4e3c097be"
+  actions = [ { code = "generic-add-node" } ]
+  description = "AWS Base AMI"
+  hasAutoScale = true
+  instanceType = { code = "win" }
+  instanceVersion = "2016"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+}
