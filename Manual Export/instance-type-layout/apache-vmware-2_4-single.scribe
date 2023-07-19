@@ -1,0 +1,15 @@
+resource "instance-type-layout" "apache-vmware-2.4-single" {
+  code = "apache-vmware-2.4-single"
+  name = "VMware Apache on Ubuntu 14.04"
+  uuid = "7cf6418b-d55a-43a0-aba1-a2ed4ae1abb0"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  portCount = 2
+  provisionType = { code = "vmware" }
+  serverType = "vm"
+  sortOrder = 10
+  workloads = [ { code = "apache-vmware-2.4-set" } ]
+}
