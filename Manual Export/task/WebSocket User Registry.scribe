@@ -1,0 +1,14 @@
+resource "task" "WebSocket User Registry" {
+  name = "WebSocket User Registry"
+  uuid = "e125e37b-f7b8-461d-aa2d-3d415bdb78bd"
+  dateCreated = "2020-02-20T21:15:28.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-02-20T21:15:28.000Z"
+  options = [
+    {
+      content = { uuid = "cdf0b17d-8ed8-4843-92dd-ecb0a9d377fb" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
