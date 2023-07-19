@@ -1,0 +1,10 @@
+resource "instance-type" "dgArmWindowsVm" {
+  code = "dgArmWindowsVm"
+  name = "DG ARM Windows VM"
+  uuid = "fbb6eeab-a665-4193-9fe3-1d486791a8c6"
+  category = "cloud"
+  deploymentService = ""
+  environmentPrefix = "DG_ARM_WINDOWS_VM"
+  optionTypes = [ { code = "fserverRole" } ]
+  visibility = "public"
+}

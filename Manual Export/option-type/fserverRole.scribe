@@ -1,0 +1,10 @@
+resource "option-type" "fserverRole" {
+  code = "fserverRole"
+  name = "fserverRole"
+  uuid = "e26e5dd0-df1e-4311-8cd8-696b510669d6"
+  defaultValue = "APP"
+  fieldContext = "config.customOptions"
+  fieldLabel = "fserverRole"
+  fieldName = "fserverRole"
+  required = true
+}
