@@ -1,0 +1,15 @@
+resource "instance-type-layout" "nginx-amazon-1.9" {
+  code = "nginx-amazon-1.9"
+  name = "Amazon NGINX"
+  uuid = "e7421c02-e3d6-4bb3-87a7-362c5df568fa"
+  actions = [ { code = "nginx-1.9-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "nginx" }
+  instanceVersion = "1.9"
+  portCount = 2
+  provisionType = { code = "amazon" }
+  serverType = "vm"
+  sortOrder = 10
+  workloads = [ { code = "nginx-amazon-1.9-set" } ]
+}
