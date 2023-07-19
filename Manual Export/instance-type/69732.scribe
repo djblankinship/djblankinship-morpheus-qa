@@ -1,0 +1,10 @@
+resource "instance-type" "69732" {
+  code = "69732"
+  name = "ap-69732"
+  uuid = "160c6711-782f-44bc-ab28-511cb67be923"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "AP-69732"
+  hasAutoScale = true
+  optionTypes = [ { code = "appName" } ]
+}
