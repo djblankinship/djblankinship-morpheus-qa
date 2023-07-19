@@ -1,0 +1,18 @@
+resource "container-type" "18ea98db-6d2c-46a5-828e-dd6be45d85c2" {
+  code = "18ea98db-6d2c-46a5-828e-dd6be45d85c2"
+  name = "Ubuntu Scale"
+  uuid = "31a752ce-8fda-4a80-ab67-8edc8b0db087"
+  containerMounts = [ { uuid = "33bdc4a1-624d-495c-8cbd-f90f10a05828" } ]
+  containerPorts = [ { uuid = "6e3b5584-e064-4d5f-99e3-1da85a1d8bc7" } ]
+  containerVersion = "16.04"
+  entryPoint = ""
+  logTypeCode = "azure"
+  mountData = "/usr/share/misc"
+  provisionType = { code = "azure" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ubuntuscale"
+  showServerLogs = true
+  statTypeCode = "azure"
+  virtualImage = { uuid = "fe754224-4cec-4473-bd9d-4b00c2c0909f" }
+}
