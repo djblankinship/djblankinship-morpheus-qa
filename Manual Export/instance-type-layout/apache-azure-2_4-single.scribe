@@ -1,0 +1,16 @@
+resource "instance-type-layout" "apache-azure-2.4-single" {
+  code = "apache-azure-2.4-single"
+  name = "Azure Apache"
+  uuid = "5acdfc14-f3af-4224-888c-1f4cbbdaa0f5"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  enabled = false
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  portCount = 2
+  provisionType = { code = "azure" }
+  serverType = "vm"
+  sortOrder = 10
+  workloads = [ { code = "apache-azure-2.4-set" } ]
+}
