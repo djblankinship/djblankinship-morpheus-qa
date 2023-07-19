@@ -5,4 +5,5 @@ resource "instance-type" "al-ubuntu" {
   category = "os"
   deploymentService = ""
   environmentPrefix = "AL-UBUNTU"
+  layouts = [ { code = "24a6c53a-be04-4043-af2c-663a008bca6a" } ]
 }
