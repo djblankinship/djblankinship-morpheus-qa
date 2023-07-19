@@ -1,9 +1,0 @@
-resource "task" "," {
-  code = ","
-  name = "test"
-  uuid = "5aeb65df-ab5e-4058-861a-e7d2263c380c"
-  dateCreated = "2019-05-16T18:59:00.000Z"
-  executeTarget = "resource"
-  lastUpdated = "2019-05-16T18:59:00.000Z"
-  taskType = { code = "winrmTask" }
-}
