@@ -1,0 +1,9 @@
+resource "instance-type" "vault" {
+  code = "vault"
+  name = "Vault"
+  uuid = "7dad3ebc-f8a7-4657-b966-8b52c4000791"
+  category = "utility"
+  deploymentService = ""
+  environmentPrefix = "VAULT"
+  hasSettings = true
+}

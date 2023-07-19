@@ -1,0 +1,16 @@
+resource "container-type" "2a68eac2-d123-4d14-b1f5-7ba2f6d7376f" {
+  code = "2a68eac2-d123-4d14-b1f5-7ba2f6d7376f"
+  name = "Vault"
+  uuid = "873e5949-7708-40d7-a21e-59920a96c7ef"
+  containerLogs = [ { uuid = "215c4403-42f6-4e5c-8be1-c618b3b3f417" } ]
+  containerMounts = [ { uuid = "16aa56f8-d8bc-45e3-ae70-1f378a53e094" } ]
+  containerPorts = [ { uuid = "67dfe1c5-669d-4d6c-b7ae-f757baec2bc7" } ]
+  containerVersion = "latest"
+  entryPoint = ""
+  logTypeCode = "docker"
+  provisionService = "dockerContainerService"
+  provisionType = { code = "docker" }
+  repositoryImage = "vault"
+  shortName = "vault"
+  statTypeCode = "docker"
+}
