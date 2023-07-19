@@ -1,0 +1,10 @@
+resource "file-content" "a6432a33-539f-409d-bb67-bac126e0e367" {
+  uuid = "a6432a33-539f-409d-bb67-bac126e0e367"
+  content = <<EOF
+sudo ip a
+
+#cat /etc/netplan/50-cloud-init.yaml
+EOF
+  dateCreated = "2022-11-15T20:23:08.000Z"
+  lastUpdated = "2022-11-15T20:26:40.000Z"
+}
