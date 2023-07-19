@@ -5,11 +5,11 @@ resource "task" "A Fail" {
   executeTarget = "resource"
   lastUpdated = "2021-02-01T18:34:18.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "ea165886-163b-49e1-876b-fec2955add30" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
