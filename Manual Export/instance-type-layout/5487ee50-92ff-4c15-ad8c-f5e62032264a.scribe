@@ -1,0 +1,16 @@
+resource "instance-type-layout" "5487ee50-92ff-4c15-ad8c-f5e62032264a" {
+  code = "5487ee50-92ff-4c15-ad8c-f5e62032264a"
+  name = "Custom VMware"
+  uuid = "965adf19-3128-47e3-aadf-368d836ea950"
+  actions = [ { code = "generic-add-node" } ]
+  description = "custom image"
+  hasAutoScale = true
+  instanceType = { code = "custom-img" }
+  instanceVersion = "vmdk"
+  labels = [ "auto", "keep" ]
+  memoryRequirement = 0
+  provisionType = { code = "vmware" }
+  supportsConvertToManaged = true
+  taskSets = [ { name = "Price" } ]
+  workloads = [ { code = "af1b1026-aeec-410c-9155-8e0f77c9e175" } ]
+}
