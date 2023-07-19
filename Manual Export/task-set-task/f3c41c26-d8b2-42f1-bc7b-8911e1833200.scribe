@@ -1,0 +1,5 @@
+resource "task-set-task" "f3c41c26-d8b2-42f1-bc7b-8911e1833200" {
+  uuid = "f3c41c26-d8b2-42f1-bc7b-8911e1833200"
+  task = { name = "Hello World Public" }
+  taskPhase = "provision"
+}
