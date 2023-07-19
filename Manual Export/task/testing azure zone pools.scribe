@@ -1,0 +1,18 @@
+resource "task" "testing azure zone pools" {
+  name = "testing azure zone pools"
+  uuid = "20294b53-593e-4667-8b71-6aabf35fefe6"
+  dateCreated = "2019-10-10T22:50:07.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-10-10T22:50:07.000Z"
+  options = [
+    {
+      optionType = { code = "groovyScript" }
+      value = <<EOF
+def account = com.bertramlabs.plugins.Account.get(1)
+def user = com.bertramlabs.plugins.User.get(1)
+println grails.util.Holders.applicationContext['optionSourceService'].azureZonePools([accountId:account.id, currentUser: user])
+EOF
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
