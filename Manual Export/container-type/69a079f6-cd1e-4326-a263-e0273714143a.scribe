@@ -1,0 +1,12 @@
+resource "container-type" "69a079f6-cd1e-4326-a263-e0273714143a" {
+  code = "69a079f6-cd1e-4326-a263-e0273714143a"
+  name = "wa-case70801"
+  uuid = "861e4f89-0d93-4ec0-a40e-18f9ee531eef"
+  containerVersion = "1"
+  entryPoint = ""
+  provisionService = "nutanix-prism-provision-provider"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  repositoryImage = ""
+  shortName = "wa-case70801"
+  virtualImage = { code = "nutanix.prism.image.morpheus.ubuntu.16.04" }
+}
