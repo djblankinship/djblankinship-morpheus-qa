@@ -1,0 +1,13 @@
+resource "instance-type-layout" "0ae3bdec-5058-4fc9-93c1-c9c2733fe526" {
+  code = "0ae3bdec-5058-4fc9-93c1-c9c2733fe526"
+  name = "ac test layout"
+  uuid = "c17f7a6c-eff3-459c-a5dc-ce7e4766d0c4"
+  actions = [ { code = "generic-add-node" } ]
+  creatable = false
+  hasAutoScale = false
+  instanceType = { code = "ubuntu" }
+  instanceVersion = "1.0"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  workloads = [ { code = "2c9e484f-625d-44a4-a268-8ec33b70172f" } ]
+}
