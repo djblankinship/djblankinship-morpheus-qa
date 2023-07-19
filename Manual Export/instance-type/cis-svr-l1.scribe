@@ -1,0 +1,9 @@
+resource "instance-type" "cis-svr-l1" {
+  code = "cis-svr-l1"
+  name = "CIS-SVR-L1"
+  uuid = "b81509bb-47b0-4542-b262-3488175f2f2c"
+  category = "os"
+  deploymentService = ""
+  description = "This instance is a security hardened to the CIS Server Level1 benchmark"
+  environmentPrefix = "CIS-SVR-L1"
+}
