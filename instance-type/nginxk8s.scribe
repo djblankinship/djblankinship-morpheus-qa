@@ -1,9 +1,0 @@
-resource "instance-type" "nginxk8s" {
-  code = "nginxk8s"
-  name = "Nginx K8s"
-  uuid = "5e997c38-967c-45a4-92d3-6edf0b5d2b16"
-  category = "web"
-  deploymentService = ""
-  environmentPrefix = "NGINX_K8S"
-  layouts = [ { code = "855c4b01-6a75-4813-a8ad-6cf104386b5e" } ]
-}
