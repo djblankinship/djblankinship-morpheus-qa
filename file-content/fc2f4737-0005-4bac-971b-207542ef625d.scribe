@@ -1,9 +1,0 @@
-resource "file-content" "fc2f4737-0005-4bac-971b-207542ef625d" {
-  uuid = "fc2f4737-0005-4bac-971b-207542ef625d"
-  contentPath = "branchMaster.txt"
-  contentRef = ""
-  dateCreated = "2023-05-04T15:05:20.000Z"
-  lastUpdated = "2023-05-04T15:07:40.000Z"
-  repository = { name = "terraform-samples" }
-  sourceType = "repository"
-}
