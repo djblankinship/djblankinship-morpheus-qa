@@ -1,0 +1,9 @@
+resource "task" "z REMOTE - RESOURCE" {
+  name = "z REMOTE - RESOURCE"
+  uuid = "169c35cb-4232-4e3c-83f5-57cfb0845867"
+  dateCreated = "2019-06-27T00:16:33.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-06-27T00:16:33.000Z"
+  options = [ { optionType = { code = "shell.sudo" }, value = "on" } ]
+  taskType = { code = "script" }
+}
