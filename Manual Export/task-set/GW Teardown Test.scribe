@@ -1,0 +1,8 @@
+resource "task-set" "GW Teardown Test" {
+  name = "GW Teardown Test"
+  uuid = "778c58b2-6c5f-47a3-b534-d4944e7bda81"
+  dateCreated = "2023-06-19T08:48:50.000Z"
+  description = "Testing scaledown and teardown tasks"
+  lastUpdated = "2023-06-19T09:46:45.000Z"
+  taskSetTasks = [ { uuid = "3e89fe09-3849-432d-957b-61385b6fc4b0" } ]
+}
