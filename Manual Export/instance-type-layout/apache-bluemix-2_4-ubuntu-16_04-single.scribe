@@ -1,0 +1,16 @@
+resource "instance-type-layout" "apache-bluemix-2.4-ubuntu-16.04-single" {
+  code = "apache-bluemix-2.4-ubuntu-16.04-single"
+  name = "IBM Cloud Apache"
+  uuid = "086cd74d-a0da-4906-8c7d-7aa5b7a61745"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  enabled = false
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  portCount = 2
+  provisionType = { code = "bluemix" }
+  serverType = "vm"
+  sortOrder = 10
+  workloads = [ { code = "apache-bluemix-2.4-ubuntu-16.04-set" } ]
+}
