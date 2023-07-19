@@ -1,0 +1,10 @@
+resource "resource-spec-template" "e4a8030b-205b-479a-8829-d87a99e34609" {
+  name = "db-arm-0916"
+  uuid = "e4a8030b-205b-479a-8829-d87a99e34609"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-09-16T20:41:01.000Z"
+  lastUpdated = "2022-11-03T19:32:05.000Z"
+  template = { uuid = "57dcd24b-b51a-45ee-ab2a-b3dbbfc572e3" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
