@@ -1,0 +1,11 @@
+resource "container-type-port" "3538c129-13b9-4fb5-a123-56d998153af6" {
+  name = "SSH"
+  uuid = "3538c129-13b9-4fb5-a123-56d998153af6"
+  export = true
+  exportName = "SSH"
+  externalPort = 22
+  internalPort = 22
+  loadBalance = true
+  loadBalanceProtocol = "null"
+  visible = true
+}
