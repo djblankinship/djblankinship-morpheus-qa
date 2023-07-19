@@ -1,0 +1,9 @@
+resource "option-type" "sizeofdrives" {
+  code = "sizeofdrives"
+  name = "Size of Drives"
+  uuid = "77c3a877-8d1c-4b15-a250-67303ec11059"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Size of Drives"
+  fieldName = "sizeofdrives"
+  type = "number"
+}
