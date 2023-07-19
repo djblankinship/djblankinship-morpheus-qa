@@ -5,4 +5,5 @@ resource "instance-type" "win2019.nvram" {
   category = "os"
   deploymentService = ""
   environmentPrefix = "JCS-WIN2019-NVRAM"
+  layouts = [ { code = "59f52ff6-0be9-469c-aee0-a055d5166fec" } ]
 }
