@@ -1,0 +1,19 @@
+resource "task" "acTestDate" {
+  code = "acTestDate"
+  name = "AC Test Date"
+  uuid = "98eb3b3f-4e4a-4cf8-834c-21d21dcb4c39"
+  allowCustomConfig = true
+  dateCreated = "2023-06-05T14:44:08.000Z"
+  executeTarget = "resource"
+  labels = [ "AdamC" ]
+  lastUpdated = "2023-07-19T15:19:55.000Z"
+  options = [
+    {
+      content = { uuid = "f372f0f5-c15b-4554-8f96-281e5e383e71" }
+      optionType = { code = "script" }
+    }
+  ]
+  retryable = true
+  taskType = { code = "script" }
+  visibility = "public"
+}
