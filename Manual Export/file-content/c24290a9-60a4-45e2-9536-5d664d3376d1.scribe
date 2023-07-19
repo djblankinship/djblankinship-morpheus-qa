@@ -1,0 +1,6 @@
+resource "file-content" "c24290a9-60a4-45e2-9536-5d664d3376d1" {
+  uuid = "c24290a9-60a4-45e2-9536-5d664d3376d1"
+  content = "sleep 3600"
+  dateCreated = "2021-06-01T19:40:56.000Z"
+  lastUpdated = "2021-06-02T02:32:34.000Z"
+}
