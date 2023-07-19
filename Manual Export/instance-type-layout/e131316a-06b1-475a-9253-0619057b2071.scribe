@@ -1,0 +1,10 @@
+resource "instance-type-layout" "e131316a-06b1-475a-9253-0619057b2071" {
+  code = "e131316a-06b1-475a-9253-0619057b2071"
+  name = "Cron Job"
+  uuid = "f4e67198-9115-4062-9875-ecd44739c1f0"
+  instanceType = { code = "kubespec" }
+  instanceVersion = "cronjob"
+  memoryRequirement = 0
+  provisionType = { code = "kubernetes" }
+  workloads = [ { code = "4fab251b-f0cf-4143-94bb-44d79df81186" } ]
+}

@@ -1,0 +1,8 @@
+resource "instance-type" "kubespec" {
+  code = "kubespec"
+  name = "Kube Specs"
+  uuid = "2863b8fd-79f3-4cb5-8fc1-67eb3df216f8"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "KUBE_SPECS"
+}
