@@ -1,0 +1,12 @@
+resource "option-type" "520a17eb-a2fc-402d-aa4e-6c8d099041f2" {
+  name = "Morpheus Groups"
+  uuid = "520a17eb-a2fc-402d-aa4e-6c8d099041f2"
+  fieldContext = "config.customOptions"
+  fieldGetName = "mogroups"
+  fieldLabel = "morpheus groups"
+  fieldName = "mogroups"
+  fieldSetName = "mogroups"
+  optionList = { name = "Morpheus Groups" }
+  optionSource = "list"
+  type = "select"
+}
