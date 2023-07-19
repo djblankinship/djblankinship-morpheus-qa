@@ -1,9 +1,0 @@
-resource "resource-spec-template" "a92dd3f3-9dd2-4042-8704-c1433b0450d8" {
-  name = "CF RDS Replica"
-  uuid = "a92dd3f3-9dd2-4042-8704-c1433b0450d8"
-  dateCreated = "2019-10-25T22:27:36.000Z"
-  lastUpdated = "2019-10-25T22:27:36.000Z"
-  template = { uuid = "c3f4fb35-a886-4832-812d-af6709f7f9f3" }
-  templateType = "CloudFormation Template"
-  type = { code = "cloudFormation" }
-}
