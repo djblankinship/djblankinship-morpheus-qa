@@ -1,0 +1,15 @@
+resource "option-type" "parsedNetwork" {
+  code = "parsedNetwork"
+  name = "Parsed Network"
+  uuid = "637be305-d65a-47dc-ad57-ba304584e922"
+  dependsOnCode = "parsedCloud"
+  displayOrder = 2
+  fieldContext = "config.customOptions"
+  fieldGetName = "parsedNetwork"
+  fieldLabel = "Network"
+  fieldName = "parsedNetwork"
+  fieldSetName = "parsedNetwork"
+  optionList = { name = "Parsed Networks" }
+  optionSource = "list"
+  type = "select"
+}
