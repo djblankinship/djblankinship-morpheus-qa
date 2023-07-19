@@ -1,0 +1,15 @@
+resource "task" "Refresh Google Cloud Types" {
+  name = "Refresh Google Cloud Types"
+  uuid = "b2469e06-9d80-449b-99c7-c75b6d4ae509"
+  dateCreated = "2023-05-17T17:13:14.000Z"
+  executeTarget = "local"
+  labels = [ "utility" ]
+  lastUpdated = "2023-05-17T17:13:15.000Z"
+  options = [
+    {
+      content = { uuid = "9c97d80f-b4eb-42e2-8a1f-ddf6abda4384" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}

@@ -1,0 +1,10 @@
+resource "file-content" "9c97d80f-b4eb-42e2-8a1f-ddf6abda4384" {
+  uuid = "9c97d80f-b4eb-42e2-8a1f-ddf6abda4384"
+  content = <<EOF
+com.morpheus.ComputeServer.withNewSession {
+  grails.util.Holders.applicationContext['googleComputeService'].refreshDailyZoneType()
+}
+EOF
+  dateCreated = "2023-05-17T17:13:15.000Z"
+  lastUpdated = "2023-05-17T17:13:15.000Z"
+}
