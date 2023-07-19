@@ -1,16 +1,15 @@
 resource "option-type" "morphpool" {
   code = "morphpool"
-  name = "API Resource Pools"
-  uuid = "93f5b266-f59f-4fc0-a550-752fcf06b9ac"
+  name = "BungePools"
+  uuid = "5bc8cbde-15ef-4bae-9554-98ce422f3b44"
   dependsOnCode = "morphcloud"
-  displayOrder = 3
   fieldContext = "config.customOptions"
   fieldGetName = "morphpool"
-  fieldLabel = "Resource Pool"
+  fieldLabel = "Pool"
   fieldName = "morphpool"
   fieldSetName = "morphpool"
-  labels = [ "auto", "keep" ]
   optionList = { name = "API Resource Pool" }
   optionSource = "list"
+  required = true
   type = "select"
 }
