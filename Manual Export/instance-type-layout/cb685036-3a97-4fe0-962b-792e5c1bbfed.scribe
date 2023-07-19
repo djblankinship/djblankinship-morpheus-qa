@@ -1,0 +1,11 @@
+resource "instance-type-layout" "cb685036-3a97-4fe0-962b-792e5c1bbfed" {
+  code = "cb685036-3a97-4fe0-962b-792e5c1bbfed"
+  name = "A Git TF"
+  uuid = "180abf4f-b234-4ac5-98e2-99b6d8fa4ab8"
+  config = "{\"tfvarSecret\":\"\"}"
+  instanceType = { code = "specs" }
+  instanceVersion = "gittf"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "c35aafcd-212d-4b45-8de3-918177ff567e" } ]
+}
