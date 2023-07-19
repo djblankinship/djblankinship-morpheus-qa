@@ -1,0 +1,12 @@
+resource "option-type" "vsRestServersIn" {
+  code = "vsRestServersIn"
+  name = "vsRestServers-In"
+  uuid = "983018fa-7def-4806-bde7-1c3515a83547"
+  fieldContext = "config.customOptions"
+  fieldLabel = "vsRestServers"
+  fieldName = "vsRestServersIn"
+  optionList = { name = "vsRestServers" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
