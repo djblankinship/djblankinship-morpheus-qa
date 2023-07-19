@@ -1,0 +1,16 @@
+resource "resource-spec-template" "e5dc8fd0-91d1-496f-9969-6ae7eea12288" {
+  name = "CF LoadBalancer"
+  uuid = "e5dc8fd0-91d1-496f-9969-6ae7eea12288"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+  }
+  dateCreated = "2019-10-25T22:26:42.000Z"
+  lastUpdated = "2020-02-14T19:45:15.000Z"
+  template = { uuid = "5a09acea-5417-4e85-ab75-6c36d3332abd" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
