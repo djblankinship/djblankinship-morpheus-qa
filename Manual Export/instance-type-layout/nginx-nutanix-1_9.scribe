@@ -1,0 +1,13 @@
+resource "instance-type-layout" "nginx-nutanix-1.9" {
+  code = "nginx-nutanix-1.9"
+  name = "Nutanix NGINX"
+  uuid = "6b679cc6-0e3b-4a14-8370-9ba9f38c4fa3"
+  actions = [ { code = "nginx-1.9-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  instanceType = { code = "nginx" }
+  instanceVersion = "1.9"
+  portCount = 2
+  provisionType = { code = "nutanix" }
+  sortOrder = 10
+  workloads = [ { code = "nginx-nutanix-1.9-set" } ]
+}
