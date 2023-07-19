@@ -1,0 +1,13 @@
+resource "instance-type-layout" "16f8cb8d-e798-405e-bfd8-81615c525f9f" {
+  code = "16f8cb8d-e798-405e-bfd8-81615c525f9f"
+  name = "Custom KVM"
+  uuid = "75513af6-5bfe-46b5-988c-a2e830cf4e1b"
+  actions = [ { code = "generic-add-node" } ]
+  description = "custom image"
+  hasAutoScale = true
+  instanceType = { code = "custom-img" }
+  instanceVersion = "qcow2"
+  memoryRequirement = 0
+  provisionType = { code = "kvm" }
+  workloads = [ { code = "c8b3983d-1c81-47c4-a34b-0dfc8dfda38d" } ]
+}
