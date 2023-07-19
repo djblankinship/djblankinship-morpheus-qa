@@ -1,0 +1,17 @@
+resource "instance-type-layout" "07c83677-618c-4130-b116-8ba07c5d74a1" {
+  code = "07c83677-618c-4130-b116-8ba07c5d74a1"
+  name = "vs67541-LO"
+  uuid = "0c15911f-994d-4045-8c4f-d22f0718ab2d"
+  instanceType = { code = "fn67541" }
+  instanceVersion = "1.0"
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "vsGroups" },
+    { code = "vsClouds" },
+    { code = "vsResourcepools" },
+    { code = "vsNetworks" },
+    { code = "vsInstanceNetwork" }
+  ]
+  provisionType = { code = "azure" }
+  workloads = [ { code = "2604629f-86cf-4b7d-9f47-a456311c2f73" } ]
+}
