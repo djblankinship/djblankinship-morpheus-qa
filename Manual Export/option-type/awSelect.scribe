@@ -1,0 +1,12 @@
+resource "option-type" "awSelect" {
+  code = "awSelect"
+  name = "aw-select"
+  uuid = "6a0db8ee-9773-46c0-8224-0cd73dc74f43"
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "yes/no"
+  fieldName = "awSelect"
+  optionList = { name = "aw-yes-no" }
+  optionSource = "list"
+  type = "select"
+}
