@@ -1,0 +1,8 @@
+resource "account-integration" "Test Local DE" {
+  name = "Test Local DE"
+  uuid = "be25195a-2495-44fe-8c20-93c6d0950d68"
+  category = "cm-server"
+  integrationType = { code = "git" }
+  serviceUrl = "git@github.com:davydotcom/test-local.git"
+  type = "git"
+}
