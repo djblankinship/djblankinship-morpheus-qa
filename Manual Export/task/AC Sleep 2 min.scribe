@@ -1,0 +1,14 @@
+resource "task" "AC Sleep 2 min" {
+  name = "AC Sleep 2 min"
+  uuid = "0853c00c-99b7-49b7-b785-ff4dcc926733"
+  dateCreated = "2023-07-17T17:36:25.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-07-17T18:01:25.000Z"
+  options = [
+    {
+      content = { uuid = "72fec3db-7954-409d-b1a8-a46642f97ecb" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
