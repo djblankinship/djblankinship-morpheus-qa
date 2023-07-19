@@ -1,0 +1,10 @@
+resource "resource-spec-template" "b7e34770-3e9a-4624-a902-7c9fa5574784" {
+  name = "Kube Ingress v1 beta1"
+  uuid = "b7e34770-3e9a-4624-a902-7c9fa5574784"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-02-09T19:14:00.000Z"
+  lastUpdated = "2023-02-09T19:14:00.000Z"
+  template = { uuid = "519ff3ee-9793-4c22-9473-f24d9c0d302d" }
+  templateType = "Kubernetes Spec"
+  type = { code = "kubernetes" }
+}
