@@ -1,0 +1,10 @@
+resource "instance-type-layout" "34ee7b82-574a-43a4-948d-96684c296445" {
+  code = "34ee7b82-574a-43a4-948d-96684c296445"
+  name = "Destroy"
+  uuid = "e06b916c-80ec-467a-9cb4-19c9b82706d0"
+  instanceType = { code = "specs" }
+  instanceVersion = "destroy"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "7968ef63-a271-4d8f-ad80-cc14dfc0bc8e" } ]
+}
