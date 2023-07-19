@@ -1,0 +1,10 @@
+resource "instance-type" "ch-win-7-ent" {
+  code = "ch-win-7-ent"
+  name = "CH Win 7 Ent"
+  uuid = "ab1b512c-5cfa-4947-87e4-51a9d1474fff"
+  category = "os"
+  deploymentService = "defaultDeployService"
+  environmentPrefix = "CH_WIN_7_ENT"
+  hasDeployment = true
+  hasSettings = true
+}
