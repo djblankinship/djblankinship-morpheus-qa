@@ -1,0 +1,23 @@
+resource "container-type" "nutanix-prism-centos-8.4" {
+  code = "nutanix-prism-centos-8.4"
+  name = "CentOS 8.4"
+  uuid = "0c463d29-65ae-4ec6-8588-ec6c8c2806a7"
+  category = "centos"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "nutanixPrismSnapshot"
+  checkTypeCode = "containerCheck"
+  commEnabled = true
+  commPort = 22
+  commType = "SSH"
+  containerLogs = [ { uuid = "b8eaced3-e9c5-486e-9dd1-4c0a52ad6d8e" } ]
+  containerVersion = "8.4"
+  logTypeCode = "centos"
+  mountLogs = "/var/log"
+  providerType = "nutanix-prism"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  serverType = "vm"
+  shortName = "centos"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "nutanix.prism.vsphere.image.morpheus.centos.8.4" }
+}

@@ -1,0 +1,13 @@
+resource "instance-type-layout" "nutanix-prism-centos-8.4-single" {
+  code = "nutanix-prism-centos-8.4-single"
+  name = "Nutanix Prism Central VM"
+  uuid = "7d8d3ecc-59b3-4c19-abc5-2a9c8403dd60"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single vm"
+  instanceType = { code = "centos" }
+  instanceVersion = "8.4"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  serverType = "vm"
+  sortOrder = 30
+  workloads = [ { code = "nutanix-prism-centos-8.4-set" } ]
+}
