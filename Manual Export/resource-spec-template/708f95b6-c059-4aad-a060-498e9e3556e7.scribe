@@ -1,0 +1,10 @@
+resource "resource-spec-template" "708f95b6-c059-4aad-a060-498e9e3556e7" {
+  name = "Terraform VMware"
+  uuid = "708f95b6-c059-4aad-a060-498e9e3556e7"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-10-10T16:03:45.000Z"
+  lastUpdated = "2022-10-10T16:03:45.000Z"
+  template = { uuid = "efa12f7a-70f4-4acc-8d99-142b19fa0017" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
