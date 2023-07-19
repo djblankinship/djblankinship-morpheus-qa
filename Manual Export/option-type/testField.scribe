@@ -1,0 +1,12 @@
+resource "option-type" "testField" {
+  code = "testField"
+  name = "testField"
+  uuid = "85210bc4-70f8-4891-b39e-c2102482a2d1"
+  defaultValue = "Deepti Gaharwar"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "testField"
+  fieldLabel = "Test Field"
+  fieldName = "testField"
+  fieldSetName = "testField"
+}
