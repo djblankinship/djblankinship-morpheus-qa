@@ -1,0 +1,8 @@
+resource "instance-type" "tftest" {
+  code = "tftest"
+  name = "tf test"
+  uuid = "ded012c3-d37f-4bd9-a842-531cb8acdc7c"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "CF_TEST"
+}
