@@ -1,0 +1,14 @@
+resource "option-type" "targetPool" {
+  code = "targetPool"
+  name = "Target Pool"
+  uuid = "f340408e-586d-4562-89ec-62f5485b55af"
+  dependsOnCode = "targetCloud"
+  displayOrder = 2
+  fieldContext = "config.customOptions"
+  fieldLabel = "Pool"
+  fieldName = "targetPool"
+  optionList = { name = "Target Pools" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
