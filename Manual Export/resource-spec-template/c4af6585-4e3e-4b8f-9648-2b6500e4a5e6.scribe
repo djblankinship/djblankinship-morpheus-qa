@@ -1,0 +1,10 @@
+resource "resource-spec-template" "c4af6585-4e3e-4b8f-9648-2b6500e4a5e6" {
+  name = "api-tf-test"
+  uuid = "c4af6585-4e3e-4b8f-9648-2b6500e4a5e6"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-09-12T22:46:52.000Z"
+  lastUpdated = "2022-09-28T00:06:32.000Z"
+  template = { uuid = "5ac21652-bfb7-4d7e-9273-e8d57fd635a7" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
