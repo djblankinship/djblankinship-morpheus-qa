@@ -1,0 +1,5 @@
+resource "task-set-task" "23f61820-16c4-417e-95bc-82491ed00397" {
+  uuid = "23f61820-16c4-417e-95bc-82491ed00397"
+  task = { name = "Scan Sda2 and restart cloud-init" }
+  taskPhase = "reconfigure"
+}
