@@ -1,8 +1,0 @@
-resource "container-type-port" "listener" {
-  name = "listener"
-  export = true
-  exportName = "LISTENER"
-  externalPort = 8200
-  internalPort = 8200
-  visible = true
-}
