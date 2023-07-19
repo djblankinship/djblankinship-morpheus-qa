@@ -1,0 +1,15 @@
+resource "task" "Setup Cypher Server" {
+  name = "Setup Cypher Server"
+  uuid = "f3b79be8-e09a-4e7e-81c1-b101acff65ef"
+  dateCreated = "2022-01-31T04:50:34.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-01-31T04:51:46.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "d6265386-f4fd-4e30-80cf-601ed6fcc709" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
