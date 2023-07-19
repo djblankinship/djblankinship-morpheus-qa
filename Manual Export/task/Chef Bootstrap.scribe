@@ -1,0 +1,15 @@
+resource "task" "Chef Bootstrap" {
+  name = "Chef Bootstrap"
+  uuid = "74b54a17-2e87-4c66-9fe9-838c07a8a5c3"
+  executeTarget = "resource"
+  lastUpdated = "2021-10-12T12:40:46.000Z"
+  options = [
+    {
+      optionType = { code = "chefServerId" }
+      value = { name = "Labs QA Chef" }
+    },
+    { optionType = { code = "chefEnv" }, value = "_default" },
+    { optionType = { code = "chefAttributes" }, value = "{}" }
+  ]
+  taskType = { code = "chefTask" }
+}
