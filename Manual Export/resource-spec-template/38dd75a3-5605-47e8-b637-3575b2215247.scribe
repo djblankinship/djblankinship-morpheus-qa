@@ -1,0 +1,9 @@
+resource "resource-spec-template" "38dd75a3-5605-47e8-b637-3575b2215247" {
+  name = "CF Redis"
+  uuid = "38dd75a3-5605-47e8-b637-3575b2215247"
+  dateCreated = "2019-10-25T22:25:50.000Z"
+  lastUpdated = "2019-10-25T22:25:50.000Z"
+  template = { uuid = "52906eb2-d8aa-4f81-9df8-45239751c3a3" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
