@@ -1,0 +1,9 @@
+resource "instance-type" "centweb" {
+  code = "centweb"
+  name = "Centos Webserver"
+  uuid = "d39ce9c6-39be-4dc1-8951-a698b4e7759a"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "CENTWEB"
+  visibility = "public"
+}
