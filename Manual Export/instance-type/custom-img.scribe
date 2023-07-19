@@ -1,0 +1,13 @@
+resource "instance-type" "custom-img" {
+  code = "custom-img"
+  name = "Custom Images"
+  uuid = "48f2aa18-c289-4b74-a05d-2f1e851abf88"
+  category = "web"
+  deploymentService = "defaultDeployService"
+  description = "DO NOT MODIFY"
+  environmentPrefix = "CUSTOM"
+  hasAutoScale = true
+  hasDeployment = true
+  labels = [ "auto", "keep" ]
+  visibility = "public"
+}
