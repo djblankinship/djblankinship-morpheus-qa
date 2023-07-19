@@ -1,0 +1,8 @@
+resource "account-integration" "NC Galaxy Jenkins Test" {
+  name = "NC Galaxy Jenkins Test"
+  uuid = "a424d734-6a6a-4893-a3f1-e5df27997d7f"
+  category = "cm-server"
+  integrationType = { code = "ansible" }
+  serviceUrl = "https://github.com/tryfan/ansible-jenkins-install"
+  type = "ansible"
+}
