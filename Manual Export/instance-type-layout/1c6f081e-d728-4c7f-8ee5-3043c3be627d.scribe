@@ -1,0 +1,10 @@
+resource "instance-type-layout" "1c6f081e-d728-4c7f-8ee5-3043c3be627d" {
+  code = "1c6f081e-d728-4c7f-8ee5-3043c3be627d"
+  name = "CF Memcached"
+  uuid = "cea39b9e-f530-44b8-a554-ec86462341f8"
+  instanceType = { code = "cfspec" }
+  instanceVersion = "memcached"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [ { uuid = "bc149bb0-5376-4b53-b94e-10bfee5b15f7" } ]
+}
