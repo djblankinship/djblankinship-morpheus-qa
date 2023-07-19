@@ -1,0 +1,16 @@
+resource "resource-spec-template" "5c654b5c-6d13-4808-acea-3bf94906878c" {
+  name = "CF Sample: YAML: Spec Template"
+  uuid = "5c654b5c-6d13-4808-acea-3bf94906878c"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+  }
+  dateCreated = "2021-02-04T00:35:59.000Z"
+  lastUpdated = "2021-02-04T00:35:59.000Z"
+  template = { uuid = "e66ffba6-8e1c-407e-9ac9-fa89f0771966" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
