@@ -1,0 +1,13 @@
+resource "instance-type-layout" "82925e8b-0395-46b9-8c43-b5cf28ce34be" {
+  code = "82925e8b-0395-46b9-8c43-b5cf28ce34be"
+  name = "Custom VCD"
+  uuid = "8c9ddeb8-7ac4-404f-977c-53e373541af7"
+  actions = [ { code = "generic-add-node" } ]
+  description = "custom image"
+  hasAutoScale = true
+  instanceType = { code = "custom-img" }
+  instanceVersion = "vmdk"
+  memoryRequirement = 0
+  provisionType = { code = "vcd" }
+  workloads = [ { code = "c543100d-be75-464f-9620-55a9e85a9f67" } ]
+}
