@@ -1,0 +1,17 @@
+resource "option-type" "GBU" {
+  code = "GBU"
+  name = "CS NA GBU - All Apps"
+  uuid = "2381fccd-a3df-4c78-883a-925fedc2987e"
+  defaultValue = "z"
+  dependsOnCode = "App_Name"
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Global Business Unit"
+  fieldName = "GBU"
+  optionList = { name = "CS NA GBU - All Apps" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
