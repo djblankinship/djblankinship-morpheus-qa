@@ -1,0 +1,15 @@
+resource "instance-type-layout" "nutanix-prism-ubuntu-22.04-single" {
+  code = "nutanix-prism-ubuntu-22.04-single"
+  name = "Nutanix Prism Central VM"
+  uuid = "34ef8b1b-8176-4e8c-a1cc-954ef7157e0f"
+  actions = [ { code = "ubuntu-add-node" } ]
+  description = "This will provision a single vm"
+  hasAutoScale = true
+  instanceType = { code = "ubuntu" }
+  instanceVersion = "22.04"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  serverType = "vm"
+  sortOrder = 40
+  supportsConvertToManaged = true
+  workloads = [ { code = "nutanix-prism-ubuntu-22.04-set" } ]
+}
