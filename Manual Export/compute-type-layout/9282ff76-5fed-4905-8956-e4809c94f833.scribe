@@ -1,0 +1,19 @@
+resource "compute-type-layout" "9282ff76-5fed-4905-8956-e4809c94f833" {
+  code = "9282ff76-5fed-4905-8956-e4809c94f833"
+  name = "Amazon Custom Ubuntu 22"
+  computeServers = [
+    {
+      code = "9282ff76-5fed-4905-8956-e4809c94f833-62a4dd3f-ece2-4c4f-a512-db48dba939a6"
+    }
+  ]
+  computeVersion = "Ubuntu 22"
+  dateCreated = "2022-05-05T17:17:52.000Z"
+  description = "do not modify"
+  groupType = { code = "docker-cluster" }
+  labels = [ "auto", "keep" ]
+  lastUpdated = "2022-10-22T18:47:03.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "amazon" }
+  sortOrder = 999
+  type = { code = "amazonLinux" }
+}
