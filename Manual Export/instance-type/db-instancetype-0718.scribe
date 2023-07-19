@@ -1,0 +1,9 @@
+resource "instance-type" "db-instancetype-0718" {
+  code = "db-instancetype-0718"
+  name = "db-instancetype-0718"
+  uuid = "4ac610cd-2b79-4dd3-8bb2-b82580497d8d"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "DB-INSTANCETYPE-0718"
+  visibility = "public"
+}
