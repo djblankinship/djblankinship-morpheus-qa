@@ -1,0 +1,15 @@
+resource "container-type" "ce42d83b-ad6c-4303-8ac7-3c8b213c4444" {
+  code = "ce42d83b-ad6c-4303-8ac7-3c8b213c4444"
+  name = "nc-cent7-gen2-v1"
+  uuid = "0cd8d729-8cfb-4d06-9269-430b7ec4e99d"
+  containerVersion = "v1-gen2"
+  entryPoint = ""
+  logTypeCode = "hyperv"
+  provisionType = { code = "scvmm" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "nccent7g2"
+  showServerLogs = true
+  statTypeCode = "hyperv"
+  virtualImage = { uuid = "39a75d25-57dc-43f6-8d55-c53d2d0083aa" }
+}
