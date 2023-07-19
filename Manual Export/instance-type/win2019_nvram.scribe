@@ -1,0 +1,8 @@
+resource "instance-type" "win2019.nvram" {
+  code = "win2019.nvram"
+  name = "JCS-Win2019-NVRAM"
+  uuid = "c175117c-f696-4bab-8436-fef580c30c77"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "JCS-WIN2019-NVRAM"
+}
