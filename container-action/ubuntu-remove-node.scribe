@@ -1,7 +1,0 @@
-resource "container-action" "ubuntu-remove-node" {
-  code = "ubuntu-remove-node"
-  name = "Remove Node"
-  uuid = "56dd0fce-934c-4a06-9740-f58be14abd4b"
-  actionCode = "removeNode"
-  description = "This will remove the ubuntu node"
-}
