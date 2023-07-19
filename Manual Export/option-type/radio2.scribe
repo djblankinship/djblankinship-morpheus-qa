@@ -1,0 +1,20 @@
+resource "option-type" "radio2" {
+  code = "radio2"
+  name = "Radio 2"
+  uuid = "ca868ac6-bd6f-4ff0-bc50-bfdd998b6e69"
+  defaultValue = "2"
+  description = "radio #2"
+  displayOrder = 1
+  displayValueOnDetails = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "radio2"
+  fieldLabel = "Radio 2"
+  fieldName = "radio2"
+  fieldSetName = "radio2"
+  helpBlock = "radio input 2"
+  optionList = { name = "manual json" }
+  optionSource = "list"
+  required = true
+  type = "radio"
+}
