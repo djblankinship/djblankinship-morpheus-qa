@@ -1,0 +1,15 @@
+resource "task" "v 1.0" {
+  name = "v 1.0"
+  uuid = "dfd1c620-43f4-4363-96a1-3212bfe15513"
+  dateCreated = "2021-03-24T22:55:09.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-03-24T22:55:09.000Z"
+  options = [
+    {
+      content = { uuid = "4838b2da-384c-471c-88fa-bc343173511c" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
