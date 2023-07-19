@@ -1,0 +1,10 @@
+resource "file-content" "bba75caf-b584-442e-9706-c31b3e9d6264" {
+  uuid = "bba75caf-b584-442e-9706-c31b3e9d6264"
+  content = <<EOF
+#!/bin/bash
+
+echo "<%= customOptions.vsRestInstances %>"
+EOF
+  dateCreated = "2023-06-26T14:11:34.000Z"
+  lastUpdated = "2023-06-26T14:11:34.000Z"
+}
