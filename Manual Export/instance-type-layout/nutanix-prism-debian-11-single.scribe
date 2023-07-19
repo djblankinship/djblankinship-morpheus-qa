@@ -1,0 +1,15 @@
+resource "instance-type-layout" "nutanix-prism-debian-11-single" {
+  code = "nutanix-prism-debian-11-single"
+  name = "Nutanix Prism Central VM"
+  uuid = "3db05059-95ae-464b-8169-40fb77c23a8a"
+  actions = [ { code = "generic-add-node" } ]
+  description = "This will provision a single vm"
+  hasAutoScale = true
+  instanceType = { code = "debian" }
+  instanceVersion = "11"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  serverType = "vm"
+  sortOrder = 20
+  supportsConvertToManaged = true
+  workloads = [ { code = "nutanix-prism-debian-11-set" } ]
+}

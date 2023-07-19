@@ -1,0 +1,21 @@
+resource "container-type" "nutanix-prism-debian-11" {
+  code = "nutanix-prism-debian-11"
+  name = "Debian 11"
+  uuid = "a7176f91-1d52-43b2-9735-c84a5c490f38"
+  category = "debian"
+  actions = [ { code = "generic-remove-node" } ]
+  backupType = "nutanixPrismSnapshot"
+  checkTypeCode = "containerCheck"
+  cloneType = "debian"
+  containerPorts = [ { code = "debian.22" } ]
+  containerVersion = "11"
+  logTypeCode = "debian"
+  mountLogs = "/var/log"
+  providerType = "nutanix-prism"
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  serverType = "vm"
+  shortName = "debian"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "nutanix.prism.image.morpheus.debian.11.20230308" }
+}
