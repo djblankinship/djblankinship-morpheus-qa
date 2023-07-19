@@ -1,0 +1,15 @@
+resource "task" "auto results 0712020143552" {
+  name = "auto results 0712020143552"
+  uuid = "42a66cd4-7fbb-4266-b2a5-41d983600773"
+  dateCreated = "2023-07-12T09:06:49.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-07-12T09:06:49.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "04e5c993-2485-4c0a-8d40-6b17531a125a" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
