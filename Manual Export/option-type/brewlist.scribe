@@ -1,0 +1,13 @@
+resource "option-type" "brewlist" {
+  code = "brewlist"
+  name = "Brewery List - By City"
+  uuid = "654aad09-1486-42e2-a97e-826546fa5551"
+  dependsOnCode = "brewcity"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Brewery List - By City"
+  fieldName = "brewlist"
+  optionList = { name = "Breweries - Search by City" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
