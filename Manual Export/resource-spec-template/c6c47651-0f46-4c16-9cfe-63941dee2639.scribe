@@ -1,0 +1,16 @@
+resource "resource-spec-template" "c6c47651-0f46-4c16-9cfe-63941dee2639" {
+  name = "CF Linux Hard-Coded Name Tag"
+  uuid = "c6c47651-0f46-4c16-9cfe-63941dee2639"
+  config = {
+    cloudformation = {
+      _CAPABILITY_AUTO_EXPAND = ""
+      _CAPABILITY_NAMED_IAM = ""
+      _IAM = ""
+    }
+  }
+  dateCreated = "2021-05-24T15:02:52.000Z"
+  lastUpdated = "2021-05-24T15:02:52.000Z"
+  template = { uuid = "22267681-0284-4a78-a5a3-ccb6e497b438" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
