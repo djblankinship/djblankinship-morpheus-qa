@@ -1,0 +1,8 @@
+resource "account-integration" "Labs Puppet" {
+  name = "Labs Puppet"
+  uuid = "4e5cd456-0a57-4870-b88b-98af7f4e2c72"
+  category = "automation"
+  integrationType = { code = "puppet" }
+  serviceUrl = "labs-puppetmaster2.prod.dc2.den.morpheusdata.com"
+  type = "puppet"
+}
