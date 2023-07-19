@@ -1,0 +1,16 @@
+resource "option-type" "c68a2e86-3848-4a11-83c3-8e7e0cefbc3b" {
+  name = "config.customOptions.select2"
+  uuid = "c68a2e86-3848-4a11-83c3-8e7e0cefbc3b"
+  description = "sample select field"
+  displayOrder = 19
+  fieldClass = "input-sm"
+  fieldContext = "config.customOptions"
+  fieldGetName = "select2"
+  fieldLabel = "Select 2"
+  fieldName = "select2"
+  fieldSetName = "select2"
+  optionList = { name = "manual json" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}

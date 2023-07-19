@@ -1,0 +1,14 @@
+resource "option-type" "adlist" {
+  code = "adlist"
+  name = "config.customOptions.ldap2"
+  uuid = "37554b35-8aa3-4e0e-aea2-d04fca34a929"
+  displayOrder = 11
+  fieldContext = "config.customOptions"
+  fieldGetName = "adlist"
+  fieldLabel = "adlist"
+  fieldName = "adlist"
+  fieldSetName = "adlist"
+  optionList = { name = "ActiveDirectory User List" }
+  optionSource = "list"
+  type = "select"
+}
