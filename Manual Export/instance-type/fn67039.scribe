@@ -1,0 +1,9 @@
+resource "instance-type" "fn67039" {
+  code = "fn67039"
+  name = "case 67039"
+  uuid = "8980f489-c08e-44b4-8678-bd64cfdaeee8"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "67039"
+  visibility = "public"
+}
