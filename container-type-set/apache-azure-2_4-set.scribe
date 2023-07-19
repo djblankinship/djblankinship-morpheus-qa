@@ -1,7 +1,0 @@
-resource "container-type-set" "apache-azure-2.4-set" {
-  code = "apache-azure-2.4-set"
-  uuid = "bd69b18d-6925-4dea-b2a7-bb6cfbdc1e1e"
-  category = "apache"
-  dynamicCount = true
-  workloadType = { code = "apache-azure-2.4" }
-}
