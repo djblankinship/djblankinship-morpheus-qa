@@ -1,0 +1,15 @@
+resource "task" "vRO Verify" {
+  name = "vRO Verify"
+  uuid = "038ebfc0-a26e-41ce-a6dc-4c7a32d794a1"
+  dateCreated = "2019-09-12T18:57:35.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-06-14T00:16:23.000Z"
+  options = [
+    {
+      content = { uuid = "25f0f423-946a-4d5b-935d-cb48fb238f5f" }
+      optionType = { code = "script" }
+      value = "echo \"results.vro: <%=results.vro.find{it.name == 'outputText'}?.value?.string?.value%>\""
+    }
+  ]
+  taskType = { code = "script" }
+}

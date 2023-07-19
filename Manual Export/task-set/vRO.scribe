@@ -1,0 +1,11 @@
+resource "task-set" "vRO" {
+  name = "vRO"
+  uuid = "3226a39e-e9ec-4b6f-9afc-720c238d73c0"
+  dateCreated = "2019-09-12T18:59:47.000Z"
+  description = "temp"
+  lastUpdated = "2023-06-14T00:09:31.000Z"
+  taskSetTasks = [
+    { uuid = "3f67f424-c266-4d5f-849e-3944d989e194" },
+    { uuid = "4617a20c-864d-48f1-9e4c-be009d481aa9" }
+  ]
+}

@@ -1,0 +1,21 @@
+resource "task" "vro" {
+  code = "vro"
+  name = "vRO Task"
+  uuid = "86ac3b8d-6ffe-4c65-91f8-897d06f36013"
+  dateCreated = "2019-09-12T18:39:55.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-06-14T00:15:58.000Z"
+  options = [
+    {
+      optionType = { code = "vroIntegrationId" }
+      value = { name = "Labs vRO" }
+    },
+    { optionType = { code = "vroWorkflow" }, value = "10630953" },
+    {
+      optionType = { code = "vroBody" }
+      value = "{\"parameters\":[{\"name\":\"hostNameOrIP\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"10.30.21.120\"}}},{\"name\":\"port\",\"type\":\"number\",\"value\":{\"number\":{\"value\":22}}},{\"name\":\"cmd\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"echo \\\"Hello <%=instance.name%>\\\"\"}}},{\"name\":\"encoding\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"\"}}},{\"name\":\"username\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"bertram\"}}},{\"name\":\"passwordAuthentication\",\"type\":\"boolean\",\"value\":{\"boolean\":{\"value\":true}}},{\"name\":\"password\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"bertram4admin\"}}},{\"name\":\"path\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"/var/lib/vco/app-server/conf/vco_key\"}}},{\"name\":\"passphrase\",\"type\":\"string\",\"value\":{\"string\":{\"value\":\"\"}}}],\"profilerOptions\":{\"enabled\":true,\"debuggerEnabled\":false}}"
+    }
+  ]
+  resultType = "json"
+  taskType = { code = "vro" }
+}
