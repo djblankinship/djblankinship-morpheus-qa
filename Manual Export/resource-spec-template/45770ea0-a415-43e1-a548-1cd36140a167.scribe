@@ -1,0 +1,10 @@
+resource "resource-spec-template" "45770ea0-a415-43e1-a548-1cd36140a167" {
+  name = "A DG Arm No Password"
+  uuid = "45770ea0-a415-43e1-a548-1cd36140a167"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2022-08-23T18:09:37.000Z"
+  lastUpdated = "2022-08-23T18:09:37.000Z"
+  template = { uuid = "976c7292-8599-4ed2-8d27-4ec4f338797a" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
