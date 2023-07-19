@@ -1,0 +1,14 @@
+resource "task" "bash echo library" {
+  name = "bash echo library"
+  uuid = "af70398b-e6cc-4b10-bc2c-a3f79e77a561"
+  executeTarget = "resource"
+  lastUpdated = "2019-07-23T22:52:06.000Z"
+  options = [
+    {
+      optionType = { code = "containerScriptId" }
+      value = { code = "22c417f8-9d3a-474b-9f18-fc65fc3c5b15" }
+    },
+    { optionType = { code = "containerScript" }, value = "bash echo" }
+  ]
+  taskType = { code = "containerScript" }
+}
