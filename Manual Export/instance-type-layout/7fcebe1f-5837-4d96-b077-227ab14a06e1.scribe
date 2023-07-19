@@ -1,0 +1,10 @@
+resource "instance-type-layout" "7fcebe1f-5837-4d96-b077-227ab14a06e1" {
+  code = "7fcebe1f-5837-4d96-b077-227ab14a06e1"
+  name = "Test Cloudformation"
+  uuid = "a4d6c45d-2f75-42fe-a25d-eeebb2c2cbfb"
+  instanceType = { code = "specs" }
+  instanceVersion = "test_cf"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [ { uuid = "e245f340-a141-4cc2-92c5-c196dba605c4" } ]
+}
