@@ -1,0 +1,16 @@
+resource "instance-type-layout" "apache-softlayer-2.4-ubuntu-16.04-single" {
+  code = "apache-softlayer-2.4-ubuntu-16.04-single"
+  name = "SoftLayer Apache"
+  uuid = "a96a84b9-0737-4830-8742-72cf0a4689dd"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  enabled = false
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  portCount = 2
+  provisionType = { code = "softlayer" }
+  serverType = "vm"
+  sortOrder = 10
+  workloads = [ { code = "apache-softlayer-2.4-ubuntu-16.04-set" } ]
+}
