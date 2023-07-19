@@ -1,0 +1,5 @@
+resource "task-set-task" "24ea529d-494c-4271-bd23-bf3b20243bfa" {
+  uuid = "24ea529d-494c-4271-bd23-bf3b20243bfa"
+  task = { name = "execute-workflow" }
+  taskPhase = "operation"
+}
