@@ -6,5 +6,6 @@ resource "instance-type" "c75V" {
   deploymentService = ""
   environmentPrefix = "CENTOS_7_5_VMWARE"
   hasSettings = true
+  layouts = [ { code = "55a1a26d-5e65-4159-b932-718ef1a0ccb9" } ]
   visibility = "public"
 }
