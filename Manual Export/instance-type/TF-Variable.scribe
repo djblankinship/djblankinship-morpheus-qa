@@ -1,0 +1,9 @@
+resource "instance-type" "TF-Variable" {
+  code = "TF-Variable"
+  name = "TF Variable"
+  uuid = "a1f36763-87ef-4fce-8ac8-49db2c23aa39"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "TF_VARIABLE"
+  visibility = "public"
+}
