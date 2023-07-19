@@ -1,0 +1,13 @@
+resource "option-type" "appName" {
+  code = "appName"
+  name = "App Name"
+  uuid = "a6653b12-fb23-4890-9795-0f82fb5f23ea"
+  description = "Option type for catalog item"
+  displayOrder = 5
+  fieldContext = "config.customOptions"
+  fieldGetName = "appName"
+  fieldLabel = "App Name"
+  fieldName = "appName"
+  fieldSetName = "appName"
+  required = true
+}
