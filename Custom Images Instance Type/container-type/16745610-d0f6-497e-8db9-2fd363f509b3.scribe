@@ -1,0 +1,25 @@
+resource "container-type" "16745610-d0f6-497e-8db9-2fd363f509b3" {
+  code = "16745610-d0f6-497e-8db9-2fd363f509b3"
+  name = "Custom UpCloud"
+  uuid = "7b984b79-369e-4a7e-b5b9-17f465f01053"
+  actions = [ { code = "generic-remove-node" } ]
+  containerLogs = [ { uuid = "6ca27b10-f5b8-48f1-8528-422d3e13fb97" } ]
+  containerMounts = [ { uuid = "64d987a9-de96-468d-a6ae-4e99d821bb0e" } ]
+  containerPorts = [
+    { uuid = "051ec7a4-19bc-4595-b9ab-ed5c1c110808" },
+    { uuid = "79dd23e7-b840-4004-ab65-a3bba9cc5bca" },
+    { uuid = "0e0c94ed-4bd3-495d-a41b-b4f5f53cfce5" }
+  ]
+  containerVersion = "qcow2"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  mountData = "/morpheus/data"
+  mountLogs = "/morpheus/logs"
+  provisionType = { code = "upcloud" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  statTypeCode = "vmware"
+  virtualImage = { code = "upcloud.image.3280.01853abf-59c4-40e1-8413-fa19c96a9482" }
+}

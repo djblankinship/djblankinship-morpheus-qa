@@ -1,0 +1,18 @@
+resource "container-type" "baaa8947-b1f9-433b-b307-8554f4ed7939" {
+  code = "baaa8947-b1f9-433b-b307-8554f4ed7939"
+  name = "Custom Azure"
+  uuid = "694db86b-07a6-49cd-a609-906690eee512"
+  category = "Web"
+  actions = [ { code = "generic-remove-node" } ]
+  containerPorts = [ { uuid = "1e85db0c-474c-4dd9-8266-8b24fc5b7b2e" } ]
+  containerVersion = "marketplace"
+  entryPoint = ""
+  logTypeCode = "azure"
+  provisionType = { code = "azure" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  showServerLogs = true
+  statTypeCode = "azure"
+  virtualImage = { uuid = "2b800436-a7fd-4bdd-b3ad-02d78b7c06cd" }
+}
