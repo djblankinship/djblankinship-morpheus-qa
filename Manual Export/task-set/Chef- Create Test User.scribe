@@ -1,8 +1,0 @@
-resource "task-set" "Chef: Create Test User" {
-  name = "Chef: Create Test User"
-  uuid = "fe09d37c-4c66-4886-bc28-779ff3a3ba16"
-  dateCreated = "2017-03-20T20:46:09.000Z"
-  lastUpdated = "2023-06-14T00:17:53.000Z"
-  taskSetTasks = [ { uuid = "6a0a5123-e604-49d5-b6f1-649e578a0c55" } ]
-  visibility = "public"
-}

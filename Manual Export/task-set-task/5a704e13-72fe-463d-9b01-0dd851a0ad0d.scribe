@@ -1,4 +1,0 @@
-resource "task-set-task" "5a704e13-72fe-463d-9b01-0dd851a0ad0d" {
-  uuid = "5a704e13-72fe-463d-9b01-0dd851a0ad0d"
-  task = { name = "A Fail" }
-}

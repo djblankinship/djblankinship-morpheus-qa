@@ -1,6 +1,0 @@
-resource "container-type-set" "nutanix-prism-centos-7.5-set" {
-  code = "nutanix-prism-centos-7.5-set"
-  uuid = "41ae9d5d-7baa-4a08-82f3-c619141538db"
-  dynamicCount = true
-  workloadType = { code = "nutanix-prism-centos-7.5" }
-}

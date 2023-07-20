@@ -1,5 +1,0 @@
-resource "task-set-task" "3e89fe09-3849-432d-957b-61385b6fc4b0" {
-  uuid = "3e89fe09-3849-432d-957b-61385b6fc4b0"
-  task = { name = "GW email" }
-  taskPhase = "scaleDown"
-}

@@ -1,8 +1,0 @@
-resource "task-set" "AC Teardown" {
-  name = "AC Teardown"
-  uuid = "909c2e15-124e-4ba5-a5ae-0d6949f0cd6f"
-  dateCreated = "2023-06-29T14:32:59.000Z"
-  labels = [ "AdamC" ]
-  lastUpdated = "2023-07-14T19:10:15.000Z"
-  taskSetTasks = [ { uuid = "bfd95db9-e8f7-4a61-835e-12d084428c8f" } ]
-}

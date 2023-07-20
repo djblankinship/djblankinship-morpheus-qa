@@ -1,9 +1,0 @@
-resource "instance-type" "f5mgmt" {
-  code = "f5mgmt"
-  name = "F5"
-  uuid = "c9cac4ae-deee-45c7-b6b6-d39d9aaab437"
-  category = "network"
-  deploymentService = ""
-  environmentPrefix = "F5"
-  layouts = [ { code = "fe417e1f-c370-4ce8-92ae-83242a32ee58" } ]
-}

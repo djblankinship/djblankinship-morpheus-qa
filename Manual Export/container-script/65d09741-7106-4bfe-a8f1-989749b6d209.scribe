@@ -1,8 +1,0 @@
-resource "container-script" "65d09741-7106-4bfe-a8f1-989749b6d209" {
-  code = "65d09741-7106-4bfe-a8f1-989749b6d209"
-  name = "User Test - tmarks"
-  uuid = "80a481cb-789f-4215-bd3d-052b553b6f3a"
-  runAsUser = "tmarks"
-  script = "echo \"$(date) - tmarks - provision\" | tee -a ~/usertest.txt"
-  scriptPhase = "provision"
-}

@@ -1,7 +1,0 @@
-resource "container-type-set" "apache-openstack-2.4-centos-7.3-set" {
-  code = "apache-openstack-2.4-centos-7.3-set"
-  uuid = "44bb9e65-650c-41b6-93ce-671bdebcd428"
-  category = "apache"
-  dynamicCount = true
-  workloadType = { code = "apache-openstack-2.4-centos-7.3" }
-}

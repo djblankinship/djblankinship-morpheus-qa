@@ -1,5 +1,0 @@
-resource "task-set-task" "76e687f2-f659-4c4d-880b-ab9d7e933fb3" {
-  uuid = "76e687f2-f659-4c4d-880b-ab9d7e933fb3"
-  task = { name = "A Public Task" }
-  taskPhase = "operation"
-}

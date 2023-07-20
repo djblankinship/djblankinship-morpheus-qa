@@ -1,8 +1,0 @@
-resource "container-type-mount" "caf55c42-516f-4c28-a39e-dc9d3eeab088" {
-  name = "data"
-  uuid = "caf55c42-516f-4c28-a39e-dc9d3eeab088"
-  canPersist = true
-  containerPath = "/var/www/html"
-  deployable = true
-  hostPath = "/var/www/html"
-}

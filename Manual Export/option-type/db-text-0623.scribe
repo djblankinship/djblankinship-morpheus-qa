@@ -1,8 +1,0 @@
-resource "option-type" "db-text-0623" {
-  code = "db-text-0623"
-  name = "db-text-0623"
-  uuid = "e19eaed5-792c-47dc-beed-3710201cb576"
-  fieldContext = "config.customOptions"
-  fieldLabel = "db-text-0623"
-  fieldName = "db-text-0623"
-}

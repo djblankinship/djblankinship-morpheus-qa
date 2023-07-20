@@ -1,8 +1,0 @@
-resource "compute-type-set" "08528758-a02e-40d4-bdd2-821451e62104-ubuntu-amazon-18.04" {
-  code = "08528758-a02e-40d4-bdd2-821451e62104-ubuntu-amazon-18.04"
-  name = "api-test-cluster-layout-master-ubuntu-amazon-18.04-set"
-  computeServerType = { code = "amazonKubeMaster" }
-  nameSuffix = "-master"
-  nodeType = "master"
-  workloadType = { code = "ubuntu-amazon-18.04" }
-}

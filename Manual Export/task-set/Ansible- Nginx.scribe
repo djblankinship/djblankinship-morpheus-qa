@@ -1,7 +1,0 @@
-resource "task-set" "Ansible: Nginx" {
-  name = "Ansible: Nginx"
-  uuid = "69a95197-99d0-4986-9e9a-b076e5d4298d"
-  dateCreated = "2017-05-16T21:58:30.000Z"
-  lastUpdated = "2023-06-14T00:17:23.000Z"
-  taskSetTasks = [ { uuid = "bedd9a1e-511b-4e45-b308-7374ba5a77dc" } ]
-}

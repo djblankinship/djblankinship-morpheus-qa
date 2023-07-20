@@ -1,9 +1,0 @@
-resource "option-type" "noofdrives" {
-  code = "noofdrives"
-  name = "Number of Drives"
-  uuid = "dc1c99a4-2cd2-4766-aec2-eb7e626afd2e"
-  fieldContext = "config.customOptions"
-  fieldLabel = "Number of Drives"
-  fieldName = "noofdrives"
-  type = "number"
-}

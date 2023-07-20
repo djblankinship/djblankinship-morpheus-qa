@@ -1,6 +1,0 @@
-resource "file-content" "f372f0f5-c15b-4554-8f96-281e5e383e71" {
-  uuid = "f372f0f5-c15b-4554-8f96-281e5e383e71"
-  content = "echo $(date)"
-  dateCreated = "2023-06-05T14:44:08.000Z"
-  lastUpdated = "2023-06-05T14:44:08.000Z"
-}

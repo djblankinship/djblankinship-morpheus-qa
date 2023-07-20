@@ -1,6 +1,0 @@
-resource "file-content" "0b308246-2b14-4511-99f3-9d58a05a97fe" {
-  uuid = "0b308246-2b14-4511-99f3-9d58a05a97fe"
-  content = "Testing teardown"
-  dateCreated = "2023-06-19T09:46:02.000Z"
-  lastUpdated = "2023-06-19T09:46:02.000Z"
-}

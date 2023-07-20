@@ -1,5 +1,0 @@
-resource "task-set-task" "7cbee6a4-0466-4a93-bf0b-16a0c5a0db37" {
-  uuid = "7cbee6a4-0466-4a93-bf0b-16a0c5a0db37"
-  task = { name = "Clear Memory Cache" }
-  taskPhase = "provision"
-}

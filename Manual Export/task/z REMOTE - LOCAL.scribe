@@ -1,8 +1,0 @@
-resource "task" "z REMOTE - LOCAL" {
-  name = "z REMOTE - LOCAL"
-  uuid = "8e077af8-422f-46d0-b7fd-58fab13fbff7"
-  dateCreated = "2019-06-25T17:24:19.000Z"
-  executeTarget = "local"
-  lastUpdated = "2019-06-27T00:17:15.000Z"
-  taskType = { code = "script" }
-}

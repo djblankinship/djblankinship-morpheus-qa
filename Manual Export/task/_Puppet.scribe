@@ -1,7 +1,0 @@
-resource "task" "_Puppet" {
-  name = "_Puppet"
-  uuid = "ed357af0-6c0d-4535-bcc9-849e98c3d090"
-  executeTarget = "resource"
-  options = [ { optionType = { code = "puppetMasterId" }, value = "5" } ]
-  taskType = { code = "puppetTask" }
-}

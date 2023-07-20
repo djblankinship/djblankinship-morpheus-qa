@@ -1,8 +1,0 @@
-resource "task-set" "A Failure Post-Provision" {
-  name = "A Failure Post-Provision"
-  uuid = "96928a08-1c52-4eb1-b99c-5e01467770c1"
-  dateCreated = "2021-10-28T23:09:41.000Z"
-  lastUpdated = "2023-07-17T19:38:11.000Z"
-  taskSetTasks = [ { uuid = "5a704e13-72fe-463d-9b01-0dd851a0ad0d" } ]
-  visibility = "public"
-}
