@@ -1,0 +1,36 @@
+resource "container-type" "1f846b3f-fa73-48dc-a065-c9fe236ddd0c" {
+  code = "1f846b3f-fa73-48dc-a065-c9fe236ddd0c"
+  name = "Apache latest"
+  uuid = "e87e5ded-f299-45ff-a10e-abe87955f312"
+  category = "apache"
+  actions = [ { code = "generic-remove-node" } ]
+  checkTypeCode = "webGetCheck"
+  containerLogs = [ { uuid = "89bcd4cd-f031-4445-9b80-9bc3db74b9d2" } ]
+  containerMounts = [ { uuid = "67efcd0c-a365-44d6-9fe0-ef09d96cbbf6" } ]
+  containerPorts = [
+    { uuid = "637db675-22a9-429f-9572-f82a357829f9" },
+    { uuid = "fa52364c-05c7-4753-baaf-875ac96429f2" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "vm"
+  mountConfig = "/etc/apache2"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  provisionType = { code = "hyperv" }
+  repositoryImage = ""
+  scripts = [
+    { code = "1876916a-84c1-408c-9a38-d3301f2a39f9" },
+    { code = "355e2a25-b2e2-4eef-a27d-fc0797dbb0e2" },
+    { code = "7d7c47cc-0e63-4704-9e9a-e3c7faab82bc" }
+  ]
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = {
+    code = "alibaba.image.public.template.ubuntu_20_04_x64_20G_alibase_20221130.vhd"
+  }
+}

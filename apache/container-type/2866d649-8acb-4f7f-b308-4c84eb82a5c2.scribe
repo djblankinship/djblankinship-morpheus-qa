@@ -1,0 +1,31 @@
+resource "container-type" "2866d649-8acb-4f7f-b308-4c84eb82a5c2" {
+  code = "2866d649-8acb-4f7f-b308-4c84eb82a5c2"
+  name = "Apache latest"
+  uuid = "36ea0580-2d39-4fd0-aa2e-70fcd3e19fd4"
+  category = "apache"
+  actions = [ { code = "generic-remove-node" } ]
+  checkTypeCode = "webGetCheck"
+  containerLogs = [ { uuid = "022384d6-0491-47dd-a984-4e1e8c7d7f64" } ]
+  containerMounts = [ { uuid = "ee8a78d8-7c32-451a-81d4-c45b0763550f" } ]
+  containerPorts = [
+    { uuid = "c91630ad-ab19-4b81-a0fe-c2edd4cac2aa" },
+    { uuid = "4577d2ff-708d-4d3f-8923-445e5063ee32" }
+  ]
+  containerVersion = "latest"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "vm"
+  mountConfig = "/etc/apache2"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  provisionType = { code = "upcloud" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = {
+    code = "upcloud.image.public.template.01000000-0000-4000-8000-000030200200"
+  }
+}

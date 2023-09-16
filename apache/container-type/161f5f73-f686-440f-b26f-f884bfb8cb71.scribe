@@ -1,0 +1,25 @@
+resource "container-type" "161f5f73-f686-440f-b26f-f884bfb8cb71" {
+  code = "161f5f73-f686-440f-b26f-f884bfb8cb71"
+  name = "Apache latest"
+  uuid = "ceacb2c8-b9e3-4191-a024-526599061ce5"
+  category = "apache"
+  actions = [ { code = "generic-remove-node" } ]
+  checkTypeCode = "webGetCheck"
+  containerLogs = [ { uuid = "f469e213-9c90-4ca9-b086-0f436a00da2d" } ]
+  containerMounts = [ { uuid = "a1fc02c2-d1af-4099-8f72-0dd80ae157ba" } ]
+  containerVersion = "latest"
+  entryPoint = ""
+  labels = [ "qa" ]
+  logTypeCode = "vm"
+  mountConfig = "/etc/apache2"
+  mountData = "/var/www/html"
+  mountLogs = "/var/log/apache2"
+  mountPoint = "/data"
+  provisionType = { code = "scvmm" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "apache"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "scvmm.image.morpheus.ubuntu.20.04.20230131.amd64" }
+}
