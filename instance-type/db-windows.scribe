@@ -1,8 +1,0 @@
-resource "instance-type" "db-windows" {
-  code = "db-windows"
-  name = "Windows"
-  uuid = "39997ee7-b87d-4cfe-9838-5418c0d40201"
-  category = "web"
-  deploymentService = ""
-  environmentPrefix = "WINDOWS"
-}
