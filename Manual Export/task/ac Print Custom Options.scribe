@@ -1,0 +1,14 @@
+resource "task" "ac Print Custom Options" {
+  name = "ac Print Custom Options"
+  uuid = "1e48c958-7520-498a-a08a-9d1a0dc77ea1"
+  dateCreated = "2023-12-01T20:41:29.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-12-01T20:41:29.000Z"
+  options = [
+    {
+      content = { uuid = "b7aa4053-34c0-4895-b387-e8e5e6f67bfc" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
