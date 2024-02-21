@@ -1,0 +1,9 @@
+resource "catalog-item-type" "provisionoraclecloud" {
+  code = "provisionoraclecloud"
+  name = "Provision - Oracle Cloud"
+  uuid = "4a9de742-7d18-4191-81b8-640e95807849"
+  dateCreated = "2023-06-23T17:57:40.000Z"
+  formType = "form"
+  lastUpdated = "2023-08-07T19:16:18.000Z"
+  refType = "InstanceType"
+}
