@@ -1,9 +1,9 @@
 resource "catalog-item-type" "null" {
-  name = "Ubuntu 20.04"
-  uuid = "70e4a1d1-057d-44bf-97e4-765026a85812"
-  allowQuantity = true
-  dateCreated = "2021-04-05T20:01:29.000Z"
-  iconPath = "/assets/containers-png/ubuntu.png"
-  lastUpdated = "2023-03-28T09:00:12.000Z"
+  name = "user1"
+  uuid = "1e6c4f25-bb2f-4298-8f05-68ffbd4edff5"
+  dateCreated = "2022-03-11T13:45:20.000Z"
+  iconPath = "/assets/branding/140x40/resource.svg"
+  lastUpdated = "2022-03-11T13:45:20.000Z"
   refType = "InstanceType"
+  visibility = "public"
 }
