@@ -1,0 +1,8 @@
+resource "instance-type" "xaas" {
+  code = "xaas"
+  name = "XaaS"
+  uuid = "06befb35-cc62-40ff-ae4e-bc146a62be0f"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "XAAS"
+}
