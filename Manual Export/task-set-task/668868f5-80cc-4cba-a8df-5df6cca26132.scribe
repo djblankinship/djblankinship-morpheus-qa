@@ -1,0 +1,6 @@
+resource "task-set-task" "668868f5-80cc-4cba-a8df-5df6cca26132" {
+  uuid = "668868f5-80cc-4cba-a8df-5df6cca26132"
+  task = { name = "Phase: Reconfigure" }
+  taskOrder = 14
+  taskPhase = "reconfigure"
+}

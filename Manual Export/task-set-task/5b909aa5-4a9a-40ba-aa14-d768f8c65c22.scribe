@@ -1,0 +1,6 @@
+resource "task-set-task" "5b909aa5-4a9a-40ba-aa14-d768f8c65c22" {
+  uuid = "5b909aa5-4a9a-40ba-aa14-d768f8c65c22"
+  task = { name = "Phase: Pre Deploy" }
+  taskOrder = 12
+  taskPhase = "preDeploy"
+}

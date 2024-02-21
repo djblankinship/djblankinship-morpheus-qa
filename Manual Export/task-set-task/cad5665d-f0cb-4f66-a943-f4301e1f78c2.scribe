@@ -1,0 +1,6 @@
+resource "task-set-task" "cad5665d-f0cb-4f66-a943-f4301e1f78c2" {
+  uuid = "cad5665d-f0cb-4f66-a943-f4301e1f78c2"
+  task = { name = "Phase: Teardown" }
+  taskOrder = 15
+  taskPhase = "teardown"
+}

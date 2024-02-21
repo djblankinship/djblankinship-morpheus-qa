@@ -1,0 +1,6 @@
+resource "task-set-task" "42cf5138-da2a-4bcf-ae4d-5d7f081ee0b6" {
+  uuid = "42cf5138-da2a-4bcf-ae4d-5d7f081ee0b6"
+  task = { name = "Phase: Pre Provision" }
+  taskOrder = 2
+  taskPhase = "preProvision"
+}
