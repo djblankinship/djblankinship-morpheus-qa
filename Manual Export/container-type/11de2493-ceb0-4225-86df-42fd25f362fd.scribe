@@ -1,0 +1,15 @@
+resource "container-type" "11de2493-ceb0-4225-86df-42fd25f362fd" {
+  code = "11de2493-ceb0-4225-86df-42fd25f362fd"
+  name = "bob-test-azure-ref"
+  uuid = "68120c82-8bcc-439b-b9b7-d59ccd4102f3"
+  containerVersion = "bob-test-azure-ref"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "azure" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "bob-test-azure-ref"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "f6d7cdff-1e85-4a11-b6e3-874c1d6b2430" }
+}

@@ -1,0 +1,10 @@
+resource "instance-type-layout" "45bcf91c-30b6-41b6-97c3-d41a9d737b32" {
+  code = "45bcf91c-30b6-41b6-97c3-d41a9d737b32"
+  name = "bob-test-azure-ref"
+  uuid = "90f51f5d-d704-4257-8c3b-b57faf752a38"
+  instanceType = { code = "bob-test-azure-ref" }
+  instanceVersion = "bob-test-azure-ref"
+  memoryRequirement = 0
+  provisionType = { code = "azure" }
+  workloads = [ { code = "11de2493-ceb0-4225-86df-42fd25f362fd" } ]
+}

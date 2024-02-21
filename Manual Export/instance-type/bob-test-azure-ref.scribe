@@ -1,0 +1,8 @@
+resource "instance-type" "bob-test-azure-ref" {
+  code = "bob-test-azure-ref"
+  name = "bob-test-azure-ref"
+  uuid = "6b5e2e90-1fc3-4b43-af93-34a9a1c560cd"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "BOB-TEST-AZURE-REF"
+}
