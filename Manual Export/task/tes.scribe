@@ -1,0 +1,14 @@
+resource "task" "tes" {
+  name = "tes"
+  uuid = "2224785b-66d8-4059-a3a2-e69f11dde65a"
+  dateCreated = "2023-05-04T15:04:10.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-05-04T15:04:10.000Z"
+  options = [
+    {
+      content = { uuid = "cbf41bd3-b364-4e98-bcfa-aaf677f4d9e1" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
