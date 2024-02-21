@@ -5,5 +5,4 @@ resource "instance-type" "bunge" {
   category = "os"
   deploymentService = ""
   environmentPrefix = "BUNGE"
-  layouts = [ { code = "11f0663a-3626-40d8-b676-cece9eeaab80" } ]
 }
