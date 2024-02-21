@@ -1,10 +1,7 @@
 resource "catalog-item-type" "null" {
-  name = "F5 Create Pool"
-  uuid = "9266e612-4ddd-4ff5-ab6f-af60fa7b05b1"
-  dateCreated = "2023-01-16T13:30:41.000Z"
-  description = "Instance type catalog. F5 instancetype used"
-  iconPath = "custom"
-  labels = [ { name = "instanceType" }, { name = "xaas" } ]
-  lastUpdated = "2023-01-16T13:30:41.000Z"
-  refType = "InstanceType"
+  name = "greg_catalog1"
+  uuid = "72c451c8-2526-43ce-83b7-b6babf78f872"
+  dateCreated = "2023-09-21T10:58:32.000Z"
+  lastUpdated = "2023-09-21T10:58:32.000Z"
+  refType = "OperationalWorkflow"
 }
