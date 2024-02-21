@@ -1,0 +1,7 @@
+resource "container-type-set" "apache-digitalocean-2.4-ubuntu-20.04-set" {
+  code = "apache-digitalocean-2.4-ubuntu-20.04-set"
+  uuid = "423868ce-1ca2-4241-b6ab-a281fd167abc"
+  category = "apache"
+  dynamicCount = true
+  workloadType = { code = "apache-digitalocean-2.4-ubuntu-20.04" }
+}
