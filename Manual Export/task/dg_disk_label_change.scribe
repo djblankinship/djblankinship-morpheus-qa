@@ -1,0 +1,15 @@
+resource "task" "dg_disk_label_change" {
+  name = "dg_disk_label_change"
+  uuid = "42b17bf3-7f46-4b9d-b50e-687c06dd3d08"
+  dateCreated = "2023-04-13T11:33:48.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-04-13T17:05:14.000Z"
+  options = [
+    {
+      content = { uuid = "a8fe07e5-63e2-4130-9752-53b40f9d4910" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+  visibility = "public"
+}
