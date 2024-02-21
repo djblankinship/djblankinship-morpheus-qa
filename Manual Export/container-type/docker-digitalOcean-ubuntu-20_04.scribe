@@ -1,0 +1,20 @@
+resource "container-type" "docker-digitalOcean-ubuntu-20.04" {
+  code = "docker-digitalOcean-ubuntu-20.04"
+  name = "Docker Ubuntu 20.04"
+  uuid = "25114c9f-3aba-4049-aea9-447bddedf74c"
+  category = "ubuntu"
+  checkTypeCode = "vmCheck"
+  cloneType = "ubuntu"
+  containerPorts = [ { code = "ubuntu.22" } ]
+  containerVersion = "20.04"
+  imageCode = "morpheus ubuntu 20.04"
+  logTypeCode = "ubuntu"
+  mountLogs = "/var/log"
+  providerType = "digitalocean"
+  provisionType = { code = "digitalocean" }
+  serverType = "vm"
+  shortName = "ubuntu"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "digitalocean.image.morpheus.ubuntu.20.04" }
+}
