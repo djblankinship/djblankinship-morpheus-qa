@@ -1,0 +1,10 @@
+resource "task-set" "Conditional Provisioning Workflow Test" {
+  name = "Conditional Provisioning Workflow Test"
+  uuid = "a2657298-825b-4339-b34f-9f4f91c49fda"
+  dateCreated = "2024-02-13T17:57:20.000Z"
+  lastUpdated = "2024-02-13T17:57:20.000Z"
+  taskSetTasks = [
+    { uuid = "580915db-97f1-41eb-bb83-a376723f7e6d" },
+    { uuid = "682d3317-ad56-405c-adeb-9421700e043b" }
+  ]
+}

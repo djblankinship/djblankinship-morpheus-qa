@@ -1,0 +1,31 @@
+resource "task" "conditionaltask2" {
+  code = "conditionaltask2"
+  name = "Conditional Task 2"
+  uuid = "8cc9903b-7540-455e-a769-8d1a626ec9f7"
+  dateCreated = "2024-02-09T23:45:43.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-02-13T18:55:36.000Z"
+  options = [
+    {
+      optionType = { code = "ifOperationalWorkflowId" }
+      value = "8759"
+    },
+    {
+      optionType = { code = "elseOperationalWorkflowId" }
+      value = "8760"
+    },
+    {
+      optionType = { code = "ifOperationalWorkflowName" }
+      value = "Hello World 1"
+    },
+    {
+      optionType = { code = "elseOperationalWorkflowName" }
+      value = "Hello World 2"
+    },
+    {
+      optionType = { code = "conditionalScript" }
+      value = "results.groovy == 'Output GROOVY'"
+    }
+  ]
+  taskType = { code = "conditionalWorkflow" }
+}

@@ -1,0 +1,16 @@
+resource "task" "groovy" {
+  code = "groovy"
+  name = "Conditional Task 1"
+  uuid = "2742ec4b-d41d-4d47-adbd-5bd79b2e5906"
+  dateCreated = "2024-02-09T23:43:36.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-02-09T23:57:57.000Z"
+  options = [
+    {
+      content = { uuid = "aa29bbef-54ed-479c-ab79-74c4903322eb" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  resultType = "value"
+  taskType = { code = "groovyTask" }
+}

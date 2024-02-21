@@ -1,0 +1,6 @@
+resource "file-content" "aa29bbef-54ed-479c-ab79-74c4903322eb" {
+  uuid = "aa29bbef-54ed-479c-ab79-74c4903322eb"
+  content = "return \"Output GROOVY\""
+  dateCreated = "2024-02-09T23:43:36.000Z"
+  lastUpdated = "2024-02-09T23:57:57.000Z"
+}

@@ -1,0 +1,6 @@
+resource "task-set-task" "580915db-97f1-41eb-bb83-a376723f7e6d" {
+  uuid = "580915db-97f1-41eb-bb83-a376723f7e6d"
+  task = { code = "conditionaltask2" }
+  taskOrder = 1
+  taskPhase = "provision"
+}
