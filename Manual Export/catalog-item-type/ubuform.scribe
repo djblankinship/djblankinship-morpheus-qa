@@ -1,0 +1,13 @@
+resource "catalog-item-type" "ubuform" {
+  code = "ubuform"
+  name = "Ubuntu - Forms"
+  uuid = "2e9c8703-395f-4d6b-be74-023697ecd804"
+  darkIconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/1996/logo/ubuntu_light_original.svg"
+  dateCreated = "2023-04-17T14:26:26.000Z"
+  description = "Ubuntu Deployment Utilizing Forms"
+  formType = "form"
+  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/1996/logo/ubuntu_light_original.svg"
+  labels = [ { name = "Forms" }, { name = "VMware" } ]
+  lastUpdated = "2024-01-04T14:25:35.000Z"
+  refType = "InstanceType"
+}

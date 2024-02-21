@@ -1,0 +1,3 @@
+resource "label" "Forms" {
+  name = "Forms"
+}
