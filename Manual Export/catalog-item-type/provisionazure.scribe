@@ -1,0 +1,9 @@
+resource "catalog-item-type" "provisionazure" {
+  code = "provisionazure"
+  name = "Provision - Azure"
+  uuid = "e33dc2d2-88db-4615-a328-8dfd4d48b526"
+  dateCreated = "2023-06-23T17:41:01.000Z"
+  formType = "form"
+  lastUpdated = "2023-11-07T17:12:53.000Z"
+  refType = "InstanceType"
+}
