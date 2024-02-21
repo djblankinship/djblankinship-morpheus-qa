@@ -5,6 +5,7 @@ resource "instance-type" "dgArmWindowsVm" {
   category = "cloud"
   deploymentService = ""
   environmentPrefix = "DG_ARM_WINDOWS_VM"
+  layouts = [ { code = "0701ba2f-8b2f-4a70-ab91-1d09db6952ca" } ]
   optionTypes = [ { code = "fserverRole" } ]
   visibility = "public"
 }
