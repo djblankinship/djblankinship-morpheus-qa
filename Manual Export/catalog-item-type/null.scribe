@@ -1,19 +1,14 @@
 resource "catalog-item-type" "null" {
-  name = "vs67541"
-  uuid = "2275cfab-9aad-4e84-aedb-55545da3ad96"
-  darkIconPath = "/assets/branding/140x40/azure.svg"
-  dateCreated = "2022-08-18T16:47:43.000Z"
-  formType = "optionTypes"
-  iconPath = "/assets/branding/140x40/azure.svg"
-  lastUpdated = "2023-09-05T00:28:23.000Z"
+  name = "vsTest"
+  uuid = "3bdb7767-2a00-4fff-848a-83702be67f68"
+  dateCreated = "2022-06-23T09:51:07.000Z"
+  iconPath = "/assets/branding/140x40/resource.svg"
+  lastUpdated = "2023-01-09T13:36:22.000Z"
   optionTypes = [
-    { code = "vsRestServersIn" },
+    { code = "morpheus_network_server" },
+    { code = "morpheus_network_interface_mac" },
     { code = "vsGroups" },
-    { code = "vsClouds" },
-    { code = "vsResourcepools" },
-    { code = "vsNetworks" },
-    { code = "vsInstanceNetwork" }
+    { code = "vsClouds" }
   ]
   refType = "InstanceType"
-  visibility = "public"
 }
