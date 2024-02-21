@@ -1,0 +1,10 @@
+resource "instance-type" "vsWindows" {
+  code = "vsWindows"
+  name = "vs windows"
+  uuid = "d9511ccd-8eac-40d3-87be-ccf3cb7e09a0"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "VS_WINDOWS"
+  hasAutoScale = true
+  visibility = "public"
+}

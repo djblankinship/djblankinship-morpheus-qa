@@ -1,0 +1,12 @@
+resource "instance-type-layout" "00daf49c-c0a0-4ca8-bfc2-d6f599cbf429" {
+  code = "00daf49c-c0a0-4ca8-bfc2-d6f599cbf429"
+  name = "windows 2012 R2"
+  uuid = "7974c769-c6e1-4a71-b4ae-4cd04e39b491"
+  actions = [ { code = "generic-add-node" } ]
+  hasAutoScale = true
+  instanceType = { code = "vsWindows" }
+  instanceVersion = "1.0"
+  memoryRequirement = 2147483648
+  provisionType = { code = "vmware" }
+  workloads = [ { code = "117be9ee-4ea7-4a41-9f19-39c1b793ea07" } ]
+}
