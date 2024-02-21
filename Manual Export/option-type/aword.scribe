@@ -1,0 +1,16 @@
+resource "option-type" "aword" {
+  code = "aword"
+  name = "AC Text"
+  uuid = "286555d1-b958-4c3c-93c1-442bf43ea757"
+  config = { _multiSelect = "", multiSelect = "on" }
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "a word"
+  fieldName = "aword"
+  helpBlock = "any 5 letter word that starts with 'a'"
+  labels = [ "AdamC" ]
+  optionList = { name = "Approved Colors" }
+  optionSource = "list"
+  required = true
+  verifyPattern = "a\\D{4}"
+}
