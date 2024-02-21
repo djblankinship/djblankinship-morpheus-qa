@@ -1,0 +1,28 @@
+resource "container-script" "5339b9e1-c246-4366-9317-401b5cc229cf" {
+  code = "5339b9e1-c246-4366-9317-401b5cc229cf"
+  name = "db-k8smastersetup"
+  uuid = "5bf056d9-d39d-4118-934c-635e5a76f968"
+  dateCreated = "2023-12-18T21:32:53.000Z"
+  lastUpdated = "2023-12-18T21:32:53.000Z"
+  runAsUser = "root"
+  script = <<EOFSCRIBE
+#create a service account
+cd <%=morpheus.morpheusHome%>
+#kubectl -n kube-system create sa morpheus
+kubectl create sa morpheus
+cat <<EOF | tee <%=morpheus.morpheusHome%>/kube/morpheus-sa.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: morpheus-token
+  annotations:
+    kubernetes.io/service-account.name: morpheus
+type: kubernetes.io/service-account-token
+EOF
+kubectl create clusterrolebinding serviceaccounts-cluster-admin --clusterrole=cluster-admin --group=system:serviceaccounts
+kubectl create -f <%=morpheus.morpheusHome%>/kube/morpheus-sa.yaml
+kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml
+EOFSCRIBE
+  scriptPhase = "postProvision"
+  sudoUser = true
+}
