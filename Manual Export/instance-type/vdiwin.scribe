@@ -1,0 +1,8 @@
+resource "instance-type" "vdiwin" {
+  code = "vdiwin"
+  name = "vdiwin"
+  uuid = "ea5604b7-c6d7-49ac-a531-a23fd6b1cc58"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "VDIWIN"
+}
