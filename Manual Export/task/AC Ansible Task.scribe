@@ -1,0 +1,17 @@
+resource "task" "AC Ansible Task" {
+  name = "AC Ansible Task"
+  uuid = "ca01d9f8-ab2f-45e5-85b8-aa10628e64a3"
+  dateCreated = "2023-08-01T21:39:17.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-09-07T18:29:57.000Z"
+  options = [
+    { optionType = { code = "ansibleGitId" }, value = "16967" },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "group_playbook"
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "main" }
+  ]
+  taskType = { code = "ansibleTask" }
+  visibility = "public"
+}
