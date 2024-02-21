@@ -1,0 +1,16 @@
+resource "task" "restartdwcon" {
+  code = "restartdwcon"
+  name = "Restart running distributed worker containers"
+  uuid = "b6b0e1c4-0e8b-4f6c-8031-322030376054"
+  dateCreated = "2024-02-08T18:22:50.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-02-08T18:22:50.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "c58fbbc1-24b8-4b5b-86ec-ddf411e63699" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

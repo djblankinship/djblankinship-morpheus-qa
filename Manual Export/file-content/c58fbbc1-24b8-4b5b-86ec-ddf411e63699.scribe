@@ -1,0 +1,6 @@
+resource "file-content" "c58fbbc1-24b8-4b5b-86ec-ddf411e63699" {
+  uuid = "c58fbbc1-24b8-4b5b-86ec-ddf411e63699"
+  content = "docker restart $(docker ps -q -f name=^.*_distributed_worker)"
+  dateCreated = "2024-02-08T18:22:50.000Z"
+  lastUpdated = "2024-02-08T18:22:50.000Z"
+}
