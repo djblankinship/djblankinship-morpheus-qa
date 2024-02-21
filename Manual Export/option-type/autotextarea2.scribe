@@ -1,0 +1,15 @@
+resource "option-type" "autotextarea2" {
+  code = "autotextarea2"
+  name = "Auto Textarea 2"
+  uuid = "bda52da7-614e-4796-84dc-9cc1e69c61fc"
+  config = { rows = "6" }
+  description = "don't delete"
+  displayOrder = 17
+  fieldContext = "config.customOptions"
+  fieldLabel = "Textarea 2"
+  fieldName = "autotextarea2"
+  labels = [ "auto", "keep" ]
+  placeHolder = "6 rows tall"
+  showOnEdit = false
+  type = "textarea"
+}

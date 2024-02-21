@@ -1,0 +1,17 @@
+resource "option-type" "autotypeahead2" {
+  code = "autotypeahead2"
+  name = "Auto Typeahead 2"
+  uuid = "e8a959b1-041f-4327-a6fb-24d5bb5c1671"
+  config = { _multiSelect = "" }
+  description = "don't delete"
+  displayOrder = 6
+  fieldContext = "config.customOptions"
+  fieldLabel = "Typeahead 2"
+  fieldName = "autotypeahead2"
+  labels = [ "auto", "keep" ]
+  optionList = { name = "Colors json" }
+  optionSource = "list"
+  placeHolder = "start typing"
+  showOnEdit = false
+  type = "typeahead"
+}

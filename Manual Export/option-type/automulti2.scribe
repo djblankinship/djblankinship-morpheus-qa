@@ -1,0 +1,17 @@
+resource "option-type" "automulti2" {
+  code = "automulti2"
+  name = "Auto Typeahead Multi 2"
+  uuid = "5f916463-a528-460e-9a92-1ca3f82c2716"
+  config = { _multiSelect = "", multiSelect = "on" }
+  description = "don't delete"
+  displayOrder = 19
+  fieldContext = "config.customOptions"
+  fieldLabel = "Multiselect 2"
+  fieldName = "automulti2"
+  labels = [ "auto", "keep" ]
+  optionList = { name = "Colors json" }
+  optionSource = "list"
+  placeHolder = "pick something"
+  showOnEdit = false
+  type = "typeahead"
+}
