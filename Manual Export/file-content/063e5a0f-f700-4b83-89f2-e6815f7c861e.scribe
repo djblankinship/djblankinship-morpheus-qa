@@ -1,0 +1,6 @@
+resource "file-content" "063e5a0f-f700-4b83-89f2-e6815f7c861e" {
+  uuid = "063e5a0f-f700-4b83-89f2-e6815f7c861e"
+  content = "println(\"Custom Options: $${customOptions}\")"
+  dateCreated = "2022-10-13T18:02:18.000Z"
+  lastUpdated = "2023-12-01T16:02:38.000Z"
+}
