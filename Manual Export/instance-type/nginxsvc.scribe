@@ -5,4 +5,5 @@ resource "instance-type" "nginxsvc" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "NGINX_SERVICE"
+  layouts = [ { code = "10121662-0bd5-4aae-b9f4-d966c040f5a7" } ]
 }
