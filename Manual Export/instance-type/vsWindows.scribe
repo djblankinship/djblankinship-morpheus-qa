@@ -6,5 +6,6 @@ resource "instance-type" "vsWindows" {
   deploymentService = ""
   environmentPrefix = "VS_WINDOWS"
   hasAutoScale = true
+  layouts = [ { code = "00daf49c-c0a0-4ca8-bfc2-d6f599cbf429" } ]
   visibility = "public"
 }
