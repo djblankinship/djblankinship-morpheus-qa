@@ -1,0 +1,15 @@
+resource "task" "z WINRM - RESOURCE" {
+  code = "z WINRM - RESOURCE"
+  name = "z WINRM - RESOURCE"
+  uuid = "9ef6ed03-e8c9-4f12-828a-61cb324f176a"
+  dateCreated = "2019-06-27T00:17:40.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-06-27T15:12:28.000Z"
+  options = [
+    {
+      optionType = { code = "script" }
+      value = "echo \"$(date) <%= instance.name %> - test\" >> c:\\\\blah"
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
