@@ -1,0 +1,10 @@
+resource "reference-data" "vro.workflows.6254.B8808080808080808080808080808080A580808001223281930284530e3e80cba" {
+  code = "vro.workflows.6254.B8808080808080808080808080808080A580808001223281930284530e3e80cba"
+  name = "Tasks / Create task"
+  category = "vro.workflows.6254"
+  keyValue = "B8808080808080808080808080808080A580808001223281930284530e3e80cba"
+  rawData = "{\"id\":\"B8808080808080808080808080808080A580808001223281930284530e3e80cba\",\"name\":\"Create task\",\"description\":\"Schedules a workflow to run at a later time and date, as a task.\",\"category\":\"Tasks\"}"
+  refId = "6254"
+  refType = "AccountIntegration"
+  value = "Create task"
+}
