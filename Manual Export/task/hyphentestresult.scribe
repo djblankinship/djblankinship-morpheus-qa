@@ -1,0 +1,15 @@
+resource "task" "hyphentestresult" {
+  name = "hyphentestresult"
+  uuid = "810080f5-12a2-44cd-8156-a6a05fece7d7"
+  dateCreated = "2022-08-17T09:42:42.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-08-17T09:45:39.000Z"
+  options = [
+    {
+      content = { uuid = "309069f4-09b6-43fe-9f1d-9694cac2108a" }
+      optionType = { code = "script" }
+    }
+  ]
+  resultType = "value"
+  taskType = { code = "script" }
+}
