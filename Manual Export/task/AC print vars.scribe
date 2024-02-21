@@ -1,0 +1,14 @@
+resource "task" "AC print vars" {
+  name = "AC print vars"
+  uuid = "99391eb0-00c3-4f9d-a593-8ed83005c936"
+  dateCreated = "2023-11-30T19:21:09.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-02-15T20:38:50.000Z"
+  options = [
+    {
+      content = { uuid = "ce0bd37c-0ddd-4f81-a460-0c4a86ff4498" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

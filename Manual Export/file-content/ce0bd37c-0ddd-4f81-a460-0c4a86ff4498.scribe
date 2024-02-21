@@ -1,0 +1,12 @@
+resource "file-content" "ce0bd37c-0ddd-4f81-a460-0c4a86ff4498" {
+  uuid = "ce0bd37c-0ddd-4f81-a460-0c4a86ff4498"
+  content = <<EOFSCRIBE
+echo "<%= customOptions.aword %>"
+echo "<%= customOptions%>"
+
+
+
+EOFSCRIBE
+  dateCreated = "2023-11-30T19:21:10.000Z"
+  lastUpdated = "2024-02-15T20:38:50.000Z"
+}
