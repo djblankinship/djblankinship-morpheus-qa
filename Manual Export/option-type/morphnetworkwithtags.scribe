@@ -1,0 +1,13 @@
+resource "option-type" "morphnetworkwithtags" {
+  code = "morphnetworkwithtags"
+  name = "API Networks with Tags"
+  uuid = "cc685428-2253-4899-aa89-0b5c28dfb16c"
+  dependsOnCode = "morphnetwork"
+  fieldContext = "config.customOptions"
+  fieldLabel = "API Networks with Tags"
+  fieldName = "morphnetworkwithtags"
+  optionList = { name = "API Networks with Tags" }
+  optionSource = "list"
+  refCode = "morphnetworkvmwaretags"
+  type = "select"
+}
