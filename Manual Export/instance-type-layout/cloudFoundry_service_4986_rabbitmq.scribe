@@ -1,0 +1,15 @@
+resource "instance-type-layout" "cloudFoundry.service.4986.rabbitmq" {
+  code = "cloudFoundry.service.4986.rabbitmq"
+  name = "Cloud Foundry RabbitMQ"
+  uuid = "b4fcbd93-893a-48f2-95ca-c37585a48013"
+  description = "Provision cloud foundry rabbitmq service"
+  externalId = "669635c2-9163-4f06-80cc-aa909fe6bbb0"
+  instanceType = { code = "rabbitmq" }
+  instanceVersion = "3.6"
+  portCount = 6
+  provisionType = { code = "cloudFoundryService" }
+  refId = 4986
+  refType = "ComputeZone"
+  serverType = "service"
+  workloads = [ { code = "cloudFoundry.service.4986.rabbitmq-set" } ]
+}
