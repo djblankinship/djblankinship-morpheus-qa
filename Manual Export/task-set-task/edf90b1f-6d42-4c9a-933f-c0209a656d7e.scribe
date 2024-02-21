@@ -1,0 +1,5 @@
+resource "task-set-task" "edf90b1f-6d42-4c9a-933f-c0209a656d7e" {
+  uuid = "edf90b1f-6d42-4c9a-933f-c0209a656d7e"
+  task = { name = "Archive Link" }
+  taskPhase = "provision"
+}
