@@ -1,0 +1,9 @@
+resource "catalog-item-type" "provision" {
+  code = "provision"
+  name = "Provision Form"
+  uuid = "52c2bd95-4164-420c-b6d7-d9295e3a00c7"
+  dateCreated = "2023-06-23T14:22:21.000Z"
+  formType = "form"
+  lastUpdated = "2023-09-05T00:28:13.000Z"
+  refType = "InstanceType"
+}
