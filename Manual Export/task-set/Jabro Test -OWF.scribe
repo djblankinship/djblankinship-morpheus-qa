@@ -1,0 +1,8 @@
+resource "task-set" "Jabro Test -OWF" {
+  name = "Jabro Test -OWF"
+  uuid = "c703daf9-d27b-4c49-864b-0a154f683175"
+  dateCreated = "2023-09-06T21:18:06.000Z"
+  lastUpdated = "2023-09-06T21:18:06.000Z"
+  optionTypes = [ { code = "morphgroup" }, { code = "morphcloud" } ]
+  taskSetType = "operation"
+}
