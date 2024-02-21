@@ -1,0 +1,17 @@
+resource "container-type" "001a71bf-0f49-4e10-ba8e-9e7843d78b74" {
+  code = "001a71bf-0f49-4e10-ba8e-9e7843d78b74"
+  name = "Amazon Centos 8"
+  uuid = "7d85044f-9d94-4e52-bec1-40f29d9de1c5"
+  actions = [ { code = "generic-remove-node" } ]
+  containerPorts = [ { uuid = "63f955d3-91e5-42a4-992c-411923061289" } ]
+  containerVersion = "Centos 8"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awscent8"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = { code = "amazon.ec2.image.3.ami-006f59adcb98c236f" }
+}
