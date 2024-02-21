@@ -1,8 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "Docs Test Workflow"
-  uuid = "e7a90089-efdb-4fa2-815e-19a3cbda7ce0"
-  dateCreated = "2020-11-09T17:29:19.000Z"
+  name = "Dynamo Self Service"
+  uuid = "1990cb4a-6409-440d-981f-7036e26fd0f3"
+  dateCreated = "2020-10-23T01:09:58.000Z"
   iconPath = "/assets/containers-png/morph-resource2.png"
-  lastUpdated = "2020-11-09T17:29:19.000Z"
-  refType = "OperationalWorkflow"
+  lastUpdated = "2020-10-23T01:09:58.000Z"
+  refType = "InstanceType"
 }
