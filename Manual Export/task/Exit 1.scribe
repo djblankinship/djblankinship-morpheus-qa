@@ -1,0 +1,15 @@
+resource "task" "Exit 1" {
+  name = "Exit 1"
+  uuid = "da7203bd-bbfc-4385-b4e6-db29aa5ab40d"
+  dateCreated = "2023-08-08T16:15:06.000Z"
+  executeTarget = "resource"
+  labels = [ "auto", "keep" ]
+  lastUpdated = "2023-11-03T22:48:19.000Z"
+  options = [
+    {
+      content = { uuid = "f3f04fa3-4d69-4561-ab87-d1b473b01013" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

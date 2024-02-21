@@ -1,0 +1,6 @@
+resource "file-content" "f3f04fa3-4d69-4561-ab87-d1b473b01013" {
+  uuid = "f3f04fa3-4d69-4561-ab87-d1b473b01013"
+  content = "exit 1"
+  dateCreated = "2023-08-08T16:15:06.000Z"
+  lastUpdated = "2023-08-08T16:15:06.000Z"
+}
