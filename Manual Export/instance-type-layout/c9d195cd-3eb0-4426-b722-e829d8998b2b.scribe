@@ -1,0 +1,11 @@
+resource "instance-type-layout" "c9d195cd-3eb0-4426-b722-e829d8998b2b" {
+  code = "c9d195cd-3eb0-4426-b722-e829d8998b2b"
+  name = "CF DynamoDB"
+  uuid = "0ebfcd98-6abc-4d58-b4a6-f63d9b549c7f"
+  hasAutoScale = false
+  instanceType = { code = "aws-dynamodb" }
+  instanceVersion = "test"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [ { uuid = "ffc3f9af-30ee-43b8-934e-5425220d6a80" } ]
+}
