@@ -5,10 +5,5 @@ resource "instance-type" "al-centos-template" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "AL-CENTOS-TEMPLATE"
-  layouts = [
-    { code = "325d4355-dcb9-4330-b245-b70abe4a24eb" },
-    { code = "bed9e1e5-aee6-4b72-be6b-9b2814489241" },
-    { code = "f31b8693-86db-419f-bab2-67472d6817c5" }
-  ]
   visibility = "public"
 }
