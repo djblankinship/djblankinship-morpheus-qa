@@ -6,12 +6,12 @@ resource "task" "DGTestNewTemplate" {
   lastUpdated = "2023-02-27T10:15:15.000Z"
   options = [
     {
-      optionType = { code = "ansibleTowerIntegrationId" }
-      value = { name = "Labs Ansible Tower" }
-    },
-    {
       optionType = { code = "ansibleTowerJobTemplateId" }
       value = { code = "ansibleTower.jobTemplate.4997.43" }
+    },
+    {
+      optionType = { code = "ansibleTowerIntegrationId" }
+      value = { name = "Labs Ansible Tower" }
     },
     {
       optionType = { code = "ansibleTowerInventoryId" }
