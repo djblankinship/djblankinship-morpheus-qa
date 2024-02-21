@@ -7,4 +7,5 @@ resource "instance-type" "autotests" {
   description = "collection of various provision types used by auto tests"
   environmentPrefix = "AUTO"
   labels = [ "auto", "keep" ]
+  layouts = [ { code = "f43b6ddf-62bd-4358-9d41-a26dfe33987e" } ]
 }
