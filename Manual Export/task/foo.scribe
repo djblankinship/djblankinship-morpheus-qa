@@ -1,0 +1,11 @@
+resource "task" "foo" {
+  code = "foo"
+  name = "echo foo"
+  uuid = "b1ba03aa-bc8c-4170-8605-95d6f55606f5"
+  dateCreated = "2019-10-01T03:08:20.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-11-14T06:04:11.000Z"
+  options = [ { optionType = { code = "script" }, value = "echo \"foo\"" } ]
+  resultType = "value"
+  taskType = { code = "script" }
+}
