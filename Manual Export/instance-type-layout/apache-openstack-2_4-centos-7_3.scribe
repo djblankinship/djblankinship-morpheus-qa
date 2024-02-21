@@ -1,0 +1,16 @@
+resource "instance-type-layout" "apache-openstack-2.4-centos-7.3" {
+  code = "apache-openstack-2.4-centos-7.3"
+  name = "OpenStack Apache on CentOS 7.3"
+  uuid = "400ccc50-01c8-4bea-b1ec-54c3b5ac0509"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  memoryRequirement = 1073741824
+  portCount = 2
+  provisionType = { code = "openstack" }
+  serverType = "vm"
+  sortOrder = 100
+  workloads = [ { code = "apache-openstack-2.4-centos-7.3-set" } ]
+}
