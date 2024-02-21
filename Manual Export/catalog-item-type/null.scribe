@@ -1,8 +1,11 @@
 resource "catalog-item-type" "null" {
-  name = "TM aaaa"
-  uuid = "95825bfd-cdde-4eb1-81de-490a3bfa55f0"
-  dateCreated = "2023-06-09T20:16:05.000Z"
+  name = "Ubuntu - Forms - Azure"
+  uuid = "97fd3fd5-93df-4e10-96da-cf203dbf6cb3"
+  darkIconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/1996/logo/ubuntu_light_original.svg"
+  dateCreated = "2023-06-06T14:06:57.000Z"
   formType = "form"
-  lastUpdated = "2023-06-09T20:16:05.000Z"
+  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/1996/logo/ubuntu_light_original.svg"
+  labels = [ { name = "Azure" }, { name = "Forms" } ]
+  lastUpdated = "2023-06-06T14:09:38.000Z"
   refType = "InstanceType"
 }
