@@ -1,9 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "wa test field visibility"
-  uuid = "82688e36-c4f7-4a18-9c77-cba18f2451cb"
-  dateCreated = "2023-05-10T13:39:26.000Z"
-  formType = "optionTypes"
-  lastUpdated = "2023-05-10T13:39:26.000Z"
-  optionTypes = [ { code = "wa_sendMail" }, { code = "wa_email_address" } ]
-  refType = "InstanceType"
+  name = "Workflow Appliance"
+  uuid = "fc0da9e9-95d1-4e0d-bbe3-0e3219f76d9c"
+  dateCreated = "2020-11-03T17:13:17.000Z"
+  iconPath = "/assets/containers-png/morph-resource2.png"
+  lastUpdated = "2021-03-23T21:39:32.000Z"
+  refType = "OperationalWorkflow"
 }
