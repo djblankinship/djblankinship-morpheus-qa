@@ -1,0 +1,13 @@
+resource "option-type" "Tenant_name" {
+  code = "Tenant_name"
+  name = "RG-SC-With-Default"
+  uuid = "d97f678e-0d58-4eab-b732-551a9fee21c9"
+  defaultValue = "Ryan"
+  fieldContext = "config.customOptions"
+  fieldGetName = "Tenant_name"
+  fieldLabel = "Tenant Name"
+  fieldName = "Tenant_name"
+  fieldSetName = "Tenant_name"
+  placeHolder = "tenant name"
+  required = true
+}
