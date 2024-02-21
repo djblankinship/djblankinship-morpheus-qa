@@ -1,0 +1,12 @@
+resource "task-set" "InstallerUpdatesSuse15" {
+  name = "InstallerUpdatesSuse15"
+  uuid = "6bd6eff8-8255-40f6-9e3e-db4bb8e69d91"
+  dateCreated = "2023-09-12T21:59:41.000Z"
+  description = "post provision to run commands on suse 15 for installer"
+  lastUpdated = "2023-09-13T14:31:30.000Z"
+  taskSetTasks = [
+    { uuid = "69feeb53-70f1-424a-9ec6-41375a1311f7" },
+    { uuid = "6ca145a2-c709-4e13-96bc-f97937345413" },
+    { uuid = "91120bbe-7174-4b23-be34-e4a39e6983d2" }
+  ]
+}

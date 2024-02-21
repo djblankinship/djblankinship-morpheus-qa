@@ -1,0 +1,5 @@
+resource "task-set-task" "91120bbe-7174-4b23-be34-e4a39e6983d2" {
+  uuid = "91120bbe-7174-4b23-be34-e4a39e6983d2"
+  task = { name = "InstallerSusePart2" }
+  taskOrder = 2
+}

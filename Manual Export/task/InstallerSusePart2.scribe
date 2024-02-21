@@ -1,0 +1,15 @@
+resource "task" "InstallerSusePart2" {
+  name = "InstallerSusePart2"
+  uuid = "a49bf5a3-0271-4aef-a548-2c4ebac0844b"
+  dateCreated = "2023-09-12T22:03:24.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-09-13T14:50:23.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "1f928e52-6883-478c-bca1-f5c1e5f46bea" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
