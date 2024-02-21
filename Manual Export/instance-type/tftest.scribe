@@ -5,4 +5,8 @@ resource "instance-type" "tftest" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "CF_TEST"
+  layouts = [
+    { code = "3fd41975-60fd-41de-9d23-9f611c5a2f0f" },
+    { code = "685df95c-521a-4a46-9360-59c8ce476db4" }
+  ]
 }
