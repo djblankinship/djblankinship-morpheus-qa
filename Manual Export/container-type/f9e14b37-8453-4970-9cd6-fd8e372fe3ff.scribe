@@ -1,0 +1,15 @@
+resource "container-type" "f9e14b37-8453-4970-9cd6-fd8e372fe3ff" {
+  code = "f9e14b37-8453-4970-9cd6-fd8e372fe3ff"
+  name = "case 67629-node"
+  uuid = "f4586e79-70f0-4cc4-a94a-3c116cfa4110"
+  containerVersion = "1.2"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "vm"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "amazon.ec2.image.morpheus.centos.8.4-v2" }
+}
