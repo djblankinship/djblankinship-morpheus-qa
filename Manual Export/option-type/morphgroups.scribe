@@ -1,0 +1,11 @@
+resource "option-type" "morphgroups" {
+  code = "morphgroups"
+  name = "acGroup"
+  uuid = "9e6ec346-e49c-45bf-bd1a-4f29dccc9036"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Group"
+  fieldName = "morphgroups"
+  optionList = { name = "API Groups" }
+  optionSource = "list"
+  type = "select"
+}
