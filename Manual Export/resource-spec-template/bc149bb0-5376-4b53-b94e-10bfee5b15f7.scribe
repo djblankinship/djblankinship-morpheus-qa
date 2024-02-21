@@ -1,0 +1,9 @@
+resource "resource-spec-template" "bc149bb0-5376-4b53-b94e-10bfee5b15f7" {
+  name = "CF Memcached"
+  uuid = "bc149bb0-5376-4b53-b94e-10bfee5b15f7"
+  dateCreated = "2019-10-25T22:25:07.000Z"
+  lastUpdated = "2019-10-25T22:25:07.000Z"
+  template = { uuid = "a7548fef-3b59-4017-a507-632a835c9aba" }
+  templateType = "CloudFormation Template"
+  type = { code = "cloudFormation" }
+}
