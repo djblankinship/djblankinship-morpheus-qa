@@ -1,0 +1,9 @@
+resource "option-type-list" "acUserTypeahead" {
+  name = "acUserTypeahead"
+  uuid = "8887f093-c781-44a7-8d3d-5ae4e897adb2"
+  config = "{\"sourceHeaders\":[]}"
+  description = "user  typeahead"
+  realTime = true
+  sourceMethod = "POST"
+  sourceUrl = "https://qa.morpheusdata.com/users"
+}
