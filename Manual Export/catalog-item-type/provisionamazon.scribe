@@ -1,0 +1,10 @@
+resource "catalog-item-type" "provisionamazon" {
+  code = "provisionamazon"
+  name = "Provision - Amazon"
+  uuid = "a43c2b12-d6e9-4e85-81bc-b5e2526f2818"
+  dateCreated = "2023-06-23T17:33:26.000Z"
+  formConfig = "{\"optOut\":{\"507e9cf0-d65b-4d47-8cda-2ccda6d1f409\":false}}"
+  formType = "form"
+  lastUpdated = "2023-12-18T18:38:50.000Z"
+  refType = "InstanceType"
+}
