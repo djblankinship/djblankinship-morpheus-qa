@@ -5,4 +5,9 @@ resource "instance-type" "disks" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "DISKS"
+  layouts = [
+    { code = "00e892e1-eaa5-43cf-8723-70c07b8b98fc" },
+    { code = "0df7c60e-e470-41ee-8ae0-83141e86dde0" },
+    { code = "228ec710-6b75-484e-8759-dcb44d6cccb0" }
+  ]
 }
