@@ -1,0 +1,14 @@
+resource "container-type" "dd617e21-6ae2-47df-966a-90c0304025fe" {
+  code = "dd617e21-6ae2-47df-966a-90c0304025fe"
+  name = "CH Win 7 Ent"
+  uuid = "dfaad61a-a1c5-4d62-8688-64dc18b82e80"
+  containerVersion = "Latest"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ch-win-7-ent"
+  showServerLogs = true
+  statTypeCode = "vmware"
+}
