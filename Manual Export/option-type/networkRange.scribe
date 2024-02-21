@@ -1,0 +1,9 @@
+resource "option-type" "networkRange" {
+  code = "networkRange"
+  name = "networkRange"
+  uuid = "8d42cf4c-e717-4cbc-b0d2-471d60b9312f"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Network Range"
+  fieldName = "networkRange"
+  requireOnCode = "isUnmanagedNetwork:(on)"
+}
