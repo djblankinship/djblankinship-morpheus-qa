@@ -1,0 +1,13 @@
+resource "option-type" "gwin1" {
+  code = "gwin1"
+  name = "GW_input1"
+  uuid = "ea5700d7-7926-43b6-b044-c398dea22ac9"
+  defaultValue = "\"Automation\""
+  description = "Test input for 71492"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Greg_test_field"
+  fieldName = "gwin1"
+  optionList = { name = "Groups" }
+  optionSource = "list"
+  type = "select"
+}

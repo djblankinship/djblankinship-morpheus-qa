@@ -1,0 +1,9 @@
+resource "task-set" "GW_input_test_workflow1" {
+  name = "GW_input_test_workflow1"
+  uuid = "8304dbdc-6753-4ec7-93cd-a97434408880"
+  dateCreated = "2023-11-03T09:39:56.000Z"
+  description = "Input test for 71492"
+  lastUpdated = "2023-11-03T09:39:56.000Z"
+  optionTypes = [ { code = "gwin1" } ]
+  taskSetType = "operation"
+}
