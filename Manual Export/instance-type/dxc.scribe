@@ -8,4 +8,5 @@ resource "instance-type" "dxc" {
   hasAutoScale = true
   hasDeployment = true
   hasSettings = true
+  layouts = [ { code = "1f49bf90-cb0e-4852-911c-3fd21c4ea848" } ]
 }
