@@ -1,0 +1,8 @@
+resource "instance-type" "nginxd" {
+  code = "nginxd"
+  name = "nginx-deployment"
+  uuid = "0cd2c539-4d01-4584-8278-3aeaee5b29f8"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "NGINX-DEPLOYMENT"
+}
