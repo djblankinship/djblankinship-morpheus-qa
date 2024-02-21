@@ -5,11 +5,11 @@ resource "task" "api-test-shelltask" {
   executeTarget = "local"
   lastUpdated = "2023-04-06T21:15:31.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "07a18b16-f2fe-49ce-9cfc-3da23e7f56a1" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
