@@ -1,0 +1,10 @@
+resource "resource-spec-template" "b83ef2fc-7cfa-4bfd-b32d-987069e56e51" {
+  name = "db-nginx-0207"
+  uuid = "b83ef2fc-7cfa-4bfd-b32d-987069e56e51"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2024-02-07T17:40:22.000Z"
+  lastUpdated = "2024-02-07T17:40:22.000Z"
+  template = { uuid = "a6bc2863-166c-4dd6-872a-c6d8522a05ef" }
+  templateType = "Kubernetes Spec"
+  type = { code = "kubernetes" }
+}
