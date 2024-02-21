@@ -1,0 +1,18 @@
+resource "instance-type-layout" "d68b634f-85c0-49c1-9547-d67c43c2c4c3" {
+  code = "d68b634f-85c0-49c1-9547-d67c43c2c4c3"
+  name = "Options"
+  uuid = "56d85ad3-0015-4752-ab29-91f675199c66"
+  actions = [ { code = "d68b634f-85c0-49c1-9547-d67c43c2c4c3" } ]
+  hasAutoScale = true
+  instanceType = { code = "options" }
+  instanceVersion = "opts1"
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "selectNoBlank" },
+    { code = "testuserid" },
+    { code = "testuserpost" }
+  ]
+  provisionType = { code = "vmware" }
+  supportsConvertToManaged = true
+  workloads = [ { code = "e911c062-1a44-4c87-be46-848a6abd32fe" } ]
+}

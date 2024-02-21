@@ -1,0 +1,13 @@
+resource "option-type" "testuserid" {
+  code = "testuserid"
+  name = "Test User ID"
+  uuid = "7bd9fbe2-7913-4827-81f9-7a668e5d3cb3"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "testuserid"
+  fieldLabel = "Test User ID"
+  fieldName = "testuserid"
+  fieldSetName = "testuserid"
+  placeHolder = "1"
+  required = true
+}
