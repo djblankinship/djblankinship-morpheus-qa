@@ -1,0 +1,20 @@
+resource "task" "api-python-cypher" {
+  code = "api-python-cypher"
+  name = "api-python-cypher"
+  uuid = "9ab4ec00-a9c3-4dc5-ba88-b4b0f59cd665"
+  dateCreated = "2023-12-13T17:34:36.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-12-13T17:34:36.000Z"
+  options = [
+    {
+      optionType = { code = "pythonAdditionalPackages" }
+      value = "morpheus-cypher"
+    },
+    { optionType = { code = "pythonBinary" }, value = "python3" },
+    {
+      content = { uuid = "3caeee26-ebf0-4c85-aa3d-e9614bb5bc91" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}

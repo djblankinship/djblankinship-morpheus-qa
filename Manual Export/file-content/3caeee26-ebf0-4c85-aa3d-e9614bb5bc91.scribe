@@ -1,0 +1,11 @@
+resource "file-content" "3caeee26-ebf0-4c85-aa3d-e9614bb5bc91" {
+  uuid = "3caeee26-ebf0-4c85-aa3d-e9614bb5bc91"
+  content = <<EOFSCRIBE
+from morpheuscypher import Cypher
+
+creds = Cypher(morpheus=morpheus).get('secret/hello')
+print(creds) # Should return "world"
+EOFSCRIBE
+  dateCreated = "2023-12-13T17:34:36.000Z"
+  lastUpdated = "2023-12-13T17:34:36.000Z"
+}
