@@ -1,0 +1,9 @@
+resource "catalog-item-type" "provisionnutanix" {
+  code = "provisionnutanix"
+  name = "Provision - Nutanix"
+  uuid = "ecaf4a79-9652-4f9f-bb9a-638e70bda062"
+  dateCreated = "2023-06-23T17:49:24.000Z"
+  formType = "form"
+  lastUpdated = "2023-08-07T19:23:12.000Z"
+  refType = "InstanceType"
+}
