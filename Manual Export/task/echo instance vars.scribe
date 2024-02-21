@@ -5,11 +5,11 @@ resource "task" "echo instance vars" {
   executeTarget = "resource"
   lastUpdated = "2020-11-06T21:28:14.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "82d3bda4-2b39-4a10-84f8-326d85241a87" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
