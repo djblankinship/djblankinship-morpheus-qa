@@ -1,0 +1,9 @@
+resource "catalog-item-type" "gwcat2" {
+  code = "gwcat2"
+  name = "GW_CatalogItem2"
+  uuid = "4a2c90c0-305f-4fc6-9800-28ab2179c279"
+  dateCreated = "2023-11-03T09:50:17.000Z"
+  description = "Test catalog for 71492"
+  lastUpdated = "2023-11-03T09:50:17.000Z"
+  refType = "OperationalWorkflow"
+}
