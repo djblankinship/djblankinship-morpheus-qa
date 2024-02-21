@@ -1,0 +1,10 @@
+resource "catalog-item-type" "provisionvmware" {
+  code = "provisionvmware"
+  name = "Provision - VMware"
+  uuid = "0fb0c875-67e8-4491-9497-2f8442402bfb"
+  dateCreated = "2023-06-23T16:54:38.000Z"
+  formConfig = "{\"optOut\":{\"25099656-07dc-40c8-844f-09167bf0baed\":false}}"
+  formType = "form"
+  lastUpdated = "2024-02-05T20:20:18.000Z"
+  refType = "InstanceType"
+}
