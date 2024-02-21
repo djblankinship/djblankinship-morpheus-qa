@@ -1,0 +1,12 @@
+resource "option-type" "acnumber" {
+  code = "acnumber"
+  name = "ac Number"
+  uuid = "c4137d13-30f4-40ed-8a62-a9996beae401"
+  defaultValue = "8"
+  displayOrder = 3
+  fieldContext = "config.customOptions"
+  fieldLabel = "number"
+  fieldName = "acnumber"
+  isHidden = true
+  type = "number"
+}
