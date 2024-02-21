@@ -5,11 +5,11 @@ resource "task" "Job: Task (No Custom Content)" {
   executeTarget = "resource"
   lastUpdated = "2023-01-13T17:22:45.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "67e30bd6-6ebb-4882-bbe0-d8179c56b6ab" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
