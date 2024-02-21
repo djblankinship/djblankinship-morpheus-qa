@@ -1,0 +1,18 @@
+resource "account-integration" "Ansible-Role-K8sCluster" {
+  name = "Ansible-Role-K8sCluster"
+  uuid = "02077aa4-f191-4b88-bec5-18eea34360b7"
+  config = {
+    ansibleCommandBus = "on"
+    ansibleGalaxyEnabled = null
+    ansibleGroupVars = "/"
+    ansibleHostVars = "/"
+    ansiblePlaybooks = "/"
+    ansibleRoles = "/roles"
+    ansibleVerbose = null
+    cacheEnabled = "on"
+    defaultBranch = "main"
+  }
+  integrationType = { code = "ansible" }
+  serviceUrl = "git@github.com:gomorpheus/ansible-role-k8scluster.git"
+  type = "ansible"
+}

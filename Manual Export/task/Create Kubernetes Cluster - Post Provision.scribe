@@ -1,0 +1,20 @@
+resource "task" "Create Kubernetes Cluster - Post Provision" {
+  name = "Create Kubernetes Cluster - Post Provision"
+  uuid = "a3c934ec-d3ac-4b68-94c2-88733a335f28"
+  dateCreated = "2024-02-08T21:18:00.000Z"
+  executeTarget = "resource"
+  labels = [ "Cluster", "K8s", "Master", "Worker" ]
+  lastUpdated = "2024-02-08T21:18:00.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Ansible-Role-K8sCluster" }
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "main" },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "postProvision.yml"
+    }
+  ]
+  taskType = { code = "ansibleTask" }
+}

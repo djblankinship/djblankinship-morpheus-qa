@@ -1,0 +1,5 @@
+resource "task-set-task" "43c8bebb-e24c-4d6e-9303-89780fe1349b" {
+  uuid = "43c8bebb-e24c-4d6e-9303-89780fe1349b"
+  task = { name = "Create Kubernetes Cluster - Provision" }
+  taskPhase = "provision"
+}

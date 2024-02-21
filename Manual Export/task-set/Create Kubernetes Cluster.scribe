@@ -1,0 +1,12 @@
+resource "task-set" "Create Kubernetes Cluster" {
+  name = "Create Kubernetes Cluster"
+  uuid = "01f27891-2705-49df-865d-9c7c01f2cb9a"
+  dateCreated = "2024-02-08T21:19:51.000Z"
+  labels = [ "Cluster", "K8s", "Master", "Worker" ]
+  lastUpdated = "2024-02-08T21:19:51.000Z"
+  platform = "linux"
+  taskSetTasks = [
+    { uuid = "43c8bebb-e24c-4d6e-9303-89780fe1349b" },
+    { uuid = "a439180d-22e9-4b4c-a328-db2958d97f2a" }
+  ]
+}
