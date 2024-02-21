@@ -1,0 +1,11 @@
+resource "file-content" "c3303a55-c2fe-422d-b6c2-0ed2aa536845" {
+  uuid = "c3303a55-c2fe-422d-b6c2-0ed2aa536845"
+  content = <<EOFSCRIBE
+yum -y update &&
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y &&
+/usr/bin/crb enable
+
+EOFSCRIBE
+  dateCreated = "2023-09-12T20:32:00.000Z"
+  lastUpdated = "2023-09-12T20:50:14.000Z"
+}

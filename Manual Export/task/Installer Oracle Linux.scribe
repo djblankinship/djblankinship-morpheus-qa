@@ -1,0 +1,15 @@
+resource "task" "Installer Oracle Linux" {
+  name = "Installer Oracle Linux"
+  uuid = "0c034b68-7864-43b7-aea4-7561115e568b"
+  dateCreated = "2023-09-12T20:32:00.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-09-12T20:50:14.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "c3303a55-c2fe-422d-b6c2-0ed2aa536845" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

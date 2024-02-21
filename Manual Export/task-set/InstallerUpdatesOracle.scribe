@@ -1,0 +1,8 @@
+resource "task-set" "InstallerUpdatesOracle" {
+  name = "InstallerUpdatesOracle"
+  uuid = "fef7bfea-dc4f-4b6b-a51d-c227e039e1e6"
+  dateCreated = "2023-09-12T20:32:47.000Z"
+  description = "post provision to run required tasks for Oracle Linux installer testing"
+  lastUpdated = "2023-12-14T18:28:55.000Z"
+  taskSetTasks = [ { uuid = "7c16f39f-dd66-4492-a2d9-7b80946400e1" } ]
+}
