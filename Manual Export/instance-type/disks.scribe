@@ -1,0 +1,8 @@
+resource "instance-type" "disks" {
+  code = "disks"
+  name = "Disks"
+  uuid = "055291f2-15f3-435c-bca1-68abfe4f9ac4"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "DISKS"
+}
