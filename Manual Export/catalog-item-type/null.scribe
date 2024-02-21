@@ -1,8 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "Hello World Local Sleep Operational"
-  uuid = "2d051005-268a-4724-8f70-99394c6624a4"
-  dateCreated = "2023-03-07T19:59:18.000Z"
-  iconPath = "/assets/branding/140x40/resource.svg"
-  lastUpdated = "2023-03-07T19:59:18.000Z"
+  name = "Job: Task"
+  uuid = "1907dd90-1bb0-47c6-87cd-c37ae448b026"
+  dateCreated = "2020-11-06T20:07:00.000Z"
+  iconPath = "/assets/containers-png/morph-resource2.png"
+  lastUpdated = "2020-11-06T20:13:35.000Z"
   refType = "OperationalWorkflow"
 }
