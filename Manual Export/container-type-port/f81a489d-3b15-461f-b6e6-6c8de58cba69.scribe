@@ -1,0 +1,9 @@
+resource "container-type-port" "f81a489d-3b15-461f-b6e6-6c8de58cba69" {
+  name = "Awesome"
+  uuid = "f81a489d-3b15-461f-b6e6-6c8de58cba69"
+  export = true
+  exportName = "AWESOME"
+  externalPort = 1337
+  internalPort = 1337
+  visible = true
+}
