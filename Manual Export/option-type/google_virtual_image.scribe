@@ -1,0 +1,14 @@
+resource "option-type" "google_virtual_image" {
+  code = "google_virtual_image"
+  name = "GCP Virtual Image"
+  uuid = "fae570e4-e6a6-462e-b43b-9d89ea37334e"
+  fieldContext = "config.customOptions"
+  fieldGetName = "google_virtual_image"
+  fieldLabel = "GCP Virtual Image"
+  fieldName = "google_virtual_image"
+  fieldSetName = "google_virtual_image"
+  optionList = { name = "GCP Virtual-Images" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
