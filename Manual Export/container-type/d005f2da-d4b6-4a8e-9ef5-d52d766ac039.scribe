@@ -1,0 +1,15 @@
+resource "container-type" "d005f2da-d4b6-4a8e-9ef5-d52d766ac039" {
+  code = "d005f2da-d4b6-4a8e-9ef5-d52d766ac039"
+  name = "Vmware2Disks"
+  uuid = "7f883dda-c2e4-4284-9562-21a79803b4d7"
+  containerVersion = "2"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "vmw2"
+  showServerLogs = true
+  statTypeCode = "vmware"
+  virtualImage = { code = "vmware.vsphere.image.18420.vm-58814" }
+}
