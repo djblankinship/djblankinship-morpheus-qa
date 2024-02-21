@@ -1,0 +1,14 @@
+resource "task" "aaaaa" {
+  name = "aaaaa"
+  uuid = "effb9d0c-566f-4f72-9186-90647419e8ea"
+  dateCreated = "2023-12-06T16:35:23.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-12-06T17:06:35.000Z"
+  options = [
+    {
+      content = { uuid = "eea59e39-f780-48b2-a31a-660332959d0e" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
