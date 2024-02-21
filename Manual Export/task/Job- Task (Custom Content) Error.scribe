@@ -5,11 +5,11 @@ resource "task" "Job: Task (Custom Content) Error" {
   executeTarget = "resource"
   lastUpdated = "2023-01-13T17:22:38.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "1e25d7db-a6a0-4502-91af-227ea5ff561e" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
