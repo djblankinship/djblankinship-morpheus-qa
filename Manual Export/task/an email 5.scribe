@@ -1,0 +1,20 @@
+resource "task" "an email 5" {
+  name = "an email 5"
+  uuid = "ad9abcab-0850-4f73-8d95-770b8c75ad5c"
+  dateCreated = "2020-04-07T02:52:58.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-04-07T02:52:58.000Z"
+  options = [
+    { optionType = { code = "emailSubject" }, value = "email 5" },
+    { optionType = { code = "emailSkipTemplate" }, value = "on" },
+    {
+      optionType = { code = "emailAddress" }
+      value = "tommymarks+5@gmail.com"
+    },
+    {
+      content = { uuid = "789a0664-a02f-4958-acdc-3bfa68db5ce7" }
+      optionType = { code = "emailBody" }
+    }
+  ]
+  taskType = { code = "email" }
+}
