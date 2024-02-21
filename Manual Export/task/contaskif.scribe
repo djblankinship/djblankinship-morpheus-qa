@@ -1,0 +1,28 @@
+resource "task" "contaskif" {
+  code = "contaskif"
+  name = "auto con task if"
+  uuid = "94294668-78d1-4bb0-82c7-fd85e5cfaddb"
+  dateCreated = "2024-02-20T22:28:41.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-02-20T22:28:41.000Z"
+  options = [
+    {
+      optionType = { code = "ifOperationalWorkflowId" }
+      value = "8839"
+    },
+    {
+      optionType = { code = "elseOperationalWorkflowId" }
+      value = "8840"
+    },
+    {
+      optionType = { code = "elseOperationalWorkflowName" }
+      value = "Auto else workflow"
+    },
+    {
+      optionType = { code = "ifOperationalWorkflowName" }
+      value = "Auto if workflow"
+    },
+    { optionType = { code = "conditionalScript" }, value = "true;" }
+  ]
+  taskType = { code = "conditionalWorkflow" }
+}
