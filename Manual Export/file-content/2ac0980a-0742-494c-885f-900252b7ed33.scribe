@@ -1,0 +1,9 @@
+resource "file-content" "2ac0980a-0742-494c-885f-900252b7ed33" {
+  uuid = "2ac0980a-0742-494c-885f-900252b7ed33"
+  content = <<EOFSCRIBE
+Get-Content "C:\Program Files (x86)\Morpheus\Morpheus Windows Agent\MorpheusAgent.exe.config"
+
+EOFSCRIBE
+  dateCreated = "2023-12-06T05:56:34.000Z"
+  lastUpdated = "2023-12-06T05:56:34.000Z"
+}

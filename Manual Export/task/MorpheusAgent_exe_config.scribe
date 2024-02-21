@@ -1,0 +1,15 @@
+resource "task" "MorpheusAgent.exe.config" {
+  name = "MorpheusAgent.exe.config"
+  uuid = "d7311306-6236-435b-bef1-d2dec39a98d9"
+  dateCreated = "2023-12-06T05:56:34.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-12-06T05:56:34.000Z"
+  options = [
+    {
+      content = { uuid = "2ac0980a-0742-494c-885f-900252b7ed33" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "winrm.elevated" }, value = "on" }
+  ]
+  taskType = { code = "winrmTask" }
+}
