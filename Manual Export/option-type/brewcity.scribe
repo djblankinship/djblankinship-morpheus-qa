@@ -1,12 +1,13 @@
 resource "option-type" "brewcity" {
   code = "brewcity"
-  name = "Brewery - City Input - Select"
-  uuid = "435020ea-64fa-4a7e-b44d-170754b67c7d"
+  name = "Brewery - City Input - Typeahead"
+  uuid = "8cd623e0-0a9a-4049-9065-4002904dd0c3"
+  config = { _multiSelect = "" }
   fieldContext = "config.customOptions"
-  fieldLabel = "Brewery - City Input - Select"
+  fieldLabel = "Brewery - City Input - Typeahead"
   fieldName = "brewcity"
   optionList = { name = "Breweries - City List" }
   optionSource = "list"
   required = true
-  type = "select"
+  type = "typeahead"
 }
