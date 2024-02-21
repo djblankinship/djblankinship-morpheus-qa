@@ -5,4 +5,5 @@ resource "instance-type" "bob-test-azure-ref" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "BOB-TEST-AZURE-REF"
+  layouts = [ { code = "45bcf91c-30b6-41b6-97c3-d41a9d737b32" } ]
 }
