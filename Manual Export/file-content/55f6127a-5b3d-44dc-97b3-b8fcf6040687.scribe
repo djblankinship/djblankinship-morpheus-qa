@@ -1,0 +1,10 @@
+resource "file-content" "55f6127a-5b3d-44dc-97b3-b8fcf6040687" {
+  uuid = "55f6127a-5b3d-44dc-97b3-b8fcf6040687"
+  content = <<EOFSCRIBE
+echo "$(date) - teardown" | tee -a /var/tmp/xaas.txt
+echo whaddup
+sleep 120
+EOFSCRIBE
+  dateCreated = "2022-01-06T05:07:27.000Z"
+  lastUpdated = "2023-09-06T20:01:05.000Z"
+}

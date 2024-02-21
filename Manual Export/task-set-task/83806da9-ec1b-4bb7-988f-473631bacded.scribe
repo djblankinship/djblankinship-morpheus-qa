@@ -1,0 +1,6 @@
+resource "task-set-task" "83806da9-ec1b-4bb7-988f-473631bacded" {
+  uuid = "83806da9-ec1b-4bb7-988f-473631bacded"
+  task = { name = "XaaS: Teardown" }
+  taskOrder = 4
+  taskPhase = "teardown"
+}

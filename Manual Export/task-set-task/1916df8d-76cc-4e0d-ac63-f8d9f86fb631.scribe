@@ -1,0 +1,5 @@
+resource "task-set-task" "1916df8d-76cc-4e0d-ac63-f8d9f86fb631" {
+  uuid = "1916df8d-76cc-4e0d-ac63-f8d9f86fb631"
+  task = { name = "XaaS: Post Provision" }
+  taskOrder = 2
+}
