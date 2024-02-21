@@ -1,0 +1,19 @@
+resource "task" "a2-pwsh" {
+  name = "a2-pwsh"
+  uuid = "999127a4-f2a0-4c10-9cfa-e1b607be515e"
+  dateCreated = "2021-09-28T16:28:13.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2021-09-28T16:28:13.000Z"
+  options = [
+    { optionType = { code = "host" }, value = "192.168.10.4" },
+    {
+      optionType = { code = "username" }
+      value = "cbunge@bungebash.com"
+    },
+    {
+      content = { uuid = "bec97fa1-0901-414f-9140-d355a0b16132" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
