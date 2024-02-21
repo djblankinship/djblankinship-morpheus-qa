@@ -1,0 +1,10 @@
+resource "instance-type-layout" "fe417e1f-c370-4ce8-92ae-83242a32ee58" {
+  code = "fe417e1f-c370-4ce8-92ae-83242a32ee58"
+  name = "create_pool"
+  uuid = "f65b7033-300e-41a8-b906-ae6be97646d9"
+  instanceType = { code = "f5mgmt" }
+  instanceVersion = "v1"
+  memoryRequirement = 0
+  provisionType = { code = "workflow" }
+  taskSets = [ { name = "f5CreatePool" } ]
+}
