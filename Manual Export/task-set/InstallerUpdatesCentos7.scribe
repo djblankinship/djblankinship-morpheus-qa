@@ -1,0 +1,8 @@
+resource "task-set" "InstallerUpdatesCentos7" {
+  name = "InstallerUpdatesCentos7"
+  uuid = "27770ad2-8f2d-471a-ae0c-c1e8959e304c"
+  dateCreated = "2023-09-12T16:55:58.000Z"
+  description = "post provision to run required tasks for Centos7 installer testing"
+  lastUpdated = "2023-09-12T20:34:47.000Z"
+  taskSetTasks = [ { uuid = "6fb7e578-eb73-4a5b-9e6d-fa7b14a4e8b0" } ]
+}

@@ -1,0 +1,15 @@
+resource "task" "Installer Centos7" {
+  name = "Installer Centos7"
+  uuid = "3e2654c5-630c-4fa3-a056-599de99ddd41"
+  dateCreated = "2023-09-12T16:55:18.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-09-12T16:55:18.000Z"
+  options = [
+    {
+      content = { uuid = "c9b7aa48-9c76-448e-89ee-c972edce33b8" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
