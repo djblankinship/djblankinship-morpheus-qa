@@ -1,0 +1,19 @@
+resource "task" "helloworldnested" {
+  code = "helloworldnested"
+  name = "Hello World Nested"
+  uuid = "c578a538-7043-4a12-8a1a-2f17b286a655"
+  dateCreated = "2024-02-09T22:36:16.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-02-13T17:45:54.000Z"
+  options = [
+    {
+      optionType = { code = "operationalWorkflowId" }
+      value = "8757"
+    },
+    {
+      optionType = { code = "operationalWorkflowName" }
+      value = "Hello World Operational 1 and 2"
+    }
+  ]
+  taskType = { code = "nestedWorkflow" }
+}

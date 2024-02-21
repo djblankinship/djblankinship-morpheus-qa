@@ -1,0 +1,6 @@
+resource "task-set-task" "1d58479b-2ba7-4f14-8d54-140426de5dae" {
+  uuid = "1d58479b-2ba7-4f14-8d54-140426de5dae"
+  task = { code = "helloworldnested" }
+  taskOrder = 1
+  taskPhase = "operation"
+}

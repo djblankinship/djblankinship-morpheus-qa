@@ -1,0 +1,11 @@
+resource "task-set" "Hello World Operational Combined" {
+  name = "Hello World Operational Combined"
+  uuid = "deeb832b-8f3d-4bae-80aa-b4676cedfb52"
+  dateCreated = "2024-02-09T22:37:03.000Z"
+  lastUpdated = "2024-02-09T22:37:03.000Z"
+  taskSetTasks = [
+    { uuid = "1d58479b-2ba7-4f14-8d54-140426de5dae" },
+    { uuid = "b30fd7ba-91a0-498f-9cfa-d8072c1ef3f4" }
+  ]
+  taskSetType = "operation"
+}
