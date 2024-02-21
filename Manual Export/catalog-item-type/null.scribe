@@ -1,8 +1,16 @@
 resource "catalog-item-type" "null" {
-  name = "Custom Instance"
-  uuid = "974e5a4c-2d1d-4043-8bc5-d4516e3961c5"
-  dateCreated = "2021-09-16T14:29:39.000Z"
-  iconPath = "/assets/containers-png/morph-resource2.png"
-  lastUpdated = "2021-09-16T14:29:39.000Z"
-  refType = "OperationalWorkflow"
+  name = "db-instance-vmware-0205"
+  uuid = "0d895271-98b8-4513-8532-164dd02a19a3"
+  dateCreated = "2024-02-05T22:37:21.000Z"
+  formType = "optionTypes"
+  lastUpdated = "2024-02-09T22:16:48.000Z"
+  optionTypes = [
+    { code = "morphgroup" },
+    { code = "morphcloud" },
+    { code = "morphpool" },
+    { code = "morphnetwork" },
+    { code = "morphnetworktagnames" },
+    { code = "morphnetworktagvalues" }
+  ]
+  refType = "InstanceType"
 }
