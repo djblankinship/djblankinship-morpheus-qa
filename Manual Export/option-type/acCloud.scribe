@@ -1,0 +1,15 @@
+resource "option-type" "acCloud" {
+  code = "acCloud"
+  name = "acCloud"
+  uuid = "d6aff6c1-f4d6-4bf4-b50a-4990dfaf872a"
+  dependsOnCode = "morphgroups"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Cloud"
+  fieldName = "acCloud"
+  optionList = { name = "API Clouds" }
+  optionSource = "list"
+  requireOnCode = "morphgroups"
+  required = true
+  type = "select"
+  visibleOnCode = "morphgroups"
+}
