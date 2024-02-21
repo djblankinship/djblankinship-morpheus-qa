@@ -1,0 +1,13 @@
+resource "instance-type-layout" "apache-nutanix-2.4-centos-7.3" {
+  code = "apache-nutanix-2.4-centos-7.3"
+  name = "Nutanix Apache on CentOS 7.3"
+  uuid = "4d332251-46a9-4e19-ada0-626073028da9"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  portCount = 2
+  provisionType = { code = "nutanix" }
+  sortOrder = 100
+  workloads = [ { code = "apache-nutanix-2.4-centos-7.3-set" } ]
+}
