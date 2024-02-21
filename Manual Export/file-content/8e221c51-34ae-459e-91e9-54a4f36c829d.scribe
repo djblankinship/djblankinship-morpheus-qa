@@ -1,0 +1,60 @@
+resource "file-content" "8e221c51-34ae-459e-91e9-54a4f36c829d" {
+  uuid = "8e221c51-34ae-459e-91e9-54a4f36c829d"
+  content = <<EOFSCRIBE
+terraform {
+    required_providers {
+        nutanix = {
+            source = "nutanix/nutanix"
+            version = "1.9.4"
+        }
+    }
+}
+
+provider "nutanix" {
+    username     = "admin"
+    password     = "tYEWJD69K*DzkcMMHh@v"
+    endpoint     = "10.126.40.5"
+    port         = 9440
+    insecure     = true
+    wait_timeout = 10
+}
+
+resource "nutanix_virtual_machine" "vm1" {
+    name = "alexc-terraform-test"
+    cluster_uuid = "00060b3d-84dd-b244-e13c-a3debb839e53"
+    guest_customization_cloud_init_user_data = "I2Nsb3VkLWNvbmZpZwoKcGFja2FnZV91cGRhdGU6IGZhbHNlCnNzaF9wd2F1dGg6IHRydWUKY2hwYXNzd2Q6CiAgZXhwaXJlOiBmYWxzZQp1c2VyczoKLSBuYW1lOiBjbG91ZGluaXQKICBsb2NrLXBhc3N3ZDogZmFsc2UKICBzaGVsbDogL2Jpbi9iYXNoCiAgcGFzc3dkOiAkNSRtY3M1V0NRc1ppbWxaeFViJEdOOVJhNEgyOHVaMklQdHlrdXd3MUxqQVJsZ3ZNTDAwOUk1eFV0ZWRQRDYKICBzdWRvOiBBTEw9KEFMTCkgQUxM"
+    num_vcpus_per_socket = 1
+    num_sockets          = 1
+    memory_size_mib      = 1024
+
+    nic_list {
+        subnet_uuid = "1f477842-791e-444e-9f31-94c661a67cdf"
+    }
+
+    disk_list {
+        data_source_reference = {
+            kind = "image"
+            uuid = "5d2bbb7e-bf2e-455b-8a76-5ee033a35aab"
+        }
+
+        device_properties {
+            disk_address = {
+                device_index = 0
+                adapter_type = "SCSI"
+            }
+
+            device_type = "DISK"
+        }
+    }
+
+  connection {
+    type     = "ssh"
+    user     = "cloudinit"
+    password = "P@55w0rd!!"
+  }
+
+}
+EOFSCRIBE
+  dateCreated = "2024-01-29T20:31:50.000Z"
+  lastUpdated = "2024-02-12T22:31:00.000Z"
+}

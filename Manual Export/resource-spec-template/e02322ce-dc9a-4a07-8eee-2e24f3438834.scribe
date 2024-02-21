@@ -1,0 +1,10 @@
+resource "resource-spec-template" "e02322ce-dc9a-4a07-8eee-2e24f3438834" {
+  name = "db-tf-template-npc-0129"
+  uuid = "e02322ce-dc9a-4a07-8eee-2e24f3438834"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2024-01-29T20:31:50.000Z"
+  lastUpdated = "2024-02-12T22:31:00.000Z"
+  template = { uuid = "8e221c51-34ae-459e-91e9-54a4f36c829d" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
