@@ -1,0 +1,9 @@
+resource "option-type" "isUnmanagedNetwork" {
+  code = "isUnmanagedNetwork"
+  name = "isUnmanagedNetwork"
+  uuid = "e208fef9-588b-4fea-9270-89d1740555a1"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Unmanaged Network"
+  fieldName = "isUnmanagedNetwork"
+  type = "checkbox"
+}
