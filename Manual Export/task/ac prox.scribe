@@ -1,0 +1,14 @@
+resource "task" "ac prox" {
+  name = "ac prox"
+  uuid = "8cc9bd8b-2225-4614-97ae-be1ed76bb457"
+  dateCreated = "2023-12-15T21:36:22.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-12-15T21:36:22.000Z"
+  options = [
+    {
+      content = { uuid = "d85dfe9a-e8da-44a2-8e5c-0c42cc0b3df6" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}

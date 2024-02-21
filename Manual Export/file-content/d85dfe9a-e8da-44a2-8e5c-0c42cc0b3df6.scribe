@@ -1,0 +1,6 @@
+resource "file-content" "d85dfe9a-e8da-44a2-8e5c-0c42cc0b3df6" {
+  uuid = "d85dfe9a-e8da-44a2-8e5c-0c42cc0b3df6"
+  content = "netsh winhttp set proxy proxy-server=\"<proxyIP:port>\" bypass-list= \"<domain/IP bypass list>\""
+  dateCreated = "2023-12-15T21:36:22.000Z"
+  lastUpdated = "2023-12-15T21:36:22.000Z"
+}
