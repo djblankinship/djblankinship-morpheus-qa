@@ -1,0 +1,14 @@
+resource "task" "Get Container Config" {
+  name = "Get Container Config"
+  uuid = "63d37865-52a3-4da9-9f4a-cfc405d96ad3"
+  dateCreated = "2023-12-16T04:13:26.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-12-16T04:13:26.000Z"
+  options = [
+    {
+      content = { uuid = "63ccbd28-0bc2-4402-b495-0217eaf8500d" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}

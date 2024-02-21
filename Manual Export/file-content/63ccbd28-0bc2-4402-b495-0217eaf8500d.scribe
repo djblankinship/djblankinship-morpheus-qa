@@ -1,0 +1,11 @@
+resource "file-content" "63ccbd28-0bc2-4402-b495-0217eaf8500d" {
+  uuid = "63ccbd28-0bc2-4402-b495-0217eaf8500d"
+  content = <<EOFSCRIBE
+com.morpheus.Container.withNewSession {
+		def c = com.morpheus.Container.get(container.id)
+    println c.getConfigMap()
+}
+EOFSCRIBE
+  dateCreated = "2023-12-16T04:13:27.000Z"
+  lastUpdated = "2023-12-16T04:13:27.000Z"
+}
