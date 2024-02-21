@@ -5,4 +5,5 @@ resource "instance-type" "pjnginx" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "PJ-NGINX"
+  layouts = [ { code = "4257a716-f54b-4d39-b671-7b6c8d68f6d3" } ]
 }
