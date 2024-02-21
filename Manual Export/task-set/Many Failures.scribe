@@ -1,0 +1,11 @@
+resource "task-set" "Many Failures" {
+  name = "Many Failures"
+  uuid = "933a0762-8b6b-4650-80a0-9599c99e1add"
+  dateCreated = "2024-01-12T03:46:36.000Z"
+  lastUpdated = "2024-01-12T03:46:36.000Z"
+  taskSetTasks = [
+    { uuid = "3ea3786e-6bc6-4c74-aae5-1a0058907bb6" },
+    { uuid = "40ce08d4-8950-462e-913b-d04f8368cd2e" },
+    { uuid = "d94cf422-3d2b-4d0e-bc3c-07da9e9a513b" }
+  ]
+}
