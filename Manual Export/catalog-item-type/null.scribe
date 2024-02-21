@@ -1,13 +1,13 @@
 resource "catalog-item-type" "null" {
-  name = "Simple Blueprint"
-  uuid = "a3462b09-90a7-414c-95e5-76bc4fe00c25"
+  name = "Simple Instance"
+  uuid = "6ffb3866-6dac-454e-ac8c-340abe8341bb"
   category = "simple"
-  darkIconPath = "/assets/branding/140x40/docker.svg"
-  dateCreated = "2023-03-06T03:02:59.000Z"
+  allowQuantity = true
+  dateCreated = "2020-09-09T23:35:47.000Z"
   description = "don't delete"
   featured = true
-  iconPath = "/assets/branding/140x40/docker.svg"
+  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/7700/logo/nginx_original.svg"
   labels = [ { name = "auto" }, { name = "keep" } ]
-  lastUpdated = "2023-08-25T15:29:31.000Z"
-  refType = "AppTemplate"
+  lastUpdated = "2023-03-15T20:19:40.000Z"
+  refType = "InstanceType"
 }
