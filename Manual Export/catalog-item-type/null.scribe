@@ -1,10 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "dg_disk_label_change"
-  uuid = "bc808b1e-af3b-46bd-b497-f8a7e1abbc78"
-  dateCreated = "2023-04-13T13:29:02.000Z"
-  formType = "optionTypes"
-  lastUpdated = "2023-04-13T13:29:02.000Z"
-  optionTypes = [ { code = "FJJSONBody" } ]
+  name = "Docs Test Workflow"
+  uuid = "e7a90089-efdb-4fa2-815e-19a3cbda7ce0"
+  dateCreated = "2020-11-09T17:29:19.000Z"
+  iconPath = "/assets/containers-png/morph-resource2.png"
+  lastUpdated = "2020-11-09T17:29:19.000Z"
   refType = "OperationalWorkflow"
-  visibility = "public"
 }
