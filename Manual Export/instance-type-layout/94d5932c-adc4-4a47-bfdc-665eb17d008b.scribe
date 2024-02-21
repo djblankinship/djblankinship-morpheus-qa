@@ -1,0 +1,14 @@
+resource "instance-type-layout" "94d5932c-adc4-4a47-bfdc-665eb17d008b" {
+  code = "94d5932c-adc4-4a47-bfdc-665eb17d008b"
+  name = "Windows Server GUI"
+  uuid = "ab7b5906-d721-4c22-9030-a7e3bcb435f1"
+  actions = [ { code = "94d5932c-adc4-4a47-bfdc-665eb17d008b" } ]
+  description = "Windows Server 2019 with a Graphical User interface"
+  hasAutoScale = true
+  instanceType = { code = "al-windows-server" }
+  instanceVersion = "2019"
+  memoryRequirement = 0
+  provisionType = { code = "scvmm" }
+  supportsConvertToManaged = true
+  workloads = [ { code = "c8128431-119f-46bd-bc20-d92164433414" } ]
+}

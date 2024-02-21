@@ -1,0 +1,13 @@
+resource "instance-type" "al-windows-server" {
+  code = "al-windows-server"
+  name = "al-windows-server"
+  uuid = "eb4d5963-5294-4715-bb4f-8dce0ed545c4"
+  category = "os"
+  deploymentService = "defaultDeployService"
+  description = "Windows Server"
+  environmentPrefix = "AL-WINDOWS-SERVER"
+  hasAutoScale = true
+  hasDeployment = true
+  hasSettings = true
+  visibility = "public"
+}
