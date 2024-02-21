@@ -1,0 +1,17 @@
+resource "task" "temp2" {
+  code = "temp2"
+  name = "Hello World 2"
+  uuid = "2ec43896-5c95-4f1d-aca5-64f4d9c23923"
+  dateCreated = "2024-02-09T22:34:22.000Z"
+  executeTarget = "resource"
+  labels = [ "hello2" ]
+  lastUpdated = "2024-02-09T22:34:22.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "6f1b084a-4c42-426d-a20f-e3a45c484e13" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
