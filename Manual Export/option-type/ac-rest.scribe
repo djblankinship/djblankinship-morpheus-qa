@@ -1,0 +1,15 @@
+resource "option-type" "ac-rest" {
+  code = "ac-rest"
+  name = "ac rest"
+  uuid = "0295d037-645c-4d8f-a3f9-c7ecaf968e93"
+  dependsOnCode = "acCreateBackup:yes"
+  fieldContext = "config.customOptions"
+  fieldLabel = "ac rest"
+  fieldName = "ac-rest"
+  optionList = { name = "ac rest list" }
+  optionSource = "list"
+  requireOnCode = "acCreateBackup:yes"
+  required = true
+  type = "select"
+  visibleOnCode = "acCreateBackup:yes"
+}
