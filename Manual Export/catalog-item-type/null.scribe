@@ -1,8 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "Print Vars"
-  uuid = "518dd2fa-3296-4e13-bbb8-493fa2f8848c"
-  dateCreated = "2020-11-09T10:18:09.000Z"
-  iconPath = "/assets/containers-png/morph-resource2.png"
-  lastUpdated = "2020-11-09T10:18:09.000Z"
-  refType = "OperationalWorkflow"
+  name = "securityGroupTest"
+  uuid = "2a18ee14-3e65-4916-aa7a-a1abd17db647"
+  dateCreated = "2023-12-07T23:21:35.000Z"
+  formType = "form"
+  lastUpdated = "2023-12-07T23:21:35.000Z"
+  refType = "InstanceType"
 }
