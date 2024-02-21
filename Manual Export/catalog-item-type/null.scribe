@@ -1,8 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "Appsec Restart"
-  uuid = "5a48f6a8-a417-4c40-a796-3f8757bc9aee"
-  dateCreated = "2022-03-15T15:44:51.000Z"
+  name = "Arm"
+  uuid = "9e337cc7-38fe-49ba-9b83-d88785959cc7"
+  dateCreated = "2022-06-03T15:53:17.000Z"
   iconPath = "/assets/branding/140x40/resource.svg"
-  lastUpdated = "2022-03-15T15:44:51.000Z"
-  refType = "OperationalWorkflow"
+  lastUpdated = "2022-06-03T15:53:17.000Z"
+  refType = "InstanceType"
 }
