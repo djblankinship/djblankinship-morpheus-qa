@@ -1,0 +1,9 @@
+resource "option-type" "ipv4_address" {
+  code = "ipv4_address"
+  name = "IPv4 Address"
+  uuid = "ad0bf4ea-c451-4750-b38f-8728c09a0d7f"
+  fieldContext = "config.customOptions"
+  fieldLabel = "IPv4 Address"
+  fieldName = "ipv4_address"
+  required = true
+}
