@@ -1,0 +1,9 @@
+resource "catalog-item-type" "provisionhyperv" {
+  code = "provisionhyperv"
+  name = "Provision - Hyper-V"
+  uuid = "af258f05-6f18-41bc-96a0-15831b865807"
+  dateCreated = "2023-06-23T16:48:18.000Z"
+  formType = "form"
+  lastUpdated = "2023-08-07T19:23:00.000Z"
+  refType = "InstanceType"
+}
