@@ -1,0 +1,15 @@
+resource "instance-type-layout" "2bc8978d-c5b9-48da-af61-ef89f58648db" {
+  code = "2bc8978d-c5b9-48da-af61-ef89f58648db"
+  name = "centos-bp"
+  uuid = "d89130d9-5570-4f68-a921-32e26e0f3124"
+  instanceType = { code = "nctestinstancetype" }
+  instanceVersion = "8bp"
+  memoryRequirement = 0
+  optionTypes = [
+    { code = "projectenv" },
+    { code = "projectsoftwareversion" },
+    { code = "projectbranch" }
+  ]
+  provisionType = { code = "vmware" }
+  workloads = [ { code = "vmware-centos-8-stream" } ]
+}
