@@ -1,9 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "TF Variable"
-  uuid = "f56abb88-c12d-4b3f-a727-9dc487528462"
-  dateCreated = "2021-12-08T19:39:21.000Z"
-  iconPath = "/assets/containers-png/morph-resource2.png"
-  lastUpdated = "2022-09-18T19:55:32.000Z"
-  optionTypes = [ { code = "appName" }, { code = "name" } ]
+  name = "TM aaaa"
+  uuid = "95825bfd-cdde-4eb1-81de-490a3bfa55f0"
+  dateCreated = "2023-06-09T20:16:05.000Z"
+  formType = "form"
+  lastUpdated = "2023-06-09T20:16:05.000Z"
   refType = "InstanceType"
 }
