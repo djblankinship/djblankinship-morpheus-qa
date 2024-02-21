@@ -1,0 +1,8 @@
+resource "compute-type-set" "ad4126ed-d297-487b-9e12-c65486c0a93a-kubernetes-1.28-ubuntu-22.04-amazon-amd64" {
+  code = "ad4126ed-d297-487b-9e12-c65486c0a93a-kubernetes-1.28-ubuntu-22.04-amazon-amd64"
+  name = "DB Kubernetes 1.28 Cluster on Ubuntu 22.04-master-kubernetes-1.28-ubuntu-22.04-amazon-amd64-set"
+  computeServerType = { code = "amazonKubeMaster" }
+  nameSuffix = "-master"
+  nodeType = "master"
+  workloadType = { code = "kubernetes-1.28-ubuntu-22.04-amazon-amd64" }
+}
