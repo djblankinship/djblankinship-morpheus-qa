@@ -1,0 +1,13 @@
+resource "instance-type-layout" "e24c6730-119a-4884-914e-84203a17ec98" {
+  code = "e24c6730-119a-4884-914e-84203a17ec98"
+  name = "ap-69732-apache"
+  uuid = "8f20f0db-8897-4190-bcc5-d1c7fa184474"
+  actions = [ { code = "e24c6730-119a-4884-914e-84203a17ec98" } ]
+  hasAutoScale = true
+  instanceType = { code = "69732" }
+  instanceVersion = "ap1"
+  memoryRequirement = 0
+  optionTypes = [ { code = "appName" } ]
+  provisionType = { code = "vmware" }
+  workloads = [ { code = "91a6ea00-4a6e-45b3-8e1f-eee0c4847b6d" } ]
+}
