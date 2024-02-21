@@ -1,0 +1,18 @@
+resource "task" "cypher template" {
+  name = "cypher template"
+  uuid = "9fdcf378-5d5b-4ca9-b8fe-2edc5d6ecc66"
+  dateCreated = "2023-04-20T16:50:24.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-04-20T16:50:24.000Z"
+  options = [
+    {
+      optionType = { code = "containerTemplateId" }
+      value = { code = "9d479962-eb49-430d-b81e-ed1dbbb1f8d5" }
+    },
+    {
+      optionType = { code = "containerTemplate" }
+      value = "My CypherTemplate"
+    }
+  ]
+  taskType = { code = "containerTemplate" }
+}
