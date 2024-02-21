@@ -1,0 +1,8 @@
+resource "instance-type" "utest" {
+  code = "utest"
+  name = "Uthman test"
+  uuid = "16cdbbb2-c79d-41c3-98a5-43d533b5af7d"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "UTHMAN_TEST"
+}

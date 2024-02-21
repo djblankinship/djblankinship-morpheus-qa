@@ -1,0 +1,10 @@
+resource "instance-type-layout" "1af6ff69-6606-4349-bb07-109a8278b893" {
+  code = "1af6ff69-6606-4349-bb07-109a8278b893"
+  name = "uthman layout"
+  uuid = "4c909aa1-62a8-4910-a4cd-b328229c00f5"
+  instanceType = { code = "utest" }
+  instanceVersion = "1.0"
+  memoryRequirement = 0
+  provisionType = { code = "vmware" }
+  taskSets = [ { name = "test workflow" } ]
+}
