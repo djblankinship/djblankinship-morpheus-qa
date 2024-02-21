@@ -1,0 +1,19 @@
+resource "container-type" "be29410d-b85d-4f16-8d99-7c3f671823a0" {
+  code = "be29410d-b85d-4f16-8d99-7c3f671823a0"
+  name = "db-kube-worker"
+  uuid = "d725b312-83f3-4de7-842b-70d9e5a96477"
+  containerVersion = "1.0"
+  entryPoint = ""
+  logTypeCode = "vm"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  scripts = [
+    { code = "37b21687-9b48-4201-8ea2-33497d91f9ba" },
+    { code = "bd37e0e2-2e05-4746-a785-ed87b38b7acb" }
+  ]
+  serverType = "vm"
+  shortName = "db-kube-worker"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { code = "vmware.vsphere.image.morpheus.ubuntu.22.04.20230918.amd64" }
+}
