@@ -1,8 +1,10 @@
 resource "catalog-item-type" "null" {
-  name = "Dynamo Self Service"
-  uuid = "1990cb4a-6409-440d-981f-7036e26fd0f3"
-  dateCreated = "2020-10-23T01:09:58.000Z"
-  iconPath = "/assets/containers-png/morph-resource2.png"
-  lastUpdated = "2020-10-23T01:09:58.000Z"
+  name = "F5 Create Pool"
+  uuid = "9266e612-4ddd-4ff5-ab6f-af60fa7b05b1"
+  dateCreated = "2023-01-16T13:30:41.000Z"
+  description = "Instance type catalog. F5 instancetype used"
+  iconPath = "custom"
+  labels = [ { name = "instanceType" }, { name = "xaas" } ]
+  lastUpdated = "2023-01-16T13:30:41.000Z"
   refType = "InstanceType"
 }
