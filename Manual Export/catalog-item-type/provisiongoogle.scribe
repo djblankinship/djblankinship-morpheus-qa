@@ -1,0 +1,9 @@
+resource "catalog-item-type" "provisiongoogle" {
+  code = "provisiongoogle"
+  name = "Provision - Google"
+  uuid = "65ff8683-b3e3-4d7d-8e91-da5b77750846"
+  dateCreated = "2023-06-23T17:44:52.000Z"
+  formType = "form"
+  lastUpdated = "2023-08-07T19:22:24.000Z"
+  refType = "InstanceType"
+}
