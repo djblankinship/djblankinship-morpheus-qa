@@ -1,0 +1,8 @@
+resource "instance-type" "cftemps" {
+  code = "cftemps"
+  name = "CloudFormation Templates"
+  uuid = "98c7b74c-c168-4aa0-ae55-cf67cbb77d1d"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "CLOUD_FORMATION_TEST"
+}
