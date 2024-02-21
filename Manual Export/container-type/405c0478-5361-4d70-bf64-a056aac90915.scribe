@@ -7,8 +7,8 @@ resource "container-type" "405c0478-5361-4d70-bf64-a056aac90915" {
   backupType = "lvmSnapshot"
   containerLogs = [ { uuid = "d128394d-92b4-4672-a211-acde717674e5" } ]
   containerMounts = [
-    { code = "template: 0650351a-9ba9-4b7d-b553-1573822400c4" },
-    { uuid = "f46e4c1c-e6e1-4688-b31b-c0933d72fedc" }
+    { uuid = "f46e4c1c-e6e1-4688-b31b-c0933d72fedc" },
+    { code = "template: 0650351a-9ba9-4b7d-b553-1573822400c4" }
   ]
   containerPorts = [
     { uuid = "2041e09a-959e-4735-96a1-786d4aa2bf30" },
