@@ -1,0 +1,38 @@
+resource "file-content" "a8cf9b75-24cf-4b97-ae1a-b037bae599a0" {
+  uuid = "a8cf9b75-24cf-4b97-ae1a-b037bae599a0"
+  content = <<EOFSCRIBE
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <%=cloudConfig.agentInstallTerraformWindows%>
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      imagePullSecrets:
+      - name: regcred
+      containers:
+      - name: nginx
+        image: nginx
+        resources:
+          requests:
+            memory: 800Mi
+            cpu: 100m
+          limits:
+            memory: 800Mi
+            cpu: 1200m
+        ports:
+        - containerPort: 80
+
+EOFSCRIBE
+  dateCreated = "2023-12-16T04:57:04.000Z"
+  lastUpdated = "2023-12-16T05:10:11.000Z"
+}
