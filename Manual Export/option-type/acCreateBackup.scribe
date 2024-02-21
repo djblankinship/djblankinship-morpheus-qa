@@ -1,0 +1,11 @@
+resource "option-type" "acCreateBackup" {
+  code = "acCreateBackup"
+  name = "ac CreateBackup"
+  uuid = "91f13eb7-50fe-4663-9464-9299766f03d1"
+  fieldContext = "config.customOptions"
+  fieldLabel = "create backup"
+  fieldName = "acCreateBackup"
+  optionList = { name = "aw-yes-no" }
+  optionSource = "list"
+  type = "select"
+}
