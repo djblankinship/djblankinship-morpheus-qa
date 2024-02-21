@@ -5,5 +5,4 @@ resource "instance-type" "extra" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "EXTRA_OPTIONS"
-  layouts = [ { code = "a8dca4a9-00ee-4ffc-8c3b-f3ff56434612" } ]
 }
