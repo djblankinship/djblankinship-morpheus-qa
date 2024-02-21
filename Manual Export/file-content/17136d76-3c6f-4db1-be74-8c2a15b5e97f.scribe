@@ -1,0 +1,6 @@
+resource "file-content" "17136d76-3c6f-4db1-be74-8c2a15b5e97f" {
+  uuid = "17136d76-3c6f-4db1-be74-8c2a15b5e97f"
+  content = "println \"$${morpheus.provisionService.morpheusComputeService.grailsApplication.mainContext.getBean('accountUsageService').checkUsages()}\""
+  dateCreated = "2021-02-19T17:54:52.000Z"
+  lastUpdated = "2021-02-19T17:54:52.000Z"
+}
