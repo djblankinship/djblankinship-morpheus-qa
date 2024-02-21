@@ -1,0 +1,10 @@
+resource "instance-type-layout" "d067a9a7-28be-41ec-9b53-e384cdb53de7" {
+  code = "d067a9a7-28be-41ec-9b53-e384cdb53de7"
+  name = "CF DynamoDB"
+  uuid = "2043e76d-f814-4f5f-8342-997fb7160692"
+  instanceType = { code = "cfspec" }
+  instanceVersion = "dynamodb"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [ { uuid = "ffc3f9af-30ee-43b8-934e-5425220d6a80" } ]
+}
