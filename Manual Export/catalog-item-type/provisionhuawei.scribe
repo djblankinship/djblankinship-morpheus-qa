@@ -1,0 +1,9 @@
+resource "catalog-item-type" "provisionhuawei" {
+  code = "provisionhuawei"
+  name = "Provision - Huawei"
+  uuid = "867789bd-32ef-4fb2-a78e-90401045e97f"
+  dateCreated = "2023-07-27T15:44:37.000Z"
+  formType = "form"
+  lastUpdated = "2023-08-07T20:50:32.000Z"
+  refType = "InstanceType"
+}
