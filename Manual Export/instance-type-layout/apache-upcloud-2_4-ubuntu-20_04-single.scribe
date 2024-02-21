@@ -1,0 +1,15 @@
+resource "instance-type-layout" "apache-upcloud-2.4-ubuntu-20.04-single" {
+  code = "apache-upcloud-2.4-ubuntu-20.04-single"
+  name = "UpCloud Apache"
+  uuid = "c900f3a6-4dfd-406a-bbeb-5a8f89e13477"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  portCount = 2
+  provisionType = { code = "upcloud" }
+  serverType = "vm"
+  sortOrder = 10
+  workloads = [ { code = "apache-upcloud-2.4-ubuntu-20.04-set" } ]
+}
