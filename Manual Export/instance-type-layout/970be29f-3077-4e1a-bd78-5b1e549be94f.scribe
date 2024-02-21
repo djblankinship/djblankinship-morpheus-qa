@@ -1,0 +1,10 @@
+resource "instance-type-layout" "970be29f-3077-4e1a-bd78-5b1e549be94f" {
+  code = "970be29f-3077-4e1a-bd78-5b1e549be94f"
+  name = "case 67039-LO"
+  uuid = "46e16970-5580-44c0-9896-3ddbe5648d01"
+  instanceType = { code = "fn67039" }
+  instanceVersion = "1.0"
+  memoryRequirement = 1073741824
+  provisionType = { code = "google" }
+  workloads = [ { code = "25b9801b-84f9-44e5-8c63-2a6430e750df" } ]
+}
