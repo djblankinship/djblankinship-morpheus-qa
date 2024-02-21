@@ -1,0 +1,9 @@
+resource "account-integration" "jw automation" {
+  name = "jw automation"
+  uuid = "a443e416-924d-4482-970f-bfeef1c374be"
+  category = "cm-server"
+  config = { defaultBranch = "master" }
+  integrationType = { code = "git" }
+  serviceUrl = "https://github.com/1Wheeler/automation.git"
+  type = "git"
+}
