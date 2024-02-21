@@ -1,0 +1,10 @@
+resource "instance-type-layout" "195b3637-e667-4915-93d4-a71b07ccb3b9" {
+  code = "195b3637-e667-4915-93d4-a71b07ccb3b9"
+  name = "CF Windows VM"
+  uuid = "0d8f90fc-ee56-4e5d-8d88-738cd8743f0c"
+  instanceType = { code = "cfspec" }
+  instanceVersion = "windows"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [ { uuid = "0f7f9b2f-94a3-48f3-a792-35c36e036a57" } ]
+}
