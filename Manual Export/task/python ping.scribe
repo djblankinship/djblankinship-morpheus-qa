@@ -1,0 +1,14 @@
+resource "task" "python ping" {
+  name = "python ping"
+  uuid = "d51c4418-91b7-4eea-be37-acb28ee10fc1"
+  dateCreated = "2022-08-29T07:13:26.000Z"
+  executeTarget = "local"
+  lastUpdated = "2022-08-29T07:14:19.000Z"
+  options = [
+    {
+      content = { uuid = "a416e39a-d863-4293-8ce2-cdfb38e3b473" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}
