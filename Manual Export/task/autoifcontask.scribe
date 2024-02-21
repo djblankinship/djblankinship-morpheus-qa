@@ -1,0 +1,17 @@
+resource "task" "autoifcontask" {
+  code = "autoifcontask"
+  name = "auto ifcon task"
+  uuid = "362cd4cd-758a-44ce-8bca-418b76c663d1"
+  dateCreated = "2024-02-20T22:26:14.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-02-20T22:26:14.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "bbba1d9e-922b-409e-9922-720442e31ef1" }
+      optionType = { code = "script" }
+    }
+  ]
+  resultType = "value"
+  taskType = { code = "script" }
+}

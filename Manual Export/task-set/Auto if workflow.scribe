@@ -1,0 +1,12 @@
+resource "task-set" "Auto if workflow" {
+  name = "Auto if workflow"
+  uuid = "85090b8f-ff31-4a1f-a814-9487ceb0abcb"
+  allowCustomConfig = true
+  dateCreated = "2024-02-20T22:27:11.000Z"
+  description = "conditional if workflow"
+  labels = [ "auto", "test" ]
+  lastUpdated = "2024-02-20T22:27:11.000Z"
+  taskSetTasks = [ { uuid = "da8981af-7ef5-47b2-8362-4f927dbae701" } ]
+  taskSetType = "operation"
+  visibility = "public"
+}

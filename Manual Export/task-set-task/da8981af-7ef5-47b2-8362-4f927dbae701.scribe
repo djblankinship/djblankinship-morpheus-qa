@@ -1,0 +1,5 @@
+resource "task-set-task" "da8981af-7ef5-47b2-8362-4f927dbae701" {
+  uuid = "da8981af-7ef5-47b2-8362-4f927dbae701"
+  task = { code = "autoifcontask" }
+  taskPhase = "operation"
+}
