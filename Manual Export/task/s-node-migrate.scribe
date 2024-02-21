@@ -1,0 +1,15 @@
+resource "task" "s-node-migrate" {
+  code = "s-node-migrate"
+  name = "S-Node-Migrate"
+  uuid = "c6280678-55b0-4de3-87f1-b4018e3fd4e1"
+  dateCreated = "2019-09-26T00:13:59.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-11-14T06:04:11.000Z"
+  options = [
+    {
+      optionType = { code = "script" }
+      value = "echo \"Hello World\""
+    }
+  ]
+  taskType = { code = "script" }
+}
