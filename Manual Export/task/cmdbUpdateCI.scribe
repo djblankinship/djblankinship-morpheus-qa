@@ -7,12 +7,12 @@ resource "task" "cmdbUpdateCI" {
   lastUpdated = "2022-09-14T18:07:18.000Z"
   options = [
     {
-      optionType = { code = "pythonArgs" }
-      value = "<%= cypher.read('secret/dxcsnowpass')%>"
-    },
-    {
       optionType = { code = "pythonAdditionalPackages" }
       value = "requests morpheus-cypher"
+    },
+    {
+      optionType = { code = "pythonArgs" }
+      value = "<%= cypher.read('secret/dxcsnowpass')%>"
     },
     {
       content = { uuid = "8582d90c-c227-4412-992d-7c57e262603b" }
