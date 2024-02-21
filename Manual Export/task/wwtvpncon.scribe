@@ -6,11 +6,11 @@ resource "task" "wwtvpncon" {
   executeTarget = "resource"
   lastUpdated = "2024-01-26T03:41:07.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "dcdf2cea-2d07-4911-a653-d19b5001d5e4" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
