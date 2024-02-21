@@ -1,0 +1,14 @@
+resource "task" "! Ruby" {
+  name = "! Ruby"
+  uuid = "db9b1739-03a6-4511-b341-4b5505ffebca"
+  dateCreated = "2020-11-04T23:01:25.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-07-17T20:56:12.000Z"
+  options = [
+    {
+      content = { uuid = "3fb881c1-01e6-4199-9aa1-3d8fcfad9969" }
+      optionType = { code = "rubyScript" }
+    }
+  ]
+  taskType = { code = "jrubyTask" }
+}

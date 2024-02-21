@@ -1,0 +1,15 @@
+resource "task" "hijack name" {
+  name = "hijack name"
+  uuid = "191ff666-5b63-4d4c-9bfc-eb6d16b27f74"
+  dateCreated = "2020-10-29T20:35:31.000Z"
+  executeTarget = "local"
+  lastUpdated = "2020-10-29T20:35:31.000Z"
+  options = [
+    {
+      content = { uuid = "da6b86bd-642e-470c-ad3b-e136b7b50993" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  resultType = "json"
+  taskType = { code = "groovyTask" }
+}
