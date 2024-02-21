@@ -1,0 +1,10 @@
+resource "instance-type-layout" "f31b8693-86db-419f-bab2-67472d6817c5" {
+  code = "f31b8693-86db-419f-bab2-67472d6817c5"
+  name = "al-centos-secureboot"
+  uuid = "ad2d6957-6dd8-4423-936f-42fee0c8a89b"
+  instanceType = { code = "al-centos-template" }
+  instanceVersion = "7"
+  memoryRequirement = 0
+  provisionType = { code = "scvmm" }
+  workloads = [ { code = "2580c621-92e5-40e8-83d2-3ab9422a6c73" } ]
+}
