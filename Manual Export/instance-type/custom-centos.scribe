@@ -1,0 +1,11 @@
+resource "instance-type" "custom-centos" {
+  code = "custom-centos"
+  name = "custom-centos"
+  uuid = "74e9741e-16c2-414b-82cf-5c2bb90ec8e2"
+  category = "web"
+  deploymentService = "defaultDeployService"
+  environmentPrefix = "custom-centos"
+  hasAutoScale = true
+  hasDeployment = true
+  hasSettings = true
+}
