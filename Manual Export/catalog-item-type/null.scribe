@@ -1,9 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "user1"
-  uuid = "1e6c4f25-bb2f-4298-8f05-68ffbd4edff5"
-  dateCreated = "2022-03-11T13:45:20.000Z"
-  iconPath = "/assets/branding/140x40/resource.svg"
-  lastUpdated = "2022-03-11T13:45:20.000Z"
+  name = "Uthman - Catalog Item #2"
+  uuid = "82252bc0-77ff-4627-ad9d-606d2689baea"
+  dateCreated = "2023-08-18T17:00:56.000Z"
+  formType = "form"
+  lastUpdated = "2023-08-18T17:00:56.000Z"
   refType = "InstanceType"
-  visibility = "public"
 }
