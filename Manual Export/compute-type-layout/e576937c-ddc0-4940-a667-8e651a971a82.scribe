@@ -1,0 +1,27 @@
+resource "compute-type-layout" "e576937c-ddc0-4940-a667-8e651a971a82" {
+  code = "e576937c-ddc0-4940-a667-8e651a971a82"
+  name = "Copy of api-test-cluster-layout-newname"
+  computeServers = [
+    {
+      code = "e576937c-ddc0-4940-a667-8e651a971a82-kubernetes-1.28-ubuntu-22.04-amazon-amd64"
+    },
+    {
+      code = "e576937c-ddc0-4940-a667-8e651a971a82-kubernetes-1.28-ubuntu-22.04-worker-amazon-amd64"
+    },
+    {
+      code = "e576937c-ddc0-4940-a667-8e651a971a82-kubernetes-1.27-ubuntu-20.04-worker-amazon-amd64"
+    }
+  ]
+  computeVersion = "1.2"
+  creatable = false
+  dateCreated = "2024-02-10T03:14:06.000Z"
+  description = "This is my new cluster layout description"
+  groupType = { code = "kubernetes-cluster" }
+  lastUpdated = "2024-02-10T03:14:06.000Z"
+  memoryRequirement = 4294967296
+  optionTypes = [ { code = "autocheck1" } ]
+  provisionType = { code = "amazon" }
+  serverCount = 3
+  taskSets = [ { name = "Hello World" } ]
+  type = { code = "amazonKubeMaster" }
+}

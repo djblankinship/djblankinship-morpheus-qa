@@ -1,0 +1,8 @@
+resource "compute-type-set" "e576937c-ddc0-4940-a667-8e651a971a82-kubernetes-1.28-ubuntu-22.04-amazon-amd64" {
+  code = "e576937c-ddc0-4940-a667-8e651a971a82-kubernetes-1.28-ubuntu-22.04-amazon-amd64"
+  name = "Copy of api-test-cluster-layout-newname-master-kubernetes-1.28-ubuntu-22.04-amazon-amd64-set"
+  computeServerType = { code = "amazonKubeMaster" }
+  nameSuffix = "-master"
+  nodeType = "master"
+  workloadType = { code = "kubernetes-1.28-ubuntu-22.04-amazon-amd64" }
+}

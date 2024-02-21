@@ -1,0 +1,11 @@
+resource "compute-type-set" "e576937c-ddc0-4940-a667-8e651a971a82-kubernetes-1.27-ubuntu-20.04-worker-amazon-amd64" {
+  code = "e576937c-ddc0-4940-a667-8e651a971a82-kubernetes-1.27-ubuntu-20.04-worker-amazon-amd64"
+  name = "Copy of api-test-cluster-layout-newname-worker-kubernetes-1.27-ubuntu-20.04-worker-amazon-amd64-set"
+  canAddNodes = true
+  computeServerType = { code = "amazonKubeWorker" }
+  dynamicCount = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "kubernetes-1.27-ubuntu-20.04-worker-amazon-amd64" }
+}
