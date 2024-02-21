@@ -1,0 +1,8 @@
+resource "task-set" "greg_test_workflow1" {
+  name = "greg_test_workflow1"
+  uuid = "13d58b46-6177-423f-9d13-401e3c48e667"
+  dateCreated = "2023-09-21T10:57:20.000Z"
+  lastUpdated = "2023-09-21T10:57:20.000Z"
+  optionTypes = [ { code = "greg_option1" } ]
+  taskSetType = "operation"
+}

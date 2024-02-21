@@ -1,0 +1,12 @@
+resource "option-type" "greg_option1" {
+  code = "greg_option1"
+  name = "greg_list_test1"
+  uuid = "856447b4-819b-4f47-9428-859b59a71d52"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Greg_test_field"
+  fieldName = "greg_option1"
+  noBlank = true
+  optionList = { name = "Breweries - City List" }
+  optionSource = "list"
+  type = "select"
+}
