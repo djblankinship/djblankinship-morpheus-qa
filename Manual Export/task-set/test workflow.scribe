@@ -1,0 +1,7 @@
+resource "task-set" "test workflow" {
+  name = "test workflow"
+  uuid = "991890ca-e0c4-4e0b-98f8-f55903563c7f"
+  dateCreated = "2023-10-24T15:29:50.000Z"
+  lastUpdated = "2023-10-24T15:29:50.000Z"
+  taskSetTasks = [ { uuid = "d6f712eb-3c7a-4fe1-9d24-0ffc446184f0" } ]
+}

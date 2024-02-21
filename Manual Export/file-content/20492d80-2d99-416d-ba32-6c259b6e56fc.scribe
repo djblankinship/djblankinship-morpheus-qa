@@ -1,0 +1,6 @@
+resource "file-content" "20492d80-2d99-416d-ba32-6c259b6e56fc" {
+  uuid = "20492d80-2d99-416d-ba32-6c259b6e56fc"
+  content = "print(\"Hello\") "
+  dateCreated = "2023-10-24T15:29:31.000Z"
+  lastUpdated = "2023-10-24T15:29:31.000Z"
+}

@@ -1,0 +1,14 @@
+resource "task" "print hello" {
+  name = "print hello"
+  uuid = "20580848-be80-4bcc-aee7-a46b499d3dbf"
+  dateCreated = "2023-10-24T15:29:31.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-10-24T15:29:31.000Z"
+  options = [
+    {
+      content = { uuid = "20492d80-2d99-416d-ba32-6c259b6e56fc" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}
