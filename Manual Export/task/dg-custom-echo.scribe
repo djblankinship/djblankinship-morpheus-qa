@@ -1,0 +1,14 @@
+resource "task" "dg-custom-echo" {
+  name = "dg-custom-echo"
+  uuid = "6cd9c6d5-e1c8-492c-8f82-b18b9a74a1b5"
+  dateCreated = "2023-03-17T11:50:54.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-03-17T11:50:54.000Z"
+  options = [
+    {
+      content = { uuid = "6cb2cbad-8d02-447c-8fed-771bab83a1c4" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
