@@ -1,0 +1,18 @@
+resource "container-type" "e15a5664-2e07-4f3c-9abc-db4132c958bd" {
+  code = "e15a5664-2e07-4f3c-9abc-db4132c958bd"
+  name = "Morpheus Ubuntu 20.04"
+  uuid = "8072c97f-5404-480d-be03-245736419c95"
+  actions = [ { code = "generic-remove-node" } ]
+  containerVersion = "20.04"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  provisionType = { code = "vmware" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "ubuntu"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = {
+    code = "vmware.vsphere.image.morpheus.ubuntu.20.04.4-v2.ubuntu.20.04.4.amd64"
+  }
+}
