@@ -1,0 +1,15 @@
+resource "task" "Price Comparison Test" {
+  name = "Price Comparison Test"
+  uuid = "51743870-c8ca-423f-95ea-0eeafe33fac9"
+  dateCreated = "2023-04-21T13:31:44.000Z"
+  executeTarget = "local"
+  labels = [ "test" ]
+  lastUpdated = "2023-04-21T13:31:44.000Z"
+  options = [
+    {
+      content = { uuid = "36d2fe4f-0fc1-4a63-8ede-286f7a2b2e14" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
