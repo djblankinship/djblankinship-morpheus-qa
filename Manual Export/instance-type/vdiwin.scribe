@@ -5,5 +5,4 @@ resource "instance-type" "vdiwin" {
   category = "os"
   deploymentService = ""
   environmentPrefix = "VDIWIN"
-  layouts = [ { code = "6b66c41b-8d7d-4f4c-81d2-103613f81708" } ]
 }
