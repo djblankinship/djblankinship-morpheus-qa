@@ -1,0 +1,15 @@
+resource "task" "Ansible: Nginx" {
+  name = "Ansible: Nginx"
+  uuid = "0e0bf5fb-2da1-406c-911e-1828b1ca2ad6"
+  executeTarget = "resource"
+  lastUpdated = "2023-06-14T00:13:50.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Labs Ansible" }
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "master" },
+    { optionType = { code = "ansiblePlaybook" }, value = "nginx-1_9" }
+  ]
+  taskType = { code = "ansibleTask" }
+}
