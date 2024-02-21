@@ -1,0 +1,13 @@
+resource "instance-type-layout" "faa67705-7426-4c1b-a00d-8582252346dc" {
+  code = "faa67705-7426-4c1b-a00d-8582252346dc"
+  name = "Custom ESXi"
+  uuid = "4ba274d5-a1a5-4a48-8d5c-b546611dae81"
+  actions = [ { code = "generic-add-node" } ]
+  description = "custom image"
+  hasAutoScale = true
+  instanceType = { code = "custom-img" }
+  instanceVersion = "vmdk"
+  memoryRequirement = 0
+  provisionType = { code = "esxi" }
+  workloads = [ { code = "6cd74509-7093-4db0-a6bc-005c1733de35" } ]
+}

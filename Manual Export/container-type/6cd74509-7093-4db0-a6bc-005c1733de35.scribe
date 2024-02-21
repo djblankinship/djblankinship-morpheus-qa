@@ -1,0 +1,24 @@
+resource "container-type" "6cd74509-7093-4db0-a6bc-005c1733de35" {
+  code = "6cd74509-7093-4db0-a6bc-005c1733de35"
+  name = "Custom ESXi"
+  uuid = "dff099ee-26b7-487e-9768-7cb8a26a4626"
+  category = "Web"
+  actions = [ { code = "generic-remove-node" } ]
+  containerLogs = [ { uuid = "d446bd6a-9bd5-4bb1-a052-71c6a2f2c56e" } ]
+  containerMounts = [ { uuid = "59a4eb45-a5f1-4472-8026-34a8fee7b6e0" } ]
+  containerPorts = [
+    { uuid = "81b66e7b-1870-46a3-8b92-123746bdda6e" },
+    { uuid = "8c27c5c0-5195-4549-997e-f349eec5fc14" },
+    { uuid = "46fec4d7-2a3a-446f-9870-7476ca39e08d" }
+  ]
+  containerVersion = "vmdk"
+  entryPoint = ""
+  logTypeCode = "vmware"
+  mountData = "/morpheus/data"
+  mountLogs = "/morpheus/logs"
+  provisionType = { code = "esxi" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "custom-img"
+  statTypeCode = "vmware"
+}
