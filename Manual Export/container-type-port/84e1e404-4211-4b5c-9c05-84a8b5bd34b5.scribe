@@ -1,0 +1,9 @@
+resource "container-type-port" "84e1e404-4211-4b5c-9c05-84a8b5bd34b5" {
+  name = "SSL"
+  uuid = "84e1e404-4211-4b5c-9c05-84a8b5bd34b5"
+  export = true
+  exportName = "SSL"
+  externalPort = 22
+  internalPort = 22
+  visible = true
+}
