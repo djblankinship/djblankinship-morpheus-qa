@@ -1,0 +1,9 @@
+resource "resource-spec-template" "6674d5ca-cec0-4758-976c-0b8babe66502" {
+  name = "ARM Windows"
+  uuid = "6674d5ca-cec0-4758-976c-0b8babe66502"
+  dateCreated = "2020-02-10T18:06:20.000Z"
+  lastUpdated = "2020-02-10T18:06:20.000Z"
+  template = { uuid = "6e115bfe-bea1-490d-b01c-2514c2d46cf3" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
