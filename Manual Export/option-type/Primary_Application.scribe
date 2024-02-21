@@ -1,0 +1,16 @@
+resource "option-type" "Primary_Application" {
+  code = "Primary_Application"
+  name = "CS NA Primary Application - All Apps"
+  uuid = "bef55d85-1b39-4f27-8da2-346d9d74a609"
+  defaultValue = "z"
+  dependsOnCode = "App_Name"
+  displayValueOnDetails = true
+  editable = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Application Name"
+  fieldName = "Primary_Application"
+  optionList = { name = "CS NA Primary Application - All Apps" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
