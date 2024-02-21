@@ -1,0 +1,10 @@
+resource "container-type-mount" "839588da-f2e5-4157-91df-3336030fab29" {
+  name = "data"
+  uuid = "839588da-f2e5-4157-91df-3336030fab29"
+  canPersist = true
+  containerPath = "/morpheus/data"
+  deployable = true
+  hostPath = "/morpheus/data"
+  shortName = "data"
+  volumeName = "data"
+}

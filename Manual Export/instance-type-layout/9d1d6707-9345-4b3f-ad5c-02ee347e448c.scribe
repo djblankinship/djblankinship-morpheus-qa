@@ -1,0 +1,13 @@
+resource "instance-type-layout" "9d1d6707-9345-4b3f-ad5c-02ee347e448c" {
+  code = "9d1d6707-9345-4b3f-ad5c-02ee347e448c"
+  name = "Custom Google"
+  uuid = "1464a344-33b1-42dd-8dfe-98d22f5c785e"
+  actions = [ { code = "generic-add-node" } ]
+  description = "custom image"
+  hasAutoScale = true
+  instanceType = { code = "custom-img" }
+  instanceVersion = "raw"
+  memoryRequirement = 0
+  provisionType = { code = "google" }
+  workloads = [ { code = "d9d1c9ae-abfe-47d8-9dd9-fde2fd461729" } ]
+}
