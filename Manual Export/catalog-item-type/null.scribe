@@ -1,11 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "KG-InstanceShare"
-  uuid = "184e37c9-b059-47ae-8a65-b28b89f21ef7"
-  darkIconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/1996/logo/ubuntu_light_original.svg"
-  dateCreated = "2023-07-18T16:35:55.000Z"
-  formType = "form"
-  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/1996/logo/ubuntu_light_original.svg"
-  lastUpdated = "2023-07-18T16:35:55.000Z"
-  refType = "InstanceType"
-  visibility = "public"
+  name = "Print Vars"
+  uuid = "518dd2fa-3296-4e13-bbb8-493fa2f8848c"
+  dateCreated = "2020-11-09T10:18:09.000Z"
+  iconPath = "/assets/containers-png/morph-resource2.png"
+  lastUpdated = "2020-11-09T10:18:09.000Z"
+  refType = "OperationalWorkflow"
 }
