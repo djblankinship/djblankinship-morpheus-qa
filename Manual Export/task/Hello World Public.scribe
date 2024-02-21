@@ -5,11 +5,11 @@ resource "task" "Hello World Public" {
   executeTarget = "resource"
   lastUpdated = "2023-07-12T20:50:34.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "08d783e0-f14a-4621-a94a-18af8359d1cb" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
   visibility = "public"
