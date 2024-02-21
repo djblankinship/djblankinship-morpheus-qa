@@ -1,0 +1,17 @@
+resource "compute-type-layout" "bc587edc-b892-4d18-816f-250c034bbdae" {
+  code = "bc587edc-b892-4d18-816f-250c034bbdae"
+  name = "VCD Custom Centos 7"
+  computeServers = [
+    {
+      code = "bc587edc-b892-4d18-816f-250c034bbdae-2d54a630-a701-4490-a724-542c7f5e3212"
+    }
+  ]
+  computeVersion = "Centos 7"
+  dateCreated = "2019-08-28T19:20:47.000Z"
+  description = "do not modify"
+  groupType = { code = "docker-cluster" }
+  lastUpdated = "2019-08-28T19:20:47.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "vcd" }
+  sortOrder = 999
+}
