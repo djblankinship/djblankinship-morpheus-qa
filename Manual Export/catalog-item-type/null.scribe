@@ -1,14 +1,9 @@
 resource "catalog-item-type" "null" {
-  name = "vsTest"
-  uuid = "3bdb7767-2a00-4fff-848a-83702be67f68"
-  dateCreated = "2022-06-23T09:51:07.000Z"
-  iconPath = "/assets/branding/140x40/resource.svg"
-  lastUpdated = "2023-01-09T13:36:22.000Z"
-  optionTypes = [
-    { code = "morpheus_network_server" },
-    { code = "morpheus_network_interface_mac" },
-    { code = "vsGroups" },
-    { code = "vsClouds" }
-  ]
+  name = "vstestformnetwork"
+  uuid = "f67ea0c3-f977-42d2-bb71-874a775c4a3d"
+  dateCreated = "2023-12-15T14:15:00.000Z"
+  formConfig = "{\"optOut\":{\"2e47f14c-8891-483e-bf80-7f04e93d2ef1\":false}}"
+  formType = "form"
+  lastUpdated = "2024-01-12T10:11:59.000Z"
   refType = "InstanceType"
 }
