@@ -1,0 +1,12 @@
+resource "container-type-port" "fb48c343-390b-4c28-b7e0-f80093a3cea1" {
+  name = "Morpheus"
+  uuid = "fb48c343-390b-4c28-b7e0-f80093a3cea1"
+  export = true
+  exportName = "MORPHEUS"
+  externalPort = 80
+  internalPort = 80
+  link = true
+  loadBalance = true
+  loadBalanceProtocol = "HTTP"
+  visible = true
+}
