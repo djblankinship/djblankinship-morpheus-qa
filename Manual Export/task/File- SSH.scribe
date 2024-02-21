@@ -1,0 +1,21 @@
+resource "task" "File: SSH" {
+  name = "File: SSH"
+  uuid = "5292b390-16d9-4412-ae02-148ede64421a"
+  executeTarget = "remote"
+  lastUpdated = "2019-11-14T06:04:11.000Z"
+  options = [
+    {
+      optionType = { code = "sshKey" }
+      value = { uuid = "e30fcef5-b1f3-4c97-8244-a71e2c7e0178" }
+    },
+    { optionType = { code = "host" }, value = "10.30.20.130" },
+    { optionType = { code = "port" }, value = "22" },
+    { optionType = { code = "username" }, value = "bertram" },
+    {
+      optionType = { code = "script" }
+      value = "echo \"SSH script\" | sudo tee -a /tmp/task.txt"
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
