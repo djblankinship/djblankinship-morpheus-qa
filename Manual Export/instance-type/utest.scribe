@@ -5,4 +5,5 @@ resource "instance-type" "utest" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "UTHMAN_TEST"
+  layouts = [ { code = "1af6ff69-6606-4349-bb07-109a8278b893" } ]
 }
