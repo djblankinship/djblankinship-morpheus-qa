@@ -7,12 +7,12 @@ resource "task" "createF5Pool" {
   lastUpdated = "2023-01-16T13:21:54.000Z"
   options = [
     {
-      optionType = { code = "ansibleTowerJobTemplateId" }
-      value = { code = "ansibleTower.jobTemplate.4997.39" }
-    },
-    {
       optionType = { code = "ansibleTowerIntegrationId" }
       value = { name = "Labs Ansible Tower" }
+    },
+    {
+      optionType = { code = "ansibleTowerJobTemplateId" }
+      value = { code = "ansibleTower.jobTemplate.4997.39" }
     },
     {
       optionType = { code = "ansibleTowerInventoryId" }
