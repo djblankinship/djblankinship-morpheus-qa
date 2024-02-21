@@ -1,0 +1,13 @@
+resource "file-content" "dcdf2cea-2d07-4911-a653-d19b5001d5e4" {
+  uuid = "dcdf2cea-2d07-4911-a653-d19b5001d5e4"
+  content = <<EOFSCRIBE
+sudo /opt/cisco/anyconnect/bin/vpn -s connect vpn.wwtatc.com/atc-lab-access <<"EOF"
+dustindeyoung0172
+<%=cypher.read('secret/wwt-vpn')%>
+y
+exit
+EOF
+EOFSCRIBE
+  dateCreated = "2024-01-26T02:57:17.000Z"
+  lastUpdated = "2024-01-26T03:41:07.000Z"
+}
