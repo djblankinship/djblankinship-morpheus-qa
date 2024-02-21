@@ -1,0 +1,7 @@
+resource "task-set" "LD Python Flow" {
+  name = "LD Python Flow"
+  uuid = "ef845ef3-9cf9-48e2-855d-a48fd8cfed53"
+  dateCreated = "2023-11-30T19:02:33.000Z"
+  lastUpdated = "2023-11-30T19:27:57.000Z"
+  taskSetTasks = [ { uuid = "d5da422e-d8b6-4b59-8f21-385e172cde6e" } ]
+}
