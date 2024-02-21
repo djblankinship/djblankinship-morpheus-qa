@@ -6,11 +6,11 @@ resource "task" "autocontask2" {
   executeTarget = "resource"
   lastUpdated = "2024-02-20T22:26:43.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "b861d002-973a-4f49-aebd-43ce40b07045" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   resultType = "value"
   taskType = { code = "script" }
