@@ -1,0 +1,12 @@
+resource "option-type" "Number" {
+  code = "Number"
+  name = "Number"
+  uuid = "ebbc941b-131b-4e87-a3e3-635d0a55602d"
+  defaultValue = "Two"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Number"
+  fieldName = "Number"
+  optionList = { name = "Approved Numbers" }
+  optionSource = "list"
+}
