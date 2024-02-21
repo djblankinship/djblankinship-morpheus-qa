@@ -1,0 +1,17 @@
+resource "option-type" "aws-linux-public-ip-type" {
+  code = "aws-linux-public-ip-type"
+  name = "public ip"
+  uuid = "d246e409-4e93-4731-b72d-9fa353c409d7"
+  category = "computeServerType.amazonLinux"
+  defaultValue = "subnet"
+  displayOrder = 103
+  fieldCode = "gomorpheus.optiontype.PublicIp"
+  fieldGroup = "Options"
+  fieldLabel = "Public IP"
+  fieldName = "publicIpType"
+  global = false
+  noBlank = true
+  optionSource = "amazonPublicIpTypes"
+  optionSourceType = "amazon"
+  type = "select"
+}
