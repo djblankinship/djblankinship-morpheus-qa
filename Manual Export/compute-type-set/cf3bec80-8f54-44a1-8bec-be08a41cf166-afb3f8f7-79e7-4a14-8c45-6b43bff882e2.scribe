@@ -1,0 +1,8 @@
+resource "compute-type-set" "cf3bec80-8f54-44a1-8bec-be08a41cf166-afb3f8f7-79e7-4a14-8c45-6b43bff882e2" {
+  code = "cf3bec80-8f54-44a1-8bec-be08a41cf166-afb3f8f7-79e7-4a14-8c45-6b43bff882e2"
+  name = "Custom VMware Kubernetes Cluster-master-afb3f8f7-79e7-4a14-8c45-6b43bff882e2-set"
+  computeServerType = { code = "amazonKubeMaster" }
+  nameSuffix = "-master"
+  nodeType = "master"
+  workloadType = { code = "afb3f8f7-79e7-4a14-8c45-6b43bff882e2" }
+}

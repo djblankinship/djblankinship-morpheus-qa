@@ -1,0 +1,17 @@
+resource "container-type" "8222d665-d5e5-44a6-ae2d-a1c72292a3bc" {
+  code = "8222d665-d5e5-44a6-ae2d-a1c72292a3bc"
+  name = "Worker K8s"
+  uuid = "8bcf7daa-2cda-4906-82b6-a6adedfe3d92"
+  category = "kubernetes"
+  containerVersion = "Worker"
+  entryPoint = ""
+  labels = [ "K8s", "Worker" ]
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "worker"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "7b0da5c3-0a8c-493e-adfb-cd60bc796036" }
+}

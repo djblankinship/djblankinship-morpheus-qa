@@ -1,0 +1,22 @@
+resource "file-content" "kubernetes-nginx-operator-0-30-controller-metrics-service-v1" {
+  code = "kubernetes-nginx-operator-0-30-controller-metrics-service-v1"
+  uuid = "df96f893-267d-4d93-a676-a8767c48a380"
+  content = <<EOFSCRIBE
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    control-plane: controller-manager
+  name: nginx-ingress-operator-controller-manager-metrics-service
+spec:
+  ports:
+  - name: https
+    port: 8443
+    targetPort: https
+  selector:
+    control-plane: controller-manager
+
+EOFSCRIBE
+  dateCreated = "2021-09-01T16:53:41.000Z"
+  lastUpdated = "2021-09-01T16:53:41.000Z"
+}

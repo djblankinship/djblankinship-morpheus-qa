@@ -1,0 +1,17 @@
+resource "container-type" "afb3f8f7-79e7-4a14-8c45-6b43bff882e2" {
+  code = "afb3f8f7-79e7-4a14-8c45-6b43bff882e2"
+  name = "Master K8s"
+  uuid = "aeed4c3d-7479-4399-be04-a32e2052b489"
+  category = "kubernetes"
+  containerVersion = "Master"
+  entryPoint = ""
+  labels = [ "K8s", "Master" ]
+  logTypeCode = "vm"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "master"
+  showServerLogs = true
+  statTypeCode = "vm"
+  virtualImage = { uuid = "7b0da5c3-0a8c-493e-adfb-cd60bc796036" }
+}

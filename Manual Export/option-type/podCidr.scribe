@@ -1,0 +1,12 @@
+resource "option-type" "podCidr" {
+  code = "podCidr"
+  name = "Pod CIDR"
+  uuid = "bf047700-43d3-49ad-96e9-c700342f0339"
+  defaultValue = "172.20.0.0/16"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Pod CIDR"
+  fieldName = "podCidr"
+  labels = [ "Cluster", "K8s" ]
+  placeHolder = "172.20.0.0/16"
+  required = true
+}

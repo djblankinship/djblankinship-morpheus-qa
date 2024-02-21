@@ -1,0 +1,10 @@
+resource "option-type" "clusterHostname" {
+  code = "clusterHostname"
+  name = "Cluster Hostname"
+  uuid = "18350d9e-00d8-4aed-bc1c-7bacd742ae2a"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Cluster Hostname"
+  fieldName = "clusterHostname"
+  labels = [ "Cluster", "K8s" ]
+  required = true
+}

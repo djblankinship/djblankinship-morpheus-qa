@@ -1,0 +1,12 @@
+resource "compute-type-set" "cf3bec80-8f54-44a1-8bec-be08a41cf166-8222d665-d5e5-44a6-ae2d-a1c72292a3bc" {
+  code = "cf3bec80-8f54-44a1-8bec-be08a41cf166-8222d665-d5e5-44a6-ae2d-a1c72292a3bc"
+  name = "Custom VMware Kubernetes Cluster-worker-8222d665-d5e5-44a6-ae2d-a1c72292a3bc-set"
+  canAddNodes = true
+  computeServerType = { code = "amazonKubeWorker" }
+  dynamicCount = true
+  nameSuffix = "-worker"
+  nodeCount = 3
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "8222d665-d5e5-44a6-ae2d-a1c72292a3bc" }
+}
