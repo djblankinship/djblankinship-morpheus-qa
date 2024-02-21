@@ -1,0 +1,15 @@
+resource "task" "winping" {
+  name = "winping"
+  uuid = "6d905793-19a3-4967-8028-519e014d696b"
+  dateCreated = "2019-01-07T14:41:54.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-01-07T14:41:54.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Labs Ansible" }
+    },
+    { optionType = { code = "ansiblePlaybook" }, value = "winping" }
+  ]
+  taskType = { code = "ansibleTask" }
+}
