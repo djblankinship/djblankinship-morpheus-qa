@@ -1,0 +1,5 @@
+resource "task-set-task" "847cb3c5-229f-4a97-94c2-8792876b257d" {
+  uuid = "847cb3c5-229f-4a97-94c2-8792876b257d"
+  task = { code = "groovy" }
+  taskPhase = "operation"
+}

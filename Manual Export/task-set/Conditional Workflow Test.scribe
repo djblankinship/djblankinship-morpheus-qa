@@ -1,0 +1,11 @@
+resource "task-set" "Conditional Workflow Test" {
+  name = "Conditional Workflow Test"
+  uuid = "bd3d4fe4-6452-47cf-8a9e-5f5e85a7fe00"
+  dateCreated = "2024-02-09T23:33:15.000Z"
+  lastUpdated = "2024-02-09T23:51:27.000Z"
+  taskSetTasks = [
+    { uuid = "548cb637-2e28-45df-bc23-89891ae0f9a6" },
+    { uuid = "847cb3c5-229f-4a97-94c2-8792876b257d" }
+  ]
+  taskSetType = "operation"
+}
