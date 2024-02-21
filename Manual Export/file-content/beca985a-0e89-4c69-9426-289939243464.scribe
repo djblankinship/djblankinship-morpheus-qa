@@ -1,0 +1,6 @@
+resource "file-content" "beca985a-0e89-4c69-9426-289939243464" {
+  uuid = "beca985a-0e89-4c69-9426-289939243464"
+  content = "zypper update -y"
+  dateCreated = "2023-09-12T21:08:06.000Z"
+  lastUpdated = "2023-09-13T14:42:09.000Z"
+}

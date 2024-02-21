@@ -1,0 +1,4 @@
+resource "task-set-task" "8298b428-b45a-494e-871c-da7a329fa093" {
+  uuid = "8298b428-b45a-494e-871c-da7a329fa093"
+  task = { name = "Installer Suse" }
+}

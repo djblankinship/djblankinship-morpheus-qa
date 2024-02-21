@@ -1,0 +1,8 @@
+resource "task-set" "InstallerUpdatesSuse12" {
+  name = "InstallerUpdatesSuse12"
+  uuid = "adcbfc71-b405-40f4-90f5-d0f5b47376ee"
+  dateCreated = "2023-09-12T22:04:54.000Z"
+  description = "post provision to run commands on suse 12 for installer"
+  lastUpdated = "2023-09-12T22:42:37.000Z"
+  taskSetTasks = [ { uuid = "8298b428-b45a-494e-871c-da7a329fa093" } ]
+}
