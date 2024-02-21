@@ -1,9 +1,9 @@
 resource "catalog-item-type" "null" {
-  name = "vstestformnetwork"
-  uuid = "f67ea0c3-f977-42d2-bb71-874a775c4a3d"
-  dateCreated = "2023-12-15T14:15:00.000Z"
-  formConfig = "{\"optOut\":{\"2e47f14c-8891-483e-bf80-7f04e93d2ef1\":false}}"
-  formType = "form"
-  lastUpdated = "2024-01-12T10:11:59.000Z"
+  name = "wa test field visibility"
+  uuid = "82688e36-c4f7-4a18-9c77-cba18f2451cb"
+  dateCreated = "2023-05-10T13:39:26.000Z"
+  formType = "optionTypes"
+  lastUpdated = "2023-05-10T13:39:26.000Z"
+  optionTypes = [ { code = "wa_sendMail" }, { code = "wa_email_address" } ]
   refType = "InstanceType"
 }
