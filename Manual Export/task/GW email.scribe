@@ -6,16 +6,16 @@ resource "task" "GW email" {
   lastUpdated = "2023-06-19T09:46:01.000Z"
   options = [
     {
+      optionType = { code = "emailSubject" }
+      value = "Teardown test"
+    },
+    {
       optionType = { code = "emailAddress" }
       value = "gwhitaker@morpheusdata.com"
     },
     {
       content = { uuid = "0b308246-2b14-4511-99f3-9d58a05a97fe" }
       optionType = { code = "emailBody" }
-    },
-    {
-      optionType = { code = "emailSubject" }
-      value = "Teardown test"
     }
   ]
   taskType = { code = "email" }
