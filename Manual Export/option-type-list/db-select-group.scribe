@@ -1,0 +1,7 @@
+resource "option-type-list" "db-select-group" {
+  name = "db-select-group"
+  uuid = "9c0a3957-3691-472f-874d-2f85efd096cb"
+  apiType = "groups"
+  realTime = true
+  type = "api"
+}
