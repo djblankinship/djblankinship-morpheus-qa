@@ -5,6 +5,5 @@ resource "instance-type" "awtest" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "AW-TEST"
-  layouts = [ { code = "aa4e82bb-203b-4120-b9ac-1eb9d87df010" } ]
   optionTypes = [ { code = "awSelect" }, { code = "aw1" } ]
 }
