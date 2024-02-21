@@ -1,0 +1,12 @@
+resource "file-content" "d61fe002-4b34-4ca1-91f4-c1efea04403e" {
+  uuid = "d61fe002-4b34-4ca1-91f4-c1efea04403e"
+  content = <<EOFSCRIBE
+com.morpheus.ComputeServer.withNewSession { 
+def account = com.bertramlabs.plugins.Account.get(1l)
+println "Windows Password Settings: ${grails.util.Holders.applicationContext['settingsService'].getProvisioningSettings(account)?.provisioningSettings}" 
+println com.morpheus.ComputeServer.get(1004972L).sshPassword
+}
+EOFSCRIBE
+  dateCreated = "2021-08-24T15:06:41.000Z"
+  lastUpdated = "2023-09-12T13:41:40.000Z"
+}
