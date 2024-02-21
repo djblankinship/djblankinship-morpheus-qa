@@ -1,9 +1,11 @@
 resource "catalog-item-type" "null" {
-  name = "Case 68960"
-  uuid = "d809da8c-b31c-4004-aaba-2fcac10ab9ee"
-  dateCreated = "2023-01-10T08:23:45.000Z"
-  iconPath = "/assets/branding/140x40/centos.svg"
-  lastUpdated = "2023-01-19T16:40:35.000Z"
+  name = "Case 68960-1"
+  uuid = "07f18f4b-a6f5-4425-8ee4-dd6c343191e6"
+  category = "Cases"
+  allowQuantity = true
+  dateCreated = "2023-01-10T11:41:32.000Z"
+  iconPath = "/assets/branding/140x40/resource.svg"
+  lastUpdated = "2023-03-03T09:33:55.000Z"
   optionTypes = [ { code = "fn68960" } ]
   refType = "InstanceType"
 }
