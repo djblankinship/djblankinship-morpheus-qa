@@ -1,13 +1,14 @@
 resource "task" "groovy" {
   code = "groovy"
-  name = "Conditional Task 1"
-  uuid = "2742ec4b-d41d-4d47-adbd-5bd79b2e5906"
-  dateCreated = "2024-02-09T23:43:36.000Z"
+  name = "temp groovyUrl"
+  uuid = "c79cdf55-158a-4b59-b422-44ecf69023af"
+  dateCreated = "2023-06-13T23:52:40.000Z"
   executeTarget = "local"
-  lastUpdated = "2024-02-09T23:57:57.000Z"
+  labels = [ "temp" ]
+  lastUpdated = "2023-06-13T23:58:31.000Z"
   options = [
     {
-      content = { uuid = "aa29bbef-54ed-479c-ab79-74c4903322eb" }
+      content = { uuid = "bde45c3f-1ef6-4925-ba64-20924b3d0b56" }
       optionType = { code = "groovyScript" }
     }
   ]
