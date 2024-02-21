@@ -1,0 +1,6 @@
+resource "task-set-task" "1636458a-8cd6-41b7-a142-a6b2e89493a3" {
+  uuid = "1636458a-8cd6-41b7-a142-a6b2e89493a3"
+  task = { code = "helloworldconditional" }
+  taskOrder = 2
+  taskPhase = "operation"
+}

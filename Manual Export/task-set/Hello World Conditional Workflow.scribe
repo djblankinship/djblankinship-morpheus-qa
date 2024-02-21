@@ -1,0 +1,8 @@
+resource "task-set" "Hello World Conditional Workflow" {
+  name = "Hello World Conditional Workflow"
+  uuid = "7982075b-dab2-444c-9590-582c520f1bf9"
+  dateCreated = "2024-02-09T23:19:16.000Z"
+  lastUpdated = "2024-02-09T23:19:28.000Z"
+  taskSetTasks = [ { uuid = "1636458a-8cd6-41b7-a142-a6b2e89493a3" } ]
+  taskSetType = "operation"
+}

@@ -1,0 +1,28 @@
+resource "task" "helloworldconditional" {
+  code = "helloworldconditional"
+  name = "Hello World Conditional"
+  uuid = "4e615651-51f6-414e-952f-32b9b5779ed0"
+  dateCreated = "2024-02-09T23:00:31.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-02-13T18:01:55.000Z"
+  options = [
+    { optionType = { code = "conditionalScript" }, value = "1 == 2" },
+    {
+      optionType = { code = "ifOperationalWorkflowId" }
+      value = "8759"
+    },
+    {
+      optionType = { code = "elseOperationalWorkflowId" }
+      value = "8760"
+    },
+    {
+      optionType = { code = "ifOperationalWorkflowName" }
+      value = "Hello World 1"
+    },
+    {
+      optionType = { code = "elseOperationalWorkflowName" }
+      value = "Hello World 2"
+    }
+  ]
+  taskType = { code = "conditionalWorkflow" }
+}
