@@ -1,0 +1,10 @@
+resource "option-type" "ugroups" {
+  code = "ugroups"
+  name = "uthman - groups"
+  uuid = "8653f4c7-4a81-4763-8ec7-d1ba49695591"
+  config = { rows = "1" }
+  fieldContext = "config.customOptions"
+  fieldLabel = "uthman_groups"
+  fieldName = "ugroups"
+  type = "textarea"
+}
