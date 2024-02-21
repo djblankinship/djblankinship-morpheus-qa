@@ -1,15 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "Wrong Order"
-  uuid = "e2d9dffd-114b-463d-8687-cab188eb2a84"
-  dateCreated = "2021-07-29T19:43:03.000Z"
+  name = "XaaS"
+  uuid = "c3e2a808-b4f4-4d9b-a320-b08df238cb1d"
+  dateCreated = "2022-01-06T05:26:42.000Z"
   iconPath = "/assets/containers-png/morph-resource2.png"
-  lastUpdated = "2021-07-30T22:00:45.000Z"
-  optionTypes = [
-    { code = "morphgroup" },
-    { code = "morphcloud" },
-    { code = "morphpool" },
-    { code = "appName" },
-    { code = "morphnetwork" }
-  ]
+  lastUpdated = "2022-01-06T05:26:42.000Z"
   refType = "InstanceType"
 }
