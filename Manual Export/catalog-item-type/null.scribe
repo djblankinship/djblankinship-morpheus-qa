@@ -1,11 +1,9 @@
 resource "catalog-item-type" "null" {
-  name = "ap-required-field"
-  uuid = "c7cdc211-850d-4f64-8a1f-f482521789b4"
-  darkIconPath = "https://qa.morpheusdata.com/storage/logos/uploads/CatalogItemType/2052/darkLogo/ap-required-field-dark_original.png"
-  dateCreated = "2023-02-15T11:09:22.000Z"
-  formType = "optionTypes"
-  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/CatalogItemType/2052/logo/ap-required-field_original.png"
-  lastUpdated = "2023-10-23T20:13:15.000Z"
-  optionTypes = [ { code = "show" }, { code = "tagDept" }, { code = "tagOwner" } ]
-  refType = "InstanceType"
+  name = "Apache App"
+  uuid = "196ab8a3-f581-4694-9ee9-b2dc0a0a6e06"
+  dateCreated = "2020-11-18T14:16:10.000Z"
+  iconPath = "/assets/branding/140x40/resource.svg"
+  lastUpdated = "2023-02-16T22:05:24.000Z"
+  optionTypes = [ { code = "appName" } ]
+  refType = "AppTemplate"
 }
