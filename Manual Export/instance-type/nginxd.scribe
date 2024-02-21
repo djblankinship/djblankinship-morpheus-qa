@@ -5,5 +5,4 @@ resource "instance-type" "nginxd" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "NGINX-DEPLOYMENT"
-  layouts = [ { code = "eda129e7-7909-4d64-b4cd-cc0d92a7d2f7" } ]
 }
