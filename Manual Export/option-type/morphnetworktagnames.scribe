@@ -1,0 +1,12 @@
+resource "option-type" "morphnetworktagnames" {
+  code = "morphnetworktagnames"
+  name = "API Networks Tag Names"
+  uuid = "039da9d8-de75-49d9-afc4-9a794ce882e5"
+  dependsOnCode = "matchAny::morphgroup,morphcloud,morphpool,morphnetwork"
+  fieldContext = "config.customOptions"
+  fieldLabel = "Network Tag Names"
+  fieldName = "morphnetworktagnames"
+  optionList = { name = "API Networks Tag Names" }
+  optionSource = "list"
+  type = "select"
+}

@@ -1,0 +1,27 @@
+resource "option-type-list" "API Networks Tag Names" {
+  name = "API Networks Tag Names"
+  uuid = "a76dbb66-f62a-4f34-b12f-dcae8f551bb1"
+  apiType = "networks"
+  realTime = true
+  requestScript = <<EOFSCRIBE
+results.siteId = input.morphgroup
+results.zoneId = input.morphcloud
+results.poolId = input.morphpool
+results.networkId = input.morphnetwork
+EOFSCRIBE
+  translationScript = <<EOFSCRIBE
+results = [];
+var i=0;
+for(i; i<data.length; i++) {
+  if (data[i].value == input.morphnetwork) {
+    var j=0;
+    for(j; j<data[i].tags.length; j++) {
+      if (data[i].tags.length > 0) {
+        results.push({name: data[i].tags[j].name});
+      }
+    }
+  }
+}
+EOFSCRIBE
+  type = "api"
+}
