@@ -6,5 +6,4 @@ resource "instance-type" "cis-svr-l1" {
   deploymentService = ""
   description = "This instance is a security hardened to the CIS Server Level1 benchmark"
   environmentPrefix = "CIS-SVR-L1"
-  layouts = [ { code = "3c5b53d1-d38f-4cd1-810e-b374fb544210" } ]
 }
