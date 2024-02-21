@@ -1,0 +1,11 @@
+resource "option-type" "manual-csv-long-list" {
+  code = "manual-csv-long-list"
+  name = "manual csv long list"
+  uuid = "4dbb1bfc-6e3b-4bf8-b106-418a48d804ba"
+  fieldContext = "config.customOptions"
+  fieldLabel = "manual csv long list"
+  fieldName = "manual-csv-long-list"
+  optionList = { name = "manual csv long list" }
+  optionSource = "list"
+  type = "select"
+}
