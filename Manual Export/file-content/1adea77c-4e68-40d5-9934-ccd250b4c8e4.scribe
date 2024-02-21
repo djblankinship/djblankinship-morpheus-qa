@@ -1,0 +1,28 @@
+resource "file-content" "1adea77c-4e68-40d5-9934-ccd250b4c8e4" {
+  uuid = "1adea77c-4e68-40d5-9934-ccd250b4c8e4"
+  content = <<EOFSCRIBE
+com.morpheus.ComputeZonePool.withNewSession {
+  def poolsToCorrect = com.morpheus.ComputeZonePool.withCriteria {
+    ilike('category','aws.vpc%')
+    isNull('refType')
+  }
+  poolsToCorrect.each { pool ->
+    def goodPool = com.morpheus.ComputeZonePool.findByRefTypeAndRefIdAndExternalId('ComputeZone',pool.zoneId,pool.externalId)
+    if(goodPool) {
+      com.morpheus.ComputeServer.where{resourcePool == pool}.updateAll(resourcePool: goodPool)
+      com.morpheus.Instance.where{resourcePool == pool}.updateAll(resourcePool: goodPool)
+      com.morpheus.Container.where{resourcePool == pool}.updateAll(resourcePool: goodPool)
+      com.morpheus.SecurityGroupLocation.where{zonePool == pool}.updateAll(zonePool: goodPool)
+      com.morpheus.NetworkRouteTable.where{zonePool == pool}.updateAll(zonePool: goodPool)
+      com.morpheus.Network.where{zonePool == pool}.updateAll(zonePool: goodPool)
+      pool.delete(flush:true)
+    } else {
+      grails.util.Holders['applicationContext']['zonePoolService'].internalDeleteComputeZonePool(pool)
+    }
+  }
+}
+return null
+EOFSCRIBE
+  dateCreated = "2023-11-08T02:31:43.000Z"
+  lastUpdated = "2023-11-08T02:39:14.000Z"
+}
