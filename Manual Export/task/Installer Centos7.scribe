@@ -5,11 +5,11 @@ resource "task" "Installer Centos7" {
   executeTarget = "resource"
   lastUpdated = "2023-09-12T16:55:18.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "c9b7aa48-9c76-448e-89ee-c972edce33b8" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
