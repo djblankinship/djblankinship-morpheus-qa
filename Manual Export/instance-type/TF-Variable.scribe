@@ -5,6 +5,5 @@ resource "instance-type" "TF-Variable" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "TF_VARIABLE"
-  layouts = [ { code = "c1419934-6ef9-4a13-b0f4-8721bb641335" } ]
   visibility = "public"
 }
