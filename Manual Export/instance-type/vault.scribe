@@ -6,5 +6,4 @@ resource "instance-type" "vault" {
   deploymentService = ""
   environmentPrefix = "VAULT"
   hasSettings = true
-  layouts = [ { code = "74248f54-00bb-49b0-8bd3-263cf8252cc7" } ]
 }
