@@ -1,0 +1,8 @@
+resource "instance-type" "test182853411" {
+  code = "test182853411"
+  name = "test182853411"
+  uuid = "356156c1-201d-4bb1-b536-c1724f5ab345"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "TEST182853411"
+}
