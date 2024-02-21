@@ -1,0 +1,14 @@
+resource "task" "Instance-Resize" {
+  name = "Instance-Resize"
+  uuid = "18b3e85f-3624-428b-a8ed-911a9bce8b9c"
+  dateCreated = "2022-05-31T18:02:16.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2022-05-31T18:08:47.000Z"
+  options = [
+    {
+      content = { uuid = "b7780926-3e98-428b-8044-cc916d803fea" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
