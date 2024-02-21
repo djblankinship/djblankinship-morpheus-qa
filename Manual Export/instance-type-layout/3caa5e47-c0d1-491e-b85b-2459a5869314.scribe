@@ -1,0 +1,12 @@
+resource "instance-type-layout" "3caa5e47-c0d1-491e-b85b-2459a5869314" {
+  code = "3caa5e47-c0d1-491e-b85b-2459a5869314"
+  name = "Custom Oracle Cloud"
+  uuid = "e74a4d7a-961f-44ac-8e18-c53fbf63f838"
+  actions = [ { code = "generic-add-node" } ]
+  hasAutoScale = true
+  instanceType = { code = "custom-img" }
+  instanceVersion = "oc"
+  memoryRequirement = 0
+  provisionType = { code = "oraclecloud" }
+  workloads = [ { code = "885d632d-041f-4f9b-b48a-fc3f1bae1072" } ]
+}
