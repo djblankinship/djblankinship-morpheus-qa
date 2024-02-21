@@ -1,0 +1,9 @@
+resource "file-content" "212da062-72d9-4b6c-9472-9aab8f34eca0" {
+  uuid = "212da062-72d9-4b6c-9472-9aab8f34eca0"
+  content = <<EOFSCRIBE
+import json
+print(json.dumps(morpheus))
+EOFSCRIBE
+  dateCreated = "2023-12-04T19:59:09.000Z"
+  lastUpdated = "2023-12-04T19:59:09.000Z"
+}

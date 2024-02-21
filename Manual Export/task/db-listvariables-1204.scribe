@@ -1,0 +1,14 @@
+resource "task" "db-listvariables-1204" {
+  name = "db-listvariables-1204"
+  uuid = "42bcde71-f6dc-4260-9b2d-cfd327b9ae72"
+  dateCreated = "2023-12-04T19:59:09.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-12-04T19:59:09.000Z"
+  options = [
+    {
+      content = { uuid = "212da062-72d9-4b6c-9472-9aab8f34eca0" }
+      optionType = { code = "pythonScript" }
+    }
+  ]
+  taskType = { code = "jythonTask" }
+}

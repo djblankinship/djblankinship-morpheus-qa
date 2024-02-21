@@ -1,0 +1,7 @@
+resource "task-set" "db-listvariables-1204" {
+  name = "db-listvariables-1204"
+  uuid = "cfe81864-b626-4b3d-9720-da4eeb864f94"
+  dateCreated = "2023-12-04T19:59:21.000Z"
+  lastUpdated = "2023-12-04T19:59:21.000Z"
+  taskSetTasks = [ { uuid = "a9b83533-68c2-4edf-bb4a-68f3bb9bfa70" } ]
+}
