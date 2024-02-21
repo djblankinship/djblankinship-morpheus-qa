@@ -1,0 +1,5 @@
+resource "task-set-task" "a91a2e23-7778-436f-894c-f15cd3a0e56f" {
+  uuid = "a91a2e23-7778-436f-894c-f15cd3a0e56f"
+  task = { name = "Installer Debian wget" }
+  taskOrder = 1
+}

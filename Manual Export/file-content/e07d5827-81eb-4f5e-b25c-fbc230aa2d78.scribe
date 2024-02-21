@@ -1,0 +1,9 @@
+resource "file-content" "e07d5827-81eb-4f5e-b25c-fbc230aa2d78" {
+  uuid = "e07d5827-81eb-4f5e-b25c-fbc230aa2d78"
+  content = <<EOFSCRIBE
+echo whoami &&
+apt-get update
+EOFSCRIBE
+  dateCreated = "2023-09-12T16:10:53.000Z"
+  lastUpdated = "2023-10-09T16:40:17.000Z"
+}

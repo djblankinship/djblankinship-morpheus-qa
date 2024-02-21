@@ -1,0 +1,11 @@
+resource "task-set" "InstallerUpdatesDebian" {
+  name = "InstallerUpdatesDebian"
+  uuid = "55b3a33e-b64f-4210-918f-0425e93c8124"
+  dateCreated = "2023-09-12T16:11:57.000Z"
+  description = "post provision to run required tasks for Debian Based installer testing"
+  lastUpdated = "2023-10-09T16:37:58.000Z"
+  taskSetTasks = [
+    { uuid = "a91a2e23-7778-436f-894c-f15cd3a0e56f" },
+    { uuid = "fe94d525-8e42-47ab-a67c-7e27824bb014" }
+  ]
+}

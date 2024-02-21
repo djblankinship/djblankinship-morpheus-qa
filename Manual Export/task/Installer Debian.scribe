@@ -1,0 +1,15 @@
+resource "task" "Installer Debian" {
+  name = "Installer Debian"
+  uuid = "98ba0712-6699-4faa-a049-a449a504197a"
+  dateCreated = "2023-09-12T16:10:53.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-10-09T16:40:17.000Z"
+  options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
+    {
+      content = { uuid = "e07d5827-81eb-4f5e-b25c-fbc230aa2d78" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

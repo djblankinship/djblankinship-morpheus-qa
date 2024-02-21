@@ -1,0 +1,4 @@
+resource "task-set-task" "fe94d525-8e42-47ab-a67c-7e27824bb014" {
+  uuid = "fe94d525-8e42-47ab-a67c-7e27824bb014"
+  task = { name = "Installer Debian" }
+}
