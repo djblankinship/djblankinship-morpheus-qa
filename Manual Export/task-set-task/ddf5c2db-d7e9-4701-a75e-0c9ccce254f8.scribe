@@ -1,0 +1,5 @@
+resource "task-set-task" "ddf5c2db-d7e9-4701-a75e-0c9ccce254f8" {
+  uuid = "ddf5c2db-d7e9-4701-a75e-0c9ccce254f8"
+  task = { name = "Ansible: Tags" }
+  taskPhase = "provision"
+}

@@ -1,0 +1,21 @@
+resource "task" "Ansible: Tags" {
+  name = "Ansible: Tags"
+  uuid = "06694776-42b9-453e-8ad3-059d93e4a2f5"
+  dateCreated = "2020-10-05T15:33:04.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2020-10-05T15:33:04.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "Labs Ansible" }
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "master" },
+    { optionType = { code = "ansibleSkipTags" }, value = "tag1" },
+    { optionType = { code = "ansibleTags" }, value = "tag2" },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "tags-test.yml"
+    }
+  ]
+  taskType = { code = "ansibleTask" }
+}
