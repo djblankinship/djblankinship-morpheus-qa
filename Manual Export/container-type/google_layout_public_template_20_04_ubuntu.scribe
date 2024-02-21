@@ -1,0 +1,19 @@
+resource "container-type" "google.layout.public.template.20.04.ubuntu" {
+  code = "google.layout.public.template.20.04.ubuntu"
+  name = "Google Ubuntu 20.04"
+  uuid = "f7b1cdb8-a8c1-4b20-af08-badc2f73db96"
+  category = "ubuntu"
+  backupType = "googleSnapshot"
+  checkTypeCode = "vmCheck"
+  commEnabled = true
+  commPort = 22
+  commType = "SSH"
+  containerVersion = "20.04"
+  entryPoint = "/bin/bash"
+  logTypeCode = "ubuntu"
+  provisionType = { code = "google" }
+  repositoryImage = "image"
+  shortName = "ubuntu"
+  statTypeCode = "ubuntu"
+  virtualImage = { code = "google.image.public.template.509711771052509110" }
+}

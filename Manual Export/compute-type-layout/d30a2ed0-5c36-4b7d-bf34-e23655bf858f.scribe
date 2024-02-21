@@ -1,0 +1,17 @@
+resource "compute-type-layout" "d30a2ed0-5c36-4b7d-bf34-e23655bf858f" {
+  code = "d30a2ed0-5c36-4b7d-bf34-e23655bf858f"
+  name = "Google Custom Ubuntu 20"
+  computeServers = [
+    {
+      code = "d30a2ed0-5c36-4b7d-bf34-e23655bf858f-google.layout.public.template.20.04.ubuntu"
+    }
+  ]
+  computeVersion = "Ubuntu 20"
+  dateCreated = "2024-01-17T22:01:50.000Z"
+  description = "do not modify"
+  groupType = { code = "docker-cluster" }
+  lastUpdated = "2024-01-17T22:01:50.000Z"
+  memoryRequirement = 0
+  provisionType = { code = "google" }
+  type = { code = "googleLinux" }
+}

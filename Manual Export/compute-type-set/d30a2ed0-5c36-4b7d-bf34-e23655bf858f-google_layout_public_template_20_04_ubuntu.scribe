@@ -1,0 +1,12 @@
+resource "compute-type-set" "d30a2ed0-5c36-4b7d-bf34-e23655bf858f-google.layout.public.template.20.04.ubuntu" {
+  code = "d30a2ed0-5c36-4b7d-bf34-e23655bf858f-google.layout.public.template.20.04.ubuntu"
+  name = "Google Custom Ubuntu 20-worker-google.layout.public.template.20.04.ubuntu-set"
+  canAddNodes = true
+  computeServerType = { code = "googleLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  nameSuffix = "-worker"
+  nodeType = "worker"
+  priorityOrder = 1
+  workloadType = { code = "google.layout.public.template.20.04.ubuntu" }
+}
