@@ -5,4 +5,5 @@ resource "instance-type" "f5mgmt" {
   category = "network"
   deploymentService = ""
   environmentPrefix = "F5"
+  layouts = [ { code = "fe417e1f-c370-4ce8-92ae-83242a32ee58" } ]
 }
