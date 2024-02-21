@@ -5,6 +5,5 @@ resource "instance-type" "centweb" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "CENTWEB"
-  layouts = [ { code = "bd255ea6-bb85-46df-bbad-74763886515a" } ]
   visibility = "public"
 }
