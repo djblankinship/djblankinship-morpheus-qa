@@ -1,0 +1,20 @@
+resource "container-type" "d920c403-025c-4b54-a513-d041288865db" {
+  code = "d920c403-025c-4b54-a513-d041288865db"
+  name = "Custom HyperV"
+  uuid = "581135cc-ea01-423c-ab88-faeda91e6d75"
+  category = "Web"
+  actions = [ { code = "generic-remove-node" } ]
+  containerLogs = [ { uuid = "2f71d013-c139-40b0-8d36-9ac0eb085680" } ]
+  containerPorts = [
+    { uuid = "c5fe4d3f-8010-440b-bb2d-4b644cae1ef1" },
+    { uuid = "211108f2-63af-4cc2-b3e2-786695149c9e" },
+    { uuid = "3538c129-13b9-4fb5-a123-56d998153af6" }
+  ]
+  containerVersion = "vhd"
+  entryPoint = ""
+  logTypeCode = "hyperv"
+  provisionType = { code = "hyperv" }
+  repositoryImage = ""
+  shortName = "custom-img"
+  statTypeCode = "hyperv"
+}

@@ -1,0 +1,13 @@
+resource "instance-type-layout" "ba5ee40d-96c0-446d-a8de-4c78b4288267" {
+  code = "ba5ee40d-96c0-446d-a8de-4c78b4288267"
+  name = "Custom HyperV"
+  uuid = "32c30825-d055-4a1a-a516-abf67cea7717"
+  actions = [ { code = "generic-add-node" } ]
+  description = "custom image"
+  hasAutoScale = true
+  instanceType = { code = "custom-img" }
+  instanceVersion = "vhd"
+  memoryRequirement = 0
+  provisionType = { code = "hyperv" }
+  workloads = [ { code = "d920c403-025c-4b54-a513-d041288865db" } ]
+}
