@@ -1,0 +1,9 @@
+resource "task-set" "Hello World Local Windows Operational" {
+  name = "Hello World Local Windows Operational"
+  uuid = "48cd2811-01a6-4949-8511-4124b5e6210a"
+  dateCreated = "2023-09-29T19:49:29.000Z"
+  lastUpdated = "2023-09-29T19:49:29.000Z"
+  platform = "windows"
+  taskSetTasks = [ { uuid = "bb357f98-fc31-484a-8f5a-45d81a431351" } ]
+  taskSetType = "operation"
+}

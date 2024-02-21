@@ -1,0 +1,5 @@
+resource "task-set-task" "bb357f98-fc31-484a-8f5a-45d81a431351" {
+  uuid = "bb357f98-fc31-484a-8f5a-45d81a431351"
+  task = { name = "Hello World Local Windows" }
+  taskPhase = "operation"
+}
