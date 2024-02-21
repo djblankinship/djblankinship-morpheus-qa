@@ -1,0 +1,7 @@
+resource "container-type-set" "nginx-scvmm-1.9-set" {
+  code = "nginx-scvmm-1.9-set"
+  uuid = "2b705b8e-2d18-40e6-888f-06bd2c0ec7d1"
+  category = "nginx"
+  dynamicCount = true
+  workloadType = { code = "nginx-scvmm-1.9" }
+}
