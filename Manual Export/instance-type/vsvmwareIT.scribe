@@ -1,0 +1,12 @@
+resource "instance-type" "vsvmwareIT" {
+  code = "vsvmwareIT"
+  name = "vsvmwareIT"
+  uuid = "c99e0df9-443f-49cd-bc59-3e10402218fc"
+  category = "cloud"
+  deploymentService = ""
+  environmentPrefix = "VSVMWAREIT"
+  optionTypes = [
+    { code = "morpheus_network_server" },
+    { code = "morpheus_network_interface_mac" }
+  ]
+}
