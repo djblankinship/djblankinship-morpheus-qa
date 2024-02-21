@@ -1,0 +1,14 @@
+resource "option-type" "vsNetworks" {
+  code = "vsNetworks"
+  name = "vsNetworks"
+  uuid = "b833fc5d-0133-408a-9794-30be2dcdd17b"
+  dependsOnCode = "vsResourcepools"
+  displayOrder = 3
+  fieldContext = "config.customOptions"
+  fieldLabel = "Networks"
+  fieldName = "vsNetworks"
+  optionList = { name = "vsNetworks" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
