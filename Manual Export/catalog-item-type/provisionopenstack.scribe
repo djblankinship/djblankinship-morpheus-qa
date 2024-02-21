@@ -1,0 +1,9 @@
+resource "catalog-item-type" "provisionopenstack" {
+  code = "provisionopenstack"
+  name = "Provision - OpenStack"
+  uuid = "159f0330-08a9-4469-8c34-4d144e58471f"
+  dateCreated = "2023-06-23T17:55:47.000Z"
+  formType = "form"
+  lastUpdated = "2023-08-07T20:28:45.000Z"
+  refType = "InstanceType"
+}
