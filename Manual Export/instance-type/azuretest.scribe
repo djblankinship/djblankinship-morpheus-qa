@@ -5,4 +5,5 @@ resource "instance-type" "azuretest" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "AZURETEST"
+  layouts = [ { code = "08e22a76-6b2f-4804-a75b-861ec4ad8ff0" } ]
 }
