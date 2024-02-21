@@ -1,0 +1,19 @@
+resource "compute-type-layout" "docker-nutanix-prism-ubuntu-18.04-single" {
+  code = "docker-nutanix-prism-ubuntu-18.04-single"
+  name = "Nutanix Prism Central Docker Ubuntu 18.04"
+  computeServers = [ { code = "docker-nutanix-prism-ubuntu-18.04-set" } ]
+  computeVersion = "18.04"
+  dateCreated = "2023-11-20T19:30:53.000Z"
+  description = "This will provision a single docker host vm in nutanix prism central."
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = true
+  lastUpdated = "2023-11-20T19:45:20.000Z"
+  memoryRequirement = 1073741824
+  optionTypes = [
+    { code = "nutanix-prism-provision-cluster" },
+    { code = "nutanix-prism-provision-categories" }
+  ]
+  provisionType = { code = "nutanix-prism-provision-provider" }
+  sortOrder = 5
+  type = { code = "nutanix-prism-vm" }
+}
