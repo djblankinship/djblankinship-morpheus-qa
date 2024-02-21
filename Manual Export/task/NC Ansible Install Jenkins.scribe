@@ -1,0 +1,19 @@
+resource "task" "NC Ansible Install Jenkins" {
+  name = "NC Ansible Install Jenkins"
+  uuid = "ddae3f00-6d3c-4d22-84cc-61fddb30c81b"
+  dateCreated = "2021-11-17T21:23:00.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-17T21:23:00.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleGitId" }
+      value = { name = "NC Galaxy Jenkins Test" }
+    },
+    {
+      optionType = { code = "ansiblePlaybook" }
+      value = "jenkins.yml"
+    },
+    { optionType = { code = "ansibleGitRef" }, value = "master" }
+  ]
+  taskType = { code = "ansibleTask" }
+}
