@@ -1,0 +1,11 @@
+resource "task-set" "api-workflow-postprovision" {
+  name = "api-workflow-postprovision"
+  uuid = "83a63058-154a-4e20-852b-24dbdc7bd69b"
+  dateCreated = "2023-12-14T18:01:23.000Z"
+  lastUpdated = "2023-12-14T18:20:35.000Z"
+  taskSetTasks = [
+    { uuid = "2d68de06-d80a-4c1a-b83c-9549193c3d2b" },
+    { uuid = "df16c113-e289-42b4-9f60-be365c50c093" },
+    { uuid = "f1771a53-dfe6-4d45-a3cd-7680743eba9e" }
+  ]
+}
