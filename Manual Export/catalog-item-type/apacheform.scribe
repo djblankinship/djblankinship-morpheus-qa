@@ -1,0 +1,11 @@
+resource "catalog-item-type" "apacheform" {
+  code = "apacheform"
+  name = "Apache Form"
+  uuid = "777399fc-c451-4eac-859a-9b4f390023c6"
+  darkIconPath = "https://qa.morpheusdata.com/storage/logos/uploads/CatalogItemType/2640/logo/Apache Form._original.txt"
+  dateCreated = "2023-06-23T14:29:14.000Z"
+  formType = "form"
+  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/7738/logo/apache_original.svg"
+  lastUpdated = "2023-09-05T00:28:05.000Z"
+  refType = "InstanceType"
+}
