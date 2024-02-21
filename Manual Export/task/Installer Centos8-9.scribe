@@ -5,11 +5,11 @@ resource "task" "Installer Centos8-9" {
   executeTarget = "resource"
   lastUpdated = "2023-09-12T17:04:29.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "cc240075-27b8-4308-b264-be31d70d19f2" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
