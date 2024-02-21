@@ -1,9 +1,15 @@
 resource "catalog-item-type" "null" {
-  name = "Workflow Instance/Server"
-  uuid = "027b5edc-0bfb-4cf5-b4e0-7ce8c19dab39"
-  darkIconPath = "/assets/containers-png/morph-resource2.png"
-  dateCreated = "2020-11-03T17:13:53.000Z"
+  name = "Wrong Order"
+  uuid = "e2d9dffd-114b-463d-8687-cab188eb2a84"
+  dateCreated = "2021-07-29T19:43:03.000Z"
   iconPath = "/assets/containers-png/morph-resource2.png"
-  lastUpdated = "2023-05-04T20:23:06.000Z"
-  refType = "OperationalWorkflow"
+  lastUpdated = "2021-07-30T22:00:45.000Z"
+  optionTypes = [
+    { code = "morphgroup" },
+    { code = "morphcloud" },
+    { code = "morphpool" },
+    { code = "appName" },
+    { code = "morphnetwork" }
+  ]
+  refType = "InstanceType"
 }
