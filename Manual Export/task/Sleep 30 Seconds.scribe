@@ -5,11 +5,11 @@ resource "task" "Sleep 30 Seconds" {
   executeTarget = "resource"
   lastUpdated = "2023-11-27T16:35:44.000Z"
   options = [
+    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "8e27aeff-f1e8-4025-9e7a-048607cfa6f1" }
       optionType = { code = "script" }
-    },
-    { optionType = { code = "shell.sudo" }, value = "on" }
+    }
   ]
   taskType = { code = "script" }
 }
