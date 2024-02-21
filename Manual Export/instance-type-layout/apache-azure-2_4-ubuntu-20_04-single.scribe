@@ -1,0 +1,15 @@
+resource "instance-type-layout" "apache-azure-2.4-ubuntu-20.04-single" {
+  code = "apache-azure-2.4-ubuntu-20.04-single"
+  name = "Azure Apache"
+  uuid = "df63eac2-38d1-4382-84fa-dd3c0214345a"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  portCount = 2
+  provisionType = { code = "azure" }
+  serverType = "vm"
+  sortOrder = 11
+  workloads = [ { code = "apache-azure-2.4-ubuntu-20.04-set" } ]
+}
