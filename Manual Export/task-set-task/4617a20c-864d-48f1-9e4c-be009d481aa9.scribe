@@ -1,0 +1,5 @@
+resource "task-set-task" "4617a20c-864d-48f1-9e4c-be009d481aa9" {
+  uuid = "4617a20c-864d-48f1-9e4c-be009d481aa9"
+  task = { code = "vro" }
+  taskPhase = "provision"
+}

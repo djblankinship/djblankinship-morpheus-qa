@@ -1,0 +1,10 @@
+resource "reference-data" "vro.workflows.6254.90808080808080808080808080808080D28080800120523434428525559a3425f" {
+  code = "vro.workflows.6254.90808080808080808080808080808080D28080800120523434428525559a3425f"
+  name = "SSH / Run SSH command"
+  category = "vro.workflows.6254"
+  keyValue = "90808080808080808080808080808080D28080800120523434428525559a3425f"
+  rawData = "{\"id\":\"90808080808080808080808080808080D28080800120523434428525559a3425f\",\"name\":\"Run SSH command\",\"description\":\"Runs an SSH command.\",\"category\":\"SSH\"}"
+  refId = "6254"
+  refType = "AccountIntegration"
+  value = "Run SSH command"
+}
