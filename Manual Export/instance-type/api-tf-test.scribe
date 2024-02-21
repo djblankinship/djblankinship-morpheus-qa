@@ -1,0 +1,9 @@
+resource "instance-type" "api-tf-test" {
+  code = "api-tf-test"
+  name = "api-tf-test"
+  uuid = "8b24755b-5755-41b0-adbc-96775f13efea"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "API_TF_TEST"
+  visibility = "public"
+}

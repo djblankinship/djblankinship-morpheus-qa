@@ -1,0 +1,11 @@
+resource "instance-type-layout" "d72ed423-c696-43b8-a167-79b8d2ca1589" {
+  code = "d72ed423-c696-43b8-a167-79b8d2ca1589"
+  name = "api-tf-test"
+  uuid = "76a2dcdd-da96-4462-b2ef-d1b82b5bf288"
+  config = "{\"tfvarSecret\":\"\"}"
+  instanceType = { code = "api-tf-test" }
+  instanceVersion = "1.0"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "c4af6585-4e3e-4b8f-9648-2b6500e4a5e6" } ]
+}
