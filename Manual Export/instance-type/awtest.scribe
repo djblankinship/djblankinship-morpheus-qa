@@ -1,0 +1,9 @@
+resource "instance-type" "awtest" {
+  code = "awtest"
+  name = "aw-test"
+  uuid = "9feeee03-cc4a-4087-8da7-f6d5d427014b"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "AW-TEST"
+  optionTypes = [ { code = "awSelect" }, { code = "aw1" } ]
+}
