@@ -1,13 +1,39 @@
 resource "catalog-item-type" "null" {
-  name = "Simple Instance"
-  uuid = "6ffb3866-6dac-454e-ac8c-340abe8341bb"
+  name = "Simple Options"
+  uuid = "2e40cbe1-6ebb-4d56-b991-06a143dab665"
   category = "simple"
-  allowQuantity = true
-  dateCreated = "2020-09-09T23:35:47.000Z"
+  darkIconPath = "/assets/branding/140x40/nginx.svg"
+  dateCreated = "2020-09-09T23:39:44.000Z"
   description = "don't delete"
-  featured = true
-  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/7700/logo/nginx_original.svg"
+  formType = "optionTypes"
+  iconPath = "/assets/branding/140x40/nginx.svg"
   labels = [ { name = "auto" }, { name = "keep" } ]
-  lastUpdated = "2023-03-15T20:19:40.000Z"
+  lastUpdated = "2023-12-16T22:11:35.000Z"
+  optionTypes = [
+    { code = "autocheck1" },
+    { code = "autocheck2" },
+    { code = "autohidden1" },
+    { code = "autohidden2" },
+    { code = "autonum1" },
+    { code = "autonum2" },
+    { code = "autopass1" },
+    { code = "autopass2" },
+    { code = "autoradio1" },
+    { code = "autoradio2" },
+    { code = "autoselect1" },
+    { code = "autoselect2" },
+    { code = "autotext1" },
+    { code = "autotext2" },
+    { code = "autotextarea1" },
+    { code = "autotextarea2" },
+    { code = "autotypeahead1" },
+    { code = "autotypeahead2" },
+    { code = "automulti1" },
+    { code = "automulti2" },
+    { code = "autorest1" },
+    { code = "autorest2" },
+    { code = "aduser" },
+    { code = "adlist" }
+  ]
   refType = "InstanceType"
 }
