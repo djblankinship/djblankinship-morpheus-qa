@@ -1,0 +1,10 @@
+resource "resource-spec-template" "1829e48b-ffce-43aa-908a-5d3a3a4dfb88" {
+  name = "Openstack Ubuntu VM"
+  uuid = "1829e48b-ffce-43aa-908a-5d3a3a4dfb88"
+  config = { terraform = { tfVersion = ">= 0.14.0" } }
+  dateCreated = "2023-03-09T04:05:44.000Z"
+  lastUpdated = "2023-03-09T04:08:29.000Z"
+  template = { uuid = "7ee7737f-302a-4d19-8fe8-21aa1bd8f3b9" }
+  templateType = "Terraform"
+  type = { code = "terraform" }
+}
