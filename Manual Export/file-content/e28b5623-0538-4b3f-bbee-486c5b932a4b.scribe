@@ -1,0 +1,6 @@
+resource "file-content" "e28b5623-0538-4b3f-bbee-486c5b932a4b" {
+  uuid = "e28b5623-0538-4b3f-bbee-486c5b932a4b"
+  content = "echo customOptions = <%=customOptions%>"
+  dateCreated = "2023-07-31T14:51:54.000Z"
+  lastUpdated = "2023-07-31T14:51:54.000Z"
+}

@@ -1,0 +1,8 @@
+resource "task-set" "CUSTOM OPTIONS" {
+  name = "CUSTOM OPTIONS"
+  uuid = "a7aa32b3-e8b3-4edb-bc52-17ba87e81954"
+  dateCreated = "2023-07-31T14:52:51.000Z"
+  lastUpdated = "2023-07-31T14:52:51.000Z"
+  taskSetTasks = [ { uuid = "d6b48cc4-2a52-411e-b17a-33ed0dc4c1af" } ]
+  taskSetType = "operation"
+}

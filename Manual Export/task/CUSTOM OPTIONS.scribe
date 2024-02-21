@@ -1,0 +1,14 @@
+resource "task" "CUSTOM OPTIONS" {
+  name = "CUSTOM OPTIONS"
+  uuid = "583bec8a-c5ad-4eef-8f00-018855985f91"
+  dateCreated = "2023-07-31T14:51:54.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-07-31T14:51:54.000Z"
+  options = [
+    {
+      content = { uuid = "e28b5623-0538-4b3f-bbee-486c5b932a4b" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
