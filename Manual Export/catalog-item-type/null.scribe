@@ -1,11 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "Case 68960-1"
-  uuid = "07f18f4b-a6f5-4425-8ee4-dd6c343191e6"
-  category = "Cases"
-  allowQuantity = true
-  dateCreated = "2023-01-10T11:41:32.000Z"
-  iconPath = "/assets/branding/140x40/resource.svg"
-  lastUpdated = "2023-03-03T09:33:55.000Z"
-  optionTypes = [ { code = "fn68960" } ]
-  refType = "InstanceType"
+  name = "Custom Instance"
+  uuid = "974e5a4c-2d1d-4043-8bc5-d4516e3961c5"
+  dateCreated = "2021-09-16T14:29:39.000Z"
+  iconPath = "/assets/containers-png/morph-resource2.png"
+  lastUpdated = "2021-09-16T14:29:39.000Z"
+  refType = "OperationalWorkflow"
 }
