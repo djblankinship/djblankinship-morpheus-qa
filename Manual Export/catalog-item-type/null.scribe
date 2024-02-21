@@ -1,8 +1,10 @@
 resource "catalog-item-type" "null" {
-  name = "Arm"
-  uuid = "9e337cc7-38fe-49ba-9b83-d88785959cc7"
-  dateCreated = "2022-06-03T15:53:17.000Z"
-  iconPath = "/assets/branding/140x40/resource.svg"
-  lastUpdated = "2022-06-03T15:53:17.000Z"
+  name = "aw-test-catalog"
+  uuid = "2a79e133-20fa-4a58-a1fc-e52a5c99c544"
+  darkIconPath = "/branding/140x40/aws-mq.svg"
+  dateCreated = "2023-10-23T18:17:28.000Z"
+  formType = "form"
+  iconPath = "/branding/140x40/alibaba.svg"
+  lastUpdated = "2024-01-29T17:52:41.000Z"
   refType = "InstanceType"
 }
