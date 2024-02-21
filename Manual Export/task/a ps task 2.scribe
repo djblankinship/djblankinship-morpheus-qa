@@ -1,0 +1,15 @@
+resource "task" "a ps task 2" {
+  name = "a ps task 2"
+  uuid = "cc8c6e4d-795d-4307-94e9-020fd90022e6"
+  dateCreated = "2020-05-05T18:37:41.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2020-05-05T18:37:41.000Z"
+  options = [
+    { optionType = { code = "winrm.elevated" }, value = "on" },
+    {
+      content = { uuid = "289ca66a-5a07-47fb-979c-b28fcb8fe035" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
