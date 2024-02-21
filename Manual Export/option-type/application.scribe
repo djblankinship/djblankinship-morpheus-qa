@@ -1,0 +1,11 @@
+resource "option-type" "application" {
+  code = "application"
+  name = "application"
+  uuid = "453743fd-b984-47cb-89da-7cdadc4c35ab"
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldGetName = "application"
+  fieldLabel = "Application Name"
+  fieldName = "application"
+  fieldSetName = "application"
+}
