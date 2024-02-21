@@ -1,0 +1,16 @@
+resource "container-type" "cca72e86-c971-446e-8a03-b09bab3b0bb7" {
+  code = "cca72e86-c971-446e-8a03-b09bab3b0bb7"
+  name = "Amazon Ubuntu 16"
+  uuid = "e9ee4cfa-258a-4d36-a78a-cf99df380ff8"
+  containerPorts = [ { uuid = "20743267-9bd2-4046-968f-e8440f54a9c1" } ]
+  containerVersion = "Ubuntu 16"
+  entryPoint = ""
+  logTypeCode = "amazon"
+  provisionType = { code = "amazon" }
+  repositoryImage = ""
+  serverType = "vm"
+  shortName = "awsubu16"
+  showServerLogs = true
+  statTypeCode = "amazon"
+  virtualImage = { uuid = "6d135fac-7b4f-404a-8391-dd98e1683689" }
+}
