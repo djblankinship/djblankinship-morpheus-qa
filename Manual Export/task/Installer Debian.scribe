@@ -5,11 +5,11 @@ resource "task" "Installer Debian" {
   executeTarget = "resource"
   lastUpdated = "2023-10-09T16:40:17.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "e07d5827-81eb-4f5e-b25c-fbc230aa2d78" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
