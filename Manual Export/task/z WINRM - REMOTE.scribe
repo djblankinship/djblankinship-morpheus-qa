@@ -1,0 +1,18 @@
+resource "task" "z WINRM - REMOTE" {
+  code = "z WINRM - REMOTE"
+  name = "z WINRM - REMOTE"
+  uuid = "bc7580b1-f1c1-48de-955a-42dcecdf3ba0"
+  dateCreated = "2019-06-27T00:17:51.000Z"
+  executeTarget = "remote"
+  lastUpdated = "2019-06-27T15:12:41.000Z"
+  options = [
+    { optionType = { code = "port" }, value = "3389" },
+    { optionType = { code = "host" }, value = "54.183.179.126" },
+    { optionType = { code = "username" }, value = "djblankinship" },
+    {
+      optionType = { code = "script" }
+      value = "echo \"$(date) - test\" >> C:\\\\Test\\blah"
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
