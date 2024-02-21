@@ -1,12 +1,23 @@
 resource "catalog-item-type" "null" {
-  name = "AC Test Catalog"
-  uuid = "baad2497-dced-4ec8-b3cc-2d7c7e12ddae"
-  darkIconPath = "/branding/140x40/vmware.svg"
-  dateCreated = "2023-04-14T15:27:39.000Z"
-  description = "Ubuntu instance based on selected resources"
+  name = "Amazon Options"
+  uuid = "58913c4e-6125-4054-9a5c-2c6d58cc28ff"
+  darkIconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/7738/logo/apache_original.svg"
+  dateCreated = "2020-09-18T20:14:34.000Z"
+  description = "api options"
   formType = "optionTypes"
-  iconPath = "/branding/140x40/vmware.svg"
-  lastUpdated = "2024-01-12T21:11:43.000Z"
-  optionTypes = [ { code = "awSelect" }, { code = "achiddentest" } ]
+  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/7738/logo/apache_original.svg"
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  lastUpdated = "2023-05-16T13:48:15.000Z"
+  optionTypes = [
+    { code = "morphgroup" },
+    { code = "morphenv" },
+    { code = "morphcloud" },
+    { code = "morphpool" },
+    { code = "morphplan" },
+    { code = "morphnetwork" },
+    { code = "morphsecgroup" },
+    { code = "name" }
+  ]
   refType = "InstanceType"
+  visibility = "public"
 }
