@@ -5,4 +5,5 @@ resource "instance-type" "nginxk8s" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "NGINX_K8S"
+  layouts = [ { code = "855c4b01-6a75-4813-a8ad-6cf104386b5e" } ]
 }
