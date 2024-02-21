@@ -1,7 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "greg_catalog1"
-  uuid = "72c451c8-2526-43ce-83b7-b6babf78f872"
-  dateCreated = "2023-09-21T10:58:32.000Z"
-  lastUpdated = "2023-09-21T10:58:32.000Z"
+  name = "Hello World Local Sleep Operational"
+  uuid = "2d051005-268a-4724-8f70-99394c6624a4"
+  dateCreated = "2023-03-07T19:59:18.000Z"
+  iconPath = "/assets/branding/140x40/resource.svg"
+  lastUpdated = "2023-03-07T19:59:18.000Z"
   refType = "OperationalWorkflow"
 }
