@@ -1,0 +1,6 @@
+resource "file-content" "b861d002-973a-4f49-aebd-43ce40b07045" {
+  uuid = "b861d002-973a-4f49-aebd-43ce40b07045"
+  content = "echo \"else conditional task\" | tee -a /var/tmp/conditionalWorkflow.txt"
+  dateCreated = "2024-02-20T22:26:43.000Z"
+  lastUpdated = "2024-02-20T22:26:43.000Z"
+}

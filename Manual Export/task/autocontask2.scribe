@@ -1,0 +1,17 @@
+resource "task" "autocontask2" {
+  code = "autocontask2"
+  name = "auto elsecon task"
+  uuid = "9a3ecef6-ab95-496b-bf88-2ac438469182"
+  dateCreated = "2024-02-20T22:26:43.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-02-20T22:26:43.000Z"
+  options = [
+    {
+      content = { uuid = "b861d002-973a-4f49-aebd-43ce40b07045" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  resultType = "value"
+  taskType = { code = "script" }
+}

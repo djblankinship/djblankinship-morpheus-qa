@@ -1,0 +1,12 @@
+resource "task-set" "Auto else workflow" {
+  name = "Auto else workflow"
+  uuid = "12815a2f-9420-4f48-84b8-923648853d4e"
+  allowCustomConfig = true
+  dateCreated = "2024-02-20T22:27:38.000Z"
+  description = "else if workflow"
+  labels = [ "auto", "test" ]
+  lastUpdated = "2024-02-20T22:27:38.000Z"
+  taskSetTasks = [ { uuid = "d134deb1-d8af-4a2f-b2ef-ef10c1c36773" } ]
+  taskSetType = "operation"
+  visibility = "public"
+}
