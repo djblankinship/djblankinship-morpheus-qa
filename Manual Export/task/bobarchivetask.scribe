@@ -1,0 +1,15 @@
+resource "task" "bobarchivetask" {
+  name = "bobarchivetask"
+  uuid = "9d1bb0a8-5b95-49cc-90ec-b73f509f6d25"
+  dateCreated = "2020-08-26T23:18:32.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2020-08-26T23:18:41.000Z"
+  options = [
+    {
+      content = { uuid = "084f6cff-7a3e-46a1-adfc-36508dd60986" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
