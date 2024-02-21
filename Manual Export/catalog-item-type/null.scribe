@@ -1,8 +1,19 @@
 resource "catalog-item-type" "null" {
-  name = "uthman row issue"
-  uuid = "b0907b46-639f-4dc7-a7b6-7a494f1cd9a0"
-  dateCreated = "2023-08-10T09:19:48.000Z"
-  formType = "form"
-  lastUpdated = "2023-08-10T09:20:39.000Z"
+  name = "vs67541"
+  uuid = "2275cfab-9aad-4e84-aedb-55545da3ad96"
+  darkIconPath = "/assets/branding/140x40/azure.svg"
+  dateCreated = "2022-08-18T16:47:43.000Z"
+  formType = "optionTypes"
+  iconPath = "/assets/branding/140x40/azure.svg"
+  lastUpdated = "2023-09-05T00:28:23.000Z"
+  optionTypes = [
+    { code = "vsRestServersIn" },
+    { code = "vsGroups" },
+    { code = "vsClouds" },
+    { code = "vsResourcepools" },
+    { code = "vsNetworks" },
+    { code = "vsInstanceNetwork" }
+  ]
   refType = "InstanceType"
+  visibility = "public"
 }
