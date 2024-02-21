@@ -1,10 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "aw-test-catalog"
-  uuid = "2a79e133-20fa-4a58-a1fc-e52a5c99c544"
-  darkIconPath = "/branding/140x40/aws-mq.svg"
-  dateCreated = "2023-10-23T18:17:28.000Z"
-  formType = "form"
-  iconPath = "/branding/140x40/alibaba.svg"
-  lastUpdated = "2024-01-29T17:52:41.000Z"
-  refType = "InstanceType"
+  name = "Bob Catalog Blueprint"
+  uuid = "f0e1a171-8938-48d0-a0bb-52c3864f7eae"
+  dateCreated = "2021-04-30T16:59:06.000Z"
+  iconPath = "/assets/containers-png/morph-resource2.png"
+  lastUpdated = "2021-04-30T16:59:06.000Z"
+  refType = "AppTemplate"
 }
