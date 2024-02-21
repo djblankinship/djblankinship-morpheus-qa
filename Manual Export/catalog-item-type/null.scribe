@@ -1,16 +1,10 @@
 resource "catalog-item-type" "null" {
-  name = "db-instance-vmware-0205"
-  uuid = "0d895271-98b8-4513-8532-164dd02a19a3"
-  dateCreated = "2024-02-05T22:37:21.000Z"
+  name = "dg_disk_label_change"
+  uuid = "bc808b1e-af3b-46bd-b497-f8a7e1abbc78"
+  dateCreated = "2023-04-13T13:29:02.000Z"
   formType = "optionTypes"
-  lastUpdated = "2024-02-09T22:16:48.000Z"
-  optionTypes = [
-    { code = "morphgroup" },
-    { code = "morphcloud" },
-    { code = "morphpool" },
-    { code = "morphnetwork" },
-    { code = "morphnetworktagnames" },
-    { code = "morphnetworktagvalues" }
-  ]
-  refType = "InstanceType"
+  lastUpdated = "2023-04-13T13:29:02.000Z"
+  optionTypes = [ { code = "FJJSONBody" } ]
+  refType = "OperationalWorkflow"
+  visibility = "public"
 }
