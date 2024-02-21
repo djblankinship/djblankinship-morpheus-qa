@@ -1,0 +1,47 @@
+resource "catalog-item-type" "simpleinputs" {
+  code = "simpleinputs"
+  name = "Simple Inputs"
+  uuid = "cd91523d-48b0-4de3-95c9-f1fdf4ad94ab"
+  category = "simple"
+  darkIconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/7700/logo/nginx_original.svg"
+  dateCreated = "2023-12-18T04:46:56.000Z"
+  description = "don't delete"
+  formType = "optionTypes"
+  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/7700/logo/nginx_original.svg"
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  lastUpdated = "2023-12-18T23:03:08.000Z"
+  optionTypes = [
+    { code = "autocheck1" },
+    { code = "autohidden1" },
+    { code = "autonum1" },
+    { code = "autopass1" },
+    { code = "autoradio1" },
+    { code = "autoselect1" },
+    { code = "autotext1" },
+    { code = "autotextarea1" },
+    { code = "autotypeahead1" },
+    { code = "automulti1" },
+    { code = "autocheck2" },
+    { code = "autohidden2" },
+    { code = "autonum2" },
+    { code = "autopass2" },
+    { code = "autoradio2" },
+    { code = "autoselect2" },
+    { code = "autotext2" },
+    { code = "autotextarea2" },
+    { code = "autotypeahead2" },
+    { code = "automulti2" },
+    { code = "autorest1" },
+    { code = "autorest2" },
+    { code = "aduser" },
+    { code = "adlist" },
+    { code = "morphgroup" },
+    { code = "morphenv" },
+    { code = "hidecheck" },
+    { code = "hideselect" },
+    { code = "hidetext" },
+    { code = "hidetextarea" },
+    { code = "autohidegroup" }
+  ]
+  refType = "InstanceType"
+}
