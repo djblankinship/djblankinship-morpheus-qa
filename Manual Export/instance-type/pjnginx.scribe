@@ -1,0 +1,8 @@
+resource "instance-type" "pjnginx" {
+  code = "pjnginx"
+  name = "pj-nginx"
+  uuid = "27e4d160-48ff-4ea8-804d-f80b33e5c2ee"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "PJ-NGINX"
+}

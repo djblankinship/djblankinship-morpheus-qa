@@ -1,0 +1,32 @@
+resource "container-type" "4d8675c9-ca02-4c25-8c35-e63f3dea36fc" {
+  code = "4d8675c9-ca02-4c25-8c35-e63f3dea36fc"
+  name = "pj nginx node"
+  uuid = "ba72f208-447e-4066-8638-b7c809a542aa"
+  containerScript = <<EOFSCRIBE
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment1234
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+EOFSCRIBE
+  containerVersion = "Latest"
+  entryPoint = ""
+  logTypeCode = "docker"
+  provisionType = { code = "kubernetes" }
+  shortName = "pjnginxnode"
+  statTypeCode = "docker"
+}

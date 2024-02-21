@@ -1,0 +1,10 @@
+resource "instance-type-layout" "4257a716-f54b-4d39-b671-7b6c8d68f6d3" {
+  code = "4257a716-f54b-4d39-b671-7b6c8d68f6d3"
+  name = "pj nginx layout"
+  uuid = "c8524004-10f8-4e2b-9486-3f64e21af700"
+  instanceType = { code = "pjnginx" }
+  instanceVersion = "Latest"
+  memoryRequirement = 0
+  provisionType = { code = "kubernetes" }
+  workloads = [ { code = "4d8675c9-ca02-4c25-8c35-e63f3dea36fc" } ]
+}
