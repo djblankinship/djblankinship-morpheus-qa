@@ -1,0 +1,13 @@
+resource "file-content" "e2fe3bef-6594-4acb-80be-9f0c4ee85ffc" {
+  uuid = "e2fe3bef-6594-4acb-80be-9f0c4ee85ffc"
+  content = <<EOFSCRIBE
+com.morpheus.task.Task.withNewSession {
+com.morpheus.task.Task.get(26219l).taskOptions.each { to ->
+  println to.value
+}
+}
+return null
+EOFSCRIBE
+  dateCreated = "2024-02-13T14:58:03.000Z"
+  lastUpdated = "2024-02-13T14:58:47.000Z"
+}

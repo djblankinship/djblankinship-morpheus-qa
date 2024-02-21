@@ -1,0 +1,15 @@
+resource "task" "Check Task Options" {
+  name = "Check Task Options"
+  uuid = "ae64a413-51e6-4d10-99a0-e54db83b0b23"
+  dateCreated = "2024-02-13T14:58:03.000Z"
+  executeTarget = "local"
+  labels = [ "david", "utility" ]
+  lastUpdated = "2024-02-13T14:58:24.000Z"
+  options = [
+    {
+      content = { uuid = "e2fe3bef-6594-4acb-80be-9f0c4ee85ffc" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}
