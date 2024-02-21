@@ -1,0 +1,14 @@
+resource "option-type" "MySQLMajorEngineVersion" {
+  code = "MySQLMajorEngineVersion"
+  name = "MySQL Major Engine Version"
+  uuid = "a156a760-0fd3-45ca-ada9-5f85a2833bde"
+  fieldContext = "config.customOptions"
+  fieldGetName = "MySQLMajorEngineVersion"
+  fieldLabel = "MySQL Major Engine Version"
+  fieldName = "MySQLMajorEngineVersion"
+  fieldSetName = "MySQLMajorEngineVersion"
+  optionList = { name = "MySQL RDS Engine Version" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
