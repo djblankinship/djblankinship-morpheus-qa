@@ -1,0 +1,15 @@
+resource "option-type" "ParsedCloud" {
+  code = "ParsedCloud"
+  name = "Parsed Cloud"
+  uuid = "8e6c90c7-1cae-46d7-b2d2-442d7269d31b"
+  dependsOnCode = "SelectedGroup"
+  fieldContext = "config.customOptions"
+  fieldGetName = "ParsedCloud"
+  fieldLabel = "Cloud"
+  fieldName = "ParsedCloud"
+  fieldSetName = "ParsedCloud"
+  optionList = { name = "Parsed Clouds" }
+  optionSource = "list"
+  required = true
+  type = "select"
+}
