@@ -1,0 +1,14 @@
+resource "task" "VDI - Create RDS Deployment" {
+  name = "VDI - Create RDS Deployment"
+  uuid = "88f55c6e-81ed-4994-a261-9d698026228f"
+  dateCreated = "2021-11-16T21:51:01.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-16T21:51:01.000Z"
+  options = [
+    {
+      content = { uuid = "72e35056-bf2e-4a82-973e-3da0e45ff31b" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}

@@ -1,0 +1,14 @@
+resource "task" "VDI - Configure Remote Applications" {
+  name = "VDI - Configure Remote Applications"
+  uuid = "0cc42824-d294-4f3c-b868-7e52ae900adb"
+  dateCreated = "2021-11-16T21:51:31.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2021-11-16T21:51:31.000Z"
+  options = [
+    {
+      content = { uuid = "db196da4-e2ec-402c-9116-eaada1493922" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "winrmTask" }
+}
