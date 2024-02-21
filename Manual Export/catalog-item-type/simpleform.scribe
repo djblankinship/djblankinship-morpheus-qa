@@ -1,0 +1,14 @@
+resource "catalog-item-type" "simpleform" {
+  code = "simpleform"
+  name = "Simple Form"
+  uuid = "985209a1-084a-482f-a1ae-f4122e124288"
+  category = "simple"
+  darkIconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/7700/logo/nginx_original.svg"
+  dateCreated = "2023-12-18T05:09:34.000Z"
+  description = "don't delete"
+  formType = "form"
+  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/7700/logo/nginx_original.svg"
+  labels = [ { name = "auto" }, { name = "keep" } ]
+  lastUpdated = "2023-12-18T05:10:59.000Z"
+  refType = "InstanceType"
+}
