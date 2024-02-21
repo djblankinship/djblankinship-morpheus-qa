@@ -7,5 +7,4 @@ resource "instance-type" "ch-win-7-ent" {
   environmentPrefix = "CH_WIN_7_ENT"
   hasDeployment = true
   hasSettings = true
-  layouts = [ { code = "24bd8fef-e588-4102-9ac4-2964714116d6" } ]
 }
