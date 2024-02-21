@@ -1,0 +1,9 @@
+resource "catalog-item-type" "provisionscvmm" {
+  code = "provisionscvmm"
+  name = "Provision - SCVMM"
+  uuid = "61522832-15fd-487d-acc5-4355f7e57659"
+  dateCreated = "2023-06-23T17:14:32.000Z"
+  formType = "form"
+  lastUpdated = "2023-08-07T19:23:59.000Z"
+  refType = "InstanceType"
+}
