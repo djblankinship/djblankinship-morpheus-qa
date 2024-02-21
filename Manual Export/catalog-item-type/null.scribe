@@ -1,8 +1,8 @@
 resource "catalog-item-type" "null" {
-  name = "Stubby Toes Blueprint"
-  uuid = "bee937db-b247-4e2c-ba23-c610af11272d"
-  dateCreated = "2023-04-18T20:51:42.000Z"
-  formType = "form"
-  lastUpdated = "2023-04-18T20:51:42.000Z"
-  refType = "AppTemplate"
+  name = "Test-SCVMM"
+  uuid = "b5da0860-605e-45c2-9f22-c917902bc7c6"
+  dateCreated = "2022-03-30T12:55:09.000Z"
+  iconPath = "/assets/branding/140x40/resource.svg"
+  lastUpdated = "2022-03-30T12:55:09.000Z"
+  refType = "InstanceType"
 }
