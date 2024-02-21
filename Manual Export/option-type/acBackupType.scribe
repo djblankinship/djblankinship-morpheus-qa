@@ -1,0 +1,15 @@
+resource "option-type" "acBackupType" {
+  code = "acBackupType"
+  name = "AC BackupType"
+  uuid = "45ed945f-0e70-48fe-8e2b-d4bd91d83b67"
+  dependsOnCode = "acCreateBackup:yes"
+  displayOrder = 1
+  fieldContext = "config.customOptions"
+  fieldLabel = "Backup Location"
+  fieldName = "acBackupType"
+  optionList = { name = "Breweries - City List" }
+  optionSource = "list"
+  requireOnCode = "acCreateBackup:yes"
+  type = "select"
+  visibleOnCode = "acCreateBackup:yes"
+}
