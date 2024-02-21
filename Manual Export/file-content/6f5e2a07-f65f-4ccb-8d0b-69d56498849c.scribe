@@ -1,0 +1,9 @@
+resource "file-content" "6f5e2a07-f65f-4ccb-8d0b-69d56498849c" {
+  uuid = "6f5e2a07-f65f-4ccb-8d0b-69d56498849c"
+  content = <<EOFSCRIBE
+echo "HELLO WORLD"
+echo "<%= customOptions %>"
+EOFSCRIBE
+  dateCreated = "2023-12-01T14:04:33.000Z"
+  lastUpdated = "2023-12-01T14:08:31.000Z"
+}

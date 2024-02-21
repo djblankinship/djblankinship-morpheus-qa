@@ -1,0 +1,15 @@
+resource "task" "helloworld" {
+  code = "helloworld"
+  name = "aw println test"
+  uuid = "3478c4e9-4719-4ee5-971f-40e704a4e8ad"
+  dateCreated = "2023-12-01T14:04:33.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-12-01T14:08:31.000Z"
+  options = [
+    {
+      content = { uuid = "6f5e2a07-f65f-4ccb-8d0b-69d56498849c" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}
