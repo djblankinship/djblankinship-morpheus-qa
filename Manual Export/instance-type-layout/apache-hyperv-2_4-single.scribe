@@ -1,0 +1,15 @@
+resource "instance-type-layout" "apache-hyperv-2.4-single" {
+  code = "apache-hyperv-2.4-single"
+  name = "Hyper-V Apache"
+  uuid = "e6c57615-5f19-4f4f-95f0-a2a901d50fe3"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single vm in hyperv"
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  portCount = 2
+  provisionType = { code = "hyperv" }
+  serverType = "vm"
+  sortOrder = 30
+  workloads = [ { code = "apache-hyperv-2.4-set" } ]
+}
