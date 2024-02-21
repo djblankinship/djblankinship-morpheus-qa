@@ -5,5 +5,4 @@ resource "instance-type" "fn67541" {
   category = "os"
   deploymentService = ""
   environmentPrefix = "VS67541"
-  layouts = [ { code = "07c83677-618c-4130-b116-8ba07c5d74a1" } ]
 }
