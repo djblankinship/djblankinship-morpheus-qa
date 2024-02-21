@@ -1,0 +1,15 @@
+resource "option-type" "achiddentest" {
+  code = "achiddentest"
+  name = "AC HiddenTest"
+  uuid = "d13fdbb6-b6d5-4e61-964b-b4cc33bac6ef"
+  dependsOnCode = "awSelect"
+  displayValueOnDetails = true
+  editable = true
+  exportMeta = true
+  fieldContext = "config.customOptions"
+  fieldLabel = "Hidden Field"
+  fieldName = "achiddentest"
+  requireOnCode = "awSelect:yes"
+  required = true
+  visibleOnCode = "awSelect:yes"
+}

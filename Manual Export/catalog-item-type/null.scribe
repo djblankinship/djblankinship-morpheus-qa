@@ -1,0 +1,12 @@
+resource "catalog-item-type" "null" {
+  name = "AC Test Catalog"
+  uuid = "baad2497-dced-4ec8-b3cc-2d7c7e12ddae"
+  darkIconPath = "/branding/140x40/vmware.svg"
+  dateCreated = "2023-04-14T15:27:39.000Z"
+  description = "Ubuntu instance based on selected resources"
+  formType = "optionTypes"
+  iconPath = "/branding/140x40/vmware.svg"
+  lastUpdated = "2024-01-12T21:11:43.000Z"
+  optionTypes = [ { code = "awSelect" }, { code = "achiddentest" } ]
+  refType = "InstanceType"
+}
