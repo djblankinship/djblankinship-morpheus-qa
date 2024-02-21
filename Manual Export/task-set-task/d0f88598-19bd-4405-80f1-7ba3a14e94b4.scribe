@@ -1,0 +1,6 @@
+resource "task-set-task" "d0f88598-19bd-4405-80f1-7ba3a14e94b4" {
+  uuid = "d0f88598-19bd-4405-80f1-7ba3a14e94b4"
+  task = { code = "actask1" }
+  taskOrder = 1
+  taskPhase = "operation"
+}

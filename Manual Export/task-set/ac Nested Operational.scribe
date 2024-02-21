@@ -1,0 +1,11 @@
+resource "task-set" "ac Nested Operational" {
+  name = "ac Nested Operational"
+  uuid = "6e4b4792-280d-4320-be46-af7a2ae495d5"
+  dateCreated = "2024-02-13T21:03:54.000Z"
+  lastUpdated = "2024-02-13T21:44:46.000Z"
+  taskSetTasks = [
+    { uuid = "d0f88598-19bd-4405-80f1-7ba3a14e94b4" },
+    { uuid = "d40b1791-e85e-48a6-a928-93fc31a22550" }
+  ]
+  taskSetType = "operation"
+}

@@ -1,0 +1,6 @@
+resource "file-content" "4a25f1c6-c75b-43a3-b7af-1b5afd1bd9f4" {
+  uuid = "4a25f1c6-c75b-43a3-b7af-1b5afd1bd9f4"
+  content = "echo \"Resutls from AC Test Date are: <%=results.acTestDate%>\""
+  dateCreated = "2024-02-13T20:50:40.000Z"
+  lastUpdated = "2024-02-13T21:06:00.000Z"
+}
