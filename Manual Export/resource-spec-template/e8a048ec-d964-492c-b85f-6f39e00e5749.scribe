@@ -1,0 +1,9 @@
+resource "resource-spec-template" "e8a048ec-d964-492c-b85f-6f39e00e5749" {
+  name = "db-arm-spec-random"
+  uuid = "e8a048ec-d964-492c-b85f-6f39e00e5749"
+  dateCreated = "2019-12-11T22:27:21.000Z"
+  lastUpdated = "2019-12-11T22:27:21.000Z"
+  template = { uuid = "a18341b0-4bce-4daf-bac3-e223934845ce" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
