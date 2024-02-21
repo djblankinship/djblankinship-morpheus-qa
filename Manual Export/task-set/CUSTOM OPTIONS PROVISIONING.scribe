@@ -1,0 +1,7 @@
+resource "task-set" "CUSTOM OPTIONS PROVISIONING" {
+  name = "CUSTOM OPTIONS PROVISIONING"
+  uuid = "c07a5376-72af-4bd0-b396-a5abfeaa31d8"
+  dateCreated = "2023-10-16T18:48:35.000Z"
+  lastUpdated = "2023-10-16T18:48:42.000Z"
+  taskSetTasks = [ { uuid = "56044d67-a485-4d29-badb-ca7ec8a89230" } ]
+}

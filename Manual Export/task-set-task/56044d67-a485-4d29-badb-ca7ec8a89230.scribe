@@ -1,0 +1,5 @@
+resource "task-set-task" "56044d67-a485-4d29-badb-ca7ec8a89230" {
+  uuid = "56044d67-a485-4d29-badb-ca7ec8a89230"
+  task = { name = "CUSTOM OPTIONS" }
+  taskPhase = "provision"
+}
