@@ -5,11 +5,11 @@ resource "task" "IPv6" {
   executeTarget = "resource"
   lastUpdated = "2022-11-15T20:26:40.000Z"
   options = [
-    { optionType = { code = "shell.sudo" }, value = "on" },
     {
       content = { uuid = "a6432a33-539f-409d-bb67-bac126e0e367" }
       optionType = { code = "script" }
-    }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
   ]
   taskType = { code = "script" }
 }
