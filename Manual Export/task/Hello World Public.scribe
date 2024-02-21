@@ -1,0 +1,16 @@
+resource "task" "Hello World Public" {
+  name = "Hello World Public"
+  uuid = "f28890e3-421a-4533-be06-00ed5fd707ab"
+  dateCreated = "2023-07-12T20:50:34.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-07-12T20:50:34.000Z"
+  options = [
+    {
+      content = { uuid = "08d783e0-f14a-4621-a94a-18af8359d1cb" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+  visibility = "public"
+}
