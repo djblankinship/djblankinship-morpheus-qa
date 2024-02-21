@@ -1,0 +1,8 @@
+resource "task" "z LOCAL - LOCAL" {
+  name = "z LOCAL - LOCAL"
+  uuid = "1b902a96-9fbd-4115-aa92-e3fed9245527"
+  dateCreated = "2019-06-27T00:18:01.000Z"
+  executeTarget = "local"
+  lastUpdated = "2019-11-14T06:04:11.000Z"
+  taskType = { code = "script" }
+}
