@@ -1,0 +1,14 @@
+resource "task" "ac sleep 1 min" {
+  name = "ac sleep 1 min"
+  uuid = "32618e5e-e529-4eac-b45e-fee02c7f732a"
+  dateCreated = "2024-01-12T18:06:54.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-01-12T18:06:54.000Z"
+  options = [
+    {
+      content = { uuid = "3322bd3b-1fb2-447e-a517-018519307c53" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

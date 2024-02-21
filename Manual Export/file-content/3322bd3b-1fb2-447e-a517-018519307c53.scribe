@@ -1,0 +1,6 @@
+resource "file-content" "3322bd3b-1fb2-447e-a517-018519307c53" {
+  uuid = "3322bd3b-1fb2-447e-a517-018519307c53"
+  content = "sleep 60"
+  dateCreated = "2024-01-12T18:06:54.000Z"
+  lastUpdated = "2024-01-12T18:06:54.000Z"
+}
