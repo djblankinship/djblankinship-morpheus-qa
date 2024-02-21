@@ -1,0 +1,11 @@
+resource "task-set" "ac final workflow" {
+  name = "ac final workflow"
+  uuid = "d200df73-70db-41f9-839b-742751e727b6"
+  dateCreated = "2024-02-13T20:53:42.000Z"
+  lastUpdated = "2024-02-13T21:47:04.000Z"
+  taskSetTasks = [
+    { uuid = "8548164c-430c-46db-a1eb-768b3c0f3646" },
+    { uuid = "9dc1247a-2d16-4efc-9032-c1aa87af0738" }
+  ]
+  taskSetType = "operation"
+}

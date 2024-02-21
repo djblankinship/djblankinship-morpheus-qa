@@ -1,0 +1,5 @@
+resource "task-set-task" "8548164c-430c-46db-a1eb-768b3c0f3646" {
+  uuid = "8548164c-430c-46db-a1eb-768b3c0f3646"
+  task = { code = "acnestedtask" }
+  taskPhase = "operation"
+}

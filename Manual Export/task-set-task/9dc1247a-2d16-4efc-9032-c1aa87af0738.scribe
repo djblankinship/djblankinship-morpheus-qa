@@ -1,0 +1,6 @@
+resource "task-set-task" "9dc1247a-2d16-4efc-9032-c1aa87af0738" {
+  uuid = "9dc1247a-2d16-4efc-9032-c1aa87af0738"
+  task = { code = "ac task3" }
+  taskOrder = 1
+  taskPhase = "operation"
+}

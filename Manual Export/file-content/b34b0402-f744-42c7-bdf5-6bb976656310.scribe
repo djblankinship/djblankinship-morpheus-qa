@@ -1,0 +1,6 @@
+resource "file-content" "b34b0402-f744-42c7-bdf5-6bb976656310" {
+  uuid = "b34b0402-f744-42c7-bdf5-6bb976656310"
+  content = "echo \"grabbing value outside of nested workflow <%=results.acTestDate%>\""
+  dateCreated = "2024-02-13T21:03:10.000Z"
+  lastUpdated = "2024-02-13T21:03:10.000Z"
+}

@@ -1,0 +1,16 @@
+resource "task" "ac task3" {
+  code = "ac task3"
+  name = "ac task3"
+  uuid = "f969fa0a-e523-42b1-a67e-6fa8d92396ba"
+  dateCreated = "2024-02-13T21:03:10.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-02-13T21:03:10.000Z"
+  options = [
+    {
+      content = { uuid = "b34b0402-f744-42c7-bdf5-6bb976656310" }
+      optionType = { code = "script" }
+    }
+  ]
+  resultType = "value"
+  taskType = { code = "script" }
+}

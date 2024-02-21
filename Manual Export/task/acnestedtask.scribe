@@ -1,0 +1,19 @@
+resource "task" "acnestedtask" {
+  code = "acnestedtask"
+  name = "ac nested task"
+  uuid = "58f65431-6c23-4d8a-b52a-73c0067c7fa2"
+  dateCreated = "2024-02-13T21:00:10.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-02-13T21:36:53.000Z"
+  options = [
+    {
+      optionType = { code = "operationalWorkflowId" }
+      value = "8801"
+    },
+    {
+      optionType = { code = "operationalWorkflowName" }
+      value = "ac Nested Operational"
+    }
+  ]
+  taskType = { code = "nestedWorkflow" }
+}
