@@ -1,0 +1,15 @@
+resource "task" "Version 2" {
+  name = "Version 2"
+  uuid = "e10383e9-d6ec-41b9-ad89-6bd9910084ad"
+  dateCreated = "2019-12-12T18:54:24.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2019-12-12T18:54:24.000Z"
+  options = [
+    {
+      optionType = { code = "script" }
+      value = "echo \"version 2.0\" | sudo tee -a /version.txt"
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}
