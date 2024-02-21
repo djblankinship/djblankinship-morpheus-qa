@@ -1,0 +1,8 @@
+resource "instance-type" "nginxsvc" {
+  code = "nginxsvc"
+  name = "Nginx Service"
+  uuid = "a81b15ce-dc0d-4c80-8ada-0cfb17e7ccd6"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "NGINX_SERVICE"
+}
