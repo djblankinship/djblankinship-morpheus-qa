@@ -5,6 +5,7 @@ resource "instance-type" "vsvmwareIT" {
   category = "cloud"
   deploymentService = ""
   environmentPrefix = "VSVMWAREIT"
+  layouts = [ { code = "3de9e9b4-b6ba-45ba-8f62-4687ac3defe8" } ]
   optionTypes = [
     { code = "morpheus_network_server" },
     { code = "morpheus_network_interface_mac" }
