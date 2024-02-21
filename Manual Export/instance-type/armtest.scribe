@@ -5,9 +5,4 @@ resource "instance-type" "armtest" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "ARM_TEST"
-  layouts = [
-    { code = "06414b59-555c-4601-a4d8-ed53d2e8d37a" },
-    { code = "073d61f4-ab1c-4590-9189-783eb8b54f9b" },
-    { code = "f2387e3d-cc26-4f95-a2a9-7fbb859a559a" }
-  ]
 }
