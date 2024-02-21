@@ -1,0 +1,9 @@
+resource "catalog-item-type" "ubuntuforms" {
+  code = "ubuntuforms"
+  name = "Ubuntu - Forms - VCD"
+  uuid = "84fe69e6-9aae-4fe3-b9b4-369dead42aab"
+  dateCreated = "2023-06-12T21:45:58.000Z"
+  formType = "form"
+  lastUpdated = "2023-06-12T21:58:11.000Z"
+  refType = "InstanceType"
+}
