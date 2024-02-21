@@ -1,0 +1,16 @@
+resource "task" "wwtvpndis" {
+  code = "wwtvpndis"
+  name = "WWT VPN - Disconnect"
+  uuid = "dd96c661-6a31-495c-bdf3-8694823fea6a"
+  dateCreated = "2024-01-26T02:58:23.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2024-01-26T03:28:26.000Z"
+  options = [
+    {
+      content = { uuid = "2bbc1473-e9a7-4395-b651-c7842e82d757" }
+      optionType = { code = "script" }
+    },
+    { optionType = { code = "shell.sudo" }, value = "on" }
+  ]
+  taskType = { code = "script" }
+}

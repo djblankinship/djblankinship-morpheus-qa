@@ -1,0 +1,6 @@
+resource "file-content" "2bbc1473-e9a7-4395-b651-c7842e82d757" {
+  uuid = "2bbc1473-e9a7-4395-b651-c7842e82d757"
+  content = "/opt/cisco/anyconnect/bin/vpn -s disconnect"
+  dateCreated = "2024-01-26T02:58:23.000Z"
+  lastUpdated = "2024-01-26T02:58:23.000Z"
+}
