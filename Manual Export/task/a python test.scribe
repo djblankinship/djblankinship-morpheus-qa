@@ -5,11 +5,11 @@ resource "task" "a python test" {
   executeTarget = "local"
   lastUpdated = "2023-07-17T20:56:28.000Z"
   options = [
+    { optionType = { code = "pythonArgs" }, value = "Hello World" },
     {
       optionType = { code = "pythonAdditionalPackages" }
       value = "pprint mechanize"
     },
-    { optionType = { code = "pythonArgs" }, value = "Hello World" },
     { optionType = { code = "pythonBinary" }, value = "python3" },
     {
       content = { uuid = "e2fe1067-32e4-4ca9-8b1f-424b5442d279" }
