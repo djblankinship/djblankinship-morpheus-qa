@@ -1,0 +1,8 @@
+resource "instance-type" "armtest" {
+  code = "armtest"
+  name = "ARM Test"
+  uuid = "18170d42-eb02-4bed-b93a-2b0e132b5e1e"
+  category = "web"
+  deploymentService = ""
+  environmentPrefix = "ARM_TEST"
+}
