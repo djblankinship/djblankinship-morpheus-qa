@@ -1,0 +1,16 @@
+resource "instance-type-layout" "apache-huawei-2.4-centos-7.3" {
+  code = "apache-huawei-2.4-centos-7.3"
+  name = "Huawei Apache on CentOS 7.3"
+  uuid = "d1136daa-afeb-459c-922d-e2fc4935f9ae"
+  actions = [ { code = "apache-add-node" } ]
+  description = "This will provision a single process with no redundancy"
+  hasAutoScale = true
+  instanceType = { code = "apache" }
+  instanceVersion = "2.4"
+  memoryRequirement = 1073741824
+  portCount = 2
+  provisionType = { code = "huawei" }
+  serverType = "vm"
+  sortOrder = 100
+  workloads = [ { code = "apache-huawei-2.4-centos-7.3-set" } ]
+}
