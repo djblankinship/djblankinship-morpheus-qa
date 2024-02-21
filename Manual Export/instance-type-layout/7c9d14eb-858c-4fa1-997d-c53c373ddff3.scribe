@@ -1,0 +1,10 @@
+resource "instance-type-layout" "7c9d14eb-858c-4fa1-997d-c53c373ddff3" {
+  code = "7c9d14eb-858c-4fa1-997d-c53c373ddff3"
+  name = "tf aws ubuntu 20.04"
+  uuid = "eddb918e-2cba-4317-8cfe-579fd6ac30b6"
+  instanceType = { code = "tf aws ubuntu 20.04" }
+  instanceVersion = "1.0"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "03f6ba46-feba-4ce4-9518-a0e8e2f568ca" } ]
+}
