@@ -1,0 +1,12 @@
+resource "catalog-item-type" "ubuforms" {
+  code = "ubuforms"
+  name = "Forms Test"
+  uuid = "5256243d-a1d1-42be-a9fc-b26ab71bb24d"
+  darkIconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/1996/logo/ubuntu_light_original.svg"
+  dateCreated = "2023-04-12T21:03:27.000Z"
+  description = "Ubuntu Deployment utilizing Forms"
+  formType = "form"
+  iconPath = "https://qa.morpheusdata.com/storage/logos/uploads/InstanceType/1996/logo/ubuntu_light_original.svg"
+  lastUpdated = "2023-04-17T14:21:58.000Z"
+  refType = "InstanceType"
+}
