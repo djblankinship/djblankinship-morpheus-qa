@@ -1,0 +1,10 @@
+resource "instance-type-layout" "d0c9999c-bcaf-4114-adf6-4a52a0295706" {
+  code = "d0c9999c-bcaf-4114-adf6-4a52a0295706"
+  name = "CF ElastiCache"
+  uuid = "73ab0f3f-d43d-4062-930d-36fbbcdf2fbd"
+  instanceType = { code = "cfspec" }
+  instanceVersion = "elasticache"
+  memoryRequirement = 0
+  provisionType = { code = "cloudFormation" }
+  specTemplates = [ { uuid = "c3fdd0c4-f500-433a-ac56-a9c0ebeccf24" } ]
+}
