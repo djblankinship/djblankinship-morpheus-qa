@@ -1,0 +1,10 @@
+resource "resource-spec-template" "750f67b0-c860-4cba-be24-9eddc23c7034" {
+  name = "A Local Arm"
+  uuid = "750f67b0-c860-4cba-be24-9eddc23c7034"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2021-10-18T15:31:54.000Z"
+  lastUpdated = "2021-10-18T15:31:54.000Z"
+  template = { uuid = "382fb2f6-f3ab-4646-a5bc-422b1a58be31" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
