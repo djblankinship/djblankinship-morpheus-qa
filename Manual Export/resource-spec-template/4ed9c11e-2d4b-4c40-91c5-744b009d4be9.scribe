@@ -1,0 +1,10 @@
+resource "resource-spec-template" "4ed9c11e-2d4b-4c40-91c5-744b009d4be9" {
+  name = "DG Windows VM"
+  uuid = "4ed9c11e-2d4b-4c40-91c5-744b009d4be9"
+  config = { terraform = { tfVersion = "" } }
+  dateCreated = "2023-06-14T14:23:27.000Z"
+  lastUpdated = "2023-06-14T14:23:27.000Z"
+  template = { uuid = "90226d40-e956-4f5c-8921-b3a67ad4acdb" }
+  templateType = "ARM Template"
+  type = { code = "arm" }
+}
