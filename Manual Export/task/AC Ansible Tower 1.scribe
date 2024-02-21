@@ -1,0 +1,26 @@
+resource "task" "AC Ansible Tower 1" {
+  name = "AC Ansible Tower 1"
+  uuid = "7dd2add4-b287-4258-9dbf-5943ad466584"
+  dateCreated = "2023-09-22T17:11:18.000Z"
+  executeTarget = "resource"
+  lastUpdated = "2023-12-14T18:59:46.000Z"
+  options = [
+    {
+      optionType = { code = "ansibleTowerIntegrationId" }
+      value = { name = "Labs Ansible Tower" }
+    },
+    {
+      optionType = { code = "ansibleTowerJobTemplateId" }
+      value = { code = "ansibleTower.jobTemplate.4997.49" }
+    },
+    {
+      optionType = { code = "ansibleTowerInventoryId" }
+      value = "5420"
+    },
+    {
+      optionType = { code = "ansibleTowerExecuteMode" }
+      value = "executeHost"
+    }
+  ]
+  taskType = { code = "ansibleTowerTask" }
+}
