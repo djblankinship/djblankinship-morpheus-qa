@@ -1,0 +1,12 @@
+resource "compute-type-set" "docker-digitalOcean-ubuntu-20.04-set" {
+  code = "docker-digitalOcean-ubuntu-20.04-set"
+  name = "docker host"
+  category = "ubuntu"
+  canAddNodes = true
+  computeServerType = { code = "digitalOceanLinux" }
+  dynamicCount = true
+  installContainerRuntime = true
+  installStorageRuntime = true
+  nodeType = "worker"
+  workloadType = { code = "docker-digitalOcean-ubuntu-20.04" }
+}

@@ -1,0 +1,15 @@
+resource "compute-type-layout" "docker-digitalOcean-ubuntu-20.04-single" {
+  code = "docker-digitalOcean-ubuntu-20.04-single"
+  name = "Digital Ocean Docker Host (Ubuntu 20.04)"
+  computeServers = [ { code = "docker-digitalOcean-ubuntu-20.04-set" } ]
+  computeVersion = "20.04"
+  dateCreated = "2023-09-12T14:48:37.000Z"
+  description = "This will provision a single docker host vm in digitalOcean"
+  groupType = { code = "docker-cluster" }
+  hasAutoScale = true
+  lastUpdated = "2023-09-12T15:17:27.000Z"
+  memoryRequirement = 1073741824
+  provisionType = { code = "digitalocean" }
+  sortOrder = 5
+  type = { code = "digitalOceanLinux" }
+}
