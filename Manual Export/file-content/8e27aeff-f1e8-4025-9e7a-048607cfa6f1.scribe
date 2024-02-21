@@ -1,0 +1,6 @@
+resource "file-content" "8e27aeff-f1e8-4025-9e7a-048607cfa6f1" {
+  uuid = "8e27aeff-f1e8-4025-9e7a-048607cfa6f1"
+  content = "sleep 30"
+  dateCreated = "2023-11-27T16:24:18.000Z"
+  lastUpdated = "2023-11-27T16:24:18.000Z"
+}
