@@ -1,0 +1,15 @@
+resource "task" "Cleanup Orphaned Controllers Job" {
+  name = "Cleanup Orphaned Controllers Job"
+  uuid = "e91af8a0-2719-443c-9b28-897cca4701eb"
+  dateCreated = "2023-12-06T16:41:55.000Z"
+  executeTarget = "local"
+  labels = [ "utility" ]
+  lastUpdated = "2023-12-06T16:41:55.000Z"
+  options = [
+    {
+      content = { uuid = "7fca44bc-2390-4d03-ae42-0e392e37086c" }
+      optionType = { code = "groovyScript" }
+    }
+  ]
+  taskType = { code = "groovyTask" }
+}

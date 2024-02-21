@@ -1,0 +1,10 @@
+resource "file-content" "7fca44bc-2390-4d03-ae42-0e392e37086c" {
+  uuid = "7fca44bc-2390-4d03-ae42-0e392e37086c"
+  content = <<EOFSCRIBE
+com.morpheus.ComputeServer.withNewSession {
+  grails.util.Holders.applicationContext['computeService'].cleanupOrphanedControllers()
+}
+EOFSCRIBE
+  dateCreated = "2023-12-06T16:41:55.000Z"
+  lastUpdated = "2023-12-06T16:41:55.000Z"
+}
