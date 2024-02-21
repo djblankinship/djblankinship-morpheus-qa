@@ -1,0 +1,10 @@
+resource "instance-type-layout" "d19399bb-b5e8-465d-b7bc-5b12cc45dbd0" {
+  code = "d19399bb-b5e8-465d-b7bc-5b12cc45dbd0"
+  name = "Simple Terraform"
+  uuid = "15f0fc27-d44d-4db2-a2aa-9b881585de65"
+  instanceType = { code = "specs" }
+  instanceVersion = "simple"
+  memoryRequirement = 0
+  provisionType = { code = "terraform" }
+  specTemplates = [ { uuid = "c61a1633-c6e9-405b-8a43-6b56d2fe391c" } ]
+}
