@@ -1,0 +1,28 @@
+resource "task" "contaskelse" {
+  code = "contaskelse"
+  name = "auto con task else"
+  uuid = "9dd4e56c-10bd-46a0-b66c-bda2a5e89ddd"
+  dateCreated = "2024-02-20T22:29:43.000Z"
+  executeTarget = "local"
+  lastUpdated = "2024-02-20T22:29:43.000Z"
+  options = [
+    {
+      optionType = { code = "ifOperationalWorkflowId" }
+      value = "8839"
+    },
+    {
+      optionType = { code = "elseOperationalWorkflowId" }
+      value = "8840"
+    },
+    {
+      optionType = { code = "elseOperationalWorkflowName" }
+      value = "Auto else workflow"
+    },
+    {
+      optionType = { code = "ifOperationalWorkflowName" }
+      value = "Auto if workflow"
+    },
+    { optionType = { code = "conditionalScript" }, value = "false;" }
+  ]
+  taskType = { code = "conditionalWorkflow" }
+}
