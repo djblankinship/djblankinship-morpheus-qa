@@ -1,0 +1,9 @@
+resource "container-type-port" "67dfe1c5-669d-4d6c-b7ae-f757baec2bc7" {
+  name = "listener"
+  uuid = "67dfe1c5-669d-4d6c-b7ae-f757baec2bc7"
+  export = true
+  exportName = "LISTENER"
+  externalPort = 8200
+  internalPort = 8200
+  visible = true
+}
