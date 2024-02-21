@@ -8,4 +8,9 @@ resource "instance-type" "custom-centos" {
   hasAutoScale = true
   hasDeployment = true
   hasSettings = true
+  layouts = [
+    { code = "1fb2fb6e-4364-4033-b492-cf158d345f19" },
+    { code = "650e1fa4-d838-4f50-aeb4-e6264f5ae99b" },
+    { code = "e948988e-85ce-4080-a61e-c7a5f84d70d6" }
+  ]
 }
