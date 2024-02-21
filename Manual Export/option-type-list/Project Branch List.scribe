@@ -1,0 +1,20 @@
+resource "option-type-list" "Project Branch List" {
+  name = "Project Branch List"
+  uuid = "8c837603-5feb-45e1-857a-ff9c96ab7133"
+  initialDataset = <<EOFSCRIBE
+dev,develop
+staging,staging
+production,stable
+EOFSCRIBE
+  realTime = true
+  translationScript = <<EOFSCRIBE
+if (input.projectenv) {
+  for (var x = 0; x < data.length; x++) {
+    if (data[x].name == input.projectenv) {
+      results.push({name:data[x].name, value:data[x].value});
+    }
+  }
+}
+EOFSCRIBE
+  type = "manual"
+}
