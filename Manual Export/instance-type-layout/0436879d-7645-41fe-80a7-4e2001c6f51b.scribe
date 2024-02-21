@@ -1,0 +1,13 @@
+resource "instance-type-layout" "0436879d-7645-41fe-80a7-4e2001c6f51b" {
+  code = "0436879d-7645-41fe-80a7-4e2001c6f51b"
+  name = "Windows Server GUI"
+  uuid = "756e7aa3-d7e7-44a2-bb0a-76bbfe3bf025"
+  actions = [ { code = "0436879d-7645-41fe-80a7-4e2001c6f51b" } ]
+  description = "Windows Server 2016 with a GUI"
+  hasAutoScale = true
+  instanceType = { code = "al-windows-server" }
+  instanceVersion = "2016"
+  memoryRequirement = 2147483648
+  provisionType = { code = "vcd" }
+  workloads = [ { code = "347e3aca-9d48-4284-a217-f107d7753625" } ]
+}
