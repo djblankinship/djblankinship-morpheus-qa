@@ -1,0 +1,8 @@
+resource "instance-type" "bunge" {
+  code = "bunge"
+  name = "Bunge"
+  uuid = "eed81d0c-e712-47db-97ae-130c6312780a"
+  category = "os"
+  deploymentService = ""
+  environmentPrefix = "BUNGE"
+}
