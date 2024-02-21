@@ -6,5 +6,4 @@ resource "instance-type" "options" {
   deploymentService = ""
   environmentPrefix = "options"
   hasAutoScale = true
-  layouts = [ { code = "d68b634f-85c0-49c1-9547-d67c43c2c4c3" } ]
 }
