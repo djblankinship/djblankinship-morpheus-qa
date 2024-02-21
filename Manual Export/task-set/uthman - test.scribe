@@ -1,0 +1,10 @@
+resource "task-set" "uthman - test" {
+  name = "uthman - test"
+  uuid = "2637c417-0047-4c60-bd81-8fce9bf437c0"
+  dateCreated = "2023-10-04T17:05:21.000Z"
+  lastUpdated = "2023-10-04T17:05:21.000Z"
+  taskSetTasks = [
+    { uuid = "14c04f78-a8a7-4a81-a64e-02d435717694" },
+    { uuid = "25e3d52e-4bf9-460f-b431-4ab5d5d6a3e1" }
+  ]
+}

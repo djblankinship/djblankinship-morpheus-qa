@@ -1,0 +1,14 @@
+resource "task" "teardown" {
+  name = "teardown"
+  uuid = "5da2ac24-1774-41f5-8373-7dc6be0bd42d"
+  dateCreated = "2023-10-04T17:04:41.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-10-04T17:04:41.000Z"
+  options = [
+    {
+      content = { uuid = "35839c76-3a3c-4291-87bc-1000a04ab03c" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

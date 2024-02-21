@@ -1,0 +1,6 @@
+resource "file-content" "35839c76-3a3c-4291-87bc-1000a04ab03c" {
+  uuid = "35839c76-3a3c-4291-87bc-1000a04ab03c"
+  content = "echo \"Teardown\""
+  dateCreated = "2023-10-04T17:04:41.000Z"
+  lastUpdated = "2023-10-04T17:04:41.000Z"
+}

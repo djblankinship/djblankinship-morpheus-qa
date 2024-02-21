@@ -1,0 +1,14 @@
+resource "task" "reconfigure" {
+  name = "reconfigure"
+  uuid = "c3151847-231c-447a-bf5a-620737bf10ab"
+  dateCreated = "2023-10-04T17:04:13.000Z"
+  executeTarget = "local"
+  lastUpdated = "2023-10-04T17:04:13.000Z"
+  options = [
+    {
+      content = { uuid = "e4097911-aa8c-4a22-949d-b1dbfb1aa3d3" }
+      optionType = { code = "script" }
+    }
+  ]
+  taskType = { code = "script" }
+}

@@ -1,0 +1,6 @@
+resource "task-set-task" "14c04f78-a8a7-4a81-a64e-02d435717694" {
+  uuid = "14c04f78-a8a7-4a81-a64e-02d435717694"
+  task = { name = "teardown" }
+  taskOrder = 2
+  taskPhase = "teardown"
+}
