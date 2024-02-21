@@ -5,6 +5,5 @@ resource "instance-type" "api-tf-test" {
   category = "web"
   deploymentService = ""
   environmentPrefix = "API_TF_TEST"
-  layouts = [ { code = "d72ed423-c696-43b8-a167-79b8d2ca1589" } ]
   visibility = "public"
 }
